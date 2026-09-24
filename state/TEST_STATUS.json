@@ -138,5 +138,20 @@
     "label": "G13b independent root and prefix browser/axe/route/security review",
     "status": "passed: 81/81 browser checks and 16 axe cases with zero violations per profile; 28 direct-route cases",
     "at": "2026-09-24T09:58:00Z"
+  },
+  {
+    "label": "G13b structural release gate",
+    "status": "passed for reviewed local candidate",
+    "at": "2026-09-24T10:00:00Z"
+  },
+  {
+    "label": "G13b GitHub Pages Actions run 35984654372",
+    "status": "completed success: build and deploy jobs",
+    "at": "2026-09-24T10:01:09Z"
+  },
+  {
+    "label": "G13b live GitHub Pages browser and axe review",
+    "status": "passed: 131/131 general browser checks; 81/81 interaction checks; 16 axe cases, zero violations",
+    "at": "2026-09-24T10:03:18Z"
   }
 ]

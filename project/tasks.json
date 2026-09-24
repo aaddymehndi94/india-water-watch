@@ -1006,7 +1006,7 @@
     "title": "G13 portable release, independent QA and GitHub Pages checkpoint",
     "owner_role": "lead",
     "depends_on": [],
-    "status": "in_progress",
+    "status": "completed",
     "suggested_paths": [],
     "acceptance": [
       "Dated, source-linked content; responsive and accessible interaction; independently reviewed before public promotion"
@@ -1017,8 +1017,81 @@
       "reporting/g13b_quality_review.md",
       "release/site-github.zip",
       "release/site-compact.zip",
-      "release/journalist-exports.zip"
+      "release/journalist-exports.zip",
+      "state/DEPLOYMENT_REPORT.md"
     ],
+    "blockers": []
+  },
+  {
+    "id": "T56",
+    "gate": "G14",
+    "title": "Acquire verified current state/district measurements and rights",
+    "owner_role": "hydrology",
+    "depends_on": [
+      "T55"
+    ],
+    "status": "in_progress",
+    "suggested_paths": [
+      "reporting/g14_local_data.md"
+    ],
+    "acceptance": [
+      "Exact accessible source/asset, date, scope, rights and independent review before publication"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T57",
+    "gate": "G14",
+    "title": "Check drought relief implementation and official statements",
+    "owner_role": "institutions_reporter",
+    "depends_on": [
+      "T55"
+    ],
+    "status": "in_progress",
+    "suggested_paths": [
+      "reporting/g14_response_outcomes.md"
+    ],
+    "acceptance": [
+      "Exact accessible source/asset, date, scope, rights and independent review before publication"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T58",
+    "gate": "G14",
+    "title": "Audit authentic 2026 imagery and reuse rights",
+    "owner_role": "source_auditor",
+    "depends_on": [
+      "T55"
+    ],
+    "status": "in_progress",
+    "suggested_paths": [
+      "reporting/g14_image_rights.md"
+    ],
+    "acceptance": [
+      "Exact accessible source/asset, date, scope, rights and independent review before publication"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T59",
+    "gate": "G14",
+    "title": "Review and publish a justified local-evidence/imagery improvement",
+    "owner_role": "lead",
+    "depends_on": [
+      "T56",
+      "T57",
+      "T58"
+    ],
+    "status": "not_started",
+    "suggested_paths": [],
+    "acceptance": [
+      "Material new content only if source/method/rights checks pass; rebuild and live verify"
+    ],
+    "result_paths": [],
     "blockers": []
   }
 ]
