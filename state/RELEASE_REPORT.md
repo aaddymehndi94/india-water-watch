@@ -1,6 +1,6 @@
 # India Water Watch · local release candidate
 
-**Candidate:** `candidate-20260924-c5c2701d6b3c` · built 24 September 2026. The GitHub Pages profile is in `dist/`; the portable root/compact profile is in `dist-compact/`. This is an agent-reviewed progress candidate. Public deployment status must be checked separately; a local ZIP is not a hosted site.
+**Candidate:** `candidate-20260924-c5c2701d6b3c` · built 24 September 2026. The GitHub Pages profile is in `dist/`; the portable root/compact profile is in `dist-compact/`. This is an agent-reviewed progress candidate. Source was pushed to GitHub as `789c58f`; the hosted site is not live because GitHub Pages is disabled.
 
 ## Built and verified
 
@@ -43,6 +43,6 @@ The prompt-driven update guide is `docs/UPDATE_PLAYBOOK.md`. Root and GitHub ZIP
 
 ## GitHub Pages
 
-The existing remote is `git@github.com-aaddymehndi94:aaddymehndi94/india-water-watch.git`; `.github/workflows/pages.yml` runs checks and builds on `main` pushes, then deploys the repository-prefix artifact. After push, verify that repository Settings → Pages uses **GitHub Actions**, inspect the workflow run, and load the actual URL before marking `state/PROJECT_STATE.json` deployed. If Pages is not enabled, the owner must enable it in Settings; SSH push alone cannot change repository Pages settings. No scheduled candidate auto-promotion is configured.
+The existing remote is `git@github.com-aaddymehndi94:aaddymehndi94/india-water-watch.git`; `.github/workflows/pages.yml` runs checks and builds on `main` pushes. [Run #1](https://github.com/aaddymehndi94/india-water-watch/actions/runs/35966962356) passed install, test and build, then `configure-pages` failed: “Get Pages site failed” / API 404. The expected Pages URL also returned HTTP 404. The owner must enable **Settings → Pages → Build and deployment → Source: GitHub Actions**; SSH push cannot change this setting. Then rerun the workflow and test the actual URL before marking `state/PROJECT_STATE.json` deployed. No scheduled candidate auto-promotion is configured.
 
 To roll back, redeploy an earlier reviewed commit/workflow run or revert with a new commit. Keep prior source snapshots and release manifests; do not rewrite history or silently alter observation dates.
