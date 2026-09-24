@@ -819,7 +819,7 @@
     "title": "Verified static release, journalist exports and GitHub Pages deployment",
     "owner_role": "lead",
     "depends_on": [],
-    "status": "in_progress",
+    "status": "completed",
     "suggested_paths": [],
     "acceptance": [
       "Source-linked and browser-verified output; exact dates; no unsupported predictive certainty"
