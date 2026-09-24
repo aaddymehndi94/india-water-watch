@@ -3,12 +3,12 @@ import Site from '../layouts/Site.astro';
 import PageHeader from '../components/PageHeader.astro';
 import { url } from '../lib/publication';
 ---
-<Site title="Search"><PageHeader title="Search the publication" eyebrow="Find a place, method or source" description="Search the published pages. Research notes and candidate data are not indexed." /><section class="section"><div class="shell reading"><div class="field"><label for="site-search">Search terms</label><input id="site-search" type="search" autocomplete="off" data-base={url('/')} placeholder="Try rainfall, state, or source" /></div><p id="search-status" class="small muted" aria-live="polite">Type to search published pages. Search is available in a built preview.</p><ol id="search-results" class="source-list"></ol><noscript><p>Search needs JavaScript. Use the <a href={url('/sources/')}>source catalogue</a>, <a href={url('/states/')}>location directory</a> and section navigation instead.</p></noscript></div></section><script is:inline type="module">
+<Site title="Search"><PageHeader title="Search the publication" eyebrow="Find a place, method or source" description="Search the published pages. Research notes and candidate data are not indexed." /><section class="section"><div class="shell reading"><div class="field"><label for="site-search">Search terms</label><input id="site-search" type="search" autocomplete="off" data-base={url('/')} placeholder="Try rainfall, state, or source" /></div><p id="search-status" class="small muted" aria-live="polite">Type to search published pages. Search is available in a built preview.</p><ol id="search-results" class="source-list"></ol><noscript><p>Search needs JavaScript. Use the <a href={url('/sources/')}>source catalogue</a>, <a href={url('/states/')}>location directory</a> and section navigation instead.</p></noscript></div></section><script is:inline>
   const input = document.querySelector('#site-search');
   const list = document.querySelector('#search-results');
   const status = document.querySelector('#search-status');
   let pagefind;
-  input?.addEventListener('input', async () => {
+  const runSearch = async () => {
     if (!input || !list || !status) return;
     const query = input.value.trim();
     list.replaceChildren();
@@ -19,6 +19,7 @@ import { url } from '../lib/publication';
         await pagefind.options({ baseUrl: input.dataset.base });
       }
       const found = await pagefind.search(query);
+      if (query !== input.value.trim()) return;
       const results = await Promise.all(found.results.slice(0,20).map(r => r.data()));
       for (const row of results) {
         const li = document.createElement('li'); const a = document.createElement('a');
@@ -28,5 +29,7 @@ import { url } from '../lib/publication';
       }
       status.textContent = `${found.results.length} matching pages`;
     } catch { status.textContent = 'Search index is unavailable in this preview. Use section navigation instead.'; }
-  });
+  };
+  input?.addEventListener('input', runSearch);
+  if (input?.value.trim().length >= 2) runSearch();
 </script></Site>
