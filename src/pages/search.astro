@@ -1,0 +1,32 @@
+---
+import Site from '../layouts/Site.astro';
+import PageHeader from '../components/PageHeader.astro';
+import { url } from '../lib/publication';
+---
+<Site title="Search"><PageHeader title="Search the publication" eyebrow="Find a place, method or source" description="Search the published pages. Research notes and candidate data are not indexed." /><section class="section"><div class="shell reading"><div class="field"><label for="site-search">Search terms</label><input id="site-search" type="search" autocomplete="off" data-base={url('/')} placeholder="Try rainfall, state, or source" /></div><p id="search-status" class="small muted" aria-live="polite">Type to search published pages. Search is available in a built preview.</p><ol id="search-results" class="source-list"></ol><noscript><p>Search needs JavaScript. Use the <a href={url('/sources/')}>source catalogue</a>, <a href={url('/states/')}>location directory</a> and section navigation instead.</p></noscript></div></section><script is:inline type="module">
+  const input = document.querySelector('#site-search');
+  const list = document.querySelector('#search-results');
+  const status = document.querySelector('#search-status');
+  let pagefind;
+  input?.addEventListener('input', async () => {
+    if (!input || !list || !status) return;
+    const query = input.value.trim();
+    list.replaceChildren();
+    if (query.length < 2) { status.textContent = 'Enter at least two characters.'; return; }
+    try {
+      if (!pagefind) {
+        pagefind = await import(`${input.dataset.base}pagefind/pagefind.js`);
+        await pagefind.options({ baseUrl: input.dataset.base });
+      }
+      const found = await pagefind.search(query);
+      const results = await Promise.all(found.results.slice(0,20).map(r => r.data()));
+      for (const row of results) {
+        const li = document.createElement('li'); const a = document.createElement('a');
+        a.href = row.url; a.textContent = row.meta.title || row.url;
+        const desc = document.createElement('small'); desc.textContent = row.meta.description || '';
+        li.append(a,desc); list.append(li);
+      }
+      status.textContent = `${found.results.length} matching pages`;
+    } catch { status.textContent = 'Search index is unavailable in this preview. Use section navigation instead.'; }
+  });
+</script></Site>

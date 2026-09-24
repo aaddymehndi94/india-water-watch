@@ -1,6 +1,8 @@
 node_modules/
 dist/
 dist-*/
+dist-compact/
+dist-root/
 .astro/
 .env
 .env.*
@@ -8,6 +10,7 @@ dist-*/
 .cache/
 .private/
 data/raw/
+data/candidates/
 __pycache__/
 *.pyc
 .venv/
@@ -15,6 +18,8 @@ __pycache__/
 playwright-report/
 test-results/
 artifacts/
+exports/
+release/
 *.log
 .DS_Store
 Thumbs.db

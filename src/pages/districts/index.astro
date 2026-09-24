@@ -1,0 +1,7 @@
+---
+import Site from '../../layouts/Site.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import { release, url } from '../../lib/publication';
+const districts = release.geographies.filter(g => g.type === 'district');
+---
+<Site title="District coverage"><PageHeader title="District coverage" eyebrow="Local evidence" description="A district name alone is not a stable identifier. Browse districts only where codes and sources have been matched." /><section class="section"><div class="shell">{districts.length ? <div class="table-wrap"><table class="data-table"><thead><tr><th>District</th><th>Code</th><th>Approved rows</th></tr></thead><tbody>{districts.map(g => <tr><td>{g.name}</td><td>{g.code || 'Pending'}</td><td>{release.observations.filter(o => o.geographyId === g.id).length}</td></tr>)}</tbody></table></div> : <div class="empty-panel"><h2>District inventory in review</h2><p>District level claims need versioned codes, boundary changes and a source with matching geographic coverage. We do not spread state measurements across districts.</p><a href={url('/methodology/')}>Read the geography method ↗</a></div>}</div></section></Site>

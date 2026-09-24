@@ -1,0 +1,369 @@
+[
+  {
+    "id": "C-IMD-RAINFALL-DEP-india-20260923",
+    "text": "IMD reports that India received 713.3 mm of rainfall from 1 June through 23 September 2026, against 837.7 mm normal for the same dates (1971–2020); its displayed departure is −14.9%.",
+    "kind": "reported",
+    "status": "attributed",
+    "geography_ids": [
+      "india"
+    ],
+    "period": {
+      "start": "2026-06-01T00:00:00+05:30",
+      "end": "2026-09-23T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "season_to_date",
+      "cutoff_convention": "IMD graphic labels dates June 1 through September 23; clock hour is not specified. Times in this record encode calendar dates only."
+    },
+    "evidence_ids": [
+      "E-IMD-ALLINDIA-20260923"
+    ],
+    "observation_ids": [
+      "O-IMD-RAINFALL-DEP-india-20260923"
+    ],
+    "input_claim_ids": [],
+    "method_path": "IMD all-India graphic middle and bottom panels; (713.3 / 837.7 - 1) × 100 = −14.85%, rounding to −14.9%.",
+    "limitations": [
+      "Rainfall departure is not a measure of water supply or a drought declaration.",
+      "The graphic is a mutable, provider-rounded image; exact region boundaries and station methods were not reconstructed."
+    ],
+    "reviewer_id": "fact_checker-agent-2026-09-24",
+    "reviewed_at": "2026-09-24T06:22:59Z",
+    "requires_human_review": false,
+    "human_review_receipt": null,
+    "supersedes": null,
+    "public": true
+  },
+  {
+    "id": "C-IMD-RAINFALL-DEP-imd-northwest-20260923",
+    "text": "IMD reports a cumulative rainfall departure of -10.5% for its Northwest India homogeneous region through 23 September 2026.",
+    "kind": "reported",
+    "status": "attributed",
+    "geography_ids": [
+      "imd:northwest"
+    ],
+    "period": {
+      "start": "2026-06-01T00:00:00+05:30",
+      "end": "2026-09-23T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "season_to_date",
+      "cutoff_convention": "IMD graphic labels dates June 1 through September 23; clock hour is not specified. Times in this record encode calendar dates only."
+    },
+    "evidence_ids": [
+      "E-IMD-HOMO-20260923"
+    ],
+    "observation_ids": [
+      "O-IMD-RAINFALL-DEP-imd-northwest-20260923"
+    ],
+    "input_claim_ids": [],
+    "method_path": null,
+    "limitations": [
+      "Rainfall departure is not a measure of water supply or a drought declaration.",
+      "The graphic is a mutable, provider-rounded image; exact region boundaries and station methods were not reconstructed.",
+      "The image identifies a 1971–2020 daily normal but does not print separate cumulative normal totals for this region; the reported percentage could not be independently recomputed."
+    ],
+    "reviewer_id": "fact_checker-agent-2026-09-24",
+    "reviewed_at": "2026-09-24T06:22:59Z",
+    "requires_human_review": false,
+    "human_review_receipt": null,
+    "supersedes": null,
+    "public": true
+  },
+  {
+    "id": "C-IMD-RAINFALL-DEP-imd-east-northeast-20260923",
+    "text": "IMD reports a cumulative rainfall departure of -26.5% for its East & Northeast India homogeneous region through 23 September 2026.",
+    "kind": "reported",
+    "status": "attributed",
+    "geography_ids": [
+      "imd:east-northeast"
+    ],
+    "period": {
+      "start": "2026-06-01T00:00:00+05:30",
+      "end": "2026-09-23T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "season_to_date",
+      "cutoff_convention": "IMD graphic labels dates June 1 through September 23; clock hour is not specified. Times in this record encode calendar dates only."
+    },
+    "evidence_ids": [
+      "E-IMD-HOMO-20260923"
+    ],
+    "observation_ids": [
+      "O-IMD-RAINFALL-DEP-imd-east-northeast-20260923"
+    ],
+    "input_claim_ids": [],
+    "method_path": null,
+    "limitations": [
+      "Rainfall departure is not a measure of water supply or a drought declaration.",
+      "The graphic is a mutable, provider-rounded image; exact region boundaries and station methods were not reconstructed.",
+      "The image identifies a 1971–2020 daily normal but does not print separate cumulative normal totals for this region; the reported percentage could not be independently recomputed."
+    ],
+    "reviewer_id": "fact_checker-agent-2026-09-24",
+    "reviewed_at": "2026-09-24T06:22:59Z",
+    "requires_human_review": false,
+    "human_review_receipt": null,
+    "supersedes": null,
+    "public": true
+  },
+  {
+    "id": "C-IMD-RAINFALL-DEP-imd-central-20260923",
+    "text": "IMD reports a cumulative rainfall departure of -5.3% for its Central India homogeneous region through 23 September 2026.",
+    "kind": "reported",
+    "status": "attributed",
+    "geography_ids": [
+      "imd:central"
+    ],
+    "period": {
+      "start": "2026-06-01T00:00:00+05:30",
+      "end": "2026-09-23T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "season_to_date",
+      "cutoff_convention": "IMD graphic labels dates June 1 through September 23; clock hour is not specified. Times in this record encode calendar dates only."
+    },
+    "evidence_ids": [
+      "E-IMD-HOMO-20260923"
+    ],
+    "observation_ids": [
+      "O-IMD-RAINFALL-DEP-imd-central-20260923"
+    ],
+    "input_claim_ids": [],
+    "method_path": null,
+    "limitations": [
+      "Rainfall departure is not a measure of water supply or a drought declaration.",
+      "The graphic is a mutable, provider-rounded image; exact region boundaries and station methods were not reconstructed.",
+      "The image identifies a 1971–2020 daily normal but does not print separate cumulative normal totals for this region; the reported percentage could not be independently recomputed."
+    ],
+    "reviewer_id": "fact_checker-agent-2026-09-24",
+    "reviewed_at": "2026-09-24T06:22:59Z",
+    "requires_human_review": false,
+    "human_review_receipt": null,
+    "supersedes": null,
+    "public": true
+  },
+  {
+    "id": "C-IMD-RAINFALL-DEP-imd-south-peninsular-20260923",
+    "text": "IMD reports a cumulative rainfall departure of -25.7% for its South Peninsular India homogeneous region through 23 September 2026.",
+    "kind": "reported",
+    "status": "attributed",
+    "geography_ids": [
+      "imd:south-peninsular"
+    ],
+    "period": {
+      "start": "2026-06-01T00:00:00+05:30",
+      "end": "2026-09-23T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "season_to_date",
+      "cutoff_convention": "IMD graphic labels dates June 1 through September 23; clock hour is not specified. Times in this record encode calendar dates only."
+    },
+    "evidence_ids": [
+      "E-IMD-HOMO-20260923"
+    ],
+    "observation_ids": [
+      "O-IMD-RAINFALL-DEP-imd-south-peninsular-20260923"
+    ],
+    "input_claim_ids": [],
+    "method_path": null,
+    "limitations": [
+      "Rainfall departure is not a measure of water supply or a drought declaration.",
+      "The graphic is a mutable, provider-rounded image; exact region boundaries and station methods were not reconstructed.",
+      "The image identifies a 1971–2020 daily normal but does not print separate cumulative normal totals for this region; the reported percentage could not be independently recomputed."
+    ],
+    "reviewer_id": "fact_checker-agent-2026-09-24",
+    "reviewed_at": "2026-09-24T06:22:59Z",
+    "requires_human_review": false,
+    "human_review_receipt": null,
+    "supersedes": null,
+    "public": true
+  },
+  {
+    "id": "C-IMD-OUTLOOK-20260831",
+    "text": "In an outlook issued 31 August 2026, IMD forecast that all-India rainfall during September was most likely below normal, its category for less than 91% of the 1971–2020 September average. It also identified areas where normal or above-normal rain was possible. This is a forecast archive, not a measured September outcome.",
+    "kind": "forecast",
+    "status": "attributed",
+    "geography_ids": [
+      "india"
+    ],
+    "period": {
+      "start": "2026-09-01T00:00:00+05:30",
+      "end": "2026-09-30T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "month",
+      "cutoff_convention": "Dates are calendar precision; 00:00 encodes date only, not a measured cutoff hour."
+    },
+    "evidence_ids": [
+      "E-IMD-OUTLOOK-20260831"
+    ],
+    "observation_ids": [],
+    "input_claim_ids": [],
+    "method_path": null,
+    "limitations": [
+      "Valid only for September 2026 and superseded by any later outlook.",
+      "A rainfall forecast is not a water-supply or crop-loss forecast."
+    ],
+    "reviewer_id": "fact_checker-agent-2026-09-24",
+    "reviewed_at": "2026-09-24T06:39:38Z",
+    "requires_human_review": false,
+    "human_review_receipt": null,
+    "supersedes": null,
+    "public": true
+  },
+  {
+    "id": "C-JJM-FUNDS-20260331",
+    "text": "According to a 31 March 2026 Ministry of Jal Shakti release, the Union Cabinet approved Jal Jeevan Mission 2.0 on 10 March and operational guidelines were released on 22 March. The ministry reported releasing ₹1,561.53 crore to five named states for FY 2025–26. This does not establish state expenditure or service outcomes.",
+    "kind": "reported",
+    "status": "attributed",
+    "geography_ids": [
+      "india"
+    ],
+    "period": {
+      "start": "2025-04-01T00:00:00+05:30",
+      "end": "2026-03-31T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "other",
+      "cutoff_convention": "Dates are calendar precision; 00:00 encodes date only, not a measured cutoff hour."
+    },
+    "evidence_ids": [
+      "E-JJM-FUNDS-20260331"
+    ],
+    "observation_ids": [],
+    "input_claim_ids": [],
+    "method_path": null,
+    "limitations": [
+      "A ministry announcement/release is a single source chain and is not independent treasury confirmation.",
+      "The five named states are Uttar Pradesh, Chhattisgarh, Madhya Pradesh, Odisha and Maharashtra; this is not a drought-specific emergency measure."
+    ],
+    "reviewer_id": "fact_checker-agent-2026-09-24",
+    "reviewed_at": "2026-09-24T06:39:38Z",
+    "requires_human_review": false,
+    "human_review_receipt": null,
+    "supersedes": null,
+    "public": true
+  },
+  {
+    "id": "C-JJM-CONNECTIONS-20260303",
+    "text": "In a 2 April 2026 parliamentary reply, the Ministry of Jal Shakti said states and Union territories reported tap-water connections for about 15.82 crore of 19.36 crore rural households as of 3 March 2026. Connection counts do not establish regular or safe service.",
+    "kind": "reported",
+    "status": "attributed",
+    "geography_ids": [
+      "india"
+    ],
+    "period": {
+      "start": "2026-03-03T00:00:00+05:30",
+      "end": "2026-03-03T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "instant",
+      "cutoff_convention": "Dates are calendar precision; 00:00 encodes date only, not a measured cutoff hour."
+    },
+    "evidence_ids": [
+      "E-JJM-CONNECTIONS-20260402"
+    ],
+    "observation_ids": [],
+    "input_claim_ids": [],
+    "method_path": null,
+    "limitations": [
+      "This is an administrative count reported by states and UTs, not a household functionality survey.",
+      "Rounded headline counts should not be treated as exact household counts."
+    ],
+    "reviewer_id": "fact_checker-agent-2026-09-24",
+    "reviewed_at": "2026-09-24T06:39:38Z",
+    "requires_human_review": false,
+    "human_review_receipt": null,
+    "supersedes": null,
+    "public": true
+  },
+  {
+    "id": "C-NSO-PREMISES-2018",
+    "text": "In a national survey conducted July–December 2018, 58.2% of rural and 80.7% of urban households reported a drinking-water facility within their premises.",
+    "kind": "reported",
+    "status": "attributed",
+    "geography_ids": [
+      "india"
+    ],
+    "period": {
+      "start": "2018-07-01T00:00:00+05:30",
+      "end": "2018-12-31T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "other",
+      "cutoff_convention": "Dates are calendar precision; 00:00 encodes date only, not a measured cutoff hour."
+    },
+    "evidence_ids": [
+      "E-NSO-WATER-2018"
+    ],
+    "observation_ids": [],
+    "input_claim_ids": [],
+    "method_path": null,
+    "limitations": [
+      "Household responses in a 2018 survey; not a 2026 service measure or quality test.",
+      "The rural and urban frames differ from later JJM administrative reports."
+    ],
+    "reviewer_id": "fact_checker-agent-2026-09-24",
+    "reviewed_at": "2026-09-24T06:39:38Z",
+    "requires_human_review": false,
+    "human_review_receipt": null,
+    "supersedes": null,
+    "public": true
+  },
+  {
+    "id": "C-NSO-SUFFICIENCY-2018",
+    "text": "In the same 2018 survey, 87.6% of rural and 90.9% of urban households said their principal source supplied sufficient drinking water throughout the year.",
+    "kind": "reported",
+    "status": "attributed",
+    "geography_ids": [
+      "india"
+    ],
+    "period": {
+      "start": "2018-07-01T00:00:00+05:30",
+      "end": "2018-12-31T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "other",
+      "cutoff_convention": "Dates are calendar precision; 00:00 encodes date only, not a measured cutoff hour."
+    },
+    "evidence_ids": [
+      "E-NSO-WATER-2018"
+    ],
+    "observation_ids": [],
+    "input_claim_ids": [],
+    "method_path": null,
+    "limitations": [
+      "Self-reported year-round sufficiency from the principal source, not independently measured daily service or safe quality."
+    ],
+    "reviewer_id": "fact_checker-agent-2026-09-24",
+    "reviewed_at": "2026-09-24T06:39:38Z",
+    "requires_human_review": false,
+    "human_review_receipt": null,
+    "supersedes": null,
+    "public": true
+  },
+  {
+    "id": "C-JJM-FUNCTIONALITY-2024",
+    "text": "A July–October 2024 survey of villages already recorded as covered by Jal Jeevan Mission found that 86.5% of surveyed households with taps had received water in the preceding seven days and 83.6% reported supply on their scheme schedule. The report estimated 80.2% met its quantity threshold; 76% of tested household water samples passed its microbiological checks.",
+    "kind": "reported",
+    "status": "attributed",
+    "geography_ids": [
+      "india"
+    ],
+    "period": {
+      "start": "2024-07-01T00:00:00+05:30",
+      "end": "2024-10-31T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "other",
+      "cutoff_convention": "Dates are calendar precision; 00:00 encodes date only, not a measured cutoff hour."
+    },
+    "evidence_ids": [
+      "E-JJM-FUNCTIONALITY-2024"
+    ],
+    "observation_ids": [],
+    "input_claim_ids": [],
+    "method_path": null,
+    "limitations": [
+      "Sampled declared-covered villages, not all rural India; weighted household estimates.",
+      "Quantity was estimated using flow at one household per habitation, not each household.",
+      "The 76% microbiological sample result is not the share of fully safe or functional households.",
+      "The report calculated a separate 76% functionality figure as the minimum of three separately estimated components, not a joint household observation."
+    ],
+    "reviewer_id": "fact_checker-agent-2026-09-24",
+    "reviewed_at": "2026-09-24T06:39:38Z",
+    "requires_human_review": false,
+    "human_review_receipt": null,
+    "supersedes": null,
+    "public": true
+  }
+]

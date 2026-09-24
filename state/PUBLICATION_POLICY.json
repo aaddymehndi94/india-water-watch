@@ -1,12 +1,13 @@
 {
   "schema_version": "1.0",
   "first_deployment_authorized": false,
+  "progress_site_authorized": true,
   "automatic_publication_enabled": false,
   "scheduled_refresh_enabled": false,
   "paid_services_authorized": false,
   "external_contact_authorized": false,
-  "approved_host": null,
+  "approved_host": "github-pages:aaddymehndi94/india-water-watch",
   "approved_release_sha256": null,
   "human_review_receipts": [],
-  "note": "Only an actual publisher decision may change authorization. A local boolean is not authentication. Agents must not fabricate approval."
+  "note": "The publisher explicitly authorized a GitHub Pages progress site on 24 September 2026. This does not authorize unreviewed observations, sensitive reporting, or final editorial sign-off. A local boolean is not authentication."
 }

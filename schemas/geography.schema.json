@@ -42,7 +42,7 @@
       "minLength": 1
     },
     "valid_from": {
-      "type": "string",
+      "type": ["string", "null"],
       "format": "date"
     },
     "valid_to": {

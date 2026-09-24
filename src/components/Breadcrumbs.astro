@@ -1,0 +1,5 @@
+---
+import { url } from '../lib/publication';
+const { items = [] } = Astro.props;
+---
+<nav class="breadcrumbs shell" aria-label="Breadcrumb"><a href={url('/')}>Home</a>{items.map((item: {label:string; href?:string}) => <><span aria-hidden="true">/</span>{item.href ? <a href={url(item.href)}>{item.label}</a> : <span aria-current="page">{item.label}</span>}</>)}</nav>

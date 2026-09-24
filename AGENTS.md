@@ -52,7 +52,7 @@ Reuse cached source snapshots, hash/diff updates, batch independent work, run ta
 
 All public outputs go through claim, data, accessibility, visual, security and rights checks. `data/quarantine`, raw copyrighted material, private reporting notes, test fixtures and development state are excluded from the public build.
 
-Automated tests cannot prove a source supports a sentence. Agent review cannot be labeled human review. Build a local release candidate autonomously; require genuine publisher authorization before first public deployment and genuine human review for sensitive allegations, novel high-stakes scenarios and actionable legal/health guidance.
+Automated tests cannot prove a source supports a sentence. Agent review cannot be labeled human review. Build a local release candidate autonomously. The publisher authorized GitHub Pages hosting as a shareable progress site in the 24 September 2026 project instruction. Deploy only tested, explicitly labeled progress and reviewed public claims there; this authorization does not substitute for genuine human review of sensitive allegations, novel high-stakes scenarios or actionable legal/health guidance. Keep observation, source publication, retrieval, review and deployment dates distinct. Subsequent reviewed checkpoints may update the hosted site. No automatic promotion of candidate source data.
 
 A release may publish a verified subset with a visible coverage report. It may not call unfinished modules complete, present missing data as good conditions, silently drop inconvenient counterevidence or lower quality gates to produce a pass.
 

@@ -1,0 +1,6 @@
+---
+import Site from '../../layouts/Site.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import { url } from '../../lib/publication';
+---
+<Site title="Understand water"><PageHeader title="Understand water" eyebrow="Explainers" description="Short guides to the questions behind a water headline: what was measured, what it means, and what it cannot show." /><section class="section"><div class="shell grid-3"><article class="editorial-card"><span class="tag">Water systems</span><h3><a class="title-link" href={url('/understand/rain-to-tap/')}>Follow a drop</a></h3><p>From rain to catchment to usable supply, with the missing links shown.</p></article><article class="editorial-card"><span class="tag">Data language</span><h3><a class="title-link" href={url('/understand/rainfall-departure/')}>What does “below normal” mean?</a></h3><p>Millimetres, departures, normal periods and the limits of a rain category.</p></article><article class="editorial-card"><span class="tag">Comparisons</span><h3><a class="title-link" href={url('/history/')}>Same season, different year</a></h3><p>Why matching dates and geographies matter in historical claims.</p></article></div></section></Site>

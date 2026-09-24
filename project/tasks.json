@@ -127,7 +127,7 @@
       "T01",
       "T06"
     ],
-    "status": "in_progress",
+    "status": "completed",
     "suggested_paths": [
       "src/styles/",
       "reports/design-decisions.md"
@@ -149,7 +149,7 @@
       "T04",
       "T06"
     ],
-    "status": "in_progress",
+    "status": "completed",
     "suggested_paths": [
       "package.json",
       "pnpm-lock.yaml",
@@ -172,7 +172,7 @@
       "T03",
       "T04"
     ],
-    "status": "in_progress",
+    "status": "completed",
     "suggested_paths": [
       "pipeline/",
       "data/",
@@ -195,7 +195,7 @@
       "T08",
       "T09"
     ],
-    "status": "in_progress",
+    "status": "completed",
     "suggested_paths": [
       "src/components/",
       "src/pages/",
@@ -217,7 +217,7 @@
       "T04",
       "T09"
     ],
-    "status": "not_started",
+    "status": "in_progress",
     "suggested_paths": [
       "data/geographies.json",
       "pipeline/geography/",
@@ -239,7 +239,7 @@
       "T04",
       "T09"
     ],
-    "status": "not_started",
+    "status": "in_progress",
     "suggested_paths": [
       "reports/hydrology-review.md",
       "reports/coverage-matrix.md"
@@ -261,7 +261,7 @@
       "T11",
       "T12"
     ],
-    "status": "not_started",
+    "status": "in_progress",
     "suggested_paths": [
       "reports/history-analysis.md",
       "reports/population-analysis.md"
@@ -284,7 +284,7 @@
       "T12",
       "T13"
     ],
-    "status": "not_started",
+    "status": "in_progress",
     "suggested_paths": [
       "src/features/explore/",
       "src/features/history/"
@@ -306,7 +306,7 @@
       "T12",
       "T13"
     ],
-    "status": "not_started",
+    "status": "in_progress",
     "suggested_paths": [
       "reports/economy-access.md",
       "content/drafts/economy/"
@@ -327,7 +327,7 @@
       "T06",
       "T12"
     ],
-    "status": "not_started",
+    "status": "in_progress",
     "suggested_paths": [
       "reports/institutions.md",
       "content/drafts/response/"
@@ -349,7 +349,7 @@
       "T12",
       "T13"
     ],
-    "status": "not_started",
+    "status": "in_progress",
     "suggested_paths": [
       "data/forecasts.json",
       "data/scenarios.json",
@@ -373,7 +373,7 @@
       "T16",
       "T17"
     ],
-    "status": "not_started",
+    "status": "in_progress",
     "suggested_paths": [
       "content/",
       "data/claims.json",
@@ -397,7 +397,7 @@
       "T12",
       "T13"
     ],
-    "status": "not_started",
+    "status": "in_progress",
     "suggested_paths": [
       "pipeline/refresh/",
       "scripts/refresh.*",
@@ -419,7 +419,7 @@
       "T18",
       "T19"
     ],
-    "status": "not_started",
+    "status": "in_progress",
     "suggested_paths": [
       "content/updates/",
       "data/news.json",
@@ -443,7 +443,7 @@
       "T19",
       "T20"
     ],
-    "status": "not_started",
+    "status": "completed",
     "suggested_paths": [
       "src/",
       "scripts/exports/"
@@ -463,7 +463,7 @@
     "depends_on": [
       "T21"
     ],
-    "status": "not_started",
+    "status": "completed",
     "suggested_paths": [
       "reports/visual-review.md",
       "reports/screenshots/"
@@ -483,7 +483,7 @@
     "depends_on": [
       "T21"
     ],
-    "status": "not_started",
+    "status": "completed",
     "suggested_paths": [
       "tests/",
       "reports/quality-review.md"
@@ -505,7 +505,7 @@
       "T20",
       "T21"
     ],
-    "status": "not_started",
+    "status": "completed",
     "suggested_paths": [
       "reports/fact-check.md",
       "reports/calculation-replay.md"
@@ -527,7 +527,7 @@
       "T23",
       "T24"
     ],
-    "status": "not_started",
+    "status": "in_progress",
     "suggested_paths": [
       "reports/editorial-signoff.md",
       "reports/human-review-queue.md"
@@ -550,7 +550,7 @@
       "T24",
       "T25"
     ],
-    "status": "not_started",
+    "status": "in_progress",
     "suggested_paths": [
       "dist/",
       "artifacts/",
@@ -571,7 +571,7 @@
     "depends_on": [
       "T26"
     ],
-    "status": "not_started",
+    "status": "in_progress",
     "suggested_paths": [
       "state/RELEASE_REVIEW.json",
       "reports/release-gate.md",
@@ -592,7 +592,7 @@
     "depends_on": [
       "T27"
     ],
-    "status": "not_started",
+    "status": "in_progress",
     "suggested_paths": [
       "state/RELEASE_REPORT.md",
       "state/HANDOFF.md"
@@ -612,7 +612,7 @@
     "depends_on": [
       "T28"
     ],
-    "status": "not_started",
+    "status": "in_progress",
     "suggested_paths": [
       "reports/deployment.md",
       "state/PUBLICATION_POLICY.json"

@@ -1,0 +1,10 @@
+---
+import Site from '../../layouts/Site.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import AtlasFilter from '../../components/AtlasFilter';
+import Status from '../../components/Status.astro';
+import RainfallChart from '../../components/RainfallChart.astro';
+import { release, url } from '../../lib/publication';
+const visible = release.observations.filter(o => Number.isFinite(o.value) && release.sources.some(s => s.id === o.sourceId) && release.claims.some(c => c.id === o.claimId && ['verified','attributed','corrected'].includes(c.status)));
+---
+<Site title="Explore the evidence"><PageHeader title="Explore the evidence" eyebrow="Atlas & tables" description="Choose a place and indicator. Every row retains its observation period and source; empty cells stay empty." /><section class="section"><div class="shell"><Status compact /><RainfallChart compact /><div class="section-head" style="margin-top:3rem"><div><p class="eyebrow">Approved observations</p><h2>Place by place</h2></div><p>URL filters can be shared. This table is available without JavaScript; filters add convenience.</p></div><AtlasFilter client:load geographies={release.geographies} observations={visible} sourceBase={url('/sources/')} /><p class="small muted">IMD broad regions are not states or districts. We do not infer district conditions from a state or regional value.</p></div></section><section class="section"><div class="shell grid-3"><article class="editorial-card"><h3><a class="title-link" href={url('/states/')}>State and UT directory</a></h3><p>Administrative lookup with explicit local coverage.</p></article><article class="editorial-card"><h3><a class="title-link" href={url('/districts/')}>District coverage</a></h3><p>District measurements appear only with reviewed codes and source geography.</p></article><article class="editorial-card"><h3><a class="title-link" href={url('/basins/')}>Basin context</a></h3><p>Catchment boundaries cross administrative borders; we keep them distinct.</p></article></div></section></Site>

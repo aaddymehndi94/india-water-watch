@@ -1,0 +1,986 @@
+{
+  "claims": [
+    {
+      "evidenceIds": [
+        "E-IMD-OUTLOOK-20260831"
+      ],
+      "geographyIds": [
+        "india"
+      ],
+      "id": "C-IMD-OUTLOOK-20260831",
+      "kind": "forecast",
+      "limitations": [
+        "Valid only for September 2026 and superseded by any later outlook.",
+        "A rainfall forecast is not a water-supply or crop-loss forecast."
+      ],
+      "observationIds": [],
+      "period": {
+        "cutoff_convention": "Dates are calendar precision; 00:00 encodes date only, not a measured cutoff hour.",
+        "end": "2026-09-30T00:00:00+05:30",
+        "kind": "month",
+        "start": "2026-09-01T00:00:00+05:30",
+        "timezone": "Asia/Kolkata"
+      },
+      "reviewedAt": "2026-09-24T06:39:38Z",
+      "status": "attributed",
+      "text": "In an outlook issued 31 August 2026, IMD forecast that all-India rainfall during September was most likely below normal, its category for less than 91% of the 1971–2020 September average. It also identified areas where normal or above-normal rain was possible. This is a forecast archive, not a measured September outcome."
+    },
+    {
+      "evidenceIds": [
+        "E-IMD-HOMO-20260923"
+      ],
+      "geographyIds": [
+        "imd:central"
+      ],
+      "id": "C-IMD-RAINFALL-DEP-imd-central-20260923",
+      "kind": "reported",
+      "limitations": [
+        "Rainfall departure is not a measure of water supply or a drought declaration.",
+        "The graphic is a mutable, provider-rounded image; exact region boundaries and station methods were not reconstructed.",
+        "The image identifies a 1971–2020 daily normal but does not print separate cumulative normal totals for this region; the reported percentage could not be independently recomputed."
+      ],
+      "observationIds": [
+        "O-IMD-RAINFALL-DEP-imd-central-20260923"
+      ],
+      "period": {
+        "cutoff_convention": "IMD graphic labels dates June 1 through September 23; clock hour is not specified. Times in this record encode calendar dates only.",
+        "end": "2026-09-23T00:00:00+05:30",
+        "kind": "season_to_date",
+        "start": "2026-06-01T00:00:00+05:30",
+        "timezone": "Asia/Kolkata"
+      },
+      "reviewedAt": "2026-09-24T06:22:59Z",
+      "status": "attributed",
+      "text": "IMD reports a cumulative rainfall departure of -5.3% for its Central India homogeneous region through 23 September 2026."
+    },
+    {
+      "evidenceIds": [
+        "E-IMD-HOMO-20260923"
+      ],
+      "geographyIds": [
+        "imd:east-northeast"
+      ],
+      "id": "C-IMD-RAINFALL-DEP-imd-east-northeast-20260923",
+      "kind": "reported",
+      "limitations": [
+        "Rainfall departure is not a measure of water supply or a drought declaration.",
+        "The graphic is a mutable, provider-rounded image; exact region boundaries and station methods were not reconstructed.",
+        "The image identifies a 1971–2020 daily normal but does not print separate cumulative normal totals for this region; the reported percentage could not be independently recomputed."
+      ],
+      "observationIds": [
+        "O-IMD-RAINFALL-DEP-imd-east-northeast-20260923"
+      ],
+      "period": {
+        "cutoff_convention": "IMD graphic labels dates June 1 through September 23; clock hour is not specified. Times in this record encode calendar dates only.",
+        "end": "2026-09-23T00:00:00+05:30",
+        "kind": "season_to_date",
+        "start": "2026-06-01T00:00:00+05:30",
+        "timezone": "Asia/Kolkata"
+      },
+      "reviewedAt": "2026-09-24T06:22:59Z",
+      "status": "attributed",
+      "text": "IMD reports a cumulative rainfall departure of -26.5% for its East & Northeast India homogeneous region through 23 September 2026."
+    },
+    {
+      "evidenceIds": [
+        "E-IMD-HOMO-20260923"
+      ],
+      "geographyIds": [
+        "imd:northwest"
+      ],
+      "id": "C-IMD-RAINFALL-DEP-imd-northwest-20260923",
+      "kind": "reported",
+      "limitations": [
+        "Rainfall departure is not a measure of water supply or a drought declaration.",
+        "The graphic is a mutable, provider-rounded image; exact region boundaries and station methods were not reconstructed.",
+        "The image identifies a 1971–2020 daily normal but does not print separate cumulative normal totals for this region; the reported percentage could not be independently recomputed."
+      ],
+      "observationIds": [
+        "O-IMD-RAINFALL-DEP-imd-northwest-20260923"
+      ],
+      "period": {
+        "cutoff_convention": "IMD graphic labels dates June 1 through September 23; clock hour is not specified. Times in this record encode calendar dates only.",
+        "end": "2026-09-23T00:00:00+05:30",
+        "kind": "season_to_date",
+        "start": "2026-06-01T00:00:00+05:30",
+        "timezone": "Asia/Kolkata"
+      },
+      "reviewedAt": "2026-09-24T06:22:59Z",
+      "status": "attributed",
+      "text": "IMD reports a cumulative rainfall departure of -10.5% for its Northwest India homogeneous region through 23 September 2026."
+    },
+    {
+      "evidenceIds": [
+        "E-IMD-HOMO-20260923"
+      ],
+      "geographyIds": [
+        "imd:south-peninsular"
+      ],
+      "id": "C-IMD-RAINFALL-DEP-imd-south-peninsular-20260923",
+      "kind": "reported",
+      "limitations": [
+        "Rainfall departure is not a measure of water supply or a drought declaration.",
+        "The graphic is a mutable, provider-rounded image; exact region boundaries and station methods were not reconstructed.",
+        "The image identifies a 1971–2020 daily normal but does not print separate cumulative normal totals for this region; the reported percentage could not be independently recomputed."
+      ],
+      "observationIds": [
+        "O-IMD-RAINFALL-DEP-imd-south-peninsular-20260923"
+      ],
+      "period": {
+        "cutoff_convention": "IMD graphic labels dates June 1 through September 23; clock hour is not specified. Times in this record encode calendar dates only.",
+        "end": "2026-09-23T00:00:00+05:30",
+        "kind": "season_to_date",
+        "start": "2026-06-01T00:00:00+05:30",
+        "timezone": "Asia/Kolkata"
+      },
+      "reviewedAt": "2026-09-24T06:22:59Z",
+      "status": "attributed",
+      "text": "IMD reports a cumulative rainfall departure of -25.7% for its South Peninsular India homogeneous region through 23 September 2026."
+    },
+    {
+      "evidenceIds": [
+        "E-IMD-ALLINDIA-20260923"
+      ],
+      "geographyIds": [
+        "india"
+      ],
+      "id": "C-IMD-RAINFALL-DEP-india-20260923",
+      "kind": "reported",
+      "limitations": [
+        "Rainfall departure is not a measure of water supply or a drought declaration.",
+        "The graphic is a mutable, provider-rounded image; exact region boundaries and station methods were not reconstructed."
+      ],
+      "observationIds": [
+        "O-IMD-RAINFALL-DEP-india-20260923"
+      ],
+      "period": {
+        "cutoff_convention": "IMD graphic labels dates June 1 through September 23; clock hour is not specified. Times in this record encode calendar dates only.",
+        "end": "2026-09-23T00:00:00+05:30",
+        "kind": "season_to_date",
+        "start": "2026-06-01T00:00:00+05:30",
+        "timezone": "Asia/Kolkata"
+      },
+      "reviewedAt": "2026-09-24T06:22:59Z",
+      "status": "attributed",
+      "text": "IMD reports that India received 713.3 mm of rainfall from 1 June through 23 September 2026, against 837.7 mm normal for the same dates (1971–2020); its displayed departure is −14.9%."
+    },
+    {
+      "evidenceIds": [
+        "E-JJM-CONNECTIONS-20260402"
+      ],
+      "geographyIds": [
+        "india"
+      ],
+      "id": "C-JJM-CONNECTIONS-20260303",
+      "kind": "reported",
+      "limitations": [
+        "This is an administrative count reported by states and UTs, not a household functionality survey.",
+        "Rounded headline counts should not be treated as exact household counts."
+      ],
+      "observationIds": [],
+      "period": {
+        "cutoff_convention": "Dates are calendar precision; 00:00 encodes date only, not a measured cutoff hour.",
+        "end": "2026-03-03T00:00:00+05:30",
+        "kind": "instant",
+        "start": "2026-03-03T00:00:00+05:30",
+        "timezone": "Asia/Kolkata"
+      },
+      "reviewedAt": "2026-09-24T06:39:38Z",
+      "status": "attributed",
+      "text": "In a 2 April 2026 parliamentary reply, the Ministry of Jal Shakti said states and Union territories reported tap-water connections for about 15.82 crore of 19.36 crore rural households as of 3 March 2026. Connection counts do not establish regular or safe service."
+    },
+    {
+      "evidenceIds": [
+        "E-JJM-FUNCTIONALITY-2024"
+      ],
+      "geographyIds": [
+        "india"
+      ],
+      "id": "C-JJM-FUNCTIONALITY-2024",
+      "kind": "reported",
+      "limitations": [
+        "Sampled declared-covered villages, not all rural India; weighted household estimates.",
+        "Quantity was estimated using flow at one household per habitation, not each household.",
+        "The 76% microbiological sample result is not the share of fully safe or functional households.",
+        "The report calculated a separate 76% functionality figure as the minimum of three separately estimated components, not a joint household observation."
+      ],
+      "observationIds": [],
+      "period": {
+        "cutoff_convention": "Dates are calendar precision; 00:00 encodes date only, not a measured cutoff hour.",
+        "end": "2024-10-31T00:00:00+05:30",
+        "kind": "other",
+        "start": "2024-07-01T00:00:00+05:30",
+        "timezone": "Asia/Kolkata"
+      },
+      "reviewedAt": "2026-09-24T06:39:38Z",
+      "status": "attributed",
+      "text": "A July–October 2024 survey of villages already recorded as covered by Jal Jeevan Mission found that 86.5% of surveyed households with taps had received water in the preceding seven days and 83.6% reported supply on their scheme schedule. The report estimated 80.2% met its quantity threshold; 76% of tested household water samples passed its microbiological checks."
+    },
+    {
+      "evidenceIds": [
+        "E-JJM-FUNDS-20260331"
+      ],
+      "geographyIds": [
+        "india"
+      ],
+      "id": "C-JJM-FUNDS-20260331",
+      "kind": "reported",
+      "limitations": [
+        "A ministry announcement/release is a single source chain and is not independent treasury confirmation.",
+        "The five named states are Uttar Pradesh, Chhattisgarh, Madhya Pradesh, Odisha and Maharashtra; this is not a drought-specific emergency measure."
+      ],
+      "observationIds": [],
+      "period": {
+        "cutoff_convention": "Dates are calendar precision; 00:00 encodes date only, not a measured cutoff hour.",
+        "end": "2026-03-31T00:00:00+05:30",
+        "kind": "other",
+        "start": "2025-04-01T00:00:00+05:30",
+        "timezone": "Asia/Kolkata"
+      },
+      "reviewedAt": "2026-09-24T06:39:38Z",
+      "status": "attributed",
+      "text": "According to a 31 March 2026 Ministry of Jal Shakti release, the Union Cabinet approved Jal Jeevan Mission 2.0 on 10 March and operational guidelines were released on 22 March. The ministry reported releasing ₹1,561.53 crore to five named states for FY 2025–26. This does not establish state expenditure or service outcomes."
+    },
+    {
+      "evidenceIds": [
+        "E-NSO-WATER-2018"
+      ],
+      "geographyIds": [
+        "india"
+      ],
+      "id": "C-NSO-PREMISES-2018",
+      "kind": "reported",
+      "limitations": [
+        "Household responses in a 2018 survey; not a 2026 service measure or quality test.",
+        "The rural and urban frames differ from later JJM administrative reports."
+      ],
+      "observationIds": [],
+      "period": {
+        "cutoff_convention": "Dates are calendar precision; 00:00 encodes date only, not a measured cutoff hour.",
+        "end": "2018-12-31T00:00:00+05:30",
+        "kind": "other",
+        "start": "2018-07-01T00:00:00+05:30",
+        "timezone": "Asia/Kolkata"
+      },
+      "reviewedAt": "2026-09-24T06:39:38Z",
+      "status": "attributed",
+      "text": "In a national survey conducted July–December 2018, 58.2% of rural and 80.7% of urban households reported a drinking-water facility within their premises."
+    },
+    {
+      "evidenceIds": [
+        "E-NSO-WATER-2018"
+      ],
+      "geographyIds": [
+        "india"
+      ],
+      "id": "C-NSO-SUFFICIENCY-2018",
+      "kind": "reported",
+      "limitations": [
+        "Self-reported year-round sufficiency from the principal source, not independently measured daily service or safe quality."
+      ],
+      "observationIds": [],
+      "period": {
+        "cutoff_convention": "Dates are calendar precision; 00:00 encodes date only, not a measured cutoff hour.",
+        "end": "2018-12-31T00:00:00+05:30",
+        "kind": "other",
+        "start": "2018-07-01T00:00:00+05:30",
+        "timezone": "Asia/Kolkata"
+      },
+      "reviewedAt": "2026-09-24T06:39:38Z",
+      "status": "attributed",
+      "text": "In the same 2018 survey, 87.6% of rural and 90.9% of urban households said their principal source supplied sufficient drinking water throughout the year."
+    }
+  ],
+  "counts": {
+    "claims": 11,
+    "geographies": 41,
+    "observations": 5,
+    "sources": 8
+  },
+  "geographies": [
+    {
+      "code": null,
+      "id": "imd:central",
+      "name": "Central India",
+      "parentIds": [
+        "india"
+      ],
+      "slug": "central",
+      "type": "other",
+      "version": "imd-homogeneous-2026-no-geometry"
+    },
+    {
+      "code": null,
+      "id": "imd:east-northeast",
+      "name": "East & Northeast India",
+      "parentIds": [
+        "india"
+      ],
+      "slug": "east-northeast",
+      "type": "other",
+      "version": "imd-homogeneous-2026-no-geometry"
+    },
+    {
+      "code": null,
+      "id": "imd:northwest",
+      "name": "Northwest India",
+      "parentIds": [
+        "india"
+      ],
+      "slug": "northwest",
+      "type": "other",
+      "version": "imd-homogeneous-2026-no-geometry"
+    },
+    {
+      "code": null,
+      "id": "imd:south-peninsular",
+      "name": "South Peninsular India",
+      "parentIds": [
+        "india"
+      ],
+      "slug": "south-peninsular",
+      "type": "other",
+      "version": "imd-homogeneous-2026-no-geometry"
+    },
+    {
+      "code": null,
+      "id": "india",
+      "name": "India",
+      "parentIds": [],
+      "slug": "india",
+      "type": "country",
+      "version": "imd-homogeneous-2026-no-geometry"
+    },
+    {
+      "code": null,
+      "id": "india:andaman-and-nicobar-islands",
+      "name": "Andaman and Nicobar Islands",
+      "parentIds": [
+        "india"
+      ],
+      "slug": "andaman-and-nicobar-islands",
+      "type": "ut",
+      "version": "2026-09-23-roster-no-geometry"
+    },
+    {
+      "code": null,
+      "id": "india:andhra-pradesh",
+      "name": "Andhra Pradesh",
+      "parentIds": [
+        "india"
+      ],
+      "slug": "andhra-pradesh",
+      "type": "state",
+      "version": "2026-09-23-roster-no-geometry"
+    },
+    {
+      "code": null,
+      "id": "india:arunachal-pradesh",
+      "name": "Arunachal Pradesh",
+      "parentIds": [
+        "india"
+      ],
+      "slug": "arunachal-pradesh",
+      "type": "state",
+      "version": "2026-09-23-roster-no-geometry"
+    },
+    {
+      "code": null,
+      "id": "india:assam",
+      "name": "Assam",
+      "parentIds": [
+        "india"
+      ],
+      "slug": "assam",
+      "type": "state",
+      "version": "2026-09-23-roster-no-geometry"
+    },
+    {
+      "code": null,
+      "id": "india:bihar",
+      "name": "Bihar",
+      "parentIds": [
+        "india"
+      ],
+      "slug": "bihar",
+      "type": "state",
+      "version": "2026-09-23-roster-no-geometry"
+    },
+    {
+      "code": null,
+      "id": "india:chandigarh",
+      "name": "Chandigarh",
+      "parentIds": [
+        "india"
+      ],
+      "slug": "chandigarh",
+      "type": "ut",
+      "version": "2026-09-23-roster-no-geometry"
+    },
+    {
+      "code": null,
+      "id": "india:chhattisgarh",
+      "name": "Chhattisgarh",
+      "parentIds": [
+        "india"
+      ],
+      "slug": "chhattisgarh",
+      "type": "state",
+      "version": "2026-09-23-roster-no-geometry"
+    },
+    {
+      "code": null,
+      "id": "india:dadra-and-nagar-haveli-and-daman-and-diu",
+      "name": "Dadra and Nagar Haveli and Daman and Diu",
+      "parentIds": [
+        "india"
+      ],
+      "slug": "dadra-and-nagar-haveli-and-daman-and-diu",
+      "type": "ut",
+      "version": "2026-09-23-roster-no-geometry"
+    },
+    {
+      "code": null,
+      "id": "india:delhi",
+      "name": "Delhi",
+      "parentIds": [
+        "india"
+      ],
+      "slug": "delhi",
+      "type": "ut",
+      "version": "2026-09-23-roster-no-geometry"
+    },
+    {
+      "code": null,
+      "id": "india:goa",
+      "name": "Goa",
+      "parentIds": [
+        "india"
+      ],
+      "slug": "goa",
+      "type": "state",
+      "version": "2026-09-23-roster-no-geometry"
+    },
+    {
+      "code": null,
+      "id": "india:gujarat",
+      "name": "Gujarat",
+      "parentIds": [
+        "india"
+      ],
+      "slug": "gujarat",
+      "type": "state",
+      "version": "2026-09-23-roster-no-geometry"
+    },
+    {
+      "code": null,
+      "id": "india:haryana",
+      "name": "Haryana",
+      "parentIds": [
+        "india"
+      ],
+      "slug": "haryana",
+      "type": "state",
+      "version": "2026-09-23-roster-no-geometry"
+    },
+    {
+      "code": null,
+      "id": "india:himachal-pradesh",
+      "name": "Himachal Pradesh",
+      "parentIds": [
+        "india"
+      ],
+      "slug": "himachal-pradesh",
+      "type": "state",
+      "version": "2026-09-23-roster-no-geometry"
+    },
+    {
+      "code": null,
+      "id": "india:jammu-and-kashmir",
+      "name": "Jammu and Kashmir",
+      "parentIds": [
+        "india"
+      ],
+      "slug": "jammu-and-kashmir",
+      "type": "ut",
+      "version": "2026-09-23-roster-no-geometry"
+    },
+    {
+      "code": null,
+      "id": "india:jharkhand",
+      "name": "Jharkhand",
+      "parentIds": [
+        "india"
+      ],
+      "slug": "jharkhand",
+      "type": "state",
+      "version": "2026-09-23-roster-no-geometry"
+    },
+    {
+      "code": null,
+      "id": "india:karnataka",
+      "name": "Karnataka",
+      "parentIds": [
+        "india"
+      ],
+      "slug": "karnataka",
+      "type": "state",
+      "version": "2026-09-23-roster-no-geometry"
+    },
+    {
+      "code": null,
+      "id": "india:kerala",
+      "name": "Kerala",
+      "parentIds": [
+        "india"
+      ],
+      "slug": "kerala",
+      "type": "state",
+      "version": "2026-09-23-roster-no-geometry"
+    },
+    {
+      "code": null,
+      "id": "india:ladakh",
+      "name": "Ladakh",
+      "parentIds": [
+        "india"
+      ],
+      "slug": "ladakh",
+      "type": "ut",
+      "version": "2026-09-23-roster-no-geometry"
+    },
+    {
+      "code": null,
+      "id": "india:lakshadweep",
+      "name": "Lakshadweep",
+      "parentIds": [
+        "india"
+      ],
+      "slug": "lakshadweep",
+      "type": "ut",
+      "version": "2026-09-23-roster-no-geometry"
+    },
+    {
+      "code": null,
+      "id": "india:madhya-pradesh",
+      "name": "Madhya Pradesh",
+      "parentIds": [
+        "india"
+      ],
+      "slug": "madhya-pradesh",
+      "type": "state",
+      "version": "2026-09-23-roster-no-geometry"
+    },
+    {
+      "code": null,
+      "id": "india:maharashtra",
+      "name": "Maharashtra",
+      "parentIds": [
+        "india"
+      ],
+      "slug": "maharashtra",
+      "type": "state",
+      "version": "2026-09-23-roster-no-geometry"
+    },
+    {
+      "code": null,
+      "id": "india:manipur",
+      "name": "Manipur",
+      "parentIds": [
+        "india"
+      ],
+      "slug": "manipur",
+      "type": "state",
+      "version": "2026-09-23-roster-no-geometry"
+    },
+    {
+      "code": null,
+      "id": "india:meghalaya",
+      "name": "Meghalaya",
+      "parentIds": [
+        "india"
+      ],
+      "slug": "meghalaya",
+      "type": "state",
+      "version": "2026-09-23-roster-no-geometry"
+    },
+    {
+      "code": null,
+      "id": "india:mizoram",
+      "name": "Mizoram",
+      "parentIds": [
+        "india"
+      ],
+      "slug": "mizoram",
+      "type": "state",
+      "version": "2026-09-23-roster-no-geometry"
+    },
+    {
+      "code": null,
+      "id": "india:nagaland",
+      "name": "Nagaland",
+      "parentIds": [
+        "india"
+      ],
+      "slug": "nagaland",
+      "type": "state",
+      "version": "2026-09-23-roster-no-geometry"
+    },
+    {
+      "code": null,
+      "id": "india:odisha",
+      "name": "Odisha",
+      "parentIds": [
+        "india"
+      ],
+      "slug": "odisha",
+      "type": "state",
+      "version": "2026-09-23-roster-no-geometry"
+    },
+    {
+      "code": null,
+      "id": "india:puducherry",
+      "name": "Puducherry",
+      "parentIds": [
+        "india"
+      ],
+      "slug": "puducherry",
+      "type": "ut",
+      "version": "2026-09-23-roster-no-geometry"
+    },
+    {
+      "code": null,
+      "id": "india:punjab",
+      "name": "Punjab",
+      "parentIds": [
+        "india"
+      ],
+      "slug": "punjab",
+      "type": "state",
+      "version": "2026-09-23-roster-no-geometry"
+    },
+    {
+      "code": null,
+      "id": "india:rajasthan",
+      "name": "Rajasthan",
+      "parentIds": [
+        "india"
+      ],
+      "slug": "rajasthan",
+      "type": "state",
+      "version": "2026-09-23-roster-no-geometry"
+    },
+    {
+      "code": null,
+      "id": "india:sikkim",
+      "name": "Sikkim",
+      "parentIds": [
+        "india"
+      ],
+      "slug": "sikkim",
+      "type": "state",
+      "version": "2026-09-23-roster-no-geometry"
+    },
+    {
+      "code": null,
+      "id": "india:tamil-nadu",
+      "name": "Tamil Nadu",
+      "parentIds": [
+        "india"
+      ],
+      "slug": "tamil-nadu",
+      "type": "state",
+      "version": "2026-09-23-roster-no-geometry"
+    },
+    {
+      "code": null,
+      "id": "india:telangana",
+      "name": "Telangana",
+      "parentIds": [
+        "india"
+      ],
+      "slug": "telangana",
+      "type": "state",
+      "version": "2026-09-23-roster-no-geometry"
+    },
+    {
+      "code": null,
+      "id": "india:tripura",
+      "name": "Tripura",
+      "parentIds": [
+        "india"
+      ],
+      "slug": "tripura",
+      "type": "state",
+      "version": "2026-09-23-roster-no-geometry"
+    },
+    {
+      "code": null,
+      "id": "india:uttar-pradesh",
+      "name": "Uttar Pradesh",
+      "parentIds": [
+        "india"
+      ],
+      "slug": "uttar-pradesh",
+      "type": "state",
+      "version": "2026-09-23-roster-no-geometry"
+    },
+    {
+      "code": null,
+      "id": "india:uttarakhand",
+      "name": "Uttarakhand",
+      "parentIds": [
+        "india"
+      ],
+      "slug": "uttarakhand",
+      "type": "state",
+      "version": "2026-09-23-roster-no-geometry"
+    },
+    {
+      "code": null,
+      "id": "india:west-bengal",
+      "name": "West Bengal",
+      "parentIds": [
+        "india"
+      ],
+      "slug": "west-bengal",
+      "type": "state",
+      "version": "2026-09-23-roster-no-geometry"
+    }
+  ],
+  "observations": [
+    {
+      "baselineId": null,
+      "claimId": "C-IMD-RAINFALL-DEP-imd-central-20260923",
+      "cutoffConvention": "IMD graphic labels dates June 1 through September 23; clock hour is not specified. Times in this record encode calendar dates only.",
+      "evidenceIds": [
+        "E-IMD-HOMO-20260923"
+      ],
+      "geographyId": "imd:central",
+      "id": "O-IMD-RAINFALL-DEP-imd-central-20260923",
+      "metricId": "rainfall_departure_pct",
+      "missingReason": null,
+      "periodEnd": "2026-09-23",
+      "periodKind": "season_to_date",
+      "periodPrecision": "date",
+      "periodStart": "2026-06-01",
+      "seriesId": "imd_2026_jun1_to_date_gif",
+      "sourceId": "E-IMD-HOMO-20260923",
+      "status": "observed",
+      "unit": "percent",
+      "value": -5.3
+    },
+    {
+      "baselineId": null,
+      "claimId": "C-IMD-RAINFALL-DEP-imd-east-northeast-20260923",
+      "cutoffConvention": "IMD graphic labels dates June 1 through September 23; clock hour is not specified. Times in this record encode calendar dates only.",
+      "evidenceIds": [
+        "E-IMD-HOMO-20260923"
+      ],
+      "geographyId": "imd:east-northeast",
+      "id": "O-IMD-RAINFALL-DEP-imd-east-northeast-20260923",
+      "metricId": "rainfall_departure_pct",
+      "missingReason": null,
+      "periodEnd": "2026-09-23",
+      "periodKind": "season_to_date",
+      "periodPrecision": "date",
+      "periodStart": "2026-06-01",
+      "seriesId": "imd_2026_jun1_to_date_gif",
+      "sourceId": "E-IMD-HOMO-20260923",
+      "status": "observed",
+      "unit": "percent",
+      "value": -26.5
+    },
+    {
+      "baselineId": null,
+      "claimId": "C-IMD-RAINFALL-DEP-imd-northwest-20260923",
+      "cutoffConvention": "IMD graphic labels dates June 1 through September 23; clock hour is not specified. Times in this record encode calendar dates only.",
+      "evidenceIds": [
+        "E-IMD-HOMO-20260923"
+      ],
+      "geographyId": "imd:northwest",
+      "id": "O-IMD-RAINFALL-DEP-imd-northwest-20260923",
+      "metricId": "rainfall_departure_pct",
+      "missingReason": null,
+      "periodEnd": "2026-09-23",
+      "periodKind": "season_to_date",
+      "periodPrecision": "date",
+      "periodStart": "2026-06-01",
+      "seriesId": "imd_2026_jun1_to_date_gif",
+      "sourceId": "E-IMD-HOMO-20260923",
+      "status": "observed",
+      "unit": "percent",
+      "value": -10.5
+    },
+    {
+      "baselineId": null,
+      "claimId": "C-IMD-RAINFALL-DEP-imd-south-peninsular-20260923",
+      "cutoffConvention": "IMD graphic labels dates June 1 through September 23; clock hour is not specified. Times in this record encode calendar dates only.",
+      "evidenceIds": [
+        "E-IMD-HOMO-20260923"
+      ],
+      "geographyId": "imd:south-peninsular",
+      "id": "O-IMD-RAINFALL-DEP-imd-south-peninsular-20260923",
+      "metricId": "rainfall_departure_pct",
+      "missingReason": null,
+      "periodEnd": "2026-09-23",
+      "periodKind": "season_to_date",
+      "periodPrecision": "date",
+      "periodStart": "2026-06-01",
+      "seriesId": "imd_2026_jun1_to_date_gif",
+      "sourceId": "E-IMD-HOMO-20260923",
+      "status": "observed",
+      "unit": "percent",
+      "value": -25.7
+    },
+    {
+      "baselineId": "imd-1971-2020",
+      "claimId": "C-IMD-RAINFALL-DEP-india-20260923",
+      "cutoffConvention": "IMD graphic labels dates June 1 through September 23; clock hour is not specified. Times in this record encode calendar dates only.",
+      "evidenceIds": [
+        "E-IMD-ALLINDIA-20260923"
+      ],
+      "geographyId": "india",
+      "id": "O-IMD-RAINFALL-DEP-india-20260923",
+      "metricId": "rainfall_departure_pct",
+      "missingReason": null,
+      "periodEnd": "2026-09-23",
+      "periodKind": "season_to_date",
+      "periodPrecision": "date",
+      "periodStart": "2026-06-01",
+      "seriesId": "imd_2026_jun1_to_date_gif",
+      "sourceId": "E-IMD-ALLINDIA-20260923",
+      "status": "observed",
+      "unit": "percent",
+      "value": -14.9
+    }
+  ],
+  "releaseId": "approved-7543569af9b1",
+  "reviewedAt": "2026-09-24T06:39:38Z",
+  "schemaVersion": "1",
+  "snapshotSha256": "7543569af9b165f2bacb8f864cc9dd619cda170e6a092c579623235ab38ecea4",
+  "sourceWatermarks": {
+    "E-IMD-ALLINDIA-20260923": "2026-09-23",
+    "E-IMD-HOMO-20260923": "2026-09-23",
+    "E-IMD-OUTLOOK-20260831": "2026-09-30",
+    "E-INDIA-ROSTER-20260923": null,
+    "E-JJM-CONNECTIONS-20260402": "2026-03-03",
+    "E-JJM-FUNCTIONALITY-2024": "2024-10-31",
+    "E-JJM-FUNDS-20260331": "2026-03-31",
+    "E-NSO-WATER-2018": "2018-12-31"
+  },
+  "sources": [
+    {
+      "id": "E-IMD-ALLINDIA-20260923",
+      "locator": "Middle panel actual 713.3 mm / normal 837.7 mm; bottom panel cumulative % departure -14.9% till Sep.23",
+      "observedThrough": "2026-09-23",
+      "observedThroughPrecision": "date",
+      "publicationDate": null,
+      "publicationDatePrecision": "unknown",
+      "publisher": "India Meteorological Department",
+      "retrievedAt": "2026-09-24T06:17:08Z",
+      "sha256": "2a75486b645fe44c6dfd250b7cb90191ccdc9f5d586357cebe34862d9921d18a",
+      "sourceId": "imd_all_india_daily_graphic",
+      "title": "IMD cumulative rainfall over the country as a whole, 2026",
+      "url": "https://mausam.imd.gov.in/ClimateInformation/imdweb/DAY_WEEK/all-india.gif"
+    },
+    {
+      "id": "E-IMD-HOMO-20260923",
+      "locator": "Four right-hand cumulative % departure panels, each labelled till Sep.23; normal 1971-2020 in left panels",
+      "observedThrough": "2026-09-23",
+      "observedThroughPrecision": "date",
+      "publicationDate": null,
+      "publicationDatePrecision": "unknown",
+      "publisher": "India Meteorological Department",
+      "retrievedAt": "2026-09-24T06:16:00Z",
+      "sha256": "dfc549134ea2f520fda1a64dd236c67169a5d86fb8f65c8c79b3520b1fef61d0",
+      "sourceId": "imd_homogeneous_regions_daily_graphic",
+      "title": "IMD rainfall over four homogeneous regions, 2026",
+      "url": "https://mausam.imd.gov.in/ClimateInformation/imdweb/DAY_WEEK/homo.gif"
+    },
+    {
+      "id": "E-IMD-OUTLOOK-20260831",
+      "locator": "Printed pp. 1-2, Highlights and section 2; threshold <91% of September 1971-2020 LPA; spatial caveat in Fig. 1.",
+      "observedThrough": "2026-09-30",
+      "observedThroughPrecision": "date",
+      "publicationDate": "2026-08-31",
+      "publicationDatePrecision": "date",
+      "publisher": "India Meteorological Department",
+      "retrievedAt": "2026-09-24T06:40:25Z",
+      "sha256": "700c9b57533b36861f66ab8d79fe32d9fb7e3669b48b33ad75c25f56a914dfbb",
+      "sourceId": "imd_september_2026_outlook",
+      "title": "Monthly Outlook for Rainfall and Temperature during September 2026",
+      "url": "https://internal.imd.gov.in/press_release/20260831_pr_5277.pdf"
+    },
+    {
+      "id": "E-INDIA-ROSTER-20260923",
+      "locator": "States and Union Territories Holiday Calendar navigation; page last reviewed 23 September 2026",
+      "observedThrough": null,
+      "observedThroughPrecision": "unknown",
+      "publicationDate": null,
+      "publicationDatePrecision": "unknown",
+      "publisher": "National Portal of India / National Informatics Centre",
+      "retrievedAt": "2026-09-24T06:19:18Z",
+      "sha256": "1544aab352318b38762669f752644b4bcad8efbf8778f5debe612c5fa2f118df",
+      "sourceId": "india_portal_calendar_roster",
+      "title": "National Portal of India state and Union Territory roster",
+      "url": "https://www.india.gov.in/calendar?date=2026-09-24"
+    },
+    {
+      "id": "E-JJM-CONNECTIONS-20260402",
+      "locator": "Printed pp. 1-2, opening paragraphs, Lok Sabha USQ 6338; 15.82 crore of about 19.36 crore rural households as on 3 March 2026.",
+      "observedThrough": "2026-03-03",
+      "observedThroughPrecision": "date",
+      "publicationDate": "2026-04-02T16:25:00+05:30",
+      "publicationDatePrecision": "datetime",
+      "publisher": "Ministry of Jal Shakti / Press Information Bureau",
+      "retrievedAt": "2026-09-24T06:40:25Z",
+      "sha256": "519a18cea92b73ad093988e3aa51f94f2448149f7215058aa511f83e99cfd54c",
+      "sourceId": "jal_shakti_jjm_2026_connections",
+      "title": "Lok Sabha written reply on reported rural tap connections",
+      "url": "https://www.jalshakti-dowr.gov.in/static/uploads/2026/04/0c540cebf0bbc74ac5c12965fc818f1d.pdf"
+    },
+    {
+      "id": "E-JJM-FUNCTIONALITY-2024",
+      "locator": "National factsheet p. 2; methods sections 2.3, 3.1, 3.8; quantity section 4.5 pp.31-32, microbiological tests section 4.6.1 p.33, functionality section 4.7 p.36.",
+      "observedThrough": "2024-10-31",
+      "observedThroughPrecision": "date",
+      "publicationDate": null,
+      "publicationDatePrecision": "unknown",
+      "publisher": "Jal Jeevan Mission",
+      "retrievedAt": "2026-09-24T06:40:27Z",
+      "sha256": "7d1f1ba033e6231db4add5fad944aedbefceb554a8261896932485ac7ddbe2bd",
+      "sourceId": "jjm_functionality_2024",
+      "title": "Functionality Assessment of Household Tap Connection: National Report 2024",
+      "url": "https://jaljeevanmission.gov.in/sites/default/files/2025-12/FHTC_National%20Report%202024.pdf"
+    },
+    {
+      "id": "E-JJM-FUNDS-20260331",
+      "locator": "Printed pp. 1-2: Cabinet and guideline dates; five named state releases total INR 1,561.53 crore.",
+      "observedThrough": "2026-03-31",
+      "observedThroughPrecision": "date",
+      "publicationDate": "2026-03-31T13:37:00+05:30",
+      "publicationDatePrecision": "datetime",
+      "publisher": "Ministry of Jal Shakti / Press Information Bureau",
+      "retrievedAt": "2026-09-24T06:40:25Z",
+      "sha256": "a29459e38b6279af4424420253707d766321d9668fa3129b7e45ce123e081d9d",
+      "sourceId": "jal_shakti_jjm_2026_funds",
+      "title": "Ministry statement on JJM 2.0 and FY 2025-26 release",
+      "url": "https://www.jalshakti-dowr.gov.in/static/uploads/2026/04/fcf34c99623c6988f805fd15151f54ee.pdf"
+    },
+    {
+      "id": "E-NSO-WATER-2018",
+      "locator": "Printed p. 1 section 3 sample and p. 2 sections 3.1(c)-(d): premises facility and self-reported year-round sufficiency.",
+      "observedThrough": "2018-12-31",
+      "observedThroughPrecision": "date",
+      "publicationDate": "2019-11-23",
+      "publicationDatePrecision": "date",
+      "publisher": "National Statistical Office / Ministry of Statistics and Programme Implementation",
+      "retrievedAt": "2026-09-24T06:40:25Z",
+      "sha256": "90832ed91c54a67d1ef8ebfe8eb4cdd4748b78467eeb78c9e087a7a88f3ea467",
+      "sourceId": "nso_nss_584_water",
+      "title": "NSO NSS Report 584 press note on drinking water, sanitation and hygiene",
+      "url": "https://mospi.gov.in/sites/default/files/press_release/Press%2BNote_Report%2BNo%2B584_DWS_76th%20Final.pdf"
+    }
+  ]
+}

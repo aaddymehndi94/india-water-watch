@@ -6,7 +6,7 @@ Use a public repository for source and permitted normalized data, with GitHub Pa
 
 Build once in CI, deploy reviewed static artifacts, and keep source ingestion out of the visitor path. The site can support a large readership economically when initial payloads and map/data chunks are small, but do not promise a capacity figure without measuring requests and bytes.
 
-Configure Pages from GitHub Actions after authorization. Resolve current action versions from official repositories and pin immutable commit SHAs. Keep workflow permissions minimal. Never execute untrusted pull-request code with deployment secrets. PR builds validate/preview; they do not deploy to production.
+The publisher's 24 September 2026 instruction authorizes a GitHub Pages **progress site** in the existing `aaddymehndi94/india-water-watch` repository. A successful local review and push to `main` may update it. The site must distinguish reported observations, evidence gaps, local build status, and deployment time. Candidate data do not auto-promote; a rebuild of old observations does not refresh their observation date. Final editorial release status and sensitive human review remain separate. Configure Pages from GitHub Actions using pinned immutable action SHAs and minimal workflow permissions. Never deploy untrusted pull-request code.
 
 GitHub project sites commonly use a `/<repo>/` prefix. Set `site`/`base`, route helpers, asset paths, Pagefind base, chart downloads, canonical URLs, Open Graph images and internal links consistently. Test the exact prefix locally, including direct URL refresh. Do not fix paths with a brittle browser redirect hack.
 
@@ -43,7 +43,7 @@ Reject `.env`, secrets, private reporting notes, raw restricted documents, test 
 
 ## Workflow contracts
 
-Templates in `templates/workflows/` are specifications, not enabled workflows. Codex must fill and validate current action/runtime references, correct base paths and locked install commands. Separate CI, authorized publication and optional candidate-refresh jobs. Use protected publishing environments and release-specific manual approval where available. A safety gate's boolean field is not an identity/authentication mechanism by itself.
+Templates in `templates/workflows/` are specifications. The progress-site workflow runs checks, builds from reviewed `data/approved` records, and deploys on checked `main` pushes. A candidate-refresh job may retrieve and upload review artifacts but never write approved data or deploy automatically. The editor checks each proposed content update before merging. A safety gate's boolean field is not an identity/authentication mechanism by itself.
 
 ## Release manifest
 

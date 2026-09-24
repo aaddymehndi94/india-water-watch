@@ -1,0 +1,779 @@
+[
+  {
+    "id": "india",
+    "name": "India",
+    "kind": "country",
+    "authority_code": null,
+    "authority": "India Meteorological Department",
+    "boundary_version": "imd-homogeneous-2026-no-geometry",
+    "valid_from": null,
+    "valid_to": null,
+    "parent_ids": [],
+    "aliases": [],
+    "geometry_asset": null,
+    "geometry_rights": "No map asset included.",
+    "evidence_ids": [
+      "E-IMD-ALLINDIA-20260923"
+    ]
+  },
+  {
+    "id": "india:andhra-pradesh",
+    "name": "Andhra Pradesh",
+    "kind": "state",
+    "authority_code": null,
+    "authority": "National Portal of India / NIC",
+    "boundary_version": "2026-09-23-roster-no-geometry",
+    "valid_from": null,
+    "valid_to": null,
+    "parent_ids": [
+      "india"
+    ],
+    "aliases": [],
+    "geometry_asset": null,
+    "geometry_rights": "No boundary asset included; roster names only.",
+    "evidence_ids": [
+      "E-INDIA-ROSTER-20260923"
+    ]
+  },
+  {
+    "id": "india:arunachal-pradesh",
+    "name": "Arunachal Pradesh",
+    "kind": "state",
+    "authority_code": null,
+    "authority": "National Portal of India / NIC",
+    "boundary_version": "2026-09-23-roster-no-geometry",
+    "valid_from": null,
+    "valid_to": null,
+    "parent_ids": [
+      "india"
+    ],
+    "aliases": [],
+    "geometry_asset": null,
+    "geometry_rights": "No boundary asset included; roster names only.",
+    "evidence_ids": [
+      "E-INDIA-ROSTER-20260923"
+    ]
+  },
+  {
+    "id": "india:assam",
+    "name": "Assam",
+    "kind": "state",
+    "authority_code": null,
+    "authority": "National Portal of India / NIC",
+    "boundary_version": "2026-09-23-roster-no-geometry",
+    "valid_from": null,
+    "valid_to": null,
+    "parent_ids": [
+      "india"
+    ],
+    "aliases": [],
+    "geometry_asset": null,
+    "geometry_rights": "No boundary asset included; roster names only.",
+    "evidence_ids": [
+      "E-INDIA-ROSTER-20260923"
+    ]
+  },
+  {
+    "id": "india:bihar",
+    "name": "Bihar",
+    "kind": "state",
+    "authority_code": null,
+    "authority": "National Portal of India / NIC",
+    "boundary_version": "2026-09-23-roster-no-geometry",
+    "valid_from": null,
+    "valid_to": null,
+    "parent_ids": [
+      "india"
+    ],
+    "aliases": [],
+    "geometry_asset": null,
+    "geometry_rights": "No boundary asset included; roster names only.",
+    "evidence_ids": [
+      "E-INDIA-ROSTER-20260923"
+    ]
+  },
+  {
+    "id": "india:chhattisgarh",
+    "name": "Chhattisgarh",
+    "kind": "state",
+    "authority_code": null,
+    "authority": "National Portal of India / NIC",
+    "boundary_version": "2026-09-23-roster-no-geometry",
+    "valid_from": null,
+    "valid_to": null,
+    "parent_ids": [
+      "india"
+    ],
+    "aliases": [],
+    "geometry_asset": null,
+    "geometry_rights": "No boundary asset included; roster names only.",
+    "evidence_ids": [
+      "E-INDIA-ROSTER-20260923"
+    ]
+  },
+  {
+    "id": "india:goa",
+    "name": "Goa",
+    "kind": "state",
+    "authority_code": null,
+    "authority": "National Portal of India / NIC",
+    "boundary_version": "2026-09-23-roster-no-geometry",
+    "valid_from": null,
+    "valid_to": null,
+    "parent_ids": [
+      "india"
+    ],
+    "aliases": [],
+    "geometry_asset": null,
+    "geometry_rights": "No boundary asset included; roster names only.",
+    "evidence_ids": [
+      "E-INDIA-ROSTER-20260923"
+    ]
+  },
+  {
+    "id": "india:gujarat",
+    "name": "Gujarat",
+    "kind": "state",
+    "authority_code": null,
+    "authority": "National Portal of India / NIC",
+    "boundary_version": "2026-09-23-roster-no-geometry",
+    "valid_from": null,
+    "valid_to": null,
+    "parent_ids": [
+      "india"
+    ],
+    "aliases": [],
+    "geometry_asset": null,
+    "geometry_rights": "No boundary asset included; roster names only.",
+    "evidence_ids": [
+      "E-INDIA-ROSTER-20260923"
+    ]
+  },
+  {
+    "id": "india:haryana",
+    "name": "Haryana",
+    "kind": "state",
+    "authority_code": null,
+    "authority": "National Portal of India / NIC",
+    "boundary_version": "2026-09-23-roster-no-geometry",
+    "valid_from": null,
+    "valid_to": null,
+    "parent_ids": [
+      "india"
+    ],
+    "aliases": [],
+    "geometry_asset": null,
+    "geometry_rights": "No boundary asset included; roster names only.",
+    "evidence_ids": [
+      "E-INDIA-ROSTER-20260923"
+    ]
+  },
+  {
+    "id": "india:himachal-pradesh",
+    "name": "Himachal Pradesh",
+    "kind": "state",
+    "authority_code": null,
+    "authority": "National Portal of India / NIC",
+    "boundary_version": "2026-09-23-roster-no-geometry",
+    "valid_from": null,
+    "valid_to": null,
+    "parent_ids": [
+      "india"
+    ],
+    "aliases": [],
+    "geometry_asset": null,
+    "geometry_rights": "No boundary asset included; roster names only.",
+    "evidence_ids": [
+      "E-INDIA-ROSTER-20260923"
+    ]
+  },
+  {
+    "id": "india:jharkhand",
+    "name": "Jharkhand",
+    "kind": "state",
+    "authority_code": null,
+    "authority": "National Portal of India / NIC",
+    "boundary_version": "2026-09-23-roster-no-geometry",
+    "valid_from": null,
+    "valid_to": null,
+    "parent_ids": [
+      "india"
+    ],
+    "aliases": [],
+    "geometry_asset": null,
+    "geometry_rights": "No boundary asset included; roster names only.",
+    "evidence_ids": [
+      "E-INDIA-ROSTER-20260923"
+    ]
+  },
+  {
+    "id": "india:karnataka",
+    "name": "Karnataka",
+    "kind": "state",
+    "authority_code": null,
+    "authority": "National Portal of India / NIC",
+    "boundary_version": "2026-09-23-roster-no-geometry",
+    "valid_from": null,
+    "valid_to": null,
+    "parent_ids": [
+      "india"
+    ],
+    "aliases": [],
+    "geometry_asset": null,
+    "geometry_rights": "No boundary asset included; roster names only.",
+    "evidence_ids": [
+      "E-INDIA-ROSTER-20260923"
+    ]
+  },
+  {
+    "id": "india:kerala",
+    "name": "Kerala",
+    "kind": "state",
+    "authority_code": null,
+    "authority": "National Portal of India / NIC",
+    "boundary_version": "2026-09-23-roster-no-geometry",
+    "valid_from": null,
+    "valid_to": null,
+    "parent_ids": [
+      "india"
+    ],
+    "aliases": [],
+    "geometry_asset": null,
+    "geometry_rights": "No boundary asset included; roster names only.",
+    "evidence_ids": [
+      "E-INDIA-ROSTER-20260923"
+    ]
+  },
+  {
+    "id": "india:madhya-pradesh",
+    "name": "Madhya Pradesh",
+    "kind": "state",
+    "authority_code": null,
+    "authority": "National Portal of India / NIC",
+    "boundary_version": "2026-09-23-roster-no-geometry",
+    "valid_from": null,
+    "valid_to": null,
+    "parent_ids": [
+      "india"
+    ],
+    "aliases": [],
+    "geometry_asset": null,
+    "geometry_rights": "No boundary asset included; roster names only.",
+    "evidence_ids": [
+      "E-INDIA-ROSTER-20260923"
+    ]
+  },
+  {
+    "id": "india:maharashtra",
+    "name": "Maharashtra",
+    "kind": "state",
+    "authority_code": null,
+    "authority": "National Portal of India / NIC",
+    "boundary_version": "2026-09-23-roster-no-geometry",
+    "valid_from": null,
+    "valid_to": null,
+    "parent_ids": [
+      "india"
+    ],
+    "aliases": [],
+    "geometry_asset": null,
+    "geometry_rights": "No boundary asset included; roster names only.",
+    "evidence_ids": [
+      "E-INDIA-ROSTER-20260923"
+    ]
+  },
+  {
+    "id": "india:manipur",
+    "name": "Manipur",
+    "kind": "state",
+    "authority_code": null,
+    "authority": "National Portal of India / NIC",
+    "boundary_version": "2026-09-23-roster-no-geometry",
+    "valid_from": null,
+    "valid_to": null,
+    "parent_ids": [
+      "india"
+    ],
+    "aliases": [],
+    "geometry_asset": null,
+    "geometry_rights": "No boundary asset included; roster names only.",
+    "evidence_ids": [
+      "E-INDIA-ROSTER-20260923"
+    ]
+  },
+  {
+    "id": "india:meghalaya",
+    "name": "Meghalaya",
+    "kind": "state",
+    "authority_code": null,
+    "authority": "National Portal of India / NIC",
+    "boundary_version": "2026-09-23-roster-no-geometry",
+    "valid_from": null,
+    "valid_to": null,
+    "parent_ids": [
+      "india"
+    ],
+    "aliases": [],
+    "geometry_asset": null,
+    "geometry_rights": "No boundary asset included; roster names only.",
+    "evidence_ids": [
+      "E-INDIA-ROSTER-20260923"
+    ]
+  },
+  {
+    "id": "india:mizoram",
+    "name": "Mizoram",
+    "kind": "state",
+    "authority_code": null,
+    "authority": "National Portal of India / NIC",
+    "boundary_version": "2026-09-23-roster-no-geometry",
+    "valid_from": null,
+    "valid_to": null,
+    "parent_ids": [
+      "india"
+    ],
+    "aliases": [],
+    "geometry_asset": null,
+    "geometry_rights": "No boundary asset included; roster names only.",
+    "evidence_ids": [
+      "E-INDIA-ROSTER-20260923"
+    ]
+  },
+  {
+    "id": "india:nagaland",
+    "name": "Nagaland",
+    "kind": "state",
+    "authority_code": null,
+    "authority": "National Portal of India / NIC",
+    "boundary_version": "2026-09-23-roster-no-geometry",
+    "valid_from": null,
+    "valid_to": null,
+    "parent_ids": [
+      "india"
+    ],
+    "aliases": [],
+    "geometry_asset": null,
+    "geometry_rights": "No boundary asset included; roster names only.",
+    "evidence_ids": [
+      "E-INDIA-ROSTER-20260923"
+    ]
+  },
+  {
+    "id": "india:odisha",
+    "name": "Odisha",
+    "kind": "state",
+    "authority_code": null,
+    "authority": "National Portal of India / NIC",
+    "boundary_version": "2026-09-23-roster-no-geometry",
+    "valid_from": null,
+    "valid_to": null,
+    "parent_ids": [
+      "india"
+    ],
+    "aliases": [],
+    "geometry_asset": null,
+    "geometry_rights": "No boundary asset included; roster names only.",
+    "evidence_ids": [
+      "E-INDIA-ROSTER-20260923"
+    ]
+  },
+  {
+    "id": "india:punjab",
+    "name": "Punjab",
+    "kind": "state",
+    "authority_code": null,
+    "authority": "National Portal of India / NIC",
+    "boundary_version": "2026-09-23-roster-no-geometry",
+    "valid_from": null,
+    "valid_to": null,
+    "parent_ids": [
+      "india"
+    ],
+    "aliases": [],
+    "geometry_asset": null,
+    "geometry_rights": "No boundary asset included; roster names only.",
+    "evidence_ids": [
+      "E-INDIA-ROSTER-20260923"
+    ]
+  },
+  {
+    "id": "india:rajasthan",
+    "name": "Rajasthan",
+    "kind": "state",
+    "authority_code": null,
+    "authority": "National Portal of India / NIC",
+    "boundary_version": "2026-09-23-roster-no-geometry",
+    "valid_from": null,
+    "valid_to": null,
+    "parent_ids": [
+      "india"
+    ],
+    "aliases": [],
+    "geometry_asset": null,
+    "geometry_rights": "No boundary asset included; roster names only.",
+    "evidence_ids": [
+      "E-INDIA-ROSTER-20260923"
+    ]
+  },
+  {
+    "id": "india:sikkim",
+    "name": "Sikkim",
+    "kind": "state",
+    "authority_code": null,
+    "authority": "National Portal of India / NIC",
+    "boundary_version": "2026-09-23-roster-no-geometry",
+    "valid_from": null,
+    "valid_to": null,
+    "parent_ids": [
+      "india"
+    ],
+    "aliases": [],
+    "geometry_asset": null,
+    "geometry_rights": "No boundary asset included; roster names only.",
+    "evidence_ids": [
+      "E-INDIA-ROSTER-20260923"
+    ]
+  },
+  {
+    "id": "india:tamil-nadu",
+    "name": "Tamil Nadu",
+    "kind": "state",
+    "authority_code": null,
+    "authority": "National Portal of India / NIC",
+    "boundary_version": "2026-09-23-roster-no-geometry",
+    "valid_from": null,
+    "valid_to": null,
+    "parent_ids": [
+      "india"
+    ],
+    "aliases": [],
+    "geometry_asset": null,
+    "geometry_rights": "No boundary asset included; roster names only.",
+    "evidence_ids": [
+      "E-INDIA-ROSTER-20260923"
+    ]
+  },
+  {
+    "id": "india:telangana",
+    "name": "Telangana",
+    "kind": "state",
+    "authority_code": null,
+    "authority": "National Portal of India / NIC",
+    "boundary_version": "2026-09-23-roster-no-geometry",
+    "valid_from": null,
+    "valid_to": null,
+    "parent_ids": [
+      "india"
+    ],
+    "aliases": [],
+    "geometry_asset": null,
+    "geometry_rights": "No boundary asset included; roster names only.",
+    "evidence_ids": [
+      "E-INDIA-ROSTER-20260923"
+    ]
+  },
+  {
+    "id": "india:tripura",
+    "name": "Tripura",
+    "kind": "state",
+    "authority_code": null,
+    "authority": "National Portal of India / NIC",
+    "boundary_version": "2026-09-23-roster-no-geometry",
+    "valid_from": null,
+    "valid_to": null,
+    "parent_ids": [
+      "india"
+    ],
+    "aliases": [],
+    "geometry_asset": null,
+    "geometry_rights": "No boundary asset included; roster names only.",
+    "evidence_ids": [
+      "E-INDIA-ROSTER-20260923"
+    ]
+  },
+  {
+    "id": "india:uttar-pradesh",
+    "name": "Uttar Pradesh",
+    "kind": "state",
+    "authority_code": null,
+    "authority": "National Portal of India / NIC",
+    "boundary_version": "2026-09-23-roster-no-geometry",
+    "valid_from": null,
+    "valid_to": null,
+    "parent_ids": [
+      "india"
+    ],
+    "aliases": [],
+    "geometry_asset": null,
+    "geometry_rights": "No boundary asset included; roster names only.",
+    "evidence_ids": [
+      "E-INDIA-ROSTER-20260923"
+    ]
+  },
+  {
+    "id": "india:uttarakhand",
+    "name": "Uttarakhand",
+    "kind": "state",
+    "authority_code": null,
+    "authority": "National Portal of India / NIC",
+    "boundary_version": "2026-09-23-roster-no-geometry",
+    "valid_from": null,
+    "valid_to": null,
+    "parent_ids": [
+      "india"
+    ],
+    "aliases": [],
+    "geometry_asset": null,
+    "geometry_rights": "No boundary asset included; roster names only.",
+    "evidence_ids": [
+      "E-INDIA-ROSTER-20260923"
+    ]
+  },
+  {
+    "id": "india:west-bengal",
+    "name": "West Bengal",
+    "kind": "state",
+    "authority_code": null,
+    "authority": "National Portal of India / NIC",
+    "boundary_version": "2026-09-23-roster-no-geometry",
+    "valid_from": null,
+    "valid_to": null,
+    "parent_ids": [
+      "india"
+    ],
+    "aliases": [],
+    "geometry_asset": null,
+    "geometry_rights": "No boundary asset included; roster names only.",
+    "evidence_ids": [
+      "E-INDIA-ROSTER-20260923"
+    ]
+  },
+  {
+    "id": "india:andaman-and-nicobar-islands",
+    "name": "Andaman and Nicobar Islands",
+    "kind": "ut",
+    "authority_code": null,
+    "authority": "National Portal of India / NIC",
+    "boundary_version": "2026-09-23-roster-no-geometry",
+    "valid_from": null,
+    "valid_to": null,
+    "parent_ids": [
+      "india"
+    ],
+    "aliases": [],
+    "geometry_asset": null,
+    "geometry_rights": "No boundary asset included; roster names only.",
+    "evidence_ids": [
+      "E-INDIA-ROSTER-20260923"
+    ]
+  },
+  {
+    "id": "india:chandigarh",
+    "name": "Chandigarh",
+    "kind": "ut",
+    "authority_code": null,
+    "authority": "National Portal of India / NIC",
+    "boundary_version": "2026-09-23-roster-no-geometry",
+    "valid_from": null,
+    "valid_to": null,
+    "parent_ids": [
+      "india"
+    ],
+    "aliases": [],
+    "geometry_asset": null,
+    "geometry_rights": "No boundary asset included; roster names only.",
+    "evidence_ids": [
+      "E-INDIA-ROSTER-20260923"
+    ]
+  },
+  {
+    "id": "india:dadra-and-nagar-haveli-and-daman-and-diu",
+    "name": "Dadra and Nagar Haveli and Daman and Diu",
+    "kind": "ut",
+    "authority_code": null,
+    "authority": "National Portal of India / NIC",
+    "boundary_version": "2026-09-23-roster-no-geometry",
+    "valid_from": null,
+    "valid_to": null,
+    "parent_ids": [
+      "india"
+    ],
+    "aliases": [],
+    "geometry_asset": null,
+    "geometry_rights": "No boundary asset included; roster names only.",
+    "evidence_ids": [
+      "E-INDIA-ROSTER-20260923"
+    ]
+  },
+  {
+    "id": "india:delhi",
+    "name": "Delhi",
+    "kind": "ut",
+    "authority_code": null,
+    "authority": "National Portal of India / NIC",
+    "boundary_version": "2026-09-23-roster-no-geometry",
+    "valid_from": null,
+    "valid_to": null,
+    "parent_ids": [
+      "india"
+    ],
+    "aliases": [],
+    "geometry_asset": null,
+    "geometry_rights": "No boundary asset included; roster names only.",
+    "evidence_ids": [
+      "E-INDIA-ROSTER-20260923"
+    ]
+  },
+  {
+    "id": "india:jammu-and-kashmir",
+    "name": "Jammu and Kashmir",
+    "kind": "ut",
+    "authority_code": null,
+    "authority": "National Portal of India / NIC",
+    "boundary_version": "2026-09-23-roster-no-geometry",
+    "valid_from": null,
+    "valid_to": null,
+    "parent_ids": [
+      "india"
+    ],
+    "aliases": [],
+    "geometry_asset": null,
+    "geometry_rights": "No boundary asset included; roster names only.",
+    "evidence_ids": [
+      "E-INDIA-ROSTER-20260923"
+    ]
+  },
+  {
+    "id": "india:lakshadweep",
+    "name": "Lakshadweep",
+    "kind": "ut",
+    "authority_code": null,
+    "authority": "National Portal of India / NIC",
+    "boundary_version": "2026-09-23-roster-no-geometry",
+    "valid_from": null,
+    "valid_to": null,
+    "parent_ids": [
+      "india"
+    ],
+    "aliases": [],
+    "geometry_asset": null,
+    "geometry_rights": "No boundary asset included; roster names only.",
+    "evidence_ids": [
+      "E-INDIA-ROSTER-20260923"
+    ]
+  },
+  {
+    "id": "india:puducherry",
+    "name": "Puducherry",
+    "kind": "ut",
+    "authority_code": null,
+    "authority": "National Portal of India / NIC",
+    "boundary_version": "2026-09-23-roster-no-geometry",
+    "valid_from": null,
+    "valid_to": null,
+    "parent_ids": [
+      "india"
+    ],
+    "aliases": [],
+    "geometry_asset": null,
+    "geometry_rights": "No boundary asset included; roster names only.",
+    "evidence_ids": [
+      "E-INDIA-ROSTER-20260923"
+    ]
+  },
+  {
+    "id": "india:ladakh",
+    "name": "Ladakh",
+    "kind": "ut",
+    "authority_code": null,
+    "authority": "National Portal of India / NIC",
+    "boundary_version": "2026-09-23-roster-no-geometry",
+    "valid_from": null,
+    "valid_to": null,
+    "parent_ids": [
+      "india"
+    ],
+    "aliases": [],
+    "geometry_asset": null,
+    "geometry_rights": "No boundary asset included; roster names only.",
+    "evidence_ids": [
+      "E-INDIA-ROSTER-20260923"
+    ]
+  },
+  {
+    "id": "imd:northwest",
+    "name": "Northwest India",
+    "kind": "other",
+    "authority_code": null,
+    "authority": "India Meteorological Department",
+    "boundary_version": "imd-homogeneous-2026-no-geometry",
+    "valid_from": null,
+    "valid_to": null,
+    "parent_ids": [
+      "india"
+    ],
+    "aliases": [],
+    "geometry_asset": null,
+    "geometry_rights": "No map asset included.",
+    "evidence_ids": [
+      "E-IMD-HOMO-20260923"
+    ]
+  },
+  {
+    "id": "imd:east-northeast",
+    "name": "East & Northeast India",
+    "kind": "other",
+    "authority_code": null,
+    "authority": "India Meteorological Department",
+    "boundary_version": "imd-homogeneous-2026-no-geometry",
+    "valid_from": null,
+    "valid_to": null,
+    "parent_ids": [
+      "india"
+    ],
+    "aliases": [],
+    "geometry_asset": null,
+    "geometry_rights": "No map asset included.",
+    "evidence_ids": [
+      "E-IMD-HOMO-20260923"
+    ]
+  },
+  {
+    "id": "imd:central",
+    "name": "Central India",
+    "kind": "other",
+    "authority_code": null,
+    "authority": "India Meteorological Department",
+    "boundary_version": "imd-homogeneous-2026-no-geometry",
+    "valid_from": null,
+    "valid_to": null,
+    "parent_ids": [
+      "india"
+    ],
+    "aliases": [],
+    "geometry_asset": null,
+    "geometry_rights": "No map asset included.",
+    "evidence_ids": [
+      "E-IMD-HOMO-20260923"
+    ]
+  },
+  {
+    "id": "imd:south-peninsular",
+    "name": "South Peninsular India",
+    "kind": "other",
+    "authority_code": null,
+    "authority": "India Meteorological Department",
+    "boundary_version": "imd-homogeneous-2026-no-geometry",
+    "valid_from": null,
+    "valid_to": null,
+    "parent_ids": [
+      "india"
+    ],
+    "aliases": [],
+    "geometry_asset": null,
+    "geometry_rights": "No map asset included.",
+    "evidence_ids": [
+      "E-IMD-HOMO-20260923"
+    ]
+  }
+]

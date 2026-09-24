@@ -1,0 +1,12 @@
+---
+import Site from '../layouts/Site.astro';
+import PageHeader from '../components/PageHeader.astro';
+// @ts-ignore Node built-ins are available during Astro's build; root toolchain owns @types/node.
+import { readFileSync, existsSync } from 'node:fs';
+export function getStaticPaths() { return import.meta.env.DEV ? [{params:{local:'local-progress'}}] : []; }
+const tasks = JSON.parse(readFileSync('project/tasks.json','utf8')) as {id:string;title:string;status:string;gate:string}[];
+const state = JSON.parse(readFileSync('state/PROJECT_STATE.json','utf8')) as {phase:string;current_gate:string;software_ready:boolean;editorially_ready:boolean;next_action:string};
+const testFile = 'state/TEST_STATUS.json';
+const tests = existsSync(testFile) ? JSON.parse(readFileSync(testFile,'utf8')) as {label:string;status:string;at?:string}[] : [];
+---
+<Site title="Local project progress"><PageHeader title="Project progress" eyebrow="Local workspace only" description="Task and test status read from workspace records on this request. This route is excluded from the production build." /><section class="section"><div class="shell"><p><strong>Phase:</strong> {state.phase} · <strong>Gate:</strong> {state.current_gate} · <strong>Software ready:</strong> {String(state.software_ready)} · <strong>Editorially ready:</strong> {String(state.editorially_ready)}</p><p><strong>Next recorded action:</strong> {state.next_action}</p><h2>Tasks</h2><div class="table-wrap"><table class="data-table"><thead><tr><th>ID</th><th>Gate</th><th>Task</th><th>Recorded status</th></tr></thead><tbody>{tasks.map(t => <tr><td>{t.id}</td><td>{t.gate}</td><td>{t.title}</td><td>{t.status.replaceAll('_',' ')}</td></tr>)}</tbody></table></div><h2 style="margin-top:3rem">Recorded tests</h2>{tests.length ? <ul>{tests.map(t => <li>{t.label}: {t.status} {t.at || ''}</li>)}</ul> : <p>No test status file is recorded. This does not mean tests passed.</p>}</div></section></Site>

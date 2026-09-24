@@ -1,0 +1,5 @@
+---
+import { release, url } from '../lib/publication';
+const { compact = false } = Astro.props;
+---
+<aside class:list={['status-band', {compact}]} aria-label="Data status"><span class="status-dot" aria-hidden="true"></span><div><strong>{release.observations.length ? 'Approved snapshot' : 'Current measurements pending review'}</strong><span>{release.observations.length ? `Reviewed ${release.reviewedAt}; release ${release.releaseId}.` : 'No national measurement is published from this candidate yet.'}</span></div><a href={url('/data-status/')}>See coverage <span aria-hidden="true">↗</span></a></aside>

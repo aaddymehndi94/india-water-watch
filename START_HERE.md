@@ -40,7 +40,7 @@ Use `AUDIT_PROMPT.txt` for an adversarial review. Use `PUBLISH_PROMPT.txt` only 
 
 Default: public GitHub repository + GitHub Pages with a tested subpath build. Alternative: a root-path static build for Cloudflare Pages. Drag-and-drop has a documented asset-count limit, so the pack specifies a compact export as well as the full build. AWS means uploading files to an origin such as S3 and configuring CloudFront; CloudFront is not itself a folder-upload service.
 
-The starter creates no remote repository or hosting account. See the hosting guide for authorization boundaries and deployment checks.
+The starter creates no remote repository or hosting account. The publisher's 24 September 2026 instruction authorizes use of the existing `aaddymehndi94/india-water-watch` repository and GitHub Pages as a shareable progress site. Deploy tested, accurately labeled progress and reviewed public claims as checked checkpoints land. Candidate data must never become public merely because a scheduled build ran. See the hosting guide for deployment checks and limits.
 
 ## Inspect this pack before starting
 

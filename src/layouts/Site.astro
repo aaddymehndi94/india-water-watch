@@ -1,0 +1,31 @@
+---
+import '../styles/site.css';
+import { url } from '../lib/publication';
+const { title, description = 'Independent, source-linked reporting on water in India.' } = Astro.props;
+const nav = [
+  ['Overview', '/'], ['Explore', '/explore/'], ['Understand', '/understand/'], ['Outlook & updates', '/outlook/'], ['Sources', '/sources/']
+];
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href={url('/favicon.svg')} />
+    <meta name="theme-color" content="#f5f2eb" />
+    <title>{title ? `${title} · India Water Watch` : 'India Water Watch'}</title>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="masthead">
+      <div class="shell masthead-inner">
+        <a class="brand" href={url('/')} aria-label="India Water Watch home"><span class="brand-mark" aria-hidden="true">◉</span><span>INDIA<br />WATER WATCH</span></a>
+        <nav aria-label="Main navigation"><ul>{nav.map(([label, path]) => <li><a href={url(path)} aria-current={Astro.url.pathname === url(path) ? 'page' : undefined}>{label}</a></li>)}</ul></nav>
+        <a class="search-link" href={url('/search/')} aria-label="Search the publication">Search <span aria-hidden="true">↗</span></a>
+      </div>
+    </header>
+    <main id="main"><slot /></main>
+    <footer class="footer"><div class="shell footer-grid"><div><p class="eyebrow">India Water Watch</p><p>Independent water reporting with visible evidence and limits.</p></div><div><a href={url('/methodology/')}>Methodology</a><a href={url('/data-status/')}>Data status</a><a href={url('/corrections/')}>Corrections</a></div><div><a href={url('/journalists/')}>Journalist desk</a><a href={url('/about/')}>About this project</a><a href={url('/sources/')}>Source catalogue</a><a href={url('/progress/')}>Build progress</a></div></div></footer>
+  </body>
+</html>

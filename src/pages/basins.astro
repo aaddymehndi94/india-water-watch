@@ -1,0 +1,6 @@
+---
+import Site from '../layouts/Site.astro';
+import PageHeader from '../components/PageHeader.astro';
+import { url } from '../lib/publication';
+---
+<Site title="Basin context"><PageHeader title="Water crosses borders" eyebrow="Basin context" description="A catchment, a state and a utility service area describe different places. Understanding water movement means keeping their boundaries separate." /><section class="section"><div class="shell grid-2"><div><h2>Read a basin with care</h2><p>Rainfall in one district can affect a downstream reservoir and service area elsewhere. To connect them, we need a reviewed catchment boundary, river or transfer route, operating record and relevant dates.</p><p>We have not approved a basin geometry or current flow series for this build. The atlas therefore does not shade basins with administrative measurements.</p><a href={url('/methodology/')}>Geography and comparability method ↗</a></div><div class="empty-panel"><p class="eyebrow">Layer status</p><h3>Basin map awaiting source and rights review</h3><p>A basin boundary is not a drought classification. See the source catalogue for India-WRIS and river discharge leads.</p><a href={url('/sources/india_wris/')}>India-WRIS source lead ↗</a></div></div></section></Site>

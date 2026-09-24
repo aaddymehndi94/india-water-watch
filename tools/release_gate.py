@@ -49,7 +49,9 @@ def gate(root: Path = ROOT, publication: bool = False) -> list[str]:
     collections: dict[str, list] = {}
     for name in COLLECTIONS:
         try:
-            value = json.loads((root / "data" / f"{name}.json").read_text(encoding="utf-8"))
+            approved_path = root / "data" / "approved" / f"{name}.json"
+            path = approved_path if approved_path.is_file() else root / "data" / f"{name}.json"
+            value = json.loads(path.read_text(encoding="utf-8"))
             if not isinstance(value, list):
                 raise ValueError("Expected a collection array")
             collections[name] = value

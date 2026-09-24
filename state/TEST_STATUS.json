@@ -1,0 +1,32 @@
+[
+  {
+    "label": "Python unit tests (80)",
+    "status": "passed",
+    "at": "2026-09-24T06:48:00Z"
+  },
+  {
+    "label": "Approved schema/reference validation",
+    "status": "passed",
+    "at": "2026-09-24T06:48:00Z"
+  },
+  {
+    "label": "Astro strict check",
+    "status": "passed",
+    "at": "2026-09-24T06:48:00Z"
+  },
+  {
+    "label": "Root and GitHub subpath builds",
+    "status": "passed",
+    "at": "2026-09-24T06:46:00Z"
+  },
+  {
+    "label": "Independent browser QA",
+    "status": "passed with stated limits",
+    "at": "2026-09-24T06:48:00Z"
+  },
+  {
+    "label": "Independent fact review",
+    "status": "correction in progress",
+    "at": "2026-09-24T06:48:00Z"
+  }
+]

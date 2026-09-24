@@ -5,9 +5,10 @@
   "type": "module",
   "packageManager": "pnpm@12.6.0",
   "scripts": {
-    "dev": "astro dev",
-    "check": "astro check",
-    "build": "astro build && pagefind --site dist",
+    "dev": "python -m tools.build_publication_data && astro dev",
+    "check": "python -m tools.validate_approved && astro check",
+    "build": "python -m tools.build_publication_data && astro build && pagefind --site dist && python -m tools.make_release_manifest",
+    "build:compact": "python -m tools.build_profile --profile compact",
     "preview": "astro preview",
     "test": "python -m unittest discover -s tests -v",
     "verify": "python tools/validate_starter.py && pnpm check && pnpm test && pnpm build",
