@@ -527,7 +527,7 @@
       "T23",
       "T24"
     ],
-    "status": "in_progress",
+    "status": "completed",
     "suggested_paths": [
       "reports/editorial-signoff.md",
       "reports/human-review-queue.md"
@@ -550,7 +550,7 @@
       "T24",
       "T25"
     ],
-    "status": "in_progress",
+    "status": "completed",
     "suggested_paths": [
       "dist/",
       "artifacts/",
@@ -571,7 +571,7 @@
     "depends_on": [
       "T26"
     ],
-    "status": "in_progress",
+    "status": "completed",
     "suggested_paths": [
       "state/RELEASE_REVIEW.json",
       "reports/release-gate.md",
@@ -592,7 +592,7 @@
     "depends_on": [
       "T27"
     ],
-    "status": "in_progress",
+    "status": "completed",
     "suggested_paths": [
       "state/RELEASE_REPORT.md",
       "state/HANDOFF.md"
