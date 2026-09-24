@@ -492,5 +492,62 @@
     "source_inspected": true,
     "upstream_evidence_ids": [],
     "access_notes": "Agency-reported rescue output by 26 July, not independently counted; earlier 25 July 355 total is superseded, not additive. Retrieval timestamp is original saved HTML response write time, rounded to seconds."
+  },
+  {
+    "id": "E-CEA-THERMAL-WATER-201617",
+    "source_id": "cea_thermal_review_2016_17",
+    "url": "https://cea.nic.in/old/reports/annual/thermalreview/thermal_review-2017.pdf",
+    "title": "Performance Review of Thermal Power Stations 2016–17",
+    "publisher": "Central Electricity Authority",
+    "published_at": null,
+    "retrieved_at": "2026-09-24T09:13:44Z",
+    "observation_period": {
+      "start": "2016-04-01T00:00:00+05:30",
+      "end": "2017-03-31T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "other",
+      "cutoff_convention": "Financial-year calendar dates; 00:00 is a date placeholder, not a measurement hour."
+    },
+    "locator": "Section 4 p. 4.5 (PDF p. 70), row 7 “Raw Water Problem”, FY2016–17 columns: 24 outages; 2,875.79 MU potential generation loss; 0.18% of maximum possible generation.",
+    "sha256": "3dd354aa901c8a307b1df437a0a58e4023e3a099fc0955d9b1744881575dd41c",
+    "local_snapshot_path": "data/candidates/g13_markets/cea_thermal_2016_17.pdf",
+    "rights_status": "permitted_excerpt",
+    "source_inspected": true,
+    "upstream_evidence_ids": [],
+    "access_notes": "Source and hash independently reviewed in reporting/g13_independent_source_review.md. No images, logos or report tables republished. Publication day unknown."
+  },
+  {
+    "id": "E-JSW-RISK-202526",
+    "source_id": "jsw_risk_2025_26",
+    "url": "https://www.jswsteel.in/jsw-steel-annual-report-2025-26/risk-management.html",
+    "title": "JSW Steel Integrated Annual Report 2025–26: Risk Management",
+    "publisher": "JSW Steel",
+    "published_at": null,
+    "retrieved_at": "2026-09-24T09:13:40Z",
+    "observation_period": null,
+    "locator": "Risk Management R7, water availability row: non-availability of water as production disruption risk; reservoir, efficiency and site-specific ZLD mitigation.",
+    "sha256": "251ef6a105579ff8b4c95114950c09684269d90ff06f6425f04b3730c7b41d24",
+    "local_snapshot_path": "data/candidates/g13_markets/jsw_risk_2025_26.html",
+    "rights_status": "permitted_excerpt",
+    "source_inspected": true,
+    "upstream_evidence_ids": [],
+    "access_notes": "Source and hash independently reviewed in reporting/g13_independent_source_review.md. No images, logos or report tables republished. Publication day unknown."
+  },
+  {
+    "id": "E-JSW-WATER-202425",
+    "source_id": "jsw_water_2024_25",
+    "url": "https://www.jswsteel.in/jsw-steel-annual-report-2024-25/water-resources.html",
+    "title": "JSW Steel Integrated Report 2024–25: Water Resources",
+    "publisher": "JSW Steel",
+    "published_at": null,
+    "retrieved_at": "2026-09-24T09:13:40Z",
+    "observation_period": null,
+    "locator": "Water Resources, water-risk statement: no water-related incidents materially affecting costs or revenues over the past four fiscal years.",
+    "sha256": "4c54cc7ce130880c76378ebe94bcdd80467926fe44c2afdd5b570d5e8c7348c7",
+    "local_snapshot_path": "data/candidates/g13_markets/jsw_water_2024_25.html",
+    "rights_status": "permitted_excerpt",
+    "source_inspected": true,
+    "upstream_evidence_ids": [],
+    "access_notes": "Source and hash independently reviewed in reporting/g13_independent_source_review.md. No images, logos or report tables republished. Publication day unknown."
   }
 ]

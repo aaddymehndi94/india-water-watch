@@ -1,74 +1,74 @@
 {
   "schema_version": "1.0",
-  "release_id": "candidate-20260924-0ff6e35ffc18",
-  "snapshot_sha256": "0ff6e35ffc18863d601e9714c2180f1b9443f0e0590779d9dc12300e13ab00a2",
+  "release_id": "candidate-20260924-9a7e43a1017a",
+  "snapshot_sha256": "9a7e43a1017afd9e2da7f479b6b21d410e0bcb17b8ca5170b31dec76275592a4",
   "checks": [
     {
       "id": "data",
       "status": "passed",
       "reviewer": "lead-engineer",
-      "evidence_path": "reporting/g11_data_review.md",
-      "evidence_sha256": "f69a9668c14837a632dd4d588dc7b2c7c30158d42fc75748f92796ce722fdc30"
+      "evidence_path": "state/COVERAGE_AND_FRESHNESS.md",
+      "evidence_sha256": "71817f1a4dbb317b8db15b4fb48b53354c7977d173818e40399dcf8a005fdc3a"
     },
     {
       "id": "claims",
       "status": "passed",
-      "reviewer": "independent-fact-checker-agent",
-      "evidence_path": "reporting/g11_independent_source_review.md",
-      "evidence_sha256": "6086bd6d7f0775ce0667b3828f73310c8c795ddd3bbf90dd0cf4a080bee434d2"
+      "reviewer": "independent-source-reviewer-agent",
+      "evidence_path": "reporting/g13_independent_source_review.md",
+      "evidence_sha256": "b498c0701f6a73c9f6cc6a92bebea71e9b3f82f7622ed7c70f33a8e6ba416cb7"
     },
     {
       "id": "comparability",
       "status": "passed",
-      "reviewer": "independent-fact-checker-agent",
-      "evidence_path": "reporting/g11_independent_source_review.md",
-      "evidence_sha256": "6086bd6d7f0775ce0667b3828f73310c8c795ddd3bbf90dd0cf4a080bee434d2"
+      "reviewer": "independent-source-reviewer-agent",
+      "evidence_path": "reporting/g13_independent_source_review.md",
+      "evidence_sha256": "b498c0701f6a73c9f6cc6a92bebea71e9b3f82f7622ed7c70f33a8e6ba416cb7"
     },
     {
       "id": "editorial",
       "status": "passed",
-      "reviewer": "independent-fact-checker-agent",
-      "evidence_path": "reporting/g11_independent_source_review.md",
-      "evidence_sha256": "6086bd6d7f0775ce0667b3828f73310c8c795ddd3bbf90dd0cf4a080bee434d2"
+      "reviewer": "independent-source-reviewer-agent",
+      "evidence_path": "reporting/g13_independent_source_review.md",
+      "evidence_sha256": "b498c0701f6a73c9f6cc6a92bebea71e9b3f82f7622ed7c70f33a8e6ba416cb7"
     },
     {
       "id": "rights",
       "status": "passed",
-      "reviewer": "independent-fact-checker-agent",
-      "evidence_path": "reporting/g11_independent_source_review.md",
-      "evidence_sha256": "6086bd6d7f0775ce0667b3828f73310c8c795ddd3bbf90dd0cf4a080bee434d2"
+      "reviewer": "independent-source-reviewer-agent",
+      "evidence_path": "reporting/g13_independent_source_review.md",
+      "evidence_sha256": "b498c0701f6a73c9f6cc6a92bebea71e9b3f82f7622ed7c70f33a8e6ba416cb7"
     },
     {
       "id": "accessibility",
       "status": "passed",
       "reviewer": "independent-quality-agent",
-      "evidence_path": "reporting/g11_quality_review.md",
-      "evidence_sha256": "917179469a7221f6b1651ae76f80a7de9cd7cf1626e116408d2168241a39046a"
+      "evidence_path": "reporting/g13b_quality_review.md",
+      "evidence_sha256": "7b0feeaceac0b0f101cb502a4f51228ce0b7a798801a14ab5ce74104e07dff97"
     },
     {
       "id": "visual",
       "status": "passed",
       "reviewer": "independent-quality-agent",
-      "evidence_path": "reporting/g11_quality_review.md",
-      "evidence_sha256": "917179469a7221f6b1651ae76f80a7de9cd7cf1626e116408d2168241a39046a"
+      "evidence_path": "reporting/g13b_quality_review.md",
+      "evidence_sha256": "7b0feeaceac0b0f101cb502a4f51228ce0b7a798801a14ab5ce74104e07dff97"
     },
     {
       "id": "security",
       "status": "passed",
       "reviewer": "independent-quality-agent",
-      "evidence_path": "reporting/g11_quality_review.md",
-      "evidence_sha256": "917179469a7221f6b1651ae76f80a7de9cd7cf1626e116408d2168241a39046a"
+      "evidence_path": "reporting/g13b_quality_review.md",
+      "evidence_sha256": "7b0feeaceac0b0f101cb502a4f51228ce0b7a798801a14ab5ce74104e07dff97"
     },
     {
       "id": "hosting",
       "status": "passed",
       "reviewer": "independent-quality-agent",
-      "evidence_path": "reporting/g11_quality_review.md",
-      "evidence_sha256": "917179469a7221f6b1651ae76f80a7de9cd7cf1626e116408d2168241a39046a"
+      "evidence_path": "reporting/g13b_quality_review.md",
+      "evidence_sha256": "7b0feeaceac0b0f101cb502a4f51228ce0b7a798801a14ab5ce74104e07dff97"
     }
   ],
   "blocking_findings": [],
   "sensitive_human_review_required": false,
   "human_review_receipt": null,
-  "scope": "Agent-reviewed G11 public progress candidate; 22 source-linked claims, seven dated numeric observations, low-confidence user-authorized AI Author assessment. No human field or editorial review asserted."
+  "scope": "Agent-reviewed G13b progress candidate; 30 source-linked claims, nine dated numeric observations, source-linked press summaries and a market evidence ladder with unverified 2026 effect gates. No human field, legal or photographic-rights review asserted."
 }

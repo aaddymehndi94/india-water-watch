@@ -10,3 +10,9 @@
 - **Important clocks:** HTML deployment/build time is not the rainfall observation time. The national IMD cumulative observation ends **23 September**; CWC monitored storage is dated **10 September**; IMD's local heavy-rain release concerns the 24 hours ending 08:30 IST **24 September**; the 17 September forecast applies to **24–30 September**.
 
 The site has no automatic feed-to-publication process. Reviewed `main` pushes trigger GitHub Pages. `docs/UPDATE_PLAYBOOK.md` gives the prompt and commands for a source refresh, independent review, build, export and deploy. `state/RELEASE_REPORT.md` lists the local candidate and portable artifacts.
+
+## G13a reviewed visual-news checkpoint
+
+- **Content commit:** `aba8d882` on `main`, pushed 24 September 2026. GitHub Actions [run 35982266011](https://github.com/aaddymehndi94/india-water-watch/actions/runs/35982266011) completed successfully.
+- **Live verification:** 24 September 2026 at approximately 09:38 UTC. Cache-busted HTTPS requests returned HTTP 200 for the homepage, history, impacts and Explore routes, each containing the new G13a content. The served HTML carried a 09:37:08 UTC Last-Modified time. Local root and repository-prefix Chrome journeys each passed 131/131 checks; 14 sampled axe cases had zero violations after a chart contrast fix. Independent public-copy review found no remaining material blocker.
+- **Scope:** completed June rank and nested exact rainfall comparison, sourced two-date DCA price, separate flood response branch and 36-place schematic locator. The press collage and business-market ladder were **not** in this G13a deployment; they are being reviewed for the next checkpoint.

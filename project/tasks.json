@@ -987,13 +987,16 @@
     "title": "Visual and accessibility remediation, collage and market mechanism",
     "owner_role": "lead",
     "depends_on": [],
-    "status": "in_progress",
+    "status": "completed",
     "suggested_paths": [],
     "acceptance": [
       "Dated, source-linked content; responsive and accessible interaction; independently reviewed before public promotion"
     ],
     "result_paths": [
-      "reporting/g13_visual_review.md"
+      "reporting/g13_visual_review.md",
+      "src/pages/index.astro",
+      "src/components/MarketRiskLadder.tsx",
+      "src/styles/market-risk-ladder.css"
     ],
     "blockers": []
   },
@@ -1008,7 +1011,14 @@
     "acceptance": [
       "Dated, source-linked content; responsive and accessible interaction; independently reviewed before public promotion"
     ],
-    "result_paths": [],
+    "result_paths": [
+      "state/RELEASE_REPORT.md",
+      "state/RELEASE_REVIEW.json",
+      "reporting/g13b_quality_review.md",
+      "release/site-github.zip",
+      "release/site-compact.zip",
+      "release/journalist-exports.zip"
+    ],
     "blockers": []
   }
 ]

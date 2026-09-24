@@ -113,5 +113,30 @@
     "label": "G13a GitHub-prefix Chrome journeys",
     "status": "passed: 131/131 checks on pre-copy-fix build; final prefix smoke pending",
     "at": "2026-09-24T09:24:00Z"
+  },
+  {
+    "label": "G13b approved-data validation and Python unit tests (80)",
+    "status": "passed",
+    "at": "2026-09-24T09:53:45Z"
+  },
+  {
+    "label": "G13b Astro strict check",
+    "status": "passed: 45 files, zero diagnostics",
+    "at": "2026-09-24T09:53:52Z"
+  },
+  {
+    "label": "G13b root, compact and GitHub-prefix builds",
+    "status": "passed: 137 HTML pages per profile, Pagefind indexed 137",
+    "at": "2026-09-24T09:54:00Z"
+  },
+  {
+    "label": "G13b independent source and public-copy review",
+    "status": "passed for promoted market claims and five linked press cards; agent review",
+    "at": "2026-09-24T09:54:00Z"
+  },
+  {
+    "label": "G13b independent root and prefix browser/axe/route/security review",
+    "status": "passed: 81/81 browser checks and 16 axe cases with zero violations per profile; 28 direct-route cases",
+    "at": "2026-09-24T09:58:00Z"
   }
 ]

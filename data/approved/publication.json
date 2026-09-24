@@ -2,6 +2,33 @@
   "claims": [
     {
       "evidenceIds": [
+        "E-CEA-THERMAL-WATER-201617"
+      ],
+      "geographyIds": [
+        "india"
+      ],
+      "id": "C-CEA-RAW-WATER-LOSS-201617",
+      "inputClaimIds": [],
+      "kind": "reported",
+      "limitations": [
+        "The CEA category does not establish drought as the cause of every raw-water outage.",
+        "Potential generation loss is not actual consumer power cuts, financial loss or a market return; cohort and period are FY2016–17."
+      ],
+      "methodPath": null,
+      "observationIds": [],
+      "period": {
+        "cutoff_convention": "Financial-year calendar dates; 00:00 is a date placeholder, not a measurement hour.",
+        "end": "2017-03-31T00:00:00+05:30",
+        "kind": "other",
+        "start": "2016-04-01T00:00:00+05:30",
+        "timezone": "Asia/Kolkata"
+      },
+      "reviewedAt": "2026-09-24T09:38:00Z",
+      "status": "attributed",
+      "text": "In its FY2016–17 thermal-station performance review, the Central Electricity Authority recorded 24 outages under “Raw Water Problem” and 2,875.79 million units of potential generation loss, 0.18% of maximum possible generation for the reviewed units. This is a historical operational category, not a 2026 drought, rupee or listed-share loss."
+    },
+    {
+      "evidenceIds": [
         "E-CWC-RSMS-20260910"
       ],
       "geographyIds": [
@@ -589,6 +616,60 @@
     },
     {
       "evidenceIds": [
+        "E-JSW-WATER-202425"
+      ],
+      "geographyIds": [
+        "india"
+      ],
+      "id": "C-JSW-NO-MATERIAL-WATER-INCIDENT-202425",
+      "inputClaimIds": [],
+      "kind": "reported",
+      "limitations": [
+        "Company self-report and materiality threshold; not an independently audited count of all water events.",
+        "The statement predates the 2026 southwest monsoon and does not rule out later losses."
+      ],
+      "methodPath": null,
+      "observationIds": [],
+      "period": {
+        "cutoff_convention": "The FY2024–25 report describes the preceding four fiscal years, FY2021–22 through FY2024–25. Calendar-date precision only; 00:00 is a placeholder, not a measurement hour.",
+        "end": "2025-03-31T00:00:00+05:30",
+        "kind": "other",
+        "start": "2021-04-01T00:00:00+05:30",
+        "timezone": "Asia/Kolkata"
+      },
+      "reviewedAt": "2026-09-24T09:38:00Z",
+      "status": "attributed",
+      "text": "JSW Steel said in its FY2024–25 integrated report that no water-related incident had materially affected its costs or revenues during the preceding four fiscal years. This is the company’s thresholded historical statement, not proof of zero smaller incidents or an assessment of the later 2026 monsoon."
+    },
+    {
+      "evidenceIds": [
+        "E-JSW-RISK-202526"
+      ],
+      "geographyIds": [
+        "india"
+      ],
+      "id": "C-JSW-WATER-RISK-202526",
+      "inputClaimIds": [],
+      "kind": "reported",
+      "limitations": [
+        "Company self-disclosure of exposure and mitigation, not independently verified operational effect.",
+        "Financial year ended 31 March 2026; report publication day was not established in this review."
+      ],
+      "methodPath": null,
+      "observationIds": [],
+      "period": {
+        "cutoff_convention": "Financial-year calendar dates; 00:00 is a date placeholder, not a measurement hour.",
+        "end": "2026-03-31T00:00:00+05:30",
+        "kind": "other",
+        "start": "2025-04-01T00:00:00+05:30",
+        "timezone": "Asia/Kolkata"
+      },
+      "reviewedAt": "2026-09-24T09:38:00Z",
+      "status": "attributed",
+      "text": "In its FY2025–26 integrated report, JSW Steel identifies non-availability of water as a production-disruption risk and describes developing reservoirs near facilities, water-efficiency measures and site-specific zero-liquid-discharge efforts. The disclosure does not report a water-caused September 2026 plant outage, earnings loss or share-price move."
+    },
+    {
+      "evidenceIds": [
         "E-KA-GAZETTE-DROUGHT-20260922"
       ],
       "geographyIds": [
@@ -785,10 +866,10 @@
     }
   ],
   "counts": {
-    "claims": 27,
+    "claims": 30,
     "geographies": 44,
     "observations": 9,
-    "sources": 22
+    "sources": 25
   },
   "geographies": [
     {
@@ -1465,11 +1546,12 @@
       "value": -14.9
     }
   ],
-  "releaseId": "approved-f22be1c28b6b",
-  "reviewedAt": "2026-09-24T09:02:56Z",
+  "releaseId": "approved-68e6210077c9",
+  "reviewedAt": "2026-09-24T09:38:00Z",
   "schemaVersion": "1",
-  "snapshotSha256": "f22be1c28b6b4ef3679d8070b803fd276c7b1efd49a9548f0f55c4d521068525",
+  "snapshotSha256": "68e6210077c93f41ffad6a1b2c4eb8aa5e7e76d550609b12289c8af6c5536b38",
   "sourceWatermarks": {
+    "E-CEA-THERMAL-WATER-201617": "2017-03-31",
     "E-CWC-RSMS-20260910": "2026-09-10",
     "E-DCA-HOME-20260923": "2026-09-23",
     "E-DCA-ONION-BLR-20250923": "2025-09-23",
@@ -1485,6 +1567,8 @@
     "E-JJM-CONNECTIONS-20260402": "2026-03-03",
     "E-JJM-FUNCTIONALITY-2024": "2024-10-31",
     "E-JJM-FUNDS-20260331": "2026-03-31",
+    "E-JSW-RISK-202526": null,
+    "E-JSW-WATER-202425": null,
     "E-KA-GAZETTE-DROUGHT-20260827": "2026-08-27",
     "E-KA-GAZETTE-DROUGHT-20260917": "2026-09-11",
     "E-KA-GAZETTE-DROUGHT-20260922": "2026-09-16",
@@ -1494,6 +1578,21 @@
     "E-NSO-WATER-2018": "2018-12-31"
   },
   "sources": [
+    {
+      "id": "E-CEA-THERMAL-WATER-201617",
+      "locator": "Section 4 p. 4.5 (PDF p. 70), row 7 “Raw Water Problem”, FY2016–17 columns: 24 outages; 2,875.79 MU potential generation loss; 0.18% of maximum possible generation.",
+      "observedThrough": "2017-03-31",
+      "observedThroughPrecision": "date",
+      "publicationDate": null,
+      "publicationDatePrecision": "unknown",
+      "publisher": "Central Electricity Authority",
+      "retrievedAt": "2026-09-24T09:13:44Z",
+      "sha256": "3dd354aa901c8a307b1df437a0a58e4023e3a099fc0955d9b1744881575dd41c",
+      "sourceId": "cea_thermal_review_2016_17",
+      "title": "Performance Review of Thermal Power Stations 2016–17",
+      "url": "https://cea.nic.in/old/reports/annual/thermalreview/thermal_review-2017.pdf",
+      "validityEnd": null
+    },
     {
       "id": "E-CWC-RSMS-20260910",
       "locator": "PDF p. 3 (printed p. 1) national and southern summary; PDF pp. 8–9 (printed pp. 6–7) Table 01.",
@@ -1717,6 +1816,36 @@
       "sourceId": "jal_shakti_jjm_2026_funds",
       "title": "Ministry statement on JJM 2.0 and FY 2025-26 release",
       "url": "https://www.jalshakti-dowr.gov.in/static/uploads/2026/04/fcf34c99623c6988f805fd15151f54ee.pdf",
+      "validityEnd": null
+    },
+    {
+      "id": "E-JSW-RISK-202526",
+      "locator": "Risk Management R7, water availability row: non-availability of water as production disruption risk; reservoir, efficiency and site-specific ZLD mitigation.",
+      "observedThrough": null,
+      "observedThroughPrecision": "unknown",
+      "publicationDate": null,
+      "publicationDatePrecision": "unknown",
+      "publisher": "JSW Steel",
+      "retrievedAt": "2026-09-24T09:13:40Z",
+      "sha256": "251ef6a105579ff8b4c95114950c09684269d90ff06f6425f04b3730c7b41d24",
+      "sourceId": "jsw_risk_2025_26",
+      "title": "JSW Steel Integrated Annual Report 2025–26: Risk Management",
+      "url": "https://www.jswsteel.in/jsw-steel-annual-report-2025-26/risk-management.html",
+      "validityEnd": null
+    },
+    {
+      "id": "E-JSW-WATER-202425",
+      "locator": "Water Resources, water-risk statement: no water-related incidents materially affecting costs or revenues over the past four fiscal years.",
+      "observedThrough": null,
+      "observedThroughPrecision": "unknown",
+      "publicationDate": null,
+      "publicationDatePrecision": "unknown",
+      "publisher": "JSW Steel",
+      "retrievedAt": "2026-09-24T09:13:40Z",
+      "sha256": "4c54cc7ce130880c76378ebe94bcdd80467926fe44c2afdd5b570d5e8c7348c7",
+      "sourceId": "jsw_water_2024_25",
+      "title": "JSW Steel Integrated Report 2024–25: Water Resources",
+      "url": "https://www.jswsteel.in/jsw-steel-annual-report-2024-25/water-resources.html",
       "validityEnd": null
     },
     {

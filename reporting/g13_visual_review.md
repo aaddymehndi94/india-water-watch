@@ -34,3 +34,15 @@ The G11 edition is clearer and more credible than the starter, but the publisher
 ## Acceptance checks
 
 360, 390, 768 and 1440 widths; root and GitHub subpath builds; mouse, touch and keyboard selection; no-JavaScript fallback; reduced motion; light and dark contrast; stable source links; no page overflow; no geographic/severity inference from locator tiles. Release screenshots must include the cover, sticky stage and schematic locator in mobile and desktop views.
+
+## G13a implementation and review evidence
+
+- Homepage cover now places the completed June rank and the cumulative 23 September departure in two separate, source-linked panels. Their scopes and dates are visible in the first 360-pixel screen. The source-linked two-window React comparison follows directly after the cover, with static server-rendered values and a full table.
+- The previously repeated chapter cards have been differentiated by evidence type and rhythm. The rainfall chapter uses a dark region index and an inset light chart; government action uses a warm documentary surface; household access uses a bright explanatory surface. The chart inset required a contrast correction after the first agent review.
+- Explore now includes 36 equal-size, approximate-position locator tiles with 36 unique cells, a searchable A–Z alternative, selected detail and URL state. The interface repeatedly says it is schematic, has no borders and shows no measured state water condition. The roster is 28 states and 8 union territories in this release.
+- Local browser captures: `/tmp/g13-home-{360,768,1440}.png`, `/tmp/g13-explore-{360,768,1440}.png`, `/tmp/g13-chart-{360,1440}.png`. At those widths the root pages had zero horizontal overflow; the schematic rendered 36 buttons; the cover rendered two reading panels; the comparison island rendered once. The local development server later exposed its known stale React `_jsxDEV` prebundle issue; final interaction review should use the clean built preview.
+- `python -m tools.validate_approved && ./node_modules/.bin/astro check` passed with zero diagnostics. The lead's rebuilt axe report `artifacts/qa/g11/g13a-fixed-axe-report.json` recorded zero violations in 14 checked route/width/theme cases. This is automated and agent review, not human approval.
+
+## G13b press mosaic
+
+Five original typographic link cards now follow the Karnataka action chapter. They paraphrase independently reviewed, dated reporting from Hindustan Times and Telangana Today, including a Lucknow recovery counterpoint. Each card states its place, outlet, report date, evidence type and a narrow limit; no outlet image, screenshot, logo or interview quote was reused. Mobile, tablet and desktop captures: `/tmp/g13-press-{360,768,1440}.png`; five cards and zero page overflow at all three widths. The collage still needs the lead's final source/copy and built-preview checks before publication.

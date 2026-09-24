@@ -855,5 +855,56 @@
     "license_status": "factual_excerpt_only",
     "selected_data_endpoint": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2289580&lang=2&reg=48",
     "production_approved": true
+  },
+  {
+    "id": "cea_thermal_review_2016_17",
+    "title": "Performance Review of Thermal Power Stations 2016–17",
+    "publisher": "Central Electricity Authority",
+    "entry_url": "https://cea.nic.in/old/reports/annual/thermalreview/thermal_review-2017.pdf",
+    "topics": [
+      "economy",
+      "water"
+    ],
+    "access_status": "source_inspected",
+    "checked_on": "2026-09-24",
+    "access_notes": "Scoped original and SHA-256 independently reviewed; factual excerpt only, no reused artwork.",
+    "expected_cadence": "annual",
+    "license_status": "factual_excerpt_only",
+    "selected_data_endpoint": "https://cea.nic.in/old/reports/annual/thermalreview/thermal_review-2017.pdf",
+    "production_approved": true
+  },
+  {
+    "id": "jsw_risk_2025_26",
+    "title": "JSW Steel Integrated Annual Report 2025–26: Risk Management",
+    "publisher": "JSW Steel",
+    "entry_url": "https://www.jswsteel.in/jsw-steel-annual-report-2025-26/risk-management.html",
+    "topics": [
+      "economy",
+      "water"
+    ],
+    "access_status": "source_inspected",
+    "checked_on": "2026-09-24",
+    "access_notes": "Scoped original and SHA-256 independently reviewed; factual excerpt only, no reused artwork.",
+    "expected_cadence": "annual",
+    "license_status": "factual_excerpt_only",
+    "selected_data_endpoint": "https://www.jswsteel.in/jsw-steel-annual-report-2025-26/risk-management.html",
+    "production_approved": true
+  },
+  {
+    "id": "jsw_water_2024_25",
+    "title": "JSW Steel Integrated Report 2024–25: Water Resources",
+    "publisher": "JSW Steel",
+    "entry_url": "https://www.jswsteel.in/jsw-steel-annual-report-2024-25/water-resources.html",
+    "topics": [
+      "economy",
+      "water"
+    ],
+    "access_status": "source_inspected",
+    "checked_on": "2026-09-24",
+    "access_notes": "Scoped original and SHA-256 independently reviewed; factual excerpt only, no reused artwork.",
+    "expected_cadence": "annual",
+    "license_status": "factual_excerpt_only",
+    "selected_data_endpoint": "https://www.jswsteel.in/jsw-steel-annual-report-2024-25/water-resources.html",
+    "production_approved": true
   }
 ]

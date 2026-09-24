@@ -390,7 +390,7 @@
     "limitations": [
       "The order covers listed taluks, not all of Karnataka or India.",
       "It is a declaration and authorization, not proof of relief distribution, crop losses or household water shortage.",
-    "The earlier 101- and 23-taluk annexes were independently reviewed for the separate cumulative claim; this 22 September order itself adds 53 taluks."
+      "The earlier 101- and 23-taluk annexes were independently reviewed for the separate cumulative claim; this 22 September order itself adds 53 taluks."
     ],
     "reviewer_id": "independent-history-depth-agent-2026-09-24",
     "reviewed_at": "2026-09-24T07:46:58Z",
@@ -912,6 +912,102 @@
     ],
     "reviewer_id": "g12_independent_source_review-agent-2026-09-24",
     "reviewed_at": "2026-09-24T09:02:56Z",
+    "requires_human_review": false,
+    "human_review_receipt": null,
+    "supersedes": null,
+    "public": true
+  },
+  {
+    "id": "C-CEA-RAW-WATER-LOSS-201617",
+    "text": "In its FY2016–17 thermal-station performance review, the Central Electricity Authority recorded 24 outages under “Raw Water Problem” and 2,875.79 million units of potential generation loss, 0.18% of maximum possible generation for the reviewed units. This is a historical operational category, not a 2026 drought, rupee or listed-share loss.",
+    "kind": "reported",
+    "status": "attributed",
+    "geography_ids": [
+      "india"
+    ],
+    "period": {
+      "start": "2016-04-01T00:00:00+05:30",
+      "end": "2017-03-31T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "other",
+      "cutoff_convention": "Financial-year calendar dates; 00:00 is a date placeholder, not a measurement hour."
+    },
+    "evidence_ids": [
+      "E-CEA-THERMAL-WATER-201617"
+    ],
+    "observation_ids": [],
+    "input_claim_ids": [],
+    "method_path": null,
+    "limitations": [
+      "The CEA category does not establish drought as the cause of every raw-water outage.",
+      "Potential generation loss is not actual consumer power cuts, financial loss or a market return; cohort and period are FY2016–17."
+    ],
+    "reviewer_id": "g13_independent_source_review-agent-2026-09-24",
+    "reviewed_at": "2026-09-24T09:38:00Z",
+    "requires_human_review": false,
+    "human_review_receipt": null,
+    "supersedes": null,
+    "public": true
+  },
+  {
+    "id": "C-JSW-WATER-RISK-202526",
+    "text": "In its FY2025–26 integrated report, JSW Steel identifies non-availability of water as a production-disruption risk and describes developing reservoirs near facilities, water-efficiency measures and site-specific zero-liquid-discharge efforts. The disclosure does not report a water-caused September 2026 plant outage, earnings loss or share-price move.",
+    "kind": "reported",
+    "status": "attributed",
+    "geography_ids": [
+      "india"
+    ],
+    "period": {
+      "start": "2025-04-01T00:00:00+05:30",
+      "end": "2026-03-31T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "other",
+      "cutoff_convention": "Financial-year calendar dates; 00:00 is a date placeholder, not a measurement hour."
+    },
+    "evidence_ids": [
+      "E-JSW-RISK-202526"
+    ],
+    "observation_ids": [],
+    "input_claim_ids": [],
+    "method_path": null,
+    "limitations": [
+      "Company self-disclosure of exposure and mitigation, not independently verified operational effect.",
+      "Financial year ended 31 March 2026; report publication day was not established in this review."
+    ],
+    "reviewer_id": "g13_independent_source_review-agent-2026-09-24",
+    "reviewed_at": "2026-09-24T09:38:00Z",
+    "requires_human_review": false,
+    "human_review_receipt": null,
+    "supersedes": null,
+    "public": true
+  },
+  {
+    "id": "C-JSW-NO-MATERIAL-WATER-INCIDENT-202425",
+    "text": "JSW Steel said in its FY2024–25 integrated report that no water-related incident had materially affected its costs or revenues during the preceding four fiscal years. This is the company’s thresholded historical statement, not proof of zero smaller incidents or an assessment of the later 2026 monsoon.",
+    "kind": "reported",
+    "status": "attributed",
+    "geography_ids": [
+      "india"
+    ],
+    "period": {
+      "start": "2021-04-01T00:00:00+05:30",
+      "end": "2025-03-31T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "other",
+      "cutoff_convention": "The FY2024–25 report describes the preceding four fiscal years, FY2021–22 through FY2024–25. Calendar-date precision only; 00:00 is a placeholder, not a measurement hour."
+    },
+    "evidence_ids": [
+      "E-JSW-WATER-202425"
+    ],
+    "observation_ids": [],
+    "input_claim_ids": [],
+    "method_path": null,
+    "limitations": [
+      "Company self-report and materiality threshold; not an independently audited count of all water events.",
+      "The statement predates the 2026 southwest monsoon and does not rule out later losses."
+    ],
+    "reviewer_id": "g13_independent_source_review-agent-2026-09-24",
+    "reviewed_at": "2026-09-24T09:38:00Z",
     "requires_human_review": false,
     "human_review_receipt": null,
     "supersedes": null,
