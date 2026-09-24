@@ -8,4 +8,6 @@ Live smoke checks returned HTTP 200 for `/`, `/states/`, `/states/karnataka/`, `
 
 The public Site is open to anyone with its URL. No named colleague was invited, and no email was sent. This is a progress publication with agent-reviewed, narrowly attributed claims. The final editorial release still lacks genuine human sign-off; no sensitive allegation or high-stakes instruction was published.
 
+Version 2 was saved from Git commit `129b3c044951f98643bdf1d747b2c4e0815eb310` as `appgprj_6ab4cac60b7c8191baca4aba1fd9ef2f~appgver_ca75577cb2a88191a7fd6db07c0299ac` and deployed as `appgdep_6ab4cd3159d0819182807cb588d96ab7`. The host reported `succeeded` at the same URL. A fresh public Chrome smoke check returned HTTP 200 for home, progress, Karnataka and search; the progress page now says “Recorded as deployed,” and search again returned 21 `rainfall` matches. The public observation CSV returned HTTP 200.
+
 GitHub source remains at https://github.com/aaddymehndi94/india-water-watch . GitHub Pages itself still returns 404 because the owner has not enabled Pages. The Sites URL above is the verified public site. Updates require a reviewed source commit, root static build, saved Sites version, deployment and fresh smoke test; no autonomous background updater is running.

@@ -17,5 +17,7 @@
   "deployment_scope": "public_progress_site",
   "deployment_url": "https://india-water-watch.aaddy.chatgpt.site",
   "deployment_host": "ChatGPT Sites",
-  "deployed_at": "2026-09-24T07:08:57+00:00"
+  "deployed_at": "2026-09-24T07:08:57+00:00",
+  "deployment_version_number": 2,
+  "deployment_id": "appgdep_6ab4cd3159d0819182807cb588d96ab7"
 }
