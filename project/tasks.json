@@ -1,0 +1,648 @@
+[
+  {
+    "id": "T01",
+    "gate": "G0",
+    "title": "Environment, capability and dependency preflight",
+    "owner_role": "lead",
+    "depends_on": [],
+    "status": "not_started",
+    "suggested_paths": [
+      "state/TOOLCHAIN.md",
+      "state/DECISIONS.md"
+    ],
+    "path_ownership_note": "Lead grants an exclusive bounded path subset before assignment; suggested paths can overlap across sequential tasks. Workers return patches rather than editing shared stores without a lease.",
+    "acceptance": [
+      "Actual tool versions; project-only agent config; current stable compatibility; frozen dependency plan"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T02",
+    "gate": "G1",
+    "title": "Audit every inherited claim without preserving its conclusion",
+    "owner_role": "source_auditor",
+    "depends_on": [
+      "T01"
+    ],
+    "status": "not_started",
+    "suggested_paths": [
+      "reports/prior-claims-audit.md"
+    ],
+    "path_ownership_note": "Lead grants an exclusive bounded path subset before assignment; suggested paths can overlap across sequential tasks. Workers return patches rather than editing shared stores without a lease.",
+    "acceptance": [
+      "Each Q-ID has primary retrieval, verdict, correction or explicit unresolved status"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T03",
+    "gate": "G1",
+    "title": "Current source access, rights and update feasibility",
+    "owner_role": "data_engineer",
+    "depends_on": [
+      "T01"
+    ],
+    "status": "not_started",
+    "suggested_paths": [
+      "reports/source-access.md",
+      "references/source_registry.json"
+    ],
+    "path_ownership_note": "Lead grants an exclusive bounded path subset before assignment; suggested paths can overlap across sequential tasks. Workers return patches rather than editing shared stores without a lease.",
+    "acceptance": [
+      "Exact product URLs and observation dates; no homepage promoted to numeric evidence; legitimate fallback paths"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T04",
+    "gate": "G1",
+    "title": "Hydrological definitions, comparability and coverage contracts",
+    "owner_role": "hydrology",
+    "depends_on": [
+      "T02",
+      "T03"
+    ],
+    "status": "not_started",
+    "suggested_paths": [
+      "reports/method-contracts.md",
+      "reports/coverage-plan.md"
+    ],
+    "path_ownership_note": "Lead grants an exclusive bounded path subset before assignment; suggested paths can overlap across sequential tasks. Workers return patches rather than editing shared stores without a lease.",
+    "acceptance": [
+      "Rainfall is not usable supply; same-cutoff and reservoir-cohort rules; supported geographic levels"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T05",
+    "gate": "G1",
+    "title": "Historical record and population/demand feasibility",
+    "owner_role": "history_demography",
+    "depends_on": [
+      "T02",
+      "T03"
+    ],
+    "status": "not_started",
+    "suggested_paths": [
+      "reports/history-feasibility.md"
+    ],
+    "path_ownership_note": "Lead grants an exclusive bounded path subset before assignment; suggested paths can overlap across sequential tasks. Workers return patches rather than editing shared stores without a lease.",
+    "acceptance": [
+      "Oldest defensible series identified; boundary/baseline changes and excluded comparisons recorded"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T06",
+    "gate": "G1",
+    "title": "Editorial sitemap and source-to-story assignment",
+    "owner_role": "editor",
+    "depends_on": [
+      "T02",
+      "T03",
+      "T04"
+    ],
+    "status": "not_started",
+    "suggested_paths": [
+      "reports/editorial-assignment.md"
+    ],
+    "path_ownership_note": "Lead grants an exclusive bounded path subset before assignment; suggested paths can overlap across sequential tasks. Workers return patches rather than editing shared stores without a lease.",
+    "acceptance": [
+      "All 16 beats assigned; counterevidence and local reporting gaps; no predetermined catastrophe"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T07",
+    "gate": "G2",
+    "title": "Typography, navigation and component design system",
+    "owner_role": "visual_designer",
+    "depends_on": [
+      "T01",
+      "T06"
+    ],
+    "status": "not_started",
+    "suggested_paths": [
+      "src/styles/",
+      "reports/design-decisions.md"
+    ],
+    "path_ownership_note": "Lead grants an exclusive bounded path subset before assignment; suggested paths can overlap across sequential tasks. Workers return patches rather than editing shared stores without a lease.",
+    "acceptance": [
+      "Water Ledger art direction; mobile hierarchy; contrast and chart tokens; no generic card wall"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T08",
+    "gate": "G2",
+    "title": "Static app bootstrap and public data contracts",
+    "owner_role": "frontend_engineer",
+    "depends_on": [
+      "T01",
+      "T04",
+      "T06"
+    ],
+    "status": "not_started",
+    "suggested_paths": [
+      "package.json",
+      "pnpm-lock.yaml",
+      "astro.config.mjs",
+      "src/lib/"
+    ],
+    "path_ownership_note": "Lead grants an exclusive bounded path subset before assignment; suggested paths can overlap across sequential tasks. Workers return patches rather than editing shared stores without a lease.",
+    "acceptance": [
+      "Working static app; schema validators; base-path helper; design tokens coordinated with T07"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T09",
+    "gate": "G2",
+    "title": "First permitted adapter and reproducible derivations",
+    "owner_role": "data_engineer",
+    "depends_on": [
+      "T03",
+      "T04"
+    ],
+    "status": "not_started",
+    "suggested_paths": [
+      "pipeline/",
+      "data/",
+      "reports/first-adapter.md"
+    ],
+    "path_ownership_note": "Lead grants an exclusive bounded path subset before assignment; suggested paths can overlap across sequential tasks. Workers return patches rather than editing shared stores without a lease.",
+    "acceptance": [
+      "Real input, checksum, parsed locator, fixture tests and explicit failure behavior"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T10",
+    "gate": "G2",
+    "title": "First polished data-to-story vertical slice",
+    "owner_role": "frontend_engineer",
+    "depends_on": [
+      "T07",
+      "T08",
+      "T09"
+    ],
+    "status": "not_started",
+    "suggested_paths": [
+      "src/components/",
+      "src/pages/",
+      "reports/vertical-slice.md"
+    ],
+    "path_ownership_note": "Lead grants an exclusive bounded path subset before assignment; suggested paths can overlap across sequential tasks. Workers return patches rather than editing shared stores without a lease.",
+    "acceptance": [
+      "Real chart/table/source drawer/CSV; independent arithmetic replay; actual mobile screenshot"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T11",
+    "gate": "G3",
+    "title": "Administrative and basin geography with crosswalks",
+    "owner_role": "data_engineer",
+    "depends_on": [
+      "T04",
+      "T09"
+    ],
+    "status": "not_started",
+    "suggested_paths": [
+      "data/geographies.json",
+      "pipeline/geography/",
+      "reports/geography-joins.md"
+    ],
+    "path_ownership_note": "Lead grants an exclusive bounded path subset before assignment; suggested paths can overlap across sequential tasks. Workers return patches rather than editing shared stores without a lease.",
+    "acceptance": [
+      "Versioned inventory and permitted boundaries; district aliases/splits; basin versus administrative separation"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T12",
+    "gate": "G3",
+    "title": "Rainfall, reservoir and groundwater datasets",
+    "owner_role": "hydrology",
+    "depends_on": [
+      "T04",
+      "T09"
+    ],
+    "status": "not_started",
+    "suggested_paths": [
+      "reports/hydrology-review.md",
+      "reports/coverage-matrix.md"
+    ],
+    "path_ownership_note": "Lead grants an exclusive bounded path subset before assignment; suggested paths can overlap across sequential tasks. Workers return patches rather than editing shared stores without a lease.",
+    "acceptance": [
+      "Dates/units/rights; same reservoir cohorts; groundwater assessment versus live measurement; failed feeds visible"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T13",
+    "gate": "G3",
+    "title": "Comparable history and population/exposure analysis",
+    "owner_role": "history_demography",
+    "depends_on": [
+      "T05",
+      "T11",
+      "T12"
+    ],
+    "status": "not_started",
+    "suggested_paths": [
+      "reports/history-analysis.md",
+      "reports/population-analysis.md"
+    ],
+    "path_ownership_note": "Lead grants an exclusive bounded path subset before assignment; suggested paths can overlap across sequential tasks. Workers return patches rather than editing shared stores without a lease.",
+    "acceptance": [
+      "Ranks disclose k/N and included years; no return-period substitution; demand gaps and population vintage explicit"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T14",
+    "gate": "G3",
+    "title": "Atlas, local views and historical comparator",
+    "owner_role": "frontend_engineer",
+    "depends_on": [
+      "T10",
+      "T11",
+      "T12",
+      "T13"
+    ],
+    "status": "not_started",
+    "suggested_paths": [
+      "src/features/explore/",
+      "src/features/history/"
+    ],
+    "path_ownership_note": "Lead grants an exclusive bounded path subset before assignment; suggested paths can overlap across sequential tasks. Workers return patches rather than editing shared stores without a lease.",
+    "acceptance": [
+      "All verified state/UT routes; district only supported metrics; mobile map/table parity; comparison guard"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T15",
+    "gate": "G4",
+    "title": "Economy, agriculture, unequal access and wealth reporting",
+    "owner_role": "economy_access",
+    "depends_on": [
+      "T06",
+      "T12",
+      "T13"
+    ],
+    "status": "not_started",
+    "suggested_paths": [
+      "reports/economy-access.md",
+      "content/drafts/economy/"
+    ],
+    "path_ownership_note": "Lead grants an exclusive bounded path subset before assignment; suggested paths can overlap across sequential tasks. Workers return patches rather than editing shared stores without a lease.",
+    "acceptance": [
+      "Separate documented outcomes and mechanisms; local evidence; wealth buffers and shared-system exposure; no invented GDP loss"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T16",
+    "gate": "G4",
+    "title": "Institutions, response tracker, voices and responsibilities",
+    "owner_role": "institutions_reporter",
+    "depends_on": [
+      "T06",
+      "T12"
+    ],
+    "status": "not_started",
+    "suggested_paths": [
+      "reports/institutions.md",
+      "content/drafts/response/"
+    ],
+    "path_ownership_note": "Lead grants an exclusive bounded path subset before assignment; suggested paths can overlap across sequential tasks. Workers return patches rather than editing shared stores without a lease.",
+    "acceptance": [
+      "Announcements versus implementation; dates and primary orders; neutral coverage; no unsent interview presented as reporting"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T17",
+    "gate": "G4",
+    "title": "Outlooks, severe conditional scenarios and recovery",
+    "owner_role": "hydrology",
+    "depends_on": [
+      "T06",
+      "T12",
+      "T13"
+    ],
+    "status": "not_started",
+    "suggested_paths": [
+      "data/forecasts.json",
+      "data/scenarios.json",
+      "reports/outlook-review.md"
+    ],
+    "path_ownership_note": "Lead grants an exclusive bounded path subset before assignment; suggested paths can overlap across sequential tasks. Workers return patches rather than editing shared stores without a lease.",
+    "acceptance": [
+      "Issuer, issue/expiry, variable, horizon, region and probabilities preserved; triggers not fake predictions; recovery signals"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T18",
+    "gate": "G4",
+    "title": "Finished explanatory journalism and public-information guides",
+    "owner_role": "editor",
+    "depends_on": [
+      "T14",
+      "T15",
+      "T16",
+      "T17"
+    ],
+    "status": "not_started",
+    "suggested_paths": [
+      "content/",
+      "data/claims.json",
+      "reports/editorial-coverage.md"
+    ],
+    "path_ownership_note": "Lead grants an exclusive bounded path subset before assignment; suggested paths can overlap across sequential tasks. Workers return patches rather than editing shared stores without a lease.",
+    "acceptance": [
+      "Source-backed complete narratives; plain language; exact claim links; practical info source-dated; unresolved human reporting withheld"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T19",
+    "gate": "G5",
+    "title": "Snapshot refresh, semantic diff and dependency tracking",
+    "owner_role": "data_engineer",
+    "depends_on": [
+      "T09",
+      "T11",
+      "T12",
+      "T13"
+    ],
+    "status": "not_started",
+    "suggested_paths": [
+      "pipeline/refresh/",
+      "scripts/refresh.*",
+      "reports/update-system.md"
+    ],
+    "path_ownership_note": "Lead grants an exclusive bounded path subset before assignment; suggested paths can overlap across sequential tasks. Workers return patches rather than editing shared stores without a lease.",
+    "acceptance": [
+      "No-change/new-observation/revision/failure test; last-known-good preserved; no timestamps laundered; affected claims listed"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T20",
+    "gate": "G5",
+    "title": "News desk, expiry, data-status and corrections",
+    "owner_role": "editor",
+    "depends_on": [
+      "T18",
+      "T19"
+    ],
+    "status": "not_started",
+    "suggested_paths": [
+      "content/updates/",
+      "data/news.json",
+      "reports/news-dedup.md"
+    ],
+    "path_ownership_note": "Lead grants an exclusive bounded path subset before assignment; suggested paths can overlap across sequential tasks. Workers return patches rather than editing shared stores without a lease.",
+    "acceptance": [
+      "Original sources identified; source-chain dedup; event versus publication date; corrections not silent rewrites; visible staleness"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T21",
+    "gate": "G6",
+    "title": "Final page integration, search and journalist exports",
+    "owner_role": "frontend_engineer",
+    "depends_on": [
+      "T14",
+      "T18",
+      "T19",
+      "T20"
+    ],
+    "status": "not_started",
+    "suggested_paths": [
+      "src/",
+      "scripts/exports/"
+    ],
+    "path_ownership_note": "Lead grants an exclusive bounded path subset before assignment; suggested paths can overlap across sequential tasks. Workers return patches rather than editing shared stores without a lease.",
+    "acceptance": [
+      "All route journeys; Pagefind/static search; citation links; chart/data/method exports; no JS narrative access"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T22",
+    "gate": "G6",
+    "title": "Independent visual, mobile and interaction review",
+    "owner_role": "visual_designer",
+    "depends_on": [
+      "T21"
+    ],
+    "status": "not_started",
+    "suggested_paths": [
+      "reports/visual-review.md",
+      "reports/screenshots/"
+    ],
+    "path_ownership_note": "Lead grants an exclusive bounded path subset before assignment; suggested paths can overlap across sequential tasks. Workers return patches rather than editing shared stores without a lease.",
+    "acceptance": [
+      "Actual 360/390/768/1440 screenshots; keyboard/no-JS/reduced-motion paths; all material findings fixed"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T23",
+    "gate": "G6",
+    "title": "Accessibility, performance and security testing",
+    "owner_role": "quality_engineer",
+    "depends_on": [
+      "T21"
+    ],
+    "status": "not_started",
+    "suggested_paths": [
+      "tests/",
+      "reports/quality-review.md"
+    ],
+    "path_ownership_note": "Lead grants an exclusive bounded path subset before assignment; suggested paths can overlap across sequential tasks. Workers return patches rather than editing shared stores without a lease.",
+    "acceptance": [
+      "Built output tested; accessibility evidence limits stated; bundle budgets; XSS/secrets/rights-leak checks"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T24",
+    "gate": "G7",
+    "title": "Independent source and methodology audit",
+    "owner_role": "fact_checker",
+    "depends_on": [
+      "T18",
+      "T20",
+      "T21"
+    ],
+    "status": "not_started",
+    "suggested_paths": [
+      "reports/fact-check.md",
+      "reports/calculation-replay.md"
+    ],
+    "path_ownership_note": "Lead grants an exclusive bounded path subset before assignment; suggested paths can overlap across sequential tasks. Workers return patches rather than editing shared stores without a lease.",
+    "acceptance": [
+      "All headlines and public current-data claims opened/replayed; source independence; comparisons and export agreement"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T25",
+    "gate": "G7",
+    "title": "Editorial, rights, privacy and public-interest review",
+    "owner_role": "editor",
+    "depends_on": [
+      "T22",
+      "T23",
+      "T24"
+    ],
+    "status": "not_started",
+    "suggested_paths": [
+      "reports/editorial-signoff.md",
+      "reports/human-review-queue.md"
+    ],
+    "path_ownership_note": "Lead grants an exclusive bounded path subset before assignment; suggested paths can overlap across sequential tasks. Workers return patches rather than editing shared stores without a lease.",
+    "acceptance": [
+      "Review by someone other than original author where possible; no fabricated human approval; unsupported/sensitive modules withheld"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T26",
+    "gate": "G8",
+    "title": "Root and GitHub subpath builds with compact export",
+    "owner_role": "frontend_engineer",
+    "depends_on": [
+      "T22",
+      "T23",
+      "T24",
+      "T25"
+    ],
+    "status": "not_started",
+    "suggested_paths": [
+      "dist/",
+      "artifacts/",
+      "reports/hosting-smoke.md"
+    ],
+    "path_ownership_note": "Lead grants an exclusive bounded path subset before assignment; suggested paths can overlap across sequential tasks. Workers return patches rather than editing shared stores without a lease.",
+    "acceptance": [
+      "Real static ZIPs; <=1000-file compact target after measured provider check; deep links/base paths; no development-only success"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T27",
+    "gate": "G8",
+    "title": "Bind manifests, acceptance evidence and release gate",
+    "owner_role": "quality_engineer",
+    "depends_on": [
+      "T26"
+    ],
+    "status": "not_started",
+    "suggested_paths": [
+      "state/RELEASE_REVIEW.json",
+      "reports/release-gate.md",
+      "project/acceptance.csv"
+    ],
+    "path_ownership_note": "Lead grants an exclusive bounded path subset before assignment; suggested paths can overlap across sequential tasks. Workers return patches rather than editing shared stores without a lease.",
+    "acceptance": [
+      "All required checks evidenced against exact source snapshot and artifact hashes; stale evidence invalidates release"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T28",
+    "gate": "G8",
+    "title": "Complete publisher handoff and rollback instructions",
+    "owner_role": "lead",
+    "depends_on": [
+      "T27"
+    ],
+    "status": "not_started",
+    "suggested_paths": [
+      "state/RELEASE_REPORT.md",
+      "state/HANDOFF.md"
+    ],
+    "path_ownership_note": "Lead grants an exclusive bounded path subset before assignment; suggested paths can overlap across sequential tasks. Workers return patches rather than editing shared stores without a lease.",
+    "acceptance": [
+      "Preview and package paths; truthful built/verified/reviewed/deployed flags; coverage/gaps; exact update/publish steps"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T29",
+    "gate": "G9",
+    "title": "Authorized first deployment and public smoke test",
+    "owner_role": "lead",
+    "depends_on": [
+      "T28"
+    ],
+    "status": "not_started",
+    "suggested_paths": [
+      "reports/deployment.md",
+      "state/PUBLICATION_POLICY.json"
+    ],
+    "path_ownership_note": "Lead grants an exclusive bounded path subset before assignment; suggested paths can overlap across sequential tasks. Workers return patches rather than editing shared stores without a lease.",
+    "acceptance": [
+      "Explicit release-and-host authorization; no secrets in repo; actual URL verified; rollback tested"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T30",
+    "gate": "G9",
+    "title": "Optional approved scheduled-refresh workflow",
+    "owner_role": "lead",
+    "depends_on": [
+      "T19",
+      "T28"
+    ],
+    "status": "not_started",
+    "suggested_paths": [
+      ".github/workflows/",
+      "reports/scheduled-operations.md"
+    ],
+    "path_ownership_note": "Lead grants an exclusive bounded path subset before assignment; suggested paths can overlap across sequential tasks. Workers return patches rather than editing shared stores without a lease.",
+    "acceptance": [
+      "Separate explicit authorization; schedule proposes candidate updates by default; no paid API assumptions; no deployment from untrusted forks"
+    ],
+    "result_paths": [],
+    "blockers": []
+  }
+]

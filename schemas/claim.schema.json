@@ -1,0 +1,174 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "claim",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+    },
+    "text": {
+      "type": "string",
+      "minLength": 1
+    },
+    "kind": {
+      "enum": [
+        "observed",
+        "reported",
+        "derived",
+        "interpretation",
+        "forecast",
+        "scenario"
+      ]
+    },
+    "status": {
+      "enum": [
+        "draft",
+        "verified",
+        "attributed",
+        "disputed",
+        "withheld",
+        "superseded",
+        "corrected"
+      ]
+    },
+    "geography_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+      },
+      "uniqueItems": true
+    },
+    "period": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "start": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "end": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "timezone": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "enum": [
+            "day",
+            "week",
+            "month",
+            "season_to_date",
+            "completed_season",
+            "year",
+            "instant",
+            "other"
+          ]
+        },
+        "cutoff_convention": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "start",
+        "end",
+        "timezone",
+        "kind",
+        "cutoff_convention"
+      ]
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "observation_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+      },
+      "uniqueItems": true
+    },
+    "input_claim_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+      },
+      "uniqueItems": true
+    },
+    "method_path": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "reviewer_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "reviewed_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "requires_human_review": {
+      "type": "boolean"
+    },
+    "human_review_receipt": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "supersedes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "public": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "id",
+    "text",
+    "kind",
+    "status",
+    "geography_ids",
+    "period",
+    "evidence_ids",
+    "observation_ids",
+    "input_claim_ids",
+    "method_path",
+    "limitations",
+    "reviewer_id",
+    "reviewed_at",
+    "requires_human_review",
+    "human_review_receipt",
+    "supersedes",
+    "public"
+  ]
+}

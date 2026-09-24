@@ -1,0 +1,175 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "observation",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+    },
+    "metric_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+    },
+    "series_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+    },
+    "definition_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "geography_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+    },
+    "boundary_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "period": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "start": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "end": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "timezone": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "enum": [
+            "day",
+            "week",
+            "month",
+            "season_to_date",
+            "completed_season",
+            "year",
+            "instant",
+            "other"
+          ]
+        },
+        "cutoff_convention": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "start",
+        "end",
+        "timezone",
+        "kind",
+        "cutoff_convention"
+      ]
+    },
+    "value": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "unit": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "enum": [
+        "observed",
+        "projected",
+        "revised",
+        "estimated",
+        "missing"
+      ]
+    },
+    "missing_reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "normal_value": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "baseline_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "cohort_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "population_basis": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "coverage_fraction": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "quality_flags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "synthetic": {
+      "type": "boolean"
+    },
+    "public": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "id",
+    "metric_id",
+    "series_id",
+    "definition_version",
+    "geography_id",
+    "boundary_version",
+    "period",
+    "value",
+    "unit",
+    "status",
+    "missing_reason",
+    "normal_value",
+    "baseline_id",
+    "cohort_id",
+    "population_basis",
+    "coverage_fraction",
+    "evidence_ids",
+    "quality_flags",
+    "synthetic",
+    "public"
+  ]
+}

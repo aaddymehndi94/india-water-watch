@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "first_deployment_authorized": false,
+  "automatic_publication_enabled": false,
+  "scheduled_refresh_enabled": false,
+  "paid_services_authorized": false,
+  "external_contact_authorized": false,
+  "approved_host": null,
+  "approved_release_sha256": null,
+  "human_review_receipts": [],
+  "note": "Only an actual publisher decision may change authorization. A local boolean is not authentication. Agents must not fabricate approval."
+}

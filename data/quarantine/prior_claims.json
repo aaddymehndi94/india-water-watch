@@ -1,0 +1,86 @@
+[
+  {
+    "id": "Q01",
+    "statement_to_audit": "2026 South Peninsula rainfall approximately 26% below normal",
+    "audit_instruction": "Confirm exact bulletin, observation cutoff, region and baseline.",
+    "status": "unverified",
+    "public": false
+  },
+  {
+    "id": "Q02",
+    "statement_to_audit": "2002 South Peninsula rainfall 78% of normal",
+    "audit_instruction": "Reconcile different peninsular definitions and older series before comparison.",
+    "status": "unverified",
+    "public": false
+  },
+  {
+    "id": "Q03",
+    "statement_to_audit": "7 of 193 seasons at least this dry in 1813–2005 reconstruction",
+    "audit_instruction": "Obtain exact full series and geography; reproduce count; do not splice it to modern region.",
+    "status": "unverified",
+    "public": false
+  },
+  {
+    "id": "Q04",
+    "statement_to_audit": "5 of 146 seasons in a different 1871–2016 series",
+    "audit_instruction": "Check sample, baseline and shared observations; not independent corroboration by default.",
+    "status": "unverified",
+    "public": false
+  },
+  {
+    "id": "Q05",
+    "statement_to_audit": "An event of this severity happens once every 25–30 years",
+    "audit_instruction": "Historical frequency is not a current probability/return period; retire unsupported framing.",
+    "status": "not_established",
+    "public": false
+  },
+  {
+    "id": "Q06",
+    "statement_to_audit": "Five-state population 223.35m near 2002 and 275.06m in 2026",
+    "audit_instruction": "Check exact counts/projection columns/reference dates and matched boundaries.",
+    "status": "unverified",
+    "public": false
+  },
+  {
+    "id": "Q07",
+    "statement_to_audit": "29.8% higher people-pressure and 23% less rainfall per resident",
+    "audit_instruction": "Illustrative arithmetic only; not measured water stress, supply or usable resource.",
+    "status": "inference_not_established",
+    "public": false
+  },
+  {
+    "id": "Q08",
+    "statement_to_audit": "Southern reservoirs 51.8% full on 17 Sep 2026 vs 88.7% in 2025",
+    "audit_instruction": "Inspect actual CWC tables, cohort, live-capacity units and dates.",
+    "status": "unverified",
+    "public": false
+  },
+  {
+    "id": "Q09",
+    "statement_to_audit": "2002 national storage comparable to 2026 southern storage",
+    "audit_instruction": "Different region/cohort/date cannot support a like-for-like stress comparison.",
+    "status": "not_comparable",
+    "public": false
+  },
+  {
+    "id": "Q10",
+    "statement_to_audit": "Precise state deficits and drought-declaration numbers in earlier chat",
+    "audit_instruction": "Retrieve dated original products and signed notifications. Do not mix reporting systems.",
+    "status": "unverified",
+    "public": false
+  },
+  {
+    "id": "Q11",
+    "statement_to_audit": "Earlier national per-capita availability, agricultural withdrawals and recharge shares",
+    "audit_instruction": "Check product year, definition, denominator and whether global or India-specific.",
+    "status": "unverified",
+    "public": false
+  },
+  {
+    "id": "Q12",
+    "statement_to_audit": "This may be the worst effective water-stress year in modern Indian history",
+    "audit_instruction": "Not established by a rainfall/population proxy; no validated multi-indicator historical comparison.",
+    "status": "not_established",
+    "public": false
+  }
+]

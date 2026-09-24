@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "scenario",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "label": {
+      "const": "conditional_scenario_not_prediction"
+    },
+    "geography_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+      },
+      "uniqueItems": true
+    },
+    "horizon": {
+      "type": "string",
+      "minLength": 1
+    },
+    "starting_observation_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+      },
+      "uniqueItems": true
+    },
+    "assumptions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "pathways": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "recovery_signals": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+      },
+      "minItems": 1
+    },
+    "model_path": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "reviewer_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "requires_human_review": {
+      "type": "boolean"
+    },
+    "human_review_receipt": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "public": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "id",
+    "title",
+    "label",
+    "geography_ids",
+    "horizon",
+    "starting_observation_ids",
+    "assumptions",
+    "pathways",
+    "recovery_signals",
+    "limitations",
+    "evidence_ids",
+    "model_path",
+    "reviewer_id",
+    "requires_human_review",
+    "human_review_receipt",
+    "public"
+  ]
+}

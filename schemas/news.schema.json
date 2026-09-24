@@ -1,0 +1,140 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "news",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "canonical_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "publisher": {
+      "type": "string",
+      "minLength": 1
+    },
+    "published_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "event_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "event_time_precision": {
+      "enum": [
+        "instant",
+        "day",
+        "month",
+        "unknown"
+      ]
+    },
+    "retrieved_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "kind": {
+      "enum": [
+        "official_notice",
+        "original_reporting",
+        "research",
+        "expert_analysis",
+        "opinion"
+      ]
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "geography_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+      },
+      "uniqueItems": true
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+      },
+      "minItems": 1
+    },
+    "claim_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+      },
+      "uniqueItems": true
+    },
+    "upstream_story_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "language": {
+      "type": "string",
+      "minLength": 1
+    },
+    "translation_status": {
+      "enum": [
+        "original",
+        "human_reviewed",
+        "not_reviewed"
+      ]
+    },
+    "expires_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "verification_status": {
+      "enum": [
+        "attributed",
+        "corroborated",
+        "under_review",
+        "withdrawn"
+      ]
+    },
+    "public": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "id",
+    "title",
+    "canonical_url",
+    "publisher",
+    "published_at",
+    "event_at",
+    "event_time_precision",
+    "retrieved_at",
+    "kind",
+    "summary",
+    "geography_ids",
+    "evidence_ids",
+    "claim_ids",
+    "upstream_story_id",
+    "language",
+    "translation_status",
+    "expires_at",
+    "verification_status",
+    "public"
+  ]
+}

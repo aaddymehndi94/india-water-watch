@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "release_id": null,
+  "snapshot_sha256": null,
+  "checks": [],
+  "blocking_findings": [
+    "No website or verified production dataset exists yet."
+  ],
+  "sensitive_human_review_required": false,
+  "human_review_receipt": null
+}

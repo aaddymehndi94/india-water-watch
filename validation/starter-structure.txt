@@ -1,0 +1,2 @@
+PASS: starter structure, JSON, task graph and available TOML checks.
+NOT CHECKED: factual accuracy, full JSON Schema semantics, website implementation, publication readiness.

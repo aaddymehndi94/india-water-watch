@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "geography",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "kind": {
+      "enum": [
+        "country",
+        "state",
+        "ut",
+        "district",
+        "subdivision",
+        "basin",
+        "utility_service_area",
+        "city",
+        "station",
+        "reservoir",
+        "other"
+      ]
+    },
+    "authority_code": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "authority": {
+      "type": "string",
+      "minLength": 1
+    },
+    "boundary_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "valid_from": {
+      "type": "string",
+      "format": "date"
+    },
+    "valid_to": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "parent_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+      },
+      "uniqueItems": true
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "geometry_asset": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "geometry_rights": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+      },
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "kind",
+    "authority_code",
+    "authority",
+    "boundary_version",
+    "valid_from",
+    "valid_to",
+    "parent_ids",
+    "aliases",
+    "geometry_asset",
+    "geometry_rights",
+    "evidence_ids"
+  ]
+}

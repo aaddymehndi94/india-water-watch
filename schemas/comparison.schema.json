@@ -1,0 +1,161 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "comparison",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+    },
+    "left_observation_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+      },
+      "uniqueItems": true
+    },
+    "right_observation_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+      },
+      "uniqueItems": true
+    },
+    "purpose": {
+      "type": "string",
+      "minLength": 1
+    },
+    "checks": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "metric_definition": {
+          "enum": [
+            "match",
+            "harmonized",
+            "mismatch",
+            "unknown",
+            "not_applicable"
+          ]
+        },
+        "unit": {
+          "enum": [
+            "match",
+            "harmonized",
+            "mismatch",
+            "unknown",
+            "not_applicable"
+          ]
+        },
+        "geography": {
+          "enum": [
+            "match",
+            "harmonized",
+            "mismatch",
+            "unknown",
+            "not_applicable"
+          ]
+        },
+        "boundary": {
+          "enum": [
+            "match",
+            "harmonized",
+            "mismatch",
+            "unknown",
+            "not_applicable"
+          ]
+        },
+        "season_cutoff": {
+          "enum": [
+            "match",
+            "harmonized",
+            "mismatch",
+            "unknown",
+            "not_applicable"
+          ]
+        },
+        "baseline": {
+          "enum": [
+            "match",
+            "harmonized",
+            "mismatch",
+            "unknown",
+            "not_applicable"
+          ]
+        },
+        "cohort": {
+          "enum": [
+            "match",
+            "harmonized",
+            "mismatch",
+            "unknown",
+            "not_applicable"
+          ]
+        },
+        "population_basis": {
+          "enum": [
+            "match",
+            "harmonized",
+            "mismatch",
+            "unknown",
+            "not_applicable"
+          ]
+        }
+      },
+      "required": [
+        "metric_definition",
+        "unit",
+        "geography",
+        "boundary",
+        "season_cutoff",
+        "baseline",
+        "cohort",
+        "population_basis"
+      ]
+    },
+    "harmonization_method": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "status": {
+      "enum": [
+        "allowed",
+        "separate_context_only",
+        "blocked"
+      ]
+    },
+    "reasons": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "reviewer_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "public": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "id",
+    "left_observation_ids",
+    "right_observation_ids",
+    "purpose",
+    "checks",
+    "harmonization_method",
+    "status",
+    "reasons",
+    "reviewer_id",
+    "public"
+  ]
+}

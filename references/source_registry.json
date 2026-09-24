@@ -1,0 +1,580 @@
+[
+  {
+    "id": "imd_current",
+    "title": "IMD rainfall monitoring",
+    "publisher": "India Meteorological Department",
+    "entry_url": "https://mausam.imd.gov.in/responsive/rainfallinformation_msd.php",
+    "topics": [
+      "rainfall",
+      "districts",
+      "basins"
+    ],
+    "access_status": "landing_inspected",
+    "checked_on": "2026-09-24",
+    "access_notes": "Current rainfall navigation and observation period visible; underlying data files not audited in this starter.",
+    "expected_cadence": "daily",
+    "license_status": "not_reviewed",
+    "selected_data_endpoint": null,
+    "production_approved": false
+  },
+  {
+    "id": "imd_grid",
+    "title": "IMD historical gridded rainfall",
+    "publisher": "India Meteorological Department",
+    "entry_url": "https://www.imdpune.gov.in/cmpg/Griddata/Rainfall_25_NetCDF.html",
+    "topics": [
+      "history",
+      "rainfall"
+    ],
+    "access_status": "access_failed",
+    "checked_on": "2026-09-24",
+    "access_notes": "Request timed out; verify endpoint, coverage, rights and version at G1.",
+    "expected_cadence": "release_based",
+    "license_status": "not_reviewed",
+    "selected_data_endpoint": null,
+    "production_approved": false
+  },
+  {
+    "id": "iitm_history",
+    "title": "IITM historical rainfall series",
+    "publisher": "Indian Institute of Tropical Meteorology",
+    "entry_url": "https://www.tropmet.res.in/static_pages.php?page_id=52",
+    "topics": [
+      "history",
+      "rainfall"
+    ],
+    "access_status": "access_failed",
+    "checked_on": "2026-09-24",
+    "access_notes": "Not accessible through preparation browsing; no historical values verified.",
+    "expected_cadence": "release_based",
+    "license_status": "not_reviewed",
+    "selected_data_endpoint": null,
+    "production_approved": false
+  },
+  {
+    "id": "cwc_storage",
+    "title": "CWC reservoir bulletins",
+    "publisher": "Central Water Commission",
+    "entry_url": "https://cwc.gov.in/reservoir-storage-bulletin",
+    "topics": [
+      "storage",
+      "reservoirs"
+    ],
+    "access_status": "access_failed",
+    "checked_on": "2026-09-24",
+    "access_notes": "Bulletin path failed; root also denied access. Discover legitimate current/archived bulletins.",
+    "expected_cadence": "bulletin_based",
+    "license_status": "not_reviewed",
+    "selected_data_endpoint": null,
+    "production_approved": false
+  },
+  {
+    "id": "nwic_discharge",
+    "title": "NWIC CWC daily river discharge catalogue",
+    "publisher": "National Water Informatics Centre / CWC",
+    "entry_url": "https://nwdp.nwic.gov.in/dataset/river-discharge-manual-dailly-central-water-commission-cwc",
+    "topics": [
+      "rivers",
+      "history"
+    ],
+    "access_status": "catalogue_inspected",
+    "checked_on": "2026-09-24",
+    "access_notes": "Catalogue describes state/time-period datasets and CSV/API formats. Individual resources, live completeness and reuse rights not audited.",
+    "expected_cadence": "product_specific",
+    "license_status": "not_reviewed",
+    "selected_data_endpoint": null,
+    "production_approved": false
+  },
+  {
+    "id": "nwic_portal",
+    "title": "National Water Data Portal",
+    "publisher": "National Water Informatics Centre",
+    "entry_url": "https://nwdp.nwic.gov.in/",
+    "topics": [
+      "water",
+      "catalogue"
+    ],
+    "access_status": "access_failed",
+    "checked_on": "2026-09-24",
+    "access_notes": "Root timed out, though one dataset catalogue was inspectable. Do not mark all portal resources healthy.",
+    "expected_cadence": "product_specific",
+    "license_status": "not_reviewed",
+    "selected_data_endpoint": null,
+    "production_approved": false
+  },
+  {
+    "id": "india_wris",
+    "title": "India-WRIS",
+    "publisher": "National Water Informatics Centre",
+    "entry_url": "https://indiawris.gov.in/wris/",
+    "topics": [
+      "basins",
+      "storage",
+      "groundwater"
+    ],
+    "access_status": "access_failed",
+    "checked_on": "2026-09-24",
+    "access_notes": "Request timed out; catalogue and API coverage must be discovered.",
+    "expected_cadence": "product_specific",
+    "license_status": "not_reviewed",
+    "selected_data_endpoint": null,
+    "production_approved": false
+  },
+  {
+    "id": "cgwb",
+    "title": "CGWB observations and resource assessments",
+    "publisher": "Central Ground Water Board",
+    "entry_url": "https://cgwb.gov.in/",
+    "topics": [
+      "groundwater",
+      "extraction"
+    ],
+    "access_status": "access_failed",
+    "checked_on": "2026-09-24",
+    "access_notes": "Root and alternate landing access failed. Do not assume the assessment year or values.",
+    "expected_cadence": "release_based",
+    "license_status": "not_reviewed",
+    "selected_data_endpoint": null,
+    "production_approved": false
+  },
+  {
+    "id": "census",
+    "title": "Census counts and demographic publications",
+    "publisher": "Census of India",
+    "entry_url": "https://censusindia.gov.in/census.website/",
+    "topics": [
+      "population",
+      "geography"
+    ],
+    "access_status": "access_failed",
+    "checked_on": "2026-09-24",
+    "access_notes": "Root returned gateway failure. Latest completed release and projection series must be checked.",
+    "expected_cadence": "release_based",
+    "license_status": "not_reviewed",
+    "selected_data_endpoint": null,
+    "production_approved": false
+  },
+  {
+    "id": "lgd",
+    "title": "Local Government Directory",
+    "publisher": "Government of India, Ministry of Panchayati Raj",
+    "entry_url": "https://lgdirectory.gov.in/",
+    "topics": [
+      "geography",
+      "codes"
+    ],
+    "access_status": "landing_inspected",
+    "checked_on": "2026-09-24",
+    "access_notes": "Directory functions and current administrative inventory visible. Download exact versioned codes; no shape licence inferred.",
+    "expected_cadence": "change_based",
+    "license_status": "not_reviewed",
+    "selected_data_endpoint": null,
+    "production_approved": false
+  },
+  {
+    "id": "ndma",
+    "title": "Drought guidance",
+    "publisher": "National Disaster Management Authority",
+    "entry_url": "https://ndma.gov.in/Natural-Hazards/Droughts",
+    "topics": [
+      "response",
+      "guidance"
+    ],
+    "access_status": "access_failed",
+    "checked_on": "2026-09-24",
+    "access_notes": "Requested page failed. Discover currently operative manuals/orders from competent sources.",
+    "expected_cadence": "change_based",
+    "license_status": "not_reviewed",
+    "selected_data_endpoint": null,
+    "production_approved": false
+  },
+  {
+    "id": "des_agri",
+    "title": "Agriculture statistics",
+    "publisher": "Directorate of Economics and Statistics, agriculture",
+    "entry_url": "https://desagri.gov.in/",
+    "topics": [
+      "crops",
+      "irrigation"
+    ],
+    "access_status": "access_failed",
+    "checked_on": "2026-09-24",
+    "access_notes": "Landing failed in preparation; specific tables still need discovery.",
+    "expected_cadence": "product_specific",
+    "license_status": "not_reviewed",
+    "selected_data_endpoint": null,
+    "production_approved": false
+  },
+  {
+    "id": "mohfw_population",
+    "title": "Official population projections",
+    "publisher": "Ministry of Health and Family Welfare",
+    "entry_url": "https://mohfw.gov.in/",
+    "topics": [
+      "population"
+    ],
+    "access_status": "lead_only",
+    "checked_on": null,
+    "access_notes": "Proposed discovery source; inspect exact projection report, column years and reference dates.",
+    "expected_cadence": "release_based",
+    "license_status": "not_reviewed",
+    "selected_data_endpoint": null,
+    "production_approved": false
+  },
+  {
+    "id": "mospi",
+    "title": "Official statistics and national accounts",
+    "publisher": "Ministry of Statistics and Programme Implementation",
+    "entry_url": "https://mospi.gov.in/",
+    "topics": [
+      "economy",
+      "prices"
+    ],
+    "access_status": "lead_only",
+    "checked_on": null,
+    "access_notes": "Discover exact current series, base years, releases and revisions.",
+    "expected_cadence": "product_specific",
+    "license_status": "not_reviewed",
+    "selected_data_endpoint": null,
+    "production_approved": false
+  },
+  {
+    "id": "rbi",
+    "title": "RBI bulletins and economic data",
+    "publisher": "Reserve Bank of India",
+    "entry_url": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx",
+    "topics": [
+      "economy"
+    ],
+    "access_status": "discovery_only",
+    "checked_on": "2026-09-24",
+    "access_notes": "Bulletin index surfaced; no economic claim or quantitative water-impact estimate audited.",
+    "expected_cadence": "release_based",
+    "license_status": "not_reviewed",
+    "selected_data_endpoint": null,
+    "production_approved": false
+  },
+  {
+    "id": "agmarknet",
+    "title": "Agricultural market prices",
+    "publisher": "AGMARKNET",
+    "entry_url": "https://agmarknet.gov.in/",
+    "topics": [
+      "crops",
+      "prices"
+    ],
+    "access_status": "lead_only",
+    "checked_on": null,
+    "access_notes": "Verify current official access, fields, market coverage and commodity definitions.",
+    "expected_cadence": "product_specific",
+    "license_status": "not_reviewed",
+    "selected_data_endpoint": null,
+    "production_approved": false
+  },
+  {
+    "id": "consumer_prices",
+    "title": "Consumer Affairs price monitoring",
+    "publisher": "Department of Consumer Affairs",
+    "entry_url": "https://consumeraffairs.gov.in/",
+    "topics": [
+      "prices"
+    ],
+    "access_status": "lead_only",
+    "checked_on": null,
+    "access_notes": "Find dated original retail/wholesale series and their locations/units.",
+    "expected_cadence": "product_specific",
+    "license_status": "not_reviewed",
+    "selected_data_endpoint": null,
+    "production_approved": false
+  },
+  {
+    "id": "cea",
+    "title": "Power-sector reporting",
+    "publisher": "Central Electricity Authority",
+    "entry_url": "https://cea.nic.in/",
+    "topics": [
+      "power",
+      "economy"
+    ],
+    "access_status": "lead_only",
+    "checked_on": null,
+    "access_notes": "Look for actual water-related generation/cooling evidence; do not infer causes from total output.",
+    "expected_cadence": "product_specific",
+    "license_status": "not_reviewed",
+    "selected_data_endpoint": null,
+    "production_approved": false
+  },
+  {
+    "id": "jal_shakti",
+    "title": "Water ministry documents",
+    "publisher": "Department of Water Resources, River Development and Ganga Rejuvenation",
+    "entry_url": "https://jalshakti-dowr.gov.in/",
+    "topics": [
+      "response",
+      "water"
+    ],
+    "access_status": "lead_only",
+    "checked_on": null,
+    "access_notes": "Locate dated original reports/orders; verify active title and jurisdiction.",
+    "expected_cadence": "change_based",
+    "license_status": "not_reviewed",
+    "selected_data_endpoint": null,
+    "production_approved": false
+  },
+  {
+    "id": "jjm",
+    "title": "Rural drinking-water reporting",
+    "publisher": "Jal Jeevan Mission",
+    "entry_url": "https://jaljeevanmission.gov.in/",
+    "topics": [
+      "access",
+      "delivery"
+    ],
+    "access_status": "lead_only",
+    "checked_on": null,
+    "access_notes": "Check metric definitions; connections are not the same as reliable potable supply.",
+    "expected_cadence": "product_specific",
+    "license_status": "not_reviewed",
+    "selected_data_endpoint": null,
+    "production_approved": false
+  },
+  {
+    "id": "pib",
+    "title": "Official government announcements",
+    "publisher": "Press Information Bureau",
+    "entry_url": "https://pib.gov.in/",
+    "topics": [
+      "response",
+      "announcements"
+    ],
+    "access_status": "lead_only",
+    "checked_on": null,
+    "access_notes": "Evidence of announcements; implementation requires separate support.",
+    "expected_cadence": "event_based",
+    "license_status": "not_reviewed",
+    "selected_data_endpoint": null,
+    "production_approved": false
+  },
+  {
+    "id": "survey_india",
+    "title": "Official map/boundary discovery",
+    "publisher": "Survey of India",
+    "entry_url": "https://surveyofindia.gov.in/",
+    "topics": [
+      "geography",
+      "maps"
+    ],
+    "access_status": "lead_only",
+    "checked_on": null,
+    "access_notes": "Verify licensed boundary products and applicable publication guidance; do not assume all GIS files may be republished.",
+    "expected_cadence": "change_based",
+    "license_status": "not_reviewed",
+    "selected_data_endpoint": null,
+    "production_approved": false
+  },
+  {
+    "id": "data_gov",
+    "title": "Open government dataset catalogue",
+    "publisher": "Open Government Data Platform India",
+    "entry_url": "https://data.gov.in/",
+    "topics": [
+      "catalogue",
+      "rights"
+    ],
+    "access_status": "lead_only",
+    "checked_on": null,
+    "access_notes": "Check each dataset licence and upstream source; catalogue presence is not a blanket licence.",
+    "expected_cadence": "product_specific",
+    "license_status": "not_reviewed",
+    "selected_data_endpoint": null,
+    "production_approved": false
+  },
+  {
+    "id": "imd_outlook",
+    "title": "IMD forecasts and monsoon bulletins",
+    "publisher": "India Meteorological Department",
+    "entry_url": "https://mausam.imd.gov.in/",
+    "topics": [
+      "forecast",
+      "rainfall"
+    ],
+    "access_status": "landing_inspected",
+    "checked_on": "2026-09-24",
+    "access_notes": "Current bulletin links visible; forecasts must be read individually with issue and validity dates.",
+    "expected_cadence": "bulletin_based",
+    "license_status": "not_reviewed",
+    "selected_data_endpoint": null,
+    "production_approved": false
+  },
+  {
+    "id": "noaa_cpc",
+    "title": "ENSO monitoring and outlooks",
+    "publisher": "NOAA Climate Prediction Center",
+    "entry_url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/",
+    "topics": [
+      "climate",
+      "forecast"
+    ],
+    "access_status": "lead_only",
+    "checked_on": null,
+    "access_notes": "Confirm current original product; no direct local-event attribution from index alone.",
+    "expected_cadence": "bulletin_based",
+    "license_status": "not_reviewed",
+    "selected_data_endpoint": null,
+    "production_approved": false
+  },
+  {
+    "id": "wmo",
+    "title": "Climate and warning context",
+    "publisher": "World Meteorological Organization",
+    "entry_url": "https://wmo.int/",
+    "topics": [
+      "climate",
+      "forecast"
+    ],
+    "access_status": "lead_only",
+    "checked_on": null,
+    "access_notes": "Use original dated products; distinguish global outlook from India/local forecasts.",
+    "expected_cadence": "release_based",
+    "license_status": "not_reviewed",
+    "selected_data_endpoint": null,
+    "production_approved": false
+  },
+  {
+    "id": "who_water",
+    "title": "Drinking-water public-health guidance",
+    "publisher": "World Health Organization",
+    "entry_url": "https://www.who.int/health-topics/drinking-water",
+    "topics": [
+      "health",
+      "quality"
+    ],
+    "access_status": "lead_only",
+    "checked_on": null,
+    "access_notes": "Find competent guidance and local authority advice; no clinical advice or inferred potability.",
+    "expected_cadence": "change_based",
+    "license_status": "not_reviewed",
+    "selected_data_endpoint": null,
+    "production_approved": false
+  },
+  {
+    "id": "icmr",
+    "title": "Indian public-health research",
+    "publisher": "Indian Council of Medical Research",
+    "entry_url": "https://www.icmr.gov.in/",
+    "topics": [
+      "health"
+    ],
+    "access_status": "lead_only",
+    "checked_on": null,
+    "access_notes": "Discover original applicable evidence; avoid implying current outbreaks without surveillance data.",
+    "expected_cadence": "release_based",
+    "license_status": "not_reviewed",
+    "selected_data_endpoint": null,
+    "production_approved": false
+  },
+  {
+    "id": "icar",
+    "title": "Agricultural research and advisories",
+    "publisher": "Indian Council of Agricultural Research",
+    "entry_url": "https://icar.gov.in/",
+    "topics": [
+      "agriculture",
+      "adaptation"
+    ],
+    "access_status": "lead_only",
+    "checked_on": null,
+    "access_notes": "Find location/crop/season-specific guidance and evidence; verify date.",
+    "expected_cadence": "product_specific",
+    "license_status": "not_reviewed",
+    "selected_data_endpoint": null,
+    "production_approved": false
+  },
+  {
+    "id": "bwssb",
+    "title": "Bengaluru water-service discovery",
+    "publisher": "Bangalore Water Supply and Sewerage Board",
+    "entry_url": "https://bwssb.karnataka.gov.in/",
+    "topics": [
+      "local",
+      "supply"
+    ],
+    "access_status": "lead_only",
+    "checked_on": null,
+    "access_notes": "Pilot utility source, not nationwide coverage; verify current service areas and public notices.",
+    "expected_cadence": "event_based",
+    "license_status": "not_reviewed",
+    "selected_data_endpoint": null,
+    "production_approved": false
+  },
+  {
+    "id": "chennai_water",
+    "title": "Chennai water-service discovery",
+    "publisher": "Chennai Metropolitan Water Supply and Sewerage Board",
+    "entry_url": "https://cmwssb.tn.gov.in/",
+    "topics": [
+      "local",
+      "supply"
+    ],
+    "access_status": "lead_only",
+    "checked_on": null,
+    "access_notes": "Verify current official site, local storage/supply definitions and notice dates.",
+    "expected_cadence": "product_specific",
+    "license_status": "not_reviewed",
+    "selected_data_endpoint": null,
+    "production_approved": false
+  },
+  {
+    "id": "state_sdmas",
+    "title": "State and district response documents",
+    "publisher": "Respective state/district authorities",
+    "entry_url": null,
+    "topics": [
+      "local",
+      "response"
+    ],
+    "access_status": "lead_only",
+    "checked_on": null,
+    "access_notes": "Discover each official department from an authoritative state portal; no fabricated universal endpoint.",
+    "expected_cadence": "event_based",
+    "license_status": "not_reviewed",
+    "selected_data_endpoint": null,
+    "production_approved": false
+  },
+  {
+    "id": "original_reporting",
+    "title": "Original national and regional-language reporting",
+    "publisher": "Multiple independent publishers",
+    "entry_url": null,
+    "topics": [
+      "news",
+      "voices",
+      "inequality"
+    ],
+    "access_status": "lead_only",
+    "checked_on": null,
+    "access_notes": "Discover original reporting and event dates; preserve rights and avoid syndicated duplicate counting.",
+    "expected_cadence": "event_based",
+    "license_status": "not_reviewed",
+    "selected_data_endpoint": null,
+    "production_approved": false
+  },
+  {
+    "id": "original_research",
+    "title": "Primary hydrology and social/economic studies",
+    "publisher": "Research authors and institutions",
+    "entry_url": null,
+    "topics": [
+      "methods",
+      "impacts",
+      "history"
+    ],
+    "access_status": "lead_only",
+    "checked_on": null,
+    "access_notes": "Locate original papers/data, methods and applicable geography; no preselected crisis conclusion.",
+    "expected_cadence": "release_based",
+    "license_status": "not_reviewed",
+    "selected_data_endpoint": null,
+    "production_approved": false
+  }
+]

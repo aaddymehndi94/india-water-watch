@@ -1,0 +1,19 @@
+{
+  "name": "India Water Watch",
+  "name_status": "working_title",
+  "repo_slug": "india-water-watch",
+  "scope": "India-wide water conditions and public-interest journalism",
+  "primary_language": "en",
+  "future_locales": [
+    "hi",
+    "regional languages after reviewed translation"
+  ],
+  "timezone": "Asia/Kolkata",
+  "architecture": "Astro static + React islands + TypeScript + Tailwind",
+  "host_default": "GitHub Pages",
+  "max_active_workers": 6,
+  "max_heavy_tasks": 2,
+  "recursive_delegation": false,
+  "requires_runtime_backend": false,
+  "public_data_seeded": false
+}

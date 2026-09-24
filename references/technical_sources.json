@@ -1,0 +1,92 @@
+[
+  {
+    "id": "codex_subagents",
+    "url": "https://developers.openai.com/codex/multi-agent/",
+    "checked_on": "2026-09-24",
+    "inspection_note": "Opened; redirected to official ChatGPT Learn subagents documentation. Standalone role files and concurrency field inspected."
+  },
+  {
+    "id": "codex_config",
+    "url": "https://developers.openai.com/codex/config-reference/",
+    "checked_on": "2026-09-24",
+    "inspection_note": "Opened; redirected to official configuration reference. Local CLI compatibility still requires preflight."
+  },
+  {
+    "id": "astro_islands",
+    "url": "https://docs.astro.build/en/concepts/islands/",
+    "checked_on": "2026-09-24",
+    "inspection_note": "Opened; static HTML plus selectively hydrated interaction described."
+  },
+  {
+    "id": "astro_pages",
+    "url": "https://docs.astro.build/en/guides/deploy/github/",
+    "checked_on": "2026-09-24",
+    "inspection_note": "Opened; static GitHub deployment and base-path requirements inspected. Resolve current action versions at build time."
+  },
+  {
+    "id": "tailwind_astro",
+    "url": "https://tailwindcss.com/docs/installation/framework-guides/astro",
+    "checked_on": "2026-09-24",
+    "inspection_note": "Opened; use currently documented Astro integration."
+  },
+  {
+    "id": "github_pages_limits",
+    "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits",
+    "checked_on": "2026-09-24",
+    "inspection_note": "Opened; free public-repository support, site and bandwidth limits inspected."
+  },
+  {
+    "id": "github_schedule",
+    "url": "https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule",
+    "checked_on": "2026-09-24",
+    "inspection_note": "Opened; scheduling reference available. Recheck exact operational constraints before enabling schedules."
+  },
+  {
+    "id": "cloudflare_upload",
+    "url": "https://developers.cloudflare.com/pages/get-started/direct-upload/",
+    "checked_on": "2026-09-24",
+    "inspection_note": "Opened; upload methods and file/asset limits inspected."
+  },
+  {
+    "id": "aws_cloudfront",
+    "url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/GettingStarted.SimpleDistribution.html",
+    "checked_on": "2026-09-24",
+    "inspection_note": "Opened; origin/distribution setup documentation."
+  },
+  {
+    "id": "observable_plot",
+    "url": "https://observablehq.com/plot/",
+    "checked_on": "2026-09-24",
+    "inspection_note": "Opened; chart library documentation, not a requirement to use hosted Observable."
+  },
+  {
+    "id": "d3_geo",
+    "url": "https://d3js.org/d3-geo",
+    "checked_on": "2026-09-24",
+    "inspection_note": "Opened; projections/geometry and winding-order caveats."
+  },
+  {
+    "id": "pagefind",
+    "url": "https://pagefind.app/",
+    "checked_on": "2026-09-24",
+    "inspection_note": "Opened; static search reference."
+  },
+  {
+    "id": "json_schema",
+    "url": "https://json-schema.org/draft/2020-12",
+    "checked_on": "2026-09-24",
+    "inspection_note": "Opened; canonical schema specification."
+  },
+  {
+    "id": "wcag",
+    "url": "https://www.w3.org/TR/WCAG22/",
+    "checked_on": "2026-09-24",
+    "inspection_note": "Opened; accessibility target reference."
+  },
+  {
+    "id": "playwright_a11y",
+    "url": "https://playwright.dev/docs/test-accessibility",
+    "checked_on": "2026-09-24",
+    "inspection_note": "Fetch failed during preparation. Verify legitimate current documentation during implementation."
+  }
+]

@@ -1,0 +1,9 @@
+BLOCK: No public observations and reviewed claims; an empty starter is not a publication
+BLOCK: dist/index.html is missing
+BLOCK: Built dist/release.json manifest missing/invalid
+BLOCK: Review is not tied to the built release/snapshot
+BLOCK: Unresolved blocking review findings
+BLOCK: Missing evidenced review checks: accessibility, claims, comparability, data, editorial, hosting, rights, security, visual
+BLOCK: No explicit destination/publication authorization
+BLOCK: Authorization is not tied to this release manifest hash
+NOT READY. Fix or withhold; do not fabricate approvals or test evidence.

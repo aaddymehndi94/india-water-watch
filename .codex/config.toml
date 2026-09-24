@@ -1,0 +1,6 @@
+# Checked against official subagent documentation on 2026-09-24.
+# Preflight must verify compatibility with the installed Codex CLI.
+# No model, permissions, global settings or credentials are overridden.
+[agents]
+enabled = true
+max_concurrent_threads_per_session = 6

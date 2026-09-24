@@ -1,0 +1,5 @@
+Prepare to publish the exact reviewed India Water Watch release I identify in this session. Read the release report, authorization policy and docs/11-HOSTING_AND_RELEASE.md. Confirm the selected release hash and hosting destination are explicitly authorized. If not, finish local packaging and ask only for the missing authorization.
+
+Run full verification and release-gate checks without changing content after approval. Build and test the correct base path for the selected host. Test direct deep links, refresh, static assets, search, downloads, sources, canonical URLs, robots/sitemap, freshness labels and missing-data states. Verify that no private files, unlicensed source documents, fixtures or secrets are included.
+
+Deploy only using the approved connected account/credentials. Record the actual deployment ID, release hash and URL. Smoke-test that URL and preserve a rollback package. Report any hosting limit/cost, including asset-count limits for drag-and-drop. Never replace an already approved release with unreviewed changes or invent a successful URL.

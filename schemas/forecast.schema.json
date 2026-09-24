@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "forecast",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+    },
+    "provider": {
+      "type": "string",
+      "minLength": 1
+    },
+    "issued_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "valid_from": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "valid_to": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "geography_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+      },
+      "uniqueItems": true
+    },
+    "variable": {
+      "type": "string",
+      "minLength": 1
+    },
+    "unit": {
+      "type": "string",
+      "minLength": 1
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "probabilities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "category": {
+            "type": "string",
+            "minLength": 1
+          },
+          "probability": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          }
+        },
+        "required": [
+          "category",
+          "probability"
+        ]
+      }
+    },
+    "probability_partition_complete": {
+      "type": "boolean"
+    },
+    "provider_method": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "skill_note": {
+      "type": "string",
+      "minLength": 1
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+      },
+      "minItems": 1
+    },
+    "claim_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+      },
+      "uniqueItems": true
+    },
+    "public": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "id",
+    "provider",
+    "issued_at",
+    "valid_from",
+    "valid_to",
+    "geography_ids",
+    "variable",
+    "unit",
+    "description",
+    "probabilities",
+    "probability_partition_complete",
+    "provider_method",
+    "skill_note",
+    "limitations",
+    "evidence_ids",
+    "claim_ids",
+    "public"
+  ]
+}

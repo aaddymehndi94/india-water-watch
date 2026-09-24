@@ -1,0 +1,142 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "evidence",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+    },
+    "source_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "publisher": {
+      "type": "string",
+      "minLength": 1
+    },
+    "published_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "retrieved_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "observation_period": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "start": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "end": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "timezone": {
+              "type": "string",
+              "minLength": 1
+            },
+            "kind": {
+              "enum": [
+                "day",
+                "week",
+                "month",
+                "season_to_date",
+                "completed_season",
+                "year",
+                "instant",
+                "other"
+              ]
+            },
+            "cutoff_convention": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "start",
+            "end",
+            "timezone",
+            "kind",
+            "cutoff_convention"
+          ]
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "locator": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "local_snapshot_path": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "rights_status": {
+      "enum": [
+        "metadata_only",
+        "permitted_excerpt",
+        "open_licensed",
+        "permission_granted",
+        "not_reviewed"
+      ]
+    },
+    "source_inspected": {
+      "type": "boolean"
+    },
+    "upstream_evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+      },
+      "uniqueItems": true
+    },
+    "access_notes": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "id",
+    "source_id",
+    "url",
+    "title",
+    "publisher",
+    "published_at",
+    "retrieved_at",
+    "observation_period",
+    "locator",
+    "sha256",
+    "local_snapshot_path",
+    "rights_status",
+    "source_inspected",
+    "upstream_evidence_ids",
+    "access_notes"
+  ]
+}
