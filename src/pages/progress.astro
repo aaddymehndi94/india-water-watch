@@ -28,6 +28,7 @@ const latestRainfallDate = release.observations.filter(row => row.metricId.inclu
   <PageHeader title="Build progress" eyebrow="Project log" description="The recorded work behind this publication. This page is captured when the site is built; it is not a live water data feed." />
   <section class="section">
     <div class="shell">
+      <h2>Current publication snapshot</h2>
       <div class="grid-3">
         <div class="empty-panel"><p class="eyebrow">Current revision</p><h3>{pretty(state.phase)}</h3><p>{state.current_gate} · {state.software_ready ? 'Software candidate ready' : 'Implementation and review in progress'}</p></div>
         <div class="empty-panel"><p class="eyebrow">Editorial review</p><h3>{state.editorially_ready ? 'Complete for this revision' : 'In progress'}</h3><p>Only individually approved claims appear in the public data release.</p></div>

@@ -1,0 +1,35 @@
+# G15 independent quality review
+
+**Reviewed snapshot:** frozen G15 source built locally on 24 September 2026 into `/tmp/iww-g15-root` and `/tmp/iww-g15-prefix`, served at `http://127.0.0.1:4177/` and `http://127.0.0.1:4178/india-water-watch/`. The site itself labels its build at 16:45 IST. **Reviewer:** `g13b_quality_review` Codex agent, separate from the G15 page and scene authors. This is agent review, not human editorial, legal, accessibility or source approval.
+
+## Verdict
+
+**Passed for the tested local G15 candidate.** No remaining material visual, navigation, interaction, automated accessibility, public-output or route failure was found in the reviewed root and project-prefix builds. The final G15 source/methodology review and the lead's release manifest remain separate evidence.
+
+## Defects found and resolved
+
+1. On the initial G15 build, `/data-status/` jumped from H1 to H3 for the first three coverage cards. Axe reported a moderate `heading-order` violation in both themes at 360 and 1440 pixels. The lead changed those card values to styled paragraphs. The final axe matrix has zero violations.
+2. The first RainDeficitScene placed its mobile `Recorded` column label over the `723.6 mm · recorded` guide at 360 and 390 pixels. I verified intersecting browser bounding boxes and sent them to the lead. The visual owner moved the label. The final bounding-box audit finds **no intersection in eight cases**: root and prefix, 360/390 pixels, dark/light. The actual 390-pixel screenshot is legible.
+3. An early automated homepage screenshot captured the symbolic image before image decode and appeared blank. I confirmed the image loaded with its expected intrinsic dimensions, waited for `HTMLImageElement.decode()` in the review harness, and inspected the final mobile screenshot. This was a screenshot-timing artifact, not a site defect.
+
+## Tests actually run
+
+| Area | Result | Evidence |
+| --- | --- | --- |
+| Root production-build journeys | **147/147 checks passed.** Home, response, impacts, data status and Explore at 360, 390, 768 and 1440 pixels in dark and light. Each returned HTTP 200, had one H1 and had no page-level horizontal overflow. Zero browser page errors, failed requests or external runtime requests. | `artifacts/qa/g15_independent/root-release-report.json`, `review.cjs`; final screenshots in the same directory |
+| Prefix production-build journeys | **147/147 checks passed.** Same route/width/theme matrix under `/india-water-watch/`, with zero page errors, failed requests or external runtime requests. | `artifacts/qa/g15_independent/prefix-release-report.json` and screenshots |
+| Automated accessibility | Axe A/AA, WCAG 2.1/2.2 AA and best-practice scan: **zero violations in 20 cases per profile** (five routes × 360/1440 pixels × dark/light). Mobile chart label audit: 8/8 non-overlapping. | Browser reports; `final-label-collision.json` |
+| New rainfall scene | Rendered IMD period **1 June–24 September 2026**, **723.6 mm** observed versus **843.2 mm** normal, **119.6 mm** gap and **−14.2%**. Mode click and keyboard Enter changed `aria-pressed` and explanation; plot accessible name includes both denominator and gap. The dated local source link resolved. Reduced-motion mode removed the animated fill transition. Without JavaScript, the period, totals and source remained readable and controls were disabled. | Browser reports; `root-release-rain-390.png` and `prefix-release-rain-390.png` |
+| New voices scene | Three dated source-linked reported voices rendered. Click changed panel and `?voice=flood`; browser Back restored the prior voice; ArrowRight, End and Home moved focus/selection. The visible note says these are published reports, not India Water Watch interviews. No-JS showed all three accounts with disabled controls. Original news photos/logos were not reproduced. | Browser reports; `root-release-voices-390.png` and prefix equivalent |
+| Response, impacts and coverage | Response hero separated **177 gazetted taluks** from **₹1,852.65 crore requested** and said later money/reach were not verified; CTA reached the six-stage flow. No-JS retained all six stage panels. Data Status gave 722/761 current numeric rows, 8 older numeric rows and 31 No Data, with an explicit refusal to publish these as approved district observations. Impacts stated a rainfall deficit is not a crop-loss estimate; the food-price panel did not claim rainfall causation. | Browser reports; response, impacts and data-status screenshots at 360/390/768/1440 in both themes |
+| Search, deep links and downloads | Root and prefix direct loads for Karnataka, history, outlook, the 24 September IMD source, search and observations CSV returned 200; Pagefind returned **79** rainfall matches; a nonexistent route returned a real 404. This smoke ran after the heading fix and before the final CSS-only label/color adjustment. | Local Playwright probe output from this review; final static link audit below |
+| Static output and security | Final root/prefix each contain **352 files, 155 HTML pages** and **3,600,146 / 3,683,612 bytes** respectively. Traversal found **zero broken local links, zero wrong-prefix links, zero suspicious output filenames and zero unsafe `_blank` links**. Regex scans found no user email, obvious tokens, private-key marker or named API token. The largest asset is the 406,701-byte licensed Nashik JPEG. | `artifacts/qa/g15_independent/static-audit-release.json`; terminal scan results |
+| Photo attribution | The existing Nashik JPEG hash matches the prior G14 rights audit (`55a9bd2503d8e38691d9e16ff3d09e5ec1fd81576482ce49f94c8fe58b411457` in both profiles). The response HTML retains 24 July 2026, Rohit R Nashik, CC BY-SA 4.0 and a bundled license sidecar. | Final built response HTML and local asset hash; `reporting/g14_image_rights.md` is the separate rights chain |
+
+## Visual inspection
+
+I inspected actual built screenshots for mobile, tablet and desktop in both themes, including final first-screen home image, the full mobile rainfall chart, the three-voice panel, response hero, impacts and Data Status. The new scenes now present figures, units, dates, attribution and caveats clearly at 360 and 390 pixels. The symbolic home art is visible behind mobile copy after image decode and retains a visible illustration label. The response hero's request figure reads as a requested stage, not a delivered outcome. The coverage display describes source-page row status, not district water conditions.
+
+## Limits and next action
+
+Automated axe checks do not establish full WCAG conformance. I did not run a screen reader, literal 200% browser zoom, throttled mobile performance or an external production-host smoke. I did not independently recompute the underlying source figures or approve the quotations as a human editor; the separate G15 source reviewer owns that chain. External publisher links were not revalidated in this QA pass. If public code or approved data changes after this build, rerun affected checks and bind this memo to the actual release hashes. The lead may proceed with release integration and hosted smoke on the reviewed snapshot.

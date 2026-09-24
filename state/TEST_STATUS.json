@@ -193,5 +193,50 @@
     "label": "G14 GitHub Pages live deployment and browser smoke",
     "status": "passed: Actions 35988484343 build/deploy success, 131/131 Chrome journeys, five content/assets routes and image hash verified",
     "at": "2026-09-24T10:41:56Z"
+  },
+  {
+    "label": "G15 approved-data validation and Python unit tests (80)",
+    "status": "passed",
+    "at": "2026-09-24T11:18:18Z"
+  },
+  {
+    "label": "G15 Astro strict check",
+    "status": "passed: 48 files, zero diagnostics",
+    "at": "2026-09-24T11:18:18Z"
+  },
+  {
+    "label": "G15 independent source, arithmetic, district, quote and rights review",
+    "status": "passed for five new claims and rendered copy; agent review with stated holds",
+    "at": "2026-09-24T11:09:03Z"
+  },
+  {
+    "label": "G15 root and GitHub-prefix general browser journeys",
+    "status": "passed: 131/131 per profile after Pagefind indexing; no external runtime requests",
+    "at": "2026-09-24T11:09:00Z"
+  },
+  {
+    "label": "G15 interactive scene and no-JavaScript controls",
+    "status": "passed: 32/32 root/prefix focused checks",
+    "at": "2026-09-24T11:09:00Z"
+  },
+  {
+    "label": "G15 independent frozen root and prefix visual/accessibility/security review",
+    "status": "passed: 147/147 browser and 20/20 axe per profile; 8/8 mobile chart labels; 352-file static audit",
+    "at": "2026-09-24T11:19:05Z"
+  },
+  {
+    "label": "G15 root, compact and GitHub-prefix static builds",
+    "status": "passed: 155 HTML pages, Pagefind indexed 155 and 352-file manifests per profile",
+    "at": "2026-09-24T11:20:53Z"
+  },
+  {
+    "label": "G15 final root and prefix general browser journeys",
+    "status": "passed: 131/131 per profile, zero external runtime requests",
+    "at": "2026-09-24T11:22:35+00:00"
+  },
+  {
+    "label": "G15 structural release gate",
+    "status": "passed for candidate-20260924-febfcaa884ce",
+    "at": "2026-09-24T11:22:35+00:00"
   }
 ]

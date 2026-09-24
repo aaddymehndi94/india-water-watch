@@ -958,5 +958,93 @@
     "license_status": "CC_BY_SA_4_0",
     "selected_data_endpoint": "https://commons.wikimedia.org/wiki/File:Nashik_Rains_Godavari_Floods_Ramkund_Panchavati_24_July_2026_Images_4.jpg",
     "production_approved": true
+  },
+  {
+    "id": "tnie_reddy_telangana_20260916",
+    "title": "The New Indian Express 16 September Telangana farmer report",
+    "publisher": "The New Indian Express",
+    "entry_url": "https://www.newindianexpress.com/amp/story/states/telangana/2026/Sep/16/rain-deficit-dries-up-telanganas-farmer-hopes",
+    "topics": [
+      "press",
+      "farmer-voice"
+    ],
+    "access_status": "source_inspected",
+    "checked_on": "2026-09-24",
+    "access_notes": "Original reporting by G Ram Mohan; brief attributed excerpt only. No village/district assigned to P Narsi Reddy; no article image/logo/screenshots reused.",
+    "expected_cadence": "event_based",
+    "license_status": "factual_excerpt_only",
+    "selected_data_endpoint": "https://www.newindianexpress.com/amp/story/states/telangana/2026/Sep/16/rain-deficit-dries-up-telanganas-farmer-hopes",
+    "production_approved": true
+  },
+  {
+    "id": "mongabay_geeta_bihar_20260918",
+    "title": "Mongabay India 18 September Bihar flood field report",
+    "publisher": "Mongabay India",
+    "entry_url": "https://india.mongabay.com/2026/09/floods-affect-millions-despite-rainfall-deficit/",
+    "topics": [
+      "press",
+      "flood",
+      "resident-voice"
+    ],
+    "access_status": "source_inspected",
+    "checked_on": "2026-09-24",
+    "access_notes": "Original reporting by Ashwini Kumar Shukla; local quoted account, not statewide loss or aid outcome. Brief excerpt only; no article image/screenshots reused.",
+    "expected_cadence": "event_based",
+    "license_status": "factual_excerpt_only",
+    "selected_data_endpoint": "https://india.mongabay.com/2026/09/floods-affect-millions-despite-rainfall-deficit/",
+    "production_approved": true
+  },
+  {
+    "id": "indianexpress_fadnavis_20260924",
+    "title": "The Indian Express report on Maharashtra chief minister drought-relief pledge",
+    "publisher": "The Indian Express",
+    "entry_url": "https://indianexpress.com/article/cities/pune/maharashtra-drought-fadnavis-latur-farmer-relief-10890580/",
+    "topics": [
+      "press",
+      "political-statement",
+      "response"
+    ],
+    "access_status": "source_inspected",
+    "checked_on": "2026-09-24",
+    "access_notes": "Original reported 23 September remarks, article updated 24 September. Pledge only; no government resolution/payment verified. No article image/screenshots reused.",
+    "expected_cadence": "event_based",
+    "license_status": "factual_excerpt_only",
+    "selected_data_endpoint": "https://indianexpress.com/article/cities/pune/maharashtra-drought-fadnavis-latur-farmer-relief-10890580/",
+    "production_approved": true
+  },
+  {
+    "id": "imd_district_cumulative_page_20260924",
+    "title": "IMD cumulative district rainfall page row-date audit",
+    "publisher": "India Meteorological Department",
+    "entry_url": "https://mausam.imd.gov.in/responsive/rainfallinformation.php?msg=C",
+    "topics": [
+      "rainfall",
+      "district",
+      "method"
+    ],
+    "access_status": "source_inspected",
+    "checked_on": "2026-09-24",
+    "access_notes": "Source-native map area rows have mixed dates and No Data; parsed counts are a publication QA finding, not a district rainfall layer or geometry licence.",
+    "expected_cadence": "periodic",
+    "license_status": "factual_excerpt_only",
+    "selected_data_endpoint": "https://mausam.imd.gov.in/responsive/rainfallinformation.php?msg=C",
+    "production_approved": true
+  },
+  {
+    "id": "mospi_cfpi_august_2026",
+    "title": "MoSPI August 2026 CPI/CFPI release",
+    "publisher": "Ministry of Statistics and Programme Implementation / Press Information Bureau",
+    "entry_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2310058&lang=1&reg=1",
+    "topics": [
+      "economy",
+      "price-index"
+    ],
+    "access_status": "source_inspected",
+    "checked_on": "2026-09-24",
+    "access_notes": "Official provisional August 2026 food-price index with base 2024=100. No rainfall causation inferred.",
+    "expected_cadence": "periodic",
+    "license_status": "factual_excerpt_only",
+    "selected_data_endpoint": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2310058&lang=1&reg=1",
+    "production_approved": true
   }
 ]

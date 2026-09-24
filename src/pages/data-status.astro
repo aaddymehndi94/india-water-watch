@@ -1,17 +1,58 @@
 ---
 import Site from '../layouts/Site.astro';
 import PageHeader from '../components/PageHeader.astro';
+import '../styles/g15-data-status.css';
 import { release, discoverySources, url } from '../lib/publication';
+
 const builtAt = new Date().toISOString();
+const districtAudit = release.claims.find(c => c.id === 'C-IMD-DISTRICT-ROW-QA-20260924');
 const systems = [
- ['Rainfall', release.observations.filter(o => o.metricId.startsWith('rainfall')).length],
- ['Reservoir storage', release.observations.filter(o => o.metricId.startsWith('reservoir')).length],
- ['Monitored retail price', release.observations.filter(o => o.metricId.startsWith('retail_')).length],
- ['Groundwater', release.observations.filter(o => o.metricId.startsWith('groundwater')).length],
- ['River flow', release.observations.filter(o => o.metricId.startsWith('river')).length],
- ['Household service', release.observations.filter(o => o.metricId.startsWith('service')).length],
- ['Water quality', release.observations.filter(o => o.metricId.startsWith('quality')).length],
- ['Forecasts', release.observations.filter(o => o.status === 'forecast').length],
+  ['Rainfall', release.observations.filter(o => o.metricId.startsWith('rainfall')).length],
+  ['Reservoir storage', release.observations.filter(o => o.metricId.startsWith('reservoir')).length],
+  ['Monitored retail price', release.observations.filter(o => o.metricId.startsWith('retail_')).length],
+  ['Groundwater', release.observations.filter(o => o.metricId.startsWith('groundwater')).length],
+  ['River flow', release.observations.filter(o => o.metricId.startsWith('river')).length],
+  ['Household service', release.observations.filter(o => o.metricId.startsWith('service')).length],
+  ['Water quality', release.observations.filter(o => o.metricId.startsWith('quality')).length],
+  ['Forecasts', release.observations.filter(o => o.status === 'forecast').length],
 ] as const;
 ---
-<Site title="Coverage and freshness"><PageHeader title="Coverage & freshness" eyebrow="Data status" description="The publication's observation, retrieval, review and build dates are separate clocks. Missing evidence does not imply normal conditions." /><section class="section"><div class="shell"><div class="grid-3"><div class="empty-panel"><p class="eyebrow">Approved snapshot</p><h3>{release.releaseId}</h3><p>{release.observations.length} observations tied to reviewed public claims.</p></div><div class="empty-panel"><p class="eyebrow">Agent claim check</p><h3>{release.reviewedAt ? release.reviewedAt.slice(0,10) : 'Not recorded'}</h3><p>Agent check date is not an observation or provider publication date. Human editorial sign-off has not been recorded.</p></div><div class="empty-panel"><p class="eyebrow">Static build</p><h3>{builtAt.slice(0,10)}</h3><p>Build timestamp <time datetime={builtAt}>{builtAt}</time>. It does not refresh source observations.</p></div></div><h2 style="margin-top:3rem">Observation and source clocks</h2><div class="table-wrap"><table class="data-table"><thead><tr><th>Place / indicator</th><th>Observed period</th><th>Provider publication</th><th>Retrieved</th><th>Agent claim check</th><th>Source</th></tr></thead><tbody>{release.observations.map(o => {const s=release.sources.find(source => source.id === o.sourceId);const c=release.claims.find(claim => claim.id === o.claimId);const g=release.geographies.find(geo => geo.id === o.geographyId);return <tr><td>{g?.name || o.geographyId}<br /><small>{o.metricId.replaceAll('_',' ')}</small></td><td>{o.periodStart.slice(0,10)} to {o.periodEnd.slice(0,10)}</td><td>{s?.publicationDate?.slice(0,10) || 'Unknown'}</td><td>{s?.retrievedAt?.slice(0,10) || 'Unknown'}</td><td>{c?.reviewedAt?.slice(0,10) || 'Unknown'}</td><td><a href={url(`/sources/${o.sourceId}/`)}>Record ↗</a></td></tr>})}</tbody></table></div>{release.observations.length === 0 && <div class="empty-panel"><p>No approved observation rows are present in this build.</p></div>}<h2 style="margin-top:3rem">Coverage by system</h2><div class="table-wrap"><table class="data-table"><thead><tr><th>System</th><th>Current public status</th><th>Next evidence needed</th></tr></thead><tbody>{systems.map(([name,count]) => <tr><td>{name}</td><td>{count ? `${count} approved observation${count === 1 ? '' : 's'}` : 'No current approved observation'}</td><td>{count ? 'See each source record and definition' : 'Exact dated source, matching geography, definitions and review'}</td></tr>)}</tbody></table></div><p class="small muted">A published rainfall departure is a weather signal, not direct evidence for storage, groundwater, service, health or an official drought declaration.</p></div></section><section class="section"><div class="shell"><p class="eyebrow">Discovery coverage</p><h2>Access is not approval</h2><p>{discoverySources.length} source leads are recorded. Their retrieval status, document rights and exact observation periods need separate checking.</p><a href={url('/sources/')}>Inspect each source lead ↗</a></div></section></Site>
+<Site title="Coverage and freshness">
+  <PageHeader title="Coverage & freshness" eyebrow="Data status" description="The publication's observation, retrieval, review and build dates are separate clocks. Missing evidence does not imply normal conditions." />
+  <section class="section"><div class="shell">
+    <div class="grid-3">
+      <div class="empty-panel"><p class="eyebrow">Approved snapshot</p><p class="g15-clock-value">{release.releaseId}</p><p>{release.observations.length} observations tied to reviewed public claims.</p></div>
+      <div class="empty-panel"><p class="eyebrow">Agent claim check</p><p class="g15-clock-value">{release.reviewedAt ? release.reviewedAt.slice(0,10) : 'Not recorded'}</p><p>Agent check date is not an observation or provider publication date. Human editorial sign-off has not been recorded.</p></div>
+      <div class="empty-panel"><p class="eyebrow">Static build</p><p class="g15-clock-value">{builtAt.slice(0,10)}</p><p>Build timestamp <time datetime={builtAt}>{builtAt}</time>. It does not refresh source observations.</p></div>
+    </div>
+    <h2 style="margin-top:3rem">Observation and source clocks</h2>
+    <div class="table-wrap"><table class="data-table"><thead><tr><th>Place / indicator</th><th>Observed period</th><th>Provider publication</th><th>Retrieved</th><th>Agent claim check</th><th>Source</th></tr></thead><tbody>
+      {release.observations.map(o => {
+        const s = release.sources.find(source => source.id === o.sourceId);
+        const c = release.claims.find(claim => claim.id === o.claimId);
+        const g = release.geographies.find(geo => geo.id === o.geographyId);
+        return <tr><td>{g?.name || o.geographyId}<br /><small>{o.metricId.replaceAll('_',' ')}</small></td><td>{o.periodStart.slice(0,10)} to {o.periodEnd.slice(0,10)}</td><td>{s?.publicationDate?.slice(0,10) || 'Unknown'}</td><td>{s?.retrievedAt?.slice(0,10) || 'Unknown'}</td><td>{c?.reviewedAt?.slice(0,10) || 'Unknown'}</td><td><a href={url(`/sources/${o.sourceId}/`)}>Record ↗</a></td></tr>;
+      })}
+    </tbody></table></div>
+    {release.observations.length === 0 && <div class="empty-panel"><p>No approved observation rows are present in this build.</p></div>}
+    <h2 style="margin-top:3rem">Coverage by system</h2>
+    <div class="table-wrap"><table class="data-table"><thead><tr><th>System</th><th>Current public status</th><th>Next evidence needed</th></tr></thead><tbody>
+      {systems.map(([name, count]) => <tr><td>{name}</td><td>{count ? `${count} approved observation${count === 1 ? '' : 's'}` : 'No current approved observation'}</td><td>{count ? 'See each source record and definition' : 'Exact dated source, matching geography, definitions and review'}</td></tr>)}
+    </tbody></table></div>
+    <p class="small muted">A published rainfall departure is a weather signal, not direct evidence for storage, groundwater, service, health or an official drought declaration.</p>
+  </div></section>
+
+  {districtAudit && <section class="section g15-district-audit"><div class="shell">
+    <p class="eyebrow">District source QA / IMD page retrieved 24 September 2026</p>
+    <h2>Why there is no uniform district map yet.</h2>
+    <div class="g15-district-audit-grid">
+      <div class="g15-district-audit-number"><strong>722<span> / 761</span></strong><p>map area entries had numeric rainfall and a row-level 24 September date in the retrieved page.</p></div>
+      <div><p>The other entries were <strong>eight numeric rows carrying older dates</strong> and <strong>31 explicit “No Data” rows</strong>. Two displayed departures, for Kargil and Leh/Ladakh, differed by more than one percentage point from arithmetic on the displayed millimetres.</p><p>Row dates, provider arithmetic, boundary matching and geometry rights need resolution before a uniformly dated district map can be published. “No Data” never means zero rain or safe supply. <a href={url(`/sources/${districtAudit.evidenceIds[0]}/`)}>Read the parsed method, source and claim limits ↗</a></p></div>
+    </div>
+    <div class="g15-district-audit-key" role="img" aria-label="Of 761 source map area entries: 722 numeric rows dated 24 September, eight numeric rows with older dates, 31 rows marked No Data"><span class="current"></span><span class="old"></span><span class="missing"></span></div>
+    <ul class="g15-district-audit-legend"><li><i class="current" aria-hidden="true"></i>722 numeric, 24 September</li><li><i class="old" aria-hidden="true"></i>8 numeric, older dates</li><li><i class="missing" aria-hidden="true"></i>31 No Data</li></ul>
+    <p class="g15-district-audit-caption">Source-page coverage, not water conditions. The 722 rows were not imported as approved district observations.</p>
+  </div></section>}
+
+  <section class="section"><div class="shell"><p class="eyebrow">Discovery coverage</p><h2>Access is not approval</h2><p>{discoverySources.length} source leads are recorded. Their retrieval status, document rights and exact observation periods need separate checking.</p><a href={url('/sources/')}>Inspect each source lead ↗</a></div></section>
+</Site>

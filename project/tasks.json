@@ -1116,14 +1116,107 @@
     "depends_on": [
       "T59"
     ],
-    "status": "not_started",
+    "status": "completed_with_hold",
     "suggested_paths": [
       "reporting/g15_subnational_evidence.md"
     ],
     "acceptance": [
       "Exact geography, boundary and observation date; definition and source rights; independent source review; visible missingness rather than fabricated district values"
     ],
-    "result_paths": [],
+    "result_paths": [
+      "reporting/g15_subnational_evidence.md",
+      "reporting/g15_subnational_independent_review.md",
+      "src/pages/data-status.astro"
+    ],
+    "blockers": [
+      "2024 Karnataka JJM rights and 2026 comparability; IMD district row dates, arithmetic, boundary and geometry"
+    ]
+  },
+  {
+    "id": "T61",
+    "gate": "G15",
+    "title": "Review dated farmer, resident and official voices with economic counterevidence",
+    "owner_role": "economy_access",
+    "depends_on": [
+      "T59"
+    ],
+    "status": "completed",
+    "suggested_paths": [
+      "reporting/g15_people_voices.md",
+      "reporting/g15_voices_independent_review.md"
+    ],
+    "acceptance": [
+      "Exact speaker, place, date and original publisher; brief rights-safe excerpts or attributed paraphrases; no in-house interview or national inference; independent source and rights review"
+    ],
+    "result_paths": [
+      "reporting/g15_people_voices.md",
+      "reporting/g15_voices_independent_review.md",
+      "reporting/g15_proposed_claim_review.md",
+      "src/components/VoicesScene.tsx",
+      "src/pages/impacts.astro"
+    ],
+    "blockers": []
+  },
+  {
+    "id": "T62",
+    "gate": "G15",
+    "title": "Build and independently test a more vivid sourced data opening",
+    "owner_role": "visual_designer",
+    "depends_on": [
+      "T59"
+    ],
+    "status": "completed",
+    "suggested_paths": [
+      "src/components/RainDeficitScene.tsx",
+      "src/styles/rain-deficit-scene.css",
+      "src/pages/index.astro",
+      "src/pages/response.astro"
+    ],
+    "acceptance": [
+      "Only verified same-date values and source links; useful touch/keyboard interaction or legible motion; SSR fallback; reduced-motion and mobile/light-dark QA"
+    ],
+    "result_paths": [
+      "src/components/RainDeficitScene.tsx",
+      "src/styles/rain-deficit-scene.css",
+      "src/components/VoicesScene.tsx",
+      "src/styles/voices-scene.css",
+      "src/pages/index.astro",
+      "src/pages/response.astro",
+      "src/styles/g15-response-hero.css",
+      "reporting/g15_design_review.md"
+    ],
+    "blockers": []
+  },
+  {
+    "id": "T63",
+    "gate": "G15",
+    "title": "Review, package and deploy the sourced visual-reporting revision",
+    "owner_role": "lead",
+    "depends_on": [
+      "T60",
+      "T61",
+      "T62"
+    ],
+    "status": "in_progress",
+    "suggested_paths": [
+      "state/RELEASE_REPORT.md",
+      "state/RELEASE_REVIEW.json",
+      "state/DEPLOYMENT_REPORT.md"
+    ],
+    "acceptance": [
+      "Independent source/method and visual/accessibility/security reviews pass exact candidate",
+      "Root, compact and GitHub-prefix builds and exports package successfully",
+      "Structural gate passes; existing GitHub Pages deployment is verified live"
+    ],
+    "result_paths": [
+      "state/RELEASE_REPORT.md",
+      "reporting/g15_postpromotion_source_review.md",
+      "reporting/g15_quality_review.md",
+      "state/RELEASE_REVIEW.json",
+      "release/site-github.zip",
+      "release/site-compact.zip",
+      "release/journalist-exports.zip"
+    ],
     "blockers": []
   }
 ]

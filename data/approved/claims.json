@@ -1288,5 +1288,170 @@
       "The file page and EXIF disagree on minute-level camera time; only the date is used.",
       "Depicted inundation alone does not establish cause, extent, damage, casualties or a September water shortage."
     ]
+  },
+  {
+    "id": "C-REPORTED-REDDY-20260916",
+    "text": "The New Indian Express reported on 16 September 2026 that Telangana farmer P Narsi Reddy left his paddy crop for cattle after rain failed and he had no assured water source. It quoted him: “We did not expect things to be this bad.” This is one reported farm account, not a state crop-loss estimate.",
+    "kind": "reported",
+    "status": "attributed",
+    "geography_ids": [
+      "india:telangana"
+    ],
+    "period": {
+      "start": "2026-09-16T00:00:00+05:30",
+      "end": "2026-09-16T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "day",
+      "cutoff_convention": "Dated report or source retrieval/reference month as specified in the linked evidence; not a live status reading."
+    },
+    "evidence_ids": [
+      "E-TNIE-REDDY-20260916"
+    ],
+    "observation_ids": [],
+    "input_claim_ids": [],
+    "method_path": null,
+    "limitations": [
+      "Original reported interview, not India Water Watch fieldwork.",
+      "The article does not identify his village or district; do not generalize from one farm.",
+      "No independent crop survey, farm yield record or debt verification."
+    ],
+    "reviewer_id": "g15_independent_source_agent-2026-09-24",
+    "reviewed_at": "2026-09-24T10:55:00Z",
+    "requires_human_review": false,
+    "human_review_receipt": null,
+    "supersedes": null,
+    "public": true
+  },
+  {
+    "id": "C-REPORTED-GEETA-20260918",
+    "text": "Mongabay India reported on 18 September 2026 that Geeta Devi’s home in Gandhi Tola, Manihari, Katihar district, Bihar, was flooded and that she had moved into temporary shelter. It quoted her: “Everything is under water.” This is a local reported account, not a statewide flood or relief-delivery measure.",
+    "kind": "reported",
+    "status": "attributed",
+    "geography_ids": [
+      "india:bihar"
+    ],
+    "period": {
+      "start": "2026-09-18T00:00:00+05:30",
+      "end": "2026-09-18T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "day",
+      "cutoff_convention": "Dated report or source retrieval/reference month as specified in the linked evidence; not a live status reading."
+    },
+    "evidence_ids": [
+      "E-MONGABAY-GEETA-20260918"
+    ],
+    "observation_ids": [],
+    "input_claim_ids": [],
+    "method_path": null,
+    "limitations": [
+      "Original reported interview, not India Water Watch fieldwork.",
+      "Her separate reported non-receipt of aid does not negate state-reported wider relief and is not asserted here.",
+      "No independent damage or statewide exposure count; do not reuse the family photograph."
+    ],
+    "reviewer_id": "g15_independent_source_agent-2026-09-24",
+    "reviewed_at": "2026-09-24T10:55:00Z",
+    "requires_human_review": false,
+    "human_review_receipt": null,
+    "supersedes": null,
+    "public": true
+  },
+  {
+    "id": "C-REPORTED-FADNAVIS-PLEDGE-20260923",
+    "text": "The Indian Express reported that Maharashtra Chief Minister Devendra Fadnavis said during a 23 September 2026 tour: “There will be no shortage of funds for drought relief.” This is a reported pledge, not a verified Government Resolution, sanction, transfer or farmer receipt.",
+    "kind": "reported",
+    "status": "attributed",
+    "geography_ids": [
+      "india:maharashtra"
+    ],
+    "period": {
+      "start": "2026-09-23T00:00:00+05:30",
+      "end": "2026-09-23T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "day",
+      "cutoff_convention": "Dated report or source retrieval/reference month as specified in the linked evidence; not a live status reading."
+    },
+    "evidence_ids": [
+      "E-IE-FADNAVIS-20260924"
+    ],
+    "observation_ids": [],
+    "input_claim_ids": [],
+    "method_path": null,
+    "limitations": [
+      "The quote is original newspaper reporting; no official recording or transcript was independently obtained.",
+      "A reported pledge is not a government resolution, funding sanction, treasury transfer or delivered relief.",
+      "Historical 1972 comparison, future water availability and acreage figures from the article are withheld."
+    ],
+    "reviewer_id": "g15_independent_source_agent-2026-09-24",
+    "reviewed_at": "2026-09-24T10:55:00Z",
+    "requires_human_review": false,
+    "human_review_receipt": null,
+    "supersedes": null,
+    "public": true
+  },
+  {
+    "id": "C-IMD-DISTRICT-ROW-QA-20260924",
+    "text": "A 24 September 2026 retrieval of IMD’s cumulative district page yielded 761 map area entries: 722 numeric rows explicitly dated 24 September, eight numeric rows dated before 24 September and 31 No Data rows. Two displayed departures for Kargil and Leh/Ladakh differed by more than one percentage point from arithmetic on the displayed millimetre totals. This page does not support a uniformly current district map.",
+    "kind": "derived",
+    "status": "verified",
+    "geography_ids": [
+      "india"
+    ],
+    "period": {
+      "start": "2026-09-24T00:00:00+05:30",
+      "end": "2026-09-24T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "day",
+      "cutoff_convention": "Dated report or source retrieval/reference month as specified in the linked evidence; not a live status reading."
+    },
+    "evidence_ids": [
+      "E-IMD-DISTRICT-ROW-AUDIT-20260924"
+    ],
+    "observation_ids": [],
+    "input_claim_ids": [],
+    "method_path": "Extract dataProvider.areas JSON from the saved IMD HTML; count 761 unique IDs = 722 numeric 2026-09-24 + 8 older numeric + 31 No Data. Recompute Kargil 100×(21.6/10.1−1)=113.861% versus displayed +97%; Leh/Ladakh 100×(58.1/25.7−1)=126.070% versus displayed +123%.",
+    "limitations": [
+      "These are parsed source-row quality counts, not numbers of districts with a current water shortage.",
+      "Map area IDs have no approved boundary/rights crosswalk; no district values or geometry are republished.",
+      "The page lacks a stated normal-period vintage and cumulative clock hour; provider discrepancies are not silently corrected."
+    ],
+    "reviewer_id": "g15_independent_source_agent-2026-09-24",
+    "reviewed_at": "2026-09-24T10:55:00Z",
+    "requires_human_review": false,
+    "human_review_receipt": null,
+    "supersedes": null,
+    "public": true
+  },
+  {
+    "id": "C-MOSPI-CFPI-202608",
+    "text": "MoSPI reported provisional all-India Consumer Food Price Index inflation of 5.95% year on year for August 2026 (base 2024=100), with rural and urban rates of 6.13% and 5.64%. This is an August price-index reading, not evidence that rainfall or later drought declarations caused the change.",
+    "kind": "reported",
+    "status": "attributed",
+    "geography_ids": [
+      "india"
+    ],
+    "period": {
+      "start": "2026-08-01T00:00:00+05:30",
+      "end": "2026-08-31T23:59:59+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "month",
+      "cutoff_convention": "Reference month for provisional year-on-year CFPI, not source publication date or a daily price."
+    },
+    "evidence_ids": [
+      "E-MOSPI-CFPI-202608"
+    ],
+    "observation_ids": [],
+    "input_claim_ids": [],
+    "method_path": null,
+    "limitations": [
+      "Provisional August index rate, not an individual food price or September observation.",
+      "No causal attribution to the 2026 rainfall deficit, crop output or later drought declarations is supported.",
+      "The rural/urban index rates are separate populations and are not added or averaged here."
+    ],
+    "reviewer_id": "g15_independent_source_agent-2026-09-24",
+    "reviewed_at": "2026-09-24T10:55:00Z",
+    "requires_human_review": false,
+    "human_review_receipt": null,
+    "supersedes": null,
+    "public": true
   }
 ]

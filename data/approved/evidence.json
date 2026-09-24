@@ -664,5 +664,120 @@
     "source_inspected": true,
     "upstream_evidence_ids": [],
     "access_notes": "CC BY-SA 4.0 file; credit title, © 2026 Rohit R Nashik / Temple City Nashik, exact source/license links and resized-from-original notice. Image supports July Nashik flood scene only, not September shortage or cause/damage. API JSON SHA recorded; downloaded thumbnail exact bytes checked."
+  },
+  {
+    "id": "E-TNIE-REDDY-20260916",
+    "source_id": "tnie_reddy_telangana_20260916",
+    "url": "https://www.newindianexpress.com/amp/story/states/telangana/2026/Sep/16/rain-deficit-dries-up-telanganas-farmer-hopes",
+    "title": "The New Indian Express 16 September Telangana farmer report",
+    "publisher": "The New Indian Express / G Ram Mohan",
+    "published_at": null,
+    "retrieved_at": "2026-09-24T10:45:45Z",
+    "observation_period": {
+      "start": "2026-09-16T00:00:00+05:30",
+      "end": "2026-09-16T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "day",
+      "cutoff_convention": "Article update date; exact farm-event date not independently stated."
+    },
+    "locator": "Opening paragraphs: P Narsi Reddy, Telangana, paddy left for cattle after rain failed and no assured water source; exact short quote “We did not expect things to be this bad.”",
+    "sha256": "09074a5d0135a57a35f00e278c6ec653575c632d891960a7c1a4a18123c819e1",
+    "local_snapshot_path": "artifacts/research/g15_people_voices/tnie_telangana.html",
+    "rights_status": "permitted_excerpt",
+    "source_inspected": true,
+    "upstream_evidence_ids": [],
+    "access_notes": "Original reporter interview, not India Water Watch fieldwork; brief attributed excerpt only. No farm village or district supplied. Article images/layout/logo not cleared."
+  },
+  {
+    "id": "E-MONGABAY-GEETA-20260918",
+    "source_id": "mongabay_geeta_bihar_20260918",
+    "url": "https://india.mongabay.com/2026/09/floods-affect-millions-despite-rainfall-deficit/",
+    "title": "Mongabay India 18 September Bihar flood field report",
+    "publisher": "Mongabay India / Ashwini Kumar Shukla",
+    "published_at": null,
+    "retrieved_at": "2026-09-24T10:45:46Z",
+    "observation_period": {
+      "start": "2026-09-18T00:00:00+05:30",
+      "end": "2026-09-18T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "day",
+      "cutoff_convention": "Field-report publication date; exact flooding onset and interview time not independently stated."
+    },
+    "locator": "Opening and “Scale of the losses” sections: Geeta Devi in Gandhi Tola, Manihari, Katihar; flooded home and temporary shelter; exact short quote “Everything is under water.”",
+    "sha256": "36dadcba872b7c5f0affe84a6bf5dfa991cc495b9821167fbacf6894e34de3aa",
+    "local_snapshot_path": "artifacts/research/g15_people_voices/mongabay_bihar.html",
+    "rights_status": "permitted_excerpt",
+    "source_inspected": true,
+    "upstream_evidence_ids": [],
+    "access_notes": "Original reporter interview; personal local flood account only. Same story also cites wider state-reported relief. No family photo, shelter location, article image or layout reused."
+  },
+  {
+    "id": "E-IE-FADNAVIS-20260924",
+    "source_id": "indianexpress_fadnavis_20260924",
+    "url": "https://indianexpress.com/article/cities/pune/maharashtra-drought-fadnavis-latur-farmer-relief-10890580/",
+    "title": "The Indian Express report on Maharashtra chief minister drought-relief pledge",
+    "publisher": "The Indian Express",
+    "published_at": "2026-09-24T04:11:00+05:30",
+    "retrieved_at": "2026-09-24T10:45:49Z",
+    "observation_period": {
+      "start": "2026-09-23T00:00:00+05:30",
+      "end": "2026-09-23T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "day",
+      "cutoff_convention": "Date of reported tour/remarks; article updated the following morning."
+    },
+    "locator": "23 September tour in Latur, Dharashiv and Solapur; exact sentence “There will be no shortage of funds for drought relief.” Report describes surveys and proposed Government Resolution, not completed sanction/payment.",
+    "sha256": "0d6b9ab610cfbad8136e0cce3ac4a182ad83ba2c741035be4359767ec158b14c",
+    "local_snapshot_path": "artifacts/research/g15_people_voices/indianexpress_maharashtra.html",
+    "rights_status": "permitted_excerpt",
+    "source_inspected": true,
+    "upstream_evidence_ids": [],
+    "access_notes": "Reported CM pledge, no official recording/transcript or implemented GR independently obtained. Brief attributed excerpt only; article photo/layout/logo not cleared. Article contains inconsistent acreage units; none reused."
+  },
+  {
+    "id": "E-IMD-DISTRICT-ROW-AUDIT-20260924",
+    "source_id": "imd_district_cumulative_page_20260924",
+    "url": "https://mausam.imd.gov.in/responsive/rainfallinformation.php?msg=C",
+    "title": "IMD cumulative district rainfall page row-date audit",
+    "publisher": "India Meteorological Department",
+    "published_at": null,
+    "retrieved_at": "2026-09-24T10:45:54Z",
+    "observation_period": {
+      "start": "2026-09-24T00:00:00+05:30",
+      "end": "2026-09-24T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "day",
+      "cutoff_convention": "Retrieval and row-audit date; provider rows have individual embedded dates, including older dates; not a common district observation period."
+    },
+    "locator": "Embedded dataProvider.areas JSON: 761 unique map area entries; row-date and No Data audit; Kargil and Leh/Ladakh displayed actual/normal/departure arithmetic mismatch.",
+    "sha256": "d9c8fb1e4f299a14527cec166a74964e4ff51cd2da8b116a04b91d3025b1f7e4",
+    "local_snapshot_path": "artifacts/research/g15_subnational/imd_district_cumulative.html",
+    "rights_status": "permitted_excerpt",
+    "source_inspected": true,
+    "upstream_evidence_ids": [],
+    "access_notes": "Parsed QA counts only; no provider map geometry or bulk district table republished. The page does not identify exact normal years or a cumulative end hour."
+  },
+  {
+    "id": "E-MOSPI-CFPI-202608",
+    "source_id": "mospi_cfpi_august_2026",
+    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2310058&lang=1&reg=1",
+    "title": "MoSPI August 2026 CPI/CFPI release",
+    "publisher": "Ministry of Statistics and Programme Implementation / Press Information Bureau",
+    "published_at": "2026-09-14T16:00:00+05:30",
+    "retrieved_at": "2026-09-24T10:45:48Z",
+    "observation_period": {
+      "start": "2026-08-01T00:00:00+05:30",
+      "end": "2026-08-31T23:59:59+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "month",
+      "cutoff_convention": "Reference month of provisional CFPI year-on-year index, not a daily reading or publication date."
+    },
+    "locator": "Release highlights and national table: provisional August 2026 all-India combined Consumer Food Price Index year-on-year 5.95%, rural 6.13%, urban 5.64%; base 2024=100.",
+    "sha256": "bdf6a30c63c6cbabde14d3366efcb9e2db26d860b28f5f9fd5b3c805d6ad82e5",
+    "local_snapshot_path": "artifacts/research/g15_people_voices/pib_cpi_august.html",
+    "rights_status": "permitted_excerpt",
+    "source_inspected": true,
+    "upstream_evidence_ids": [],
+    "access_notes": "The August food-price index is an official dated economic indicator, not a rainfall-attributed price change; source mutable but independent refetch confirmed same figures."
   }
 ]
