@@ -1,6 +1,6 @@
 ---
 import Site from '../layouts/Site.astro';
 import PageHeader from '../components/PageHeader.astro';
-import { url } from '../lib/publication';
+import { release, url } from '../lib/publication';
 ---
-<Site title="Corrections"><PageHeader title="Corrections & revisions" eyebrow="Publication record" description="Material changes to published claims should be dated, explained and linked to the affected release." /><section class="section"><div class="shell"><div class="empty-panel"><h2>No public corrections recorded</h2><p>This build has no approved release of current findings. Future corrections should state what changed, why, when, and which charts, downloads or pages were affected. A provider's revised data must not silently overwrite an earlier observation.</p><a href={url('/methodology/')}>How revisions are handled ↗</a></div></div></section></Site>
+<Site title="Corrections"><PageHeader title="Corrections & revisions" eyebrow="Publication record" description="Material changes to published claims should be dated, explained and linked to the affected release." /><section class="section"><div class="shell"><div class="empty-panel"><h2>No public corrections recorded</h2><p>No earlier public release or correction history is recorded in this build. The current snapshot contains {release.claims.length} source-linked public claims and {release.observations.length} observations. Future corrections should state what changed, why, when, and which charts, downloads or pages were affected. A provider's revised data must not silently overwrite an earlier observation.</p><a href={url('/methodology/')}>How revisions are handled ↗</a></div></div></section></Site>

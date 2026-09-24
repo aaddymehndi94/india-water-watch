@@ -22,11 +22,11 @@
   {
     "label": "Independent browser QA",
     "status": "passed with stated limits",
-    "at": "2026-09-24T06:48:00Z"
+    "at": "2026-09-24T06:52:00Z"
   },
   {
     "label": "Independent fact review",
-    "status": "correction in progress",
-    "at": "2026-09-24T06:48:00Z"
+    "status": "passed for approved claims; agent review",
+    "at": "2026-09-24T06:52:00Z"
   }
 ]
