@@ -48,5 +48,10 @@
     "label": "GitHub Actions run #1",
     "status": "checks/build passed; configure-pages failed (Pages not enabled)",
     "at": "2026-09-24T06:56:00Z"
+  },
+  {
+    "label": "Live Sites progress deployment v1",
+    "status": "passed: public HTTP and browser smoke",
+    "at": "2026-09-24T07:08:57+00:00"
   }
 ]

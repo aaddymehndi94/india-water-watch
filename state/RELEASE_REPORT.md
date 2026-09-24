@@ -1,6 +1,6 @@
 # India Water Watch · local release candidate
 
-**Candidate:** `candidate-20260924-c5c2701d6b3c` · built 24 September 2026. The GitHub Pages profile is in `dist/`; the portable root/compact profile is in `dist-compact/`. This is an agent-reviewed progress candidate. Source was pushed to GitHub as `789c58f`; the hosted site is not live because GitHub Pages is disabled.
+**Candidate:** `candidate-20260924-c5c2701d6b3c` · built 24 September 2026. The GitHub Pages profile ZIP is `release/site-github.zip`; the root profile was deployed through ChatGPT Sites. This agent-reviewed progress candidate is publicly live at https://india-water-watch.aaddy.chatgpt.site . GitHub Pages remains disabled.
 
 ## Built and verified
 
@@ -41,8 +41,8 @@ python tools/release_gate.py
 
 The prompt-driven update guide is `docs/UPDATE_PLAYBOOK.md`. Root and GitHub ZIPs have different base paths. Host the contents of the appropriate ZIP over HTTP(S); do not assume `file://` supports search. Screenshots at 360, 768 and 1440 CSS px are in `artifacts/qa/`. Full evidence is in `reporting/final_fact_review.md`, `reporting/final_editorial_review.md`, `reporting/final_quality_review.md`, `reporting/release_checks.md` and `state/RELEASE_REVIEW.json`.
 
-## GitHub Pages
+## Hosting
 
-The existing remote is `git@github.com-aaddymehndi94:aaddymehndi94/india-water-watch.git`; `.github/workflows/pages.yml` runs checks and builds on `main` pushes. [Run #1](https://github.com/aaddymehndi94/india-water-watch/actions/runs/35966962356) passed install, test and build, then `configure-pages` failed: “Get Pages site failed” / API 404. The expected Pages URL also returned HTTP 404. The owner must enable **Settings → Pages → Build and deployment → Source: GitHub Actions**; SSH push cannot change this setting. Then rerun the workflow and test the actual URL before marking `state/PROJECT_STATE.json` deployed. No scheduled candidate auto-promotion is configured.
+The verified public progress URL is https://india-water-watch.aaddy.chatgpt.site . See `state/DEPLOYMENT_REPORT.md` for the Sites project/version/deployment IDs and live route/search checks. The existing GitHub remote is `git@github.com-aaddymehndi94:aaddymehndi94/india-water-watch.git`; `.github/workflows/pages.yml` runs checks and builds on `main` pushes. GitHub Pages still fails at `configure-pages` because Pages is disabled. The owner can enable **Settings → Pages → Build and deployment → Source: GitHub Actions** for an additional GitHub URL. No scheduled candidate auto-promotion is configured.
 
 To roll back, redeploy an earlier reviewed commit/workflow run or revert with a new commit. Keep prior source snapshots and release manifests; do not rewrite history or silently alter observation dates.
