@@ -42,13 +42,19 @@ class RefreshTests(unittest.TestCase):
                                     fetcher=fake_fetch(body, "2026-09-24T06:00:00Z"))
         self.assertEqual(first["status"], "candidate_created")
         self.assertTrue(first["diff"]["baseline"])
+        self.assertEqual((self.root / first["raw_snapshot_path"]).read_bytes(), body)
+        self.assertEqual(first["raw_snapshot_sha256"], hashlib.sha256(body).hexdigest())
+        self.assertEqual(json.loads((self.root / first["candidate_path"]).read_text())["source"]["raw_snapshot_path"],
+                         first["raw_snapshot_path"])
         second_path, second = refresh(self.root, scope="all", as_of=self.as_of,
                                       fetcher=fake_fetch(body, "2026-09-24T06:01:00Z"))
         self.assertEqual(second["status"], "no_change")
         self.assertFalse(second["diff"]["observation_changed"])
         self.assertEqual(second["candidate_path"], first["candidate_path"])
+        self.assertEqual(second["raw_snapshot_path"], first["raw_snapshot_path"])
         self.assertNotEqual(first_path, second_path)
         self.assertEqual(len(list((self.root / "data/candidates/imd").glob("*.json"))), 1)
+        self.assertEqual(len(list((self.root / "data/raw/imd").glob("*.html"))), 1)
         self.assertFalse((self.root / "data/approved").exists())
         self.assertFalse(second["deployment_performed"])
 

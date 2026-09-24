@@ -243,5 +243,20 @@
     "label": "G15 GitHub Pages live deployment and browser smoke",
     "status": "passed: Actions 35992840931 build/deploy success, 131/131 Chrome journeys, nine content routes and five assets/export hashes verified",
     "at": "2026-09-24T11:28:26Z"
+  },
+  {
+    "label": "G16 independent IMD district source-revision review",
+    "status": "passed: raw object-by-ID comparison; one row date changed to unknown, no public promotion",
+    "at": "2026-09-24T11:34:47Z"
+  },
+  {
+    "label": "G16 IMD immutable raw-snapshot adapter tests",
+    "status": "passed: 13 focused tests; raw byte/hash paths in candidate and attempts",
+    "at": "2026-09-24T11:36:02Z"
+  },
+  {
+    "label": "G16 repository regression after adapter change",
+    "status": "passed: 81 Python tests, approved validation, Astro check 48 files zero diagnostics, starter structure",
+    "at": "2026-09-24T11:38:09+00:00"
   }
 ]

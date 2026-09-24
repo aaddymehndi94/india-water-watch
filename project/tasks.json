@@ -1228,7 +1228,7 @@
     "depends_on": [
       "T63"
     ],
-    "status": "queued",
+    "status": "in_progress",
     "suggested_paths": [
       "data/candidates/",
       "reporting/g16_source_refresh.md"
@@ -1238,7 +1238,15 @@
       "Independently replay changed values and report gaps before promotion",
       "Keep released G15 snapshot visible until a new gate passes"
     ],
-    "result_paths": [],
-    "blockers": []
+    "result_paths": [
+      "reporting/g16_district_refresh_review.md",
+      "reporting/g16_refresh_decision.md",
+      "reporting/g16_raw_snapshot_adapter.md",
+      "pipeline/sources/imd_cumulative.py",
+      "pipeline/refresh.py"
+    ],
+    "blockers": [
+      "No later CWC bulletin has been independently retrieved; one IMD district row now has an invalid date and district map remains withheld."
+    ]
   }
 ]

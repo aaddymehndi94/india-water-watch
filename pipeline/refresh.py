@@ -117,7 +117,15 @@ def refresh(
     else:
         diff = imd.semantic_diff(previous, candidate)
         diff["baseline"] = False
-    same_snapshot = previous is not None and not diff["observation_changed"] and not diff["source_bytes_changed"]
+    # Keep exact response bytes even when the parsed observation is unchanged.
+    # Older candidates without a raw-path reference get one metadata repair
+    # candidate; later identical checks reuse it.
+    raw_path = imd.save_raw_snapshot(root, body)
+    raw_relative = str(raw_path.relative_to(root))
+    same_snapshot = (previous is not None and not diff["observation_changed"]
+                     and not diff["source_bytes_changed"]
+                     and previous["source"].get("raw_snapshot_path") == raw_relative
+                     and previous["source"].get("raw_snapshot_sha256") == source_hash)
     if same_snapshot:
         candidate_path = previous_path
     else:
@@ -132,6 +140,8 @@ def refresh(
         "checked_at": metadata["retrieved_at"],
         "source_url": imd.SOURCE_URL,
         "source_sha256": source_hash,
+        "raw_snapshot_path": raw_relative,
+        "raw_snapshot_sha256": source_hash,
         "source_observation_period": candidate["page_period"],
         "source_publication_time": candidate["source_publication_time"],
         "candidate_path": str(candidate_path.relative_to(root)),

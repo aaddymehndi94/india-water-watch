@@ -14,6 +14,8 @@ For the homepage rainfall scene, change its reviewed `observedMm`, `normalMm`, p
 
 To update another beat, name the exact source and question in the prompt. The CWC bulletin currently needs a source review/manual import; the existing automated refresh covers IMD only. An inaccessible source should produce a logged gap and a legitimate manual-import proposal; it must not cause fabricated data. The site has no background updater: reviewed changes reach GitHub Pages only after a commit and push.
 
+The IMD refresh stores the exact retrieved HTML in ignored `data/raw/imd/<sha256>.html` and records its path and hash in both the candidate and the attempt report. Keep that raw snapshot with the candidate during independent review, but never copy it into the public build or an exported ZIP. A `no_change` result means the parsed source observation and response bytes matched the prior candidate; it does not refresh the approved public snapshot. The 24 September district page later changed one row's date to `0000-00-00` while leaving its values intact; treat such a sentinel as an unknown observation date, even when the page-level cutoff is current.
+
 ## Exact local commands
 
 ```bash

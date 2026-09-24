@@ -121,6 +121,12 @@ def _tooltip_fields(value: str) -> tuple[str, str, str, str]:
 
 def parse(body: bytes, metadata: dict) -> dict:
     """Strictly parse a candidate; fail closed on changed source structure."""
+    source_hash = hashlib.sha256(body).hexdigest()
+    if metadata.get("source_sha256") != source_hash:
+        raise SourceError("source hash mismatch before parsing")
+    metadata = {**metadata,
+                "raw_snapshot_path": f"data/raw/imd/{source_hash}.html",
+                "raw_snapshot_sha256": source_hash}
     try:
         page = body.decode("utf-8", "strict")
     except UnicodeDecodeError as exc:
@@ -290,14 +296,29 @@ def semantic_diff(previous: dict, current: dict) -> dict:
 
 def save_candidate(root: Path, body: bytes, metadata: dict, candidate: dict) -> Path:
     """Persist a validated candidate without changing approved/public data."""
-    source_hash = metadata["source_sha256"]
-    raw_path = root / "data/raw/imd" / f"{source_hash}.html"
+    source_hash = hashlib.sha256(body).hexdigest()
+    if metadata.get("source_sha256") != source_hash:
+        raise SourceError("source hash mismatch before candidate save")
+    raw_path = save_raw_snapshot(root, body)
+    if candidate["source"].get("raw_snapshot_path") != str(raw_path.relative_to(root)):
+        raise SourceError("candidate raw snapshot path mismatch")
+    if candidate["source"].get("raw_snapshot_sha256") != source_hash:
+        raise SourceError("candidate raw snapshot hash mismatch")
     retrieval_slug = re.sub(r"[^0-9]", "", metadata["retrieved_at"])
     candidate_path = root / "data/candidates/imd" / f"{candidate['page_period']['displayed_end_date']}-{source_hash[:16]}-{retrieval_slug}.json"
-    _write_new(raw_path, body)
     encoded = (json.dumps(candidate, ensure_ascii=False, indent=2, sort_keys=True) + "\n").encode("utf-8")
     _write_new(candidate_path, encoded)
     return candidate_path
+
+
+def save_raw_snapshot(root: Path, body: bytes) -> Path:
+    """Write exact fetched bytes once under their full SHA-256; verify reuse."""
+    source_hash = hashlib.sha256(body).hexdigest()
+    raw_path = root / "data/raw/imd" / f"{source_hash}.html"
+    _write_new(raw_path, body)
+    if hashlib.sha256(raw_path.read_bytes()).hexdigest() != source_hash:
+        raise SourceError("raw snapshot failed post-write hash check")
+    return raw_path
 
 
 def run(root: Path, *, body: bytes | None = None, retrieved_at: str | None = None) -> Path:

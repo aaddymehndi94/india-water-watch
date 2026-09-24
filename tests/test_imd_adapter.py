@@ -85,10 +85,26 @@ class ImdAdapterTests(unittest.TestCase):
             body = page()
             candidate = run(root, body=body, retrieved_at="2026-09-24T00:00:00Z")
             self.assertTrue(candidate.is_file())
+            parsed = json.loads(candidate.read_text())
+            raw_path = root / parsed["source"]["raw_snapshot_path"]
+            self.assertEqual(raw_path.read_bytes(), body)
+            self.assertEqual(parsed["source"]["raw_snapshot_sha256"], hashlib.sha256(body).hexdigest())
             self.assertEqual(run(root, body=body, retrieved_at="2026-09-24T00:00:00Z"), candidate)
             self.assertEqual(len(list((root / "data/raw/imd").glob("*.html"))), 1)
             with self.assertRaises(SourceError):
                 run(root, body=b"bad", retrieved_at="2026-09-24T00:00:00Z")
+            self.assertEqual(len(list((root / "data/candidates/imd").glob("*.json"))), 1)
+
+    def test_corrupt_raw_snapshot_is_rejected_without_overwrite(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            body = page()
+            candidate = run(root, body=body, retrieved_at="2026-09-24T00:00:00Z")
+            raw_path = root / json.loads(candidate.read_text())["source"]["raw_snapshot_path"]
+            raw_path.write_bytes(b"corrupt")
+            with self.assertRaisesRegex(SourceError, "immutable path collision"):
+                run(root, body=body, retrieved_at="2026-09-24T00:01:00Z")
+            self.assertEqual(raw_path.read_bytes(), b"corrupt")
             self.assertEqual(len(list((root / "data/candidates/imd").glob("*.json"))), 1)
 
     def test_semantic_diff_ignores_retrieval_only_change(self):
