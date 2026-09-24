@@ -5,7 +5,7 @@
     "title": "Environment, capability and dependency preflight",
     "owner_role": "lead",
     "depends_on": [],
-    "status": "not_started",
+    "status": "completed",
     "suggested_paths": [
       "state/TOOLCHAIN.md",
       "state/DECISIONS.md"
@@ -25,7 +25,7 @@
     "depends_on": [
       "T01"
     ],
-    "status": "not_started",
+    "status": "completed",
     "suggested_paths": [
       "reports/prior-claims-audit.md"
     ],
@@ -44,7 +44,7 @@
     "depends_on": [
       "T01"
     ],
-    "status": "not_started",
+    "status": "completed",
     "suggested_paths": [
       "reports/source-access.md",
       "references/source_registry.json"
@@ -65,7 +65,7 @@
       "T02",
       "T03"
     ],
-    "status": "not_started",
+    "status": "completed",
     "suggested_paths": [
       "reports/method-contracts.md",
       "reports/coverage-plan.md"
@@ -86,7 +86,7 @@
       "T02",
       "T03"
     ],
-    "status": "not_started",
+    "status": "completed",
     "suggested_paths": [
       "reports/history-feasibility.md"
     ],
@@ -107,7 +107,7 @@
       "T03",
       "T04"
     ],
-    "status": "not_started",
+    "status": "in_progress",
     "suggested_paths": [
       "reports/editorial-assignment.md"
     ],
@@ -127,7 +127,7 @@
       "T01",
       "T06"
     ],
-    "status": "not_started",
+    "status": "in_progress",
     "suggested_paths": [
       "src/styles/",
       "reports/design-decisions.md"
@@ -149,7 +149,7 @@
       "T04",
       "T06"
     ],
-    "status": "not_started",
+    "status": "in_progress",
     "suggested_paths": [
       "package.json",
       "pnpm-lock.yaml",
@@ -172,7 +172,7 @@
       "T03",
       "T04"
     ],
-    "status": "not_started",
+    "status": "in_progress",
     "suggested_paths": [
       "pipeline/",
       "data/",
@@ -195,7 +195,7 @@
       "T08",
       "T09"
     ],
-    "status": "not_started",
+    "status": "in_progress",
     "suggested_paths": [
       "src/components/",
       "src/pages/",

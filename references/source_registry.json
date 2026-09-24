@@ -9,12 +9,12 @@
       "districts",
       "basins"
     ],
-    "access_status": "landing_inspected",
+    "access_status": "district_product_inspected_candidate_only",
     "checked_on": "2026-09-24",
-    "access_notes": "Current rainfall navigation and observation period visible; underlying data files not audited in this starter.",
+    "access_notes": "Direct cumulative district HTML inspected and parsed: 761 map rows, 31 No Data, 33 older source dates, 2 arithmetic conflicts. Candidate-only pending LGD crosswalk, baseline and rights.",
     "expected_cadence": "daily",
     "license_status": "not_reviewed",
-    "selected_data_endpoint": null,
+    "selected_data_endpoint": "https://mausam.imd.gov.in/responsive/rainfallinformation.php?msg=C",
     "production_approved": false
   },
   {
@@ -576,5 +576,57 @@
     "license_status": "not_reviewed",
     "selected_data_endpoint": null,
     "production_approved": false
+  },
+  {
+    "id": "imd_all_india_gif",
+    "title": "IMD cumulative country rainfall graphic, 2026",
+    "publisher": "India Meteorological Department",
+    "entry_url": "https://mausam.imd.gov.in/ClimateInformation/imdweb/DAY_WEEK/all-india.gif",
+    "topics": [
+      "rainfall",
+      "country"
+    ],
+    "access_status": "product_inspected",
+    "checked_on": "2026-09-24",
+    "access_notes": "Graphic snapshot SHA256 2a75486b645fe44c6dfd250b7cb90191ccdc9f5d586357cebe34862d9921d18a; 1 Jun\u201323 Sep, 713.3/837.7 mm, -14.9% against 1971\u20132020 normal. Brief facts only; no graphic redistribution. Independent source/method review completed.",
+    "expected_cadence": "daily",
+    "license_status": "brief_factual_excerpt_only",
+    "selected_data_endpoint": "https://mausam.imd.gov.in/ClimateInformation/imdweb/DAY_WEEK/all-india.gif",
+    "production_approved": true
+  },
+  {
+    "id": "imd_regions_gif",
+    "title": "IMD four homogeneous region rainfall graphic, 2026",
+    "publisher": "India Meteorological Department",
+    "entry_url": "https://mausam.imd.gov.in/ClimateInformation/imdweb/DAY_WEEK/homo.gif",
+    "topics": [
+      "rainfall",
+      "regions"
+    ],
+    "access_status": "product_inspected",
+    "checked_on": "2026-09-24",
+    "access_notes": "Graphic snapshot SHA256 dfc549134ea2f520fda1a64dd236c67169a5d86fb8f65c8c79b3520b1fef61d0; provider-reported 1 Jun\u201323 Sep departures; regional cumulative denominators not printed. Brief facts only; no graphic redistribution. Independent image review completed.",
+    "expected_cadence": "daily",
+    "license_status": "brief_factual_excerpt_only",
+    "selected_data_endpoint": "https://mausam.imd.gov.in/ClimateInformation/imdweb/DAY_WEEK/homo.gif",
+    "production_approved": true
+  },
+  {
+    "id": "india_portal_roster",
+    "title": "National Portal of India state and Union Territory roster",
+    "publisher": "National Informatics Centre",
+    "entry_url": "https://www.india.gov.in/calendar?date=2026-09-24",
+    "topics": [
+      "geography",
+      "states",
+      "union_territories"
+    ],
+    "access_status": "product_inspected",
+    "checked_on": "2026-09-24",
+    "access_notes": "Navigation roster lists 28 states and 8 UTs, last updated 23 Sep 2026; names only, no LGD code/boundary. Snapshot SHA256 1544aab352318b38762669f752644b4bcad8efbf8778f5debe612c5fa2f118df.",
+    "expected_cadence": "as_changed",
+    "license_status": "metadata_only",
+    "selected_data_endpoint": "https://www.india.gov.in/calendar?date=2026-09-24",
+    "production_approved": true
   }
 ]

@@ -6,3 +6,4 @@ D003 · The operator explicitly requested GitHub hosting as a shareable progress
 D004 · Actual stable package versions are resolved and frozen at G0, not guessed by this starter.
 D005 · Government Survey of India boundary downloads are not bundled until reproduction rights are clarified. A state/UT table explorer can ship meanwhile.
 D006 · Candidate IMD district rows retain individual dates and missingness; only reviewed, crosswalked records may enter approved public data.
+D007 · Geography `valid_from` is nullable because a page retrieval date is not proof of a boundary effective date. IMD homogeneous regions use `other`, not meteorological subdivision, until a dedicated geography kind is introduced.

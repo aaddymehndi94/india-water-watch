@@ -3,23 +3,17 @@
   "project": "india-water-watch",
   "starter_date": "2026-09-24",
   "phase": "implementation",
-  "current_gate": "G1",
+  "current_gate": "G2",
   "software_ready": false,
   "editorially_ready": false,
   "publisher_authorized": true,
   "deployed": false,
   "approved_release_id": null,
-  "last_completed_task": "T01",
-  "next_task": "T02",
+  "last_completed_task": "T05",
+  "next_task": "T10",
   "active_workers": [
-    "prior_audit",
-    "hydrology_sources",
-    "history",
-    "institutions",
-    "economy_access",
-    "data_pipeline",
     "frontend"
   ],
-  "source_data_status": "No production observations or claims have been verified by this starter.",
-  "next_action": "Complete Q01-Q12 audit; then review IMD candidate data and integrate Astro site."
+  "source_data_status": "Five IMD national/homogeneous-region rainfall values through 2026-09-23 reviewed for narrow attributed use; district candidate withheld pending crosswalk, baseline and rights.",
+  "next_action": "Generate approved projection; integrate five IMD values into Astro; run build/check and G2 browser review."
 }
