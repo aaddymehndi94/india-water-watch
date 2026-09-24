@@ -301,5 +301,174 @@
     ],
     "synthetic": false,
     "public": true
+  },
+  {
+    "id": "O-IMD-RAINFALL-DEP-india-20260924",
+    "metric_id": "rainfall_departure_pct",
+    "series_id": "imd_2026_jun1_to_date_gif",
+    "definition_version": "provider-displayed-2026-09-24",
+    "geography_id": "india",
+    "boundary_version": "imd-homogeneous-2026-no-geometry",
+    "period": {
+      "start": "2026-06-01T00:00:00+05:30",
+      "end": "2026-09-24T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "season_to_date",
+      "cutoff_convention": "IMD graphic labels dates June 1 through September 24; clock hour is not specified. Times in this record encode calendar dates only."
+    },
+    "value": -14.2,
+    "unit": "percent",
+    "status": "observed",
+    "missing_reason": null,
+    "normal_value": null,
+    "baseline_id": "imd-1971-2020",
+    "cohort_id": null,
+    "population_basis": null,
+    "coverage_fraction": null,
+    "evidence_ids": [
+      "E-IMD-ALLINDIA-20260924"
+    ],
+    "quality_flags": [
+      "provider_graphic_rounded",
+      "date_precision_only"
+    ],
+    "synthetic": false,
+    "public": true
+  },
+  {
+    "id": "O-IMD-RAINFALL-DEP-imd-northwest-20260924",
+    "metric_id": "rainfall_departure_pct",
+    "series_id": "imd_2026_jun1_to_date_gif",
+    "definition_version": "provider-displayed-2026-09-24",
+    "geography_id": "imd:northwest",
+    "boundary_version": "imd-homogeneous-2026-no-geometry",
+    "period": {
+      "start": "2026-06-01T00:00:00+05:30",
+      "end": "2026-09-24T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "season_to_date",
+      "cutoff_convention": "IMD graphic labels dates June 1 through September 24; clock hour is not specified. Times in this record encode calendar dates only."
+    },
+    "value": -10.8,
+    "unit": "percent",
+    "status": "observed",
+    "missing_reason": null,
+    "normal_value": null,
+    "baseline_id": null,
+    "cohort_id": null,
+    "population_basis": null,
+    "coverage_fraction": null,
+    "evidence_ids": [
+      "E-IMD-HOMO-20260924"
+    ],
+    "quality_flags": [
+      "provider_graphic_rounded",
+      "date_precision_only",
+      "cumulative_baseline_unconfirmed"
+    ],
+    "synthetic": false,
+    "public": true
+  },
+  {
+    "id": "O-IMD-RAINFALL-DEP-imd-east-northeast-20260924",
+    "metric_id": "rainfall_departure_pct",
+    "series_id": "imd_2026_jun1_to_date_gif",
+    "definition_version": "provider-displayed-2026-09-24",
+    "geography_id": "imd:east-northeast",
+    "boundary_version": "imd-homogeneous-2026-no-geometry",
+    "period": {
+      "start": "2026-06-01T00:00:00+05:30",
+      "end": "2026-09-24T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "season_to_date",
+      "cutoff_convention": "IMD graphic labels dates June 1 through September 24; clock hour is not specified. Times in this record encode calendar dates only."
+    },
+    "value": -25.6,
+    "unit": "percent",
+    "status": "observed",
+    "missing_reason": null,
+    "normal_value": null,
+    "baseline_id": null,
+    "cohort_id": null,
+    "population_basis": null,
+    "coverage_fraction": null,
+    "evidence_ids": [
+      "E-IMD-HOMO-20260924"
+    ],
+    "quality_flags": [
+      "provider_graphic_rounded",
+      "date_precision_only",
+      "cumulative_baseline_unconfirmed"
+    ],
+    "synthetic": false,
+    "public": true
+  },
+  {
+    "id": "O-IMD-RAINFALL-DEP-imd-central-20260924",
+    "metric_id": "rainfall_departure_pct",
+    "series_id": "imd_2026_jun1_to_date_gif",
+    "definition_version": "provider-displayed-2026-09-24",
+    "geography_id": "imd:central",
+    "boundary_version": "imd-homogeneous-2026-no-geometry",
+    "period": {
+      "start": "2026-06-01T00:00:00+05:30",
+      "end": "2026-09-24T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "season_to_date",
+      "cutoff_convention": "IMD graphic labels dates June 1 through September 24; clock hour is not specified. Times in this record encode calendar dates only."
+    },
+    "value": -4.8,
+    "unit": "percent",
+    "status": "observed",
+    "missing_reason": null,
+    "normal_value": null,
+    "baseline_id": null,
+    "cohort_id": null,
+    "population_basis": null,
+    "coverage_fraction": null,
+    "evidence_ids": [
+      "E-IMD-HOMO-20260924"
+    ],
+    "quality_flags": [
+      "provider_graphic_rounded",
+      "date_precision_only",
+      "cumulative_baseline_unconfirmed"
+    ],
+    "synthetic": false,
+    "public": true
+  },
+  {
+    "id": "O-IMD-RAINFALL-DEP-imd-south-peninsular-20260924",
+    "metric_id": "rainfall_departure_pct",
+    "series_id": "imd_2026_jun1_to_date_gif",
+    "definition_version": "provider-displayed-2026-09-24",
+    "geography_id": "imd:south-peninsular",
+    "boundary_version": "imd-homogeneous-2026-no-geometry",
+    "period": {
+      "start": "2026-06-01T00:00:00+05:30",
+      "end": "2026-09-24T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "season_to_date",
+      "cutoff_convention": "IMD graphic labels dates June 1 through September 24; clock hour is not specified. Times in this record encode calendar dates only."
+    },
+    "value": -23.5,
+    "unit": "percent",
+    "status": "observed",
+    "missing_reason": null,
+    "normal_value": null,
+    "baseline_id": null,
+    "cohort_id": null,
+    "population_basis": null,
+    "coverage_fraction": null,
+    "evidence_ids": [
+      "E-IMD-HOMO-20260924"
+    ],
+    "quality_flags": [
+      "provider_graphic_rounded",
+      "date_precision_only",
+      "cumulative_baseline_unconfirmed"
+    ],
+    "synthetic": false,
+    "public": true
   }
 ]

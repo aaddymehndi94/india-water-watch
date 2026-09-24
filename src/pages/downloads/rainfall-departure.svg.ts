@@ -3,7 +3,9 @@ import { rainfallDepartureX as x } from '../../lib/charts';
 export const prerender = true;
 const safe = (v: unknown) => String(v ?? '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&apos;'}[ch] || ch));
 export function GET() {
-  const rows = release.observations.filter(o => o.metricId === 'rainfall_departure_pct' && o.geographyId !== 'india' && typeof o.value === 'number' && Number.isFinite(o.value)).sort((a,b) => a.geographyId === 'india' ? -1 : b.geographyId === 'india' ? 1 : a.geographyId.localeCompare(b.geographyId));
+  const dated = release.observations.filter(o => o.metricId === 'rainfall_departure_pct' && o.geographyId !== 'india' && typeof o.value === 'number' && Number.isFinite(o.value));
+  const latestEnd = dated.reduce((end, row) => row.periodEnd > end ? row.periodEnd : end, '');
+  const rows = dated.filter(row => row.periodEnd === latestEnd).sort((a,b) => a.geographyId.localeCompare(b.geographyId));
   const endDate = rows[0]?.periodEnd.slice(0,10) || 'date unavailable';
   const startDate = rows[0]?.periodStart.slice(0,10) || 'date unavailable';
   const geo = new Map(release.geographies.map(g => [g.id,g.name]));

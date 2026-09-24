@@ -1012,5 +1012,281 @@
     "human_review_receipt": null,
     "supersedes": null,
     "public": true
+  },
+  {
+    "id": "C-IMD-RAINFALL-DEP-india-20260924",
+    "text": "IMD reports that India received 723.6 mm of rainfall from 1 June through 24 September 2026, against 843.2 mm normal for the same dates (1971–2020); its displayed departure is −14.2%.",
+    "kind": "reported",
+    "status": "attributed",
+    "geography_ids": [
+      "india"
+    ],
+    "period": {
+      "start": "2026-06-01T00:00:00+05:30",
+      "end": "2026-09-24T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "season_to_date",
+      "cutoff_convention": "IMD graphic labels dates June 1 through September 24; clock hour is not specified. Times in this record encode calendar dates only."
+    },
+    "evidence_ids": [
+      "E-IMD-ALLINDIA-20260924"
+    ],
+    "observation_ids": [
+      "O-IMD-RAINFALL-DEP-india-20260924"
+    ],
+    "input_claim_ids": [],
+    "method_path": "IMD all-India graphic middle and bottom panels; (723.6 / 843.2 − 1) × 100 = −14.184%, rounding to −14.2%.",
+    "limitations": [
+      "Rainfall departure is not a measure of water supply or a drought declaration.",
+      "The graphic is a mutable, provider-rounded image; exact region boundaries and station methods were not reconstructed."
+    ],
+    "reviewer_id": "fact_checker-agent-g14-2026-09-24",
+    "reviewed_at": "2026-09-24T10:11:23Z",
+    "requires_human_review": false,
+    "human_review_receipt": null,
+    "supersedes": null,
+    "public": true
+  },
+  {
+    "id": "C-IMD-RAINFALL-DEP-imd-northwest-20260924",
+    "text": "IMD reports a cumulative rainfall departure of -10.8% for its Northwest India homogeneous region through 24 September 2026.",
+    "kind": "reported",
+    "status": "attributed",
+    "geography_ids": [
+      "imd:northwest"
+    ],
+    "period": {
+      "start": "2026-06-01T00:00:00+05:30",
+      "end": "2026-09-24T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "season_to_date",
+      "cutoff_convention": "IMD graphic labels dates June 1 through September 24; clock hour is not specified. Times in this record encode calendar dates only."
+    },
+    "evidence_ids": [
+      "E-IMD-HOMO-20260924"
+    ],
+    "observation_ids": [
+      "O-IMD-RAINFALL-DEP-imd-northwest-20260924"
+    ],
+    "input_claim_ids": [],
+    "method_path": null,
+    "limitations": [
+      "Rainfall departure is not a measure of water supply or a drought declaration.",
+      "The graphic is a mutable, provider-rounded image; exact region boundaries and station methods were not reconstructed.",
+      "The image identifies a 1971–2020 daily normal but does not print separate cumulative normal totals for this region; the reported percentage could not be independently recomputed."
+    ],
+    "reviewer_id": "fact_checker-agent-g14-2026-09-24",
+    "reviewed_at": "2026-09-24T10:11:23Z",
+    "requires_human_review": false,
+    "human_review_receipt": null,
+    "supersedes": null,
+    "public": true
+  },
+  {
+    "id": "C-IMD-RAINFALL-DEP-imd-east-northeast-20260924",
+    "text": "IMD reports a cumulative rainfall departure of -25.6% for its East & Northeast India homogeneous region through 24 September 2026.",
+    "kind": "reported",
+    "status": "attributed",
+    "geography_ids": [
+      "imd:east-northeast"
+    ],
+    "period": {
+      "start": "2026-06-01T00:00:00+05:30",
+      "end": "2026-09-24T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "season_to_date",
+      "cutoff_convention": "IMD graphic labels dates June 1 through September 24; clock hour is not specified. Times in this record encode calendar dates only."
+    },
+    "evidence_ids": [
+      "E-IMD-HOMO-20260924"
+    ],
+    "observation_ids": [
+      "O-IMD-RAINFALL-DEP-imd-east-northeast-20260924"
+    ],
+    "input_claim_ids": [],
+    "method_path": null,
+    "limitations": [
+      "Rainfall departure is not a measure of water supply or a drought declaration.",
+      "The graphic is a mutable, provider-rounded image; exact region boundaries and station methods were not reconstructed.",
+      "The image identifies a 1971–2020 daily normal but does not print separate cumulative normal totals for this region; the reported percentage could not be independently recomputed."
+    ],
+    "reviewer_id": "fact_checker-agent-g14-2026-09-24",
+    "reviewed_at": "2026-09-24T10:11:23Z",
+    "requires_human_review": false,
+    "human_review_receipt": null,
+    "supersedes": null,
+    "public": true
+  },
+  {
+    "id": "C-IMD-RAINFALL-DEP-imd-central-20260924",
+    "text": "IMD reports a cumulative rainfall departure of -4.8% for its Central India homogeneous region through 24 September 2026.",
+    "kind": "reported",
+    "status": "attributed",
+    "geography_ids": [
+      "imd:central"
+    ],
+    "period": {
+      "start": "2026-06-01T00:00:00+05:30",
+      "end": "2026-09-24T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "season_to_date",
+      "cutoff_convention": "IMD graphic labels dates June 1 through September 24; clock hour is not specified. Times in this record encode calendar dates only."
+    },
+    "evidence_ids": [
+      "E-IMD-HOMO-20260924"
+    ],
+    "observation_ids": [
+      "O-IMD-RAINFALL-DEP-imd-central-20260924"
+    ],
+    "input_claim_ids": [],
+    "method_path": null,
+    "limitations": [
+      "Rainfall departure is not a measure of water supply or a drought declaration.",
+      "The graphic is a mutable, provider-rounded image; exact region boundaries and station methods were not reconstructed.",
+      "The image identifies a 1971–2020 daily normal but does not print separate cumulative normal totals for this region; the reported percentage could not be independently recomputed."
+    ],
+    "reviewer_id": "fact_checker-agent-g14-2026-09-24",
+    "reviewed_at": "2026-09-24T10:11:23Z",
+    "requires_human_review": false,
+    "human_review_receipt": null,
+    "supersedes": null,
+    "public": true
+  },
+  {
+    "id": "C-IMD-RAINFALL-DEP-imd-south-peninsular-20260924",
+    "text": "IMD reports a cumulative rainfall departure of -23.5% for its South Peninsular India homogeneous region through 24 September 2026.",
+    "kind": "reported",
+    "status": "attributed",
+    "geography_ids": [
+      "imd:south-peninsular"
+    ],
+    "period": {
+      "start": "2026-06-01T00:00:00+05:30",
+      "end": "2026-09-24T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "season_to_date",
+      "cutoff_convention": "IMD graphic labels dates June 1 through September 24; clock hour is not specified. Times in this record encode calendar dates only."
+    },
+    "evidence_ids": [
+      "E-IMD-HOMO-20260924"
+    ],
+    "observation_ids": [
+      "O-IMD-RAINFALL-DEP-imd-south-peninsular-20260924"
+    ],
+    "input_claim_ids": [],
+    "method_path": null,
+    "limitations": [
+      "Rainfall departure is not a measure of water supply or a drought declaration.",
+      "The graphic is a mutable, provider-rounded image; exact region boundaries and station methods were not reconstructed.",
+      "The image identifies a 1971–2020 daily normal but does not print separate cumulative normal totals for this region; the reported percentage could not be independently recomputed."
+    ],
+    "reviewer_id": "fact_checker-agent-g14-2026-09-24",
+    "reviewed_at": "2026-09-24T10:11:23Z",
+    "requires_human_review": false,
+    "human_review_receipt": null,
+    "supersedes": null,
+    "public": true
+  },
+  {
+    "kind": "reported",
+    "status": "attributed",
+    "observation_ids": [],
+    "requires_human_review": false,
+    "human_review_receipt": null,
+    "supersedes": null,
+    "public": true,
+    "reviewer_id": "g14_independent_source_review-agent-2026-09-24",
+    "reviewed_at": "2026-09-24T10:19:13Z",
+    "id": "C-KA-INTERIM-REQUEST-20260923",
+    "text": "After Karnataka listed 177 drought-affected taluks by 22 September 2026, Chief Minister D.K. Shivakumar asked the Prime Minister on 23 September to release half of the ₹3,705.30 crore that his letter says the state had sought for its first 101 declared taluks (₹1,852.65 crore by arithmetic), and to advance the Centre’s second SDRF instalment. These are requests, not verified central approvals, transfers or household aid.",
+    "geography_ids": [
+      "india:karnataka"
+    ],
+    "period": {
+      "start": "2026-09-23T00:00:00+05:30",
+      "end": "2026-09-23T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "day",
+      "cutoff_convention": "Date of the public letter and funding request; not a disbursement date."
+    },
+    "evidence_ids": [
+      "E-KA-CM-LETTER-20260923",
+      "E-KA-GAZETTE-DROUGHT-20260922"
+    ],
+    "input_claim_ids": [
+      "C-KA-DROUGHT-THREE-ORDERS-20260922"
+    ],
+    "method_path": "Letter page 2 requests 50% of the page-1 memorandum amount; 0.5 × ₹3,705.30 crore = ₹1,852.65 crore. Three original gazette annexes list 101 + 23 + 53 unique taluks = 177.",
+    "limitations": [
+      "The 10 September memorandum itself was not independently obtained; its amount and submission are attributed to the 23 September letter.",
+      "No central approval, treasury transfer, district spending, beneficiary receipt or completed crop-loss survey is established by this letter.",
+      "The CM’s prospective crop-loss and Bengaluru supply concerns are not adopted as observed outcomes."
+    ]
+  },
+  {
+    "kind": "reported",
+    "status": "attributed",
+    "observation_ids": [],
+    "requires_human_review": false,
+    "human_review_receipt": null,
+    "supersedes": null,
+    "public": true,
+    "reviewer_id": "g14_independent_source_review-agent-2026-09-24",
+    "reviewed_at": "2026-09-24T10:19:13Z",
+    "id": "C-CSIR-ASSAM-FILTERS-20260810",
+    "text": "In a 10 August 2026 release, CSIR-NEERI reported installing five household and five community emergency water-treatment units in Jonakimondal village, Jorhat district, Assam, and handing 70 household and 20 community units to the district administration after flooding. These are agency-reported deployment and handover outputs, not independently verified safe-water or sustained-use outcomes.",
+    "geography_ids": [
+      "india:assam"
+    ],
+    "period": {
+      "start": "2026-08-10T00:00:00+05:30",
+      "end": "2026-08-10T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "day",
+      "cutoff_convention": "Agency release date; actual installation/handover days were not separately reported."
+    },
+    "evidence_ids": [
+      "E-CSIR-NEERI-ASSAM-20260810"
+    ],
+    "input_claim_ids": [],
+    "method_path": "Release paragraphs 2–3; 5 + 5 = 10 installed; 70 + 20 = 90 handed over. The groups are distinct and not an outcome count.",
+    "limitations": [
+      "Agency report, not independent water-quality test or audit.",
+      "Handover to the district is not installation or sustained household service.",
+      "Separate Assam flood response; not Karnataka drought relief."
+    ]
+  },
+  {
+    "kind": "reported",
+    "status": "attributed",
+    "observation_ids": [],
+    "requires_human_review": false,
+    "human_review_receipt": null,
+    "supersedes": null,
+    "public": true,
+    "reviewer_id": "g14_independent_source_review-agent-2026-09-24",
+    "reviewed_at": "2026-09-24T10:19:13Z",
+    "id": "C-COMMONS-NASHIK-FLOOD-PHOTO-20260724",
+    "text": "A creator-uploaded Wikimedia Commons photograph dated 24 July 2026 shows the flooded Godavari at Ramkund/Panchavati in Nashik, Maharashtra. It is a July local flood scene under CC BY-SA 4.0, not a photograph of September drought, flood cause, damage or conditions elsewhere.",
+    "geography_ids": [
+      "india:maharashtra"
+    ],
+    "period": {
+      "start": "2026-07-24T00:00:00+05:30",
+      "end": "2026-07-24T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "day",
+      "cutoff_convention": "Creator-file-page date of depicted scene, not site publication time."
+    },
+    "evidence_ids": [
+      "E-COMMONS-NASHIK-FLOOD-20260724"
+    ],
+    "input_claim_ids": [],
+    "method_path": null,
+    "limitations": [
+      "The Commons uploader and EXIF support the stated date/place and asserted license, but the site cannot independently guarantee full copyright chain of title.",
+      "The file page and EXIF disagree on minute-level camera time; only the date is used.",
+      "Depicted inundation alone does not establish cause, extent, damage, casualties or a September water shortage."
+    ]
   }
 ]

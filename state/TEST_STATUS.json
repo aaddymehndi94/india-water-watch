@@ -153,5 +153,40 @@
     "label": "G13b live GitHub Pages browser and axe review",
     "status": "passed: 131/131 general browser checks; 81/81 interaction checks; 16 axe cases, zero violations",
     "at": "2026-09-24T10:03:18Z"
+  },
+  {
+    "label": "G14 approved-data validation and Python unit tests (80)",
+    "status": "passed",
+    "at": "2026-09-24T10:33:15Z"
+  },
+  {
+    "label": "G14 Astro strict check",
+    "status": "passed: 46 files, zero diagnostics",
+    "at": "2026-09-24T10:33:15Z"
+  },
+  {
+    "label": "G14 root, compact and GitHub-prefix static builds",
+    "status": "passed: 145 HTML pages and 330 manifest inventory files per profile; Pagefind indexed 145",
+    "at": "2026-09-24T10:33:15Z"
+  },
+  {
+    "label": "G14 independent source, response-stage and image-rights review",
+    "status": "passed for promoted claims and licensed July photograph; agent review",
+    "at": "2026-09-24T10:33:15Z"
+  },
+  {
+    "label": "G14 general Chrome journeys",
+    "status": "passed: 131/131 root and 131/131 prefix, no external runtime requests",
+    "at": "2026-09-24T10:33:15Z"
+  },
+  {
+    "label": "G14 independent final root and prefix browser, axe, route and static review",
+    "status": "passed: 201/201 browser and 28/28 axe per profile; 30/30 direct routes; zero broken local links or leaks",
+    "at": "2026-09-24T10:38:32Z"
+  },
+  {
+    "label": "G14 structural release gate",
+    "status": "passed for candidate-20260924-5993f9d4621f",
+    "at": "2026-09-24T10:38:32Z"
   }
 ]

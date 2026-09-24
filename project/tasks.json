@@ -1030,14 +1030,16 @@
     "depends_on": [
       "T55"
     ],
-    "status": "in_progress",
+    "status": "completed",
     "suggested_paths": [
       "reporting/g14_local_data.md"
     ],
     "acceptance": [
       "Exact accessible source/asset, date, scope, rights and independent review before publication"
     ],
-    "result_paths": [],
+    "result_paths": [
+      "reporting/g14_local_data.md"
+    ],
     "blockers": []
   },
   {
@@ -1048,14 +1050,16 @@
     "depends_on": [
       "T55"
     ],
-    "status": "in_progress",
+    "status": "completed",
     "suggested_paths": [
       "reporting/g14_response_outcomes.md"
     ],
     "acceptance": [
       "Exact accessible source/asset, date, scope, rights and independent review before publication"
     ],
-    "result_paths": [],
+    "result_paths": [
+      "reporting/g14_response_outcomes.md"
+    ],
     "blockers": []
   },
   {
@@ -1066,14 +1070,16 @@
     "depends_on": [
       "T55"
     ],
-    "status": "in_progress",
+    "status": "completed",
     "suggested_paths": [
       "reporting/g14_image_rights.md"
     ],
     "acceptance": [
       "Exact accessible source/asset, date, scope, rights and independent review before publication"
     ],
-    "result_paths": [],
+    "result_paths": [
+      "reporting/g14_image_rights.md"
+    ],
     "blockers": []
   },
   {
@@ -1086,12 +1092,19 @@
       "T57",
       "T58"
     ],
-    "status": "not_started",
+    "status": "in_progress",
     "suggested_paths": [],
     "acceptance": [
       "Material new content only if source/method/rights checks pass; rebuild and live verify"
     ],
-    "result_paths": [],
+    "result_paths": [
+      "state/RELEASE_REPORT.md",
+      "state/RELEASE_REVIEW.json",
+      "reporting/g14_postpromotion_source_review.md",
+      "reporting/g14_quality_review.md",
+      "release/site-github.zip",
+      "release/site-compact.zip"
+    ],
     "blockers": []
   }
 ]

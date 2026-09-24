@@ -55,7 +55,11 @@ function RainFocus({ row, name, sourceBase }: { row: Observation; name: string; 
 }
 
 export default function AtlasFilter({ geographies, observations, claims, sourceBase, stateBase }: Props) {
-  const rain = useMemo(() => observations.filter(o => o.metricId === 'rainfall_departure_pct' && typeof o.value === 'number'), [observations]);
+  const rainSnapshots = useMemo(() => observations.filter(o => o.metricId === 'rainfall_departure_pct' && typeof o.value === 'number'), [observations]);
+  const rainDates = useMemo(() => [...new Set(rainSnapshots.map(o => o.periodEnd.slice(0, 10)))].sort().reverse(), [rainSnapshots]);
+  const latestRainDate = rainDates[0] || '';
+  const [rainDate, setRainDate] = useState(latestRainDate);
+  const rain = useMemo(() => rainSnapshots.filter(o => o.periodEnd.slice(0, 10) === rainDate), [rainSnapshots, rainDate]);
   const storage = useMemo(() => observations.filter(o => o.metricId === 'reservoir_live_storage_bcm' && typeof o.value === 'number'), [observations]);
   const places = useMemo(() => geographies.filter(isState).sort((a, b) => a.name.localeCompare(b.name)), [geographies]);
   const stateCount = places.filter(g => g.type === 'state').length;
@@ -74,6 +78,8 @@ export default function AtlasFilter({ geographies, observations, claims, sourceB
       const nextMetric = params.get('metric');
       const stage: View = nextView === 'coverage' || nextView === 'storage' || nextView === 'rainfall' ? nextView : nextMetric === 'reservoir_live_storage_bcm' ? 'storage' : 'rainfall';
       const place = params.get('place') || '';
+      const requestedRainDate = params.get('rain-date') || latestRainDate;
+      setRainDate(rainDates.includes(requestedRainDate) ? requestedRainDate : latestRainDate);
       setView(stage);
       setSelected(stage === 'coverage' ? places.some(g => g.id === place) ? place : '' : stage === 'storage' ? storage.some(o => o.geographyId === place) ? place : storage[0]?.geographyId || '' : rain.some(o => o.geographyId === place) ? place : rain.find(o => o.geographyId === 'india')?.geographyId || rain[0]?.geographyId || '');
       setQuery(params.get('q') || '');
@@ -81,18 +87,20 @@ export default function AtlasFilter({ geographies, observations, claims, sourceB
       setHydrated(true);
     };
     read(); window.addEventListener('popstate', read); return () => window.removeEventListener('popstate', read);
-  }, [places, rain, storage]);
-  function update(next: { view?: View; selected?: string; query?: string; layout?: CoverageLayout }) {
+  }, [places, rain, rainDates, latestRainDate, storage]);
+  function update(next: { view?: View; selected?: string; query?: string; layout?: CoverageLayout; rainDate?: string }) {
     const v = next.view ?? view;
     const s = next.selected ?? selected;
     const q = next.query ?? query;
     const layout = next.layout ?? coverageLayout;
-    setView(v); setSelected(s); setQuery(q); setCoverageLayout(layout);
+    const chosenRainDate = next.rainDate ?? rainDate;
+    setView(v); setSelected(s); setQuery(q); setCoverageLayout(layout); setRainDate(chosenRainDate);
     const params = new URLSearchParams();
     if (v !== 'rainfall') params.set('view', v);
     if (s && !(v === 'rainfall' && s === 'india')) params.set('place', s);
     if (q.trim() && v === 'coverage') params.set('q', q.trim());
     if (v === 'coverage' && layout === 'az') params.set('layout', 'az');
+    if (v === 'rainfall' && chosenRainDate && chosenRainDate !== latestRainDate) params.set('rain-date', chosenRainDate);
     history.pushState(null, '', `${location.pathname}${params.size ? `?${params}` : ''}`);
   }
   function changeView(next: View) {
@@ -111,7 +119,8 @@ export default function AtlasFilter({ geographies, observations, claims, sourceB
       <button type="button" disabled={!hydrated} aria-pressed={view === 'storage'} onClick={() => changeView('storage')}>02 <span>Storage</span> <b>{storage.length}</b></button>
       <button type="button" disabled={!hydrated} aria-pressed={view === 'coverage'} onClick={() => changeView('coverage')}>03 <span>Places</span> <b>{places.length}</b></button>
     </div>
-    {view === 'rainfall' && <section aria-labelledby="atlas-rain-title"><div className="section-head"><div><p className="eyebrow">IMD · {rainPeriod}</p><h3 id="atlas-rain-title">How far from the normal?</h3></div><p>Tap a bar to inspect a reported value and its source. These are rainfall departures; separate regional cumulative normal totals are not printed in the provider graphic.</p></div>
+    {view === 'rainfall' && <section aria-labelledby="atlas-rain-title"><div className="section-head"><div><p className="eyebrow">IMD · {rainPeriod}</p><h3 id="atlas-rain-title">How far from the normal?</h3></div><p>Choose a dated snapshot, then tap a bar for the reported value and source. These are cumulative rainfall departures; separate regional cumulative normal totals are not printed in the provider graphic.</p></div>
+      {rainDates.length > 1 && <><div className="atlas-date-switch" role="group" aria-label="Choose a cumulative rainfall snapshot">{rainDates.map(day => <button key={day} type="button" disabled={!hydrated} aria-pressed={rainDate === day} onClick={() => update({ rainDate: day })}>{date(day)}<span>{day === latestRainDate ? 'Latest reviewed' : 'Earlier reviewed'}</span></button>)}</div><p className="small muted">Both readings start on 1 June. Moving between them changes the cumulative period and its same-date normal; their difference is not a measured one-day rainfall total or household water change.</p></>}
       {rain.length ? <><div className="evidence-plot" role="group" aria-label="Select a reported rainfall departure">{rain.map(o => { const magnitude = Math.min(100, Math.abs(o.value ?? 0) / 50 * 100); return <button className="evidence-bar" type="button" disabled={!hydrated} key={o.id} aria-pressed={selectedRain?.id === o.id} onClick={() => update({ selected: o.geographyId })}><span className="evidence-bar-label">{names.get(o.geographyId) || o.geographyId}<small>{evidenceKind(o)}</small></span><span className="evidence-bar-track" aria-hidden="true"><span className="evidence-bar-fill" style={{ width: `${magnitude}%` }} /></span><strong>{o.value?.toFixed(1)}%</strong></button>; })}</div>{selectedRain && <RainFocus row={selectedRain} name={names.get(selectedRain.geographyId) || selectedRain.geographyId} sourceBase={sourceBase} />}<p className="small muted">Bar lengths use a fixed 0 to −50% magnitude axis. They are not local conditions or a ranking of harm. <a href={`${sourceBase}${encodeURIComponent(rain[0].sourceId)}/`}>See source records ↗</a></p><details><summary>Read all rainfall values as a table</summary><div className="table-wrap"><table className="data-table atlas-table"><caption>IMD rainfall departure reports, with period and evidence</caption><thead><tr><th scope="col">Place</th><th scope="col">Departure</th><th scope="col">Period</th><th scope="col">Source</th></tr></thead><tbody>{rain.map(o => <tr key={o.id}><td>{names.get(o.geographyId) || o.geographyId}</td><td>{o.value?.toFixed(1)}%</td><td>{date(o.periodStart)} to {date(o.periodEnd)}</td><td><a href={`${sourceBase}${encodeURIComponent(o.sourceId)}/`}>Evidence ↗</a></td></tr>)}</tbody></table></div></details></> : <div className="empty-panel"><p>No approved rainfall observations in this release.</p></div>}
     </section>}
     {view === 'storage' && <section aria-labelledby="atlas-storage-title"><div className="section-head"><div><p className="eyebrow">CWC · {storagePeriod}</p><h3 id="atlas-storage-title">What monitored reservoirs held</h3></div><p>Each fill is a fraction of its own monitored cohort’s live capacity. The two gauges do not share a denominator and are not a basin map.</p></div><div className="storage-pair">{storage.map(o => { const claim = claims.find(c => c.id === o.claimId); const capacity = capacityFrom(claim); const percent = capacity && o.value !== null ? 100 * o.value / capacity : null; return <article className="storage-meter" key={o.id}><p className="eyebrow">{names.get(o.geographyId) || o.geographyId}</p><div className="storage-meter-figure" role="img" aria-label={percent === null ? `${o.value} BCM reported live storage; cohort capacity unavailable` : `${o.value} of ${capacity} BCM live capacity, ${percent.toFixed(2)} percent`}>{percent !== null ? <div className="storage-meter-track"><div className="storage-meter-fill" style={{ height: `${Math.max(0, Math.min(100, percent))}%` }} /></div> : <p>Capacity unavailable; no fill shown.</p>}<div className="storage-meter-value"><strong>{o.value?.toFixed(3)}</strong><span>BCM live storage</span>{percent !== null && <b>{percent.toFixed(2)}% of own capacity</b>}</div></div><p className="small">Status date {date(o.periodEnd)} · {evidenceKind(o)}. {capacity === null ? 'Capacity not available in the approved claim.' : `Combined live capacity ${capacity.toFixed(3)} BCM.`}</p><a href={`${sourceBase}${encodeURIComponent(o.sourceId)}/`}>CWC bulletin and limits ↗</a></article>; })}</div><p className="small muted">CWC’s southern cohort consists of 50 monitored reservoirs and is not IMD’s South Peninsular rainfall region. The national CWC cohort contains the southern one, so these are not independent sums. Neither gauge measures household supply.</p><details><summary>Read monitored storage values as a table</summary><div className="table-wrap"><table className="data-table atlas-table"><caption>CWC monitored reservoir live storage, {storagePeriod}</caption><thead><tr><th scope="col">Cohort</th><th scope="col">Live storage</th><th scope="col">Capacity</th><th scope="col">Status date</th><th scope="col">Source</th></tr></thead><tbody>{storage.map(o => { const capacity = capacityFrom(claims.find(c => c.id === o.claimId)); return <tr key={o.id}><td>{names.get(o.geographyId) || o.geographyId}</td><td>{o.value?.toFixed(3)} BCM</td><td>{capacity === null ? 'Not available' : `${capacity.toFixed(3)} BCM`}</td><td>{date(o.periodEnd)}</td><td><a href={`${sourceBase}${encodeURIComponent(o.sourceId)}/`}>Evidence ↗</a></td></tr>; })}</tbody></table></div></details></section>}

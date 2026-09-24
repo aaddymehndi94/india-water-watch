@@ -549,5 +549,120 @@
     "source_inspected": true,
     "upstream_evidence_ids": [],
     "access_notes": "Source and hash independently reviewed in reporting/g13_independent_source_review.md. No images, logos or report tables republished. Publication day unknown."
+  },
+  {
+    "id": "E-IMD-ALLINDIA-20260924",
+    "source_id": "imd_all_india_daily_graphic",
+    "url": "https://mausam.imd.gov.in/ClimateInformation/imdweb/DAY_WEEK/all-india.gif",
+    "title": "IMD cumulative rainfall over the country as a whole, 2026",
+    "publisher": "India Meteorological Department",
+    "published_at": null,
+    "retrieved_at": "2026-09-24T10:10:25Z",
+    "observation_period": {
+      "start": "2026-06-01T00:00:00+05:30",
+      "end": "2026-09-24T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "season_to_date",
+      "cutoff_convention": "IMD graphic labels dates June 1 through September 24; clock hour is not specified. Times in this record encode calendar dates only."
+    },
+    "locator": "Middle panel actual 723.6 mm / normal 843.2 mm (1971–2020); bottom panel cumulative departure −14.2% through Sep.24",
+    "sha256": "4114c80678444756c7d2a86e1fb58c799b43439a1d0ab2e5b0bcb8a365003f9f",
+    "local_snapshot_path": "artifacts/research/g14_lead/all-india-20260924.gif",
+    "rights_status": "permitted_excerpt",
+    "source_inspected": true,
+    "upstream_evidence_ids": [],
+    "access_notes": "Mutable official GIF; brief numeric facts extracted, graphic not republished. Normal 1971-2020 appears in panel. Snapshot byte count 60374. Source exact values independently reread on 24 September 2026; no provider publication time asserted."
+  },
+  {
+    "id": "E-IMD-HOMO-20260924",
+    "source_id": "imd_homogeneous_regions_daily_graphic",
+    "url": "https://mausam.imd.gov.in/ClimateInformation/imdweb/DAY_WEEK/homo.gif",
+    "title": "IMD rainfall over four homogeneous regions, 2026",
+    "publisher": "India Meteorological Department",
+    "published_at": null,
+    "retrieved_at": "2026-09-24T10:10:25Z",
+    "observation_period": {
+      "start": "2026-06-01T00:00:00+05:30",
+      "end": "2026-09-24T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "season_to_date",
+      "cutoff_convention": "IMD graphic labels dates June 1 through September 24; clock hour is not specified. Times in this record encode calendar dates only."
+    },
+    "locator": "Four right-hand cumulative departure panels labelled through Sep.24: Northwest −10.8%, East/Northeast −25.6%, Central −4.8%, South Peninsula −23.5%; 1971–2020 daily normal label",
+    "sha256": "3489028ba0f793cfcb36a15a8ab49ef1b860785ba698de39471c1a8a348435da",
+    "local_snapshot_path": "artifacts/research/g14_lead/homo-20260924.gif",
+    "rights_status": "permitted_excerpt",
+    "source_inspected": true,
+    "upstream_evidence_ids": [],
+    "access_notes": "Mutable official GIF; brief numeric facts extracted, graphic not republished. Region is IMD homogeneous region, not a state sum. Snapshot byte count 114515. Source exact values independently reread on 24 September 2026; no provider publication time asserted."
+  },
+  {
+    "id": "E-KA-CM-LETTER-20260923",
+    "source_id": "karnataka_cm_letter_20260923",
+    "url": "https://x.com/DKShivakumar/status/2102776129845350875",
+    "title": "Chief Minister D.K. Shivakumar letter to Prime Minister on drought assistance",
+    "publisher": "Office of the Chief Minister of Karnataka / original public X post",
+    "published_at": "2026-09-23T20:34:31+05:30",
+    "retrieved_at": "2026-09-24T10:07:15Z",
+    "observation_period": {
+      "start": "2026-09-23T00:00:00+05:30",
+      "end": "2026-09-23T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "day",
+      "cutoff_convention": "Date of signed public request, not a central approval or payment date."
+    },
+    "locator": "Original X post and attached signed letter: page 1 describes earlier ₹3,705.30 crore memorandum for first 101 taluks; page 2 requests 50% interim release and advance central second SDRF instalment.",
+    "sha256": "a15d1d28c7fbed9531a35ba87ed1d32b5e9eaa0e207569bec66d64341d483b85",
+    "local_snapshot_path": "artifacts/research/g14_response/cm_x_post.html",
+    "rights_status": "permitted_excerpt",
+    "source_inspected": true,
+    "upstream_evidence_ids": [],
+    "access_notes": "Original letter pages visually read; X HTML SHA is the 10:07 UTC cached post, media bytes can vary. Letter images reviewed as evidence only, not cleared for republication. Earlier 10 September memorandum was not independently obtained."
+  },
+  {
+    "id": "E-CSIR-NEERI-ASSAM-20260810",
+    "source_id": "csir_neeri_assam_filters_20260810",
+    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2297133&lang=1&reg=1",
+    "title": "CSIR-NEERI report on emergency flood water-treatment units in Jorhat, Assam",
+    "publisher": "CSIR-NEERI / Press Information Bureau",
+    "published_at": null,
+    "retrieved_at": "2026-09-24T10:07:17Z",
+    "observation_period": {
+      "start": "2026-08-10T00:00:00+05:30",
+      "end": "2026-08-10T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "day",
+      "cutoff_convention": "Date of agency release; exact installation and handover dates were not stated."
+    },
+    "locator": "10 August 2026 release, paragraphs 2–3: five household and five community units installed in Jonakimondal; 70 household and 20 community units handed to district administration.",
+    "sha256": "d21a61c5f990126b2cdc7c892a17a98131c55e53d621a5ae9608a4c5aa73e523",
+    "local_snapshot_path": "artifacts/research/g14_response/pib_assam_filters_20260810.html",
+    "rights_status": "permitted_excerpt",
+    "source_inspected": true,
+    "upstream_evidence_ids": [],
+    "access_notes": "Agency-reported installation/handover output; no independent water-quality or sustained-user result. Date known to day only; no precise publication timestamp asserted."
+  },
+  {
+    "id": "E-COMMONS-NASHIK-FLOOD-20260724",
+    "source_id": "commons_nashik_flood_20260724",
+    "url": "https://commons.wikimedia.org/wiki/File:Nashik_Rains_Godavari_Floods_Ramkund_Panchavati_24_July_2026_Images_4.jpg",
+    "title": "Nashik Rains Godavari Floods Ramkund Panchavati 24 July 2026 Images 4.jpg",
+    "publisher": "Rohit R Nashik / Temple City Nashik via Wikimedia Commons",
+    "published_at": "2026-07-25T10:49:42Z",
+    "retrieved_at": "2026-09-24T10:05:54Z",
+    "observation_period": {
+      "start": "2026-07-24T00:00:00+05:30",
+      "end": "2026-07-24T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "day",
+      "cutoff_convention": "Creator-file-page date of photographed July flood scene; minute-level camera times conflict, so date precision only."
+    },
+    "locator": "Commons file page description, image-info API and EXIF: flooded Godavari at Ramkund/Panchavati, Nashik; own-work CC BY-SA 4.0; original SHA-1 77e40513a3efe2156859e887a27dc2ab13b692dd; 1280px thumbnail SHA-256 55a9bd2503d8e38691d9e16ff3d09e5ec1fd81576482ce49f94c8fe58b411457.",
+    "sha256": "a4bf1065d15b4839c590dce38052696dcd77f60cb56b244e1d072d5ad917a223",
+    "local_snapshot_path": "artifacts/research/g14_images/nashik-flood-2026.json",
+    "rights_status": "open_licensed",
+    "source_inspected": true,
+    "upstream_evidence_ids": [],
+    "access_notes": "CC BY-SA 4.0 file; credit title, © 2026 Rohit R Nashik / Temple City Nashik, exact source/license links and resized-from-original notice. Image supports July Nashik flood scene only, not September shortage or cause/damage. API JSON SHA recorded; downloaded thumbnail exact bytes checked."
   }
 ]

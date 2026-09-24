@@ -906,5 +906,57 @@
     "license_status": "factual_excerpt_only",
     "selected_data_endpoint": "https://www.jswsteel.in/jsw-steel-annual-report-2024-25/water-resources.html",
     "production_approved": true
+  },
+  {
+    "id": "karnataka_cm_letter_20260923",
+    "title": "Karnataka chief minister’s 23 September drought assistance letter",
+    "publisher": "Office of the Chief Minister of Karnataka",
+    "entry_url": "https://x.com/DKShivakumar/status/2102776129845350875",
+    "topics": [
+      "response",
+      "political-statement"
+    ],
+    "access_status": "source_inspected",
+    "checked_on": "2026-09-24",
+    "access_notes": "Signed letter images inspected. Request for interim assistance and SDRF advance, not approval/transfer; original images not cleared for republication.",
+    "expected_cadence": "event_based",
+    "license_status": "factual_excerpt_only",
+    "selected_data_endpoint": "https://x.com/DKShivakumar/status/2102776129845350875",
+    "production_approved": true
+  },
+  {
+    "id": "csir_neeri_assam_filters_20260810",
+    "title": "CSIR-NEERI emergency treatment deployment after Assam flooding",
+    "publisher": "CSIR-NEERI / Press Information Bureau",
+    "entry_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2297133&lang=1&reg=1",
+    "topics": [
+      "response",
+      "flood",
+      "water-quality"
+    ],
+    "access_status": "source_inspected",
+    "checked_on": "2026-09-24",
+    "access_notes": "Agency-reported installation and handover only; no independently tested sustained outcome.",
+    "expected_cadence": "event_based",
+    "license_status": "factual_excerpt_only",
+    "selected_data_endpoint": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2297133&lang=1&reg=1",
+    "production_approved": true
+  },
+  {
+    "id": "commons_nashik_flood_20260724",
+    "title": "Rohit R Nashik July 2026 Godavari flood photograph",
+    "publisher": "Rohit R Nashik / Temple City Nashik via Wikimedia Commons",
+    "entry_url": "https://commons.wikimedia.org/wiki/File:Nashik_Rains_Godavari_Floods_Ramkund_Panchavati_24_July_2026_Images_4.jpg",
+    "topics": [
+      "flood",
+      "documentary-photo"
+    ],
+    "access_status": "source_inspected",
+    "checked_on": "2026-09-24",
+    "access_notes": "Creator-uploaded own work, CC BY-SA 4.0; exact title/creator/source/license/change notice required. July Nashik only.",
+    "expected_cadence": "event_based",
+    "license_status": "CC_BY_SA_4_0",
+    "selected_data_endpoint": "https://commons.wikimedia.org/wiki/File:Nashik_Rains_Godavari_Floods_Ramkund_Panchavati_24_July_2026_Images_4.jpg",
+    "production_approved": true
   }
 ]
