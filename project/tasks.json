@@ -1197,7 +1197,7 @@
       "T61",
       "T62"
     ],
-    "status": "in_progress",
+    "status": "completed",
     "suggested_paths": [
       "state/RELEASE_REPORT.md",
       "state/RELEASE_REVIEW.json",
@@ -1210,13 +1210,35 @@
     ],
     "result_paths": [
       "state/RELEASE_REPORT.md",
+      "state/RELEASE_REVIEW.json",
       "reporting/g15_postpromotion_source_review.md",
       "reporting/g15_quality_review.md",
-      "state/RELEASE_REVIEW.json",
       "release/site-github.zip",
       "release/site-compact.zip",
-      "release/journalist-exports.zip"
+      "release/journalist-exports.zip",
+      "state/DEPLOYMENT_REPORT.md"
     ],
+    "blockers": []
+  },
+  {
+    "id": "T64",
+    "gate": "G16",
+    "title": "Refresh the next official rainfall and storage evidence without changing observation dates by build alone",
+    "owner_role": "data_engineer",
+    "depends_on": [
+      "T63"
+    ],
+    "status": "queued",
+    "suggested_paths": [
+      "data/candidates/",
+      "reporting/g16_source_refresh.md"
+    ],
+    "acceptance": [
+      "Fetch official current products with source/observation/retrieval clocks",
+      "Independently replay changed values and report gaps before promotion",
+      "Keep released G15 snapshot visible until a new gate passes"
+    ],
+    "result_paths": [],
     "blockers": []
   }
 ]

@@ -1,6 +1,6 @@
 # India Water Watch · G15 visual reporting candidate
 
-**Candidate:** `candidate-20260924-febfcaa884ce`, built 24 September 2026. The prior G14 content is live at [GitHub Pages](https://aaddymehndi94.github.io/india-water-watch/) until this reviewed revision is pushed and verified. The previous G14 release report is preserved in Git history.
+**Candidate:** `candidate-20260924-febfcaa884ce`, built 24 September 2026 and deployed to the maintained [GitHub Pages site](https://aaddymehndi94.github.io/india-water-watch/) in Actions run 35992840931. Build and deploy succeeded by 11:25:39 UTC; the G15 live browser journey and content/asset checks passed by 11:28 UTC. The previous G14 release report is preserved in Git history. `state/DEPLOYMENT_REPORT.md` records the deployment evidence.
 
 ## What changed
 

@@ -238,5 +238,10 @@
     "label": "G15 structural release gate",
     "status": "passed for candidate-20260924-febfcaa884ce",
     "at": "2026-09-24T11:22:35+00:00"
+  },
+  {
+    "label": "G15 GitHub Pages live deployment and browser smoke",
+    "status": "passed: Actions 35992840931 build/deploy success, 131/131 Chrome journeys, nine content routes and five assets/export hashes verified",
+    "at": "2026-09-24T11:28:26Z"
   }
 ]
