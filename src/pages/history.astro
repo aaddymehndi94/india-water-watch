@@ -1,6 +1,7 @@
 ---
 import Site from '../layouts/Site.astro';
 import PageHeader from '../components/PageHeader.astro';
+import '../styles/g13-sidepages.css';
 import { release, url } from '../lib/publication';
 const claim = (id: string) => release.claims.find(c => c.id === id);
 const source = (id: string) => {
@@ -11,9 +12,12 @@ const current = claim('C-IMD-RAINFALL-DEP-imd-south-peninsular-20260923');
 const y2002 = claim('C-IMD-HISTORY-SOUTH-2002');
 const y2009 = claim('C-IMD-HISTORY-SOUTH-2009');
 const y2025 = claim('C-IMD-HISTORY-SOUTH-2025');
+const juneIndia = claim('C-IMD-JUNE-RANK-INDIA-2026');
+const juneEast = claim('C-IMD-JUNE-RANK-EASTNE-2026');
 ---
-<Site title="When was it last this bad?" description="Three source-linked South Peninsula monsoon seasons and why the partial 2026 figure cannot yet be ranked against them.">
-  <PageHeader title="When was it last this bad?" eyebrow="History / same season, different year" description="The honest answer is not a year. It is a rule: compare the same place, the same months and the same cutoff—or refuse the rank." />
+<Site title="A June last lower in 2014" description="IMD's completed June 2026 historical rank, and why the partial monsoon through 23 September still cannot be ranked against complete seasons.">
+  <PageHeader title="A June last lower in 2014" eyebrow="History / match the clock" description="IMD can rank the completed month: June 2026 was India's sixth-lowest June since 1901. The unfinished monsoon is a different comparison." />
+  {juneIndia && <section class="g13-history-spotlight" aria-labelledby="june-rank-title"><div class="shell g13-history-grid"><div><p class="eyebrow">IMD report · completed June 2026</p><h2 id="june-rank-title">The sixth-lowest June in 126 years.</h2><p class="g13-history-lede">Of the five lower Indian Junes IMD lists since 1901, <strong>2014 was the most recent</strong>. In June 2026, the agency recorded 102.5 mm against its 165.3 mm June normal: <strong>38.0% below normal</strong> for that month.</p><p class="small">IMD rounds the observed total to 103 mm on page 1 and prints 102.5 mm in its table on page 3. <a href={source(juneIndia.id)}>See the original pages and claim limits ↗</a></p></div><div class="g13-june-figure" role="img" aria-label="June 2026 India rainfall: 102.5 millimetres observed versus 165.3 millimetres normal"><div class="g13-june-rank"><span>06</span><small>rank among lowest Junes<br />in IMD series since 1901</small></div><div class="g13-june-bars"><div><span>June normal</span><b style="--bar:100%">165.3 <small>mm</small></b></div><div><span>June 2026</span><b style="--bar:62%">102.5 <small>mm</small></b></div></div><p>One month. One geography. One source series.</p></div></div>{juneEast && <div class="shell g13-history-rail"><strong>02</strong><p>East & Northeast India had its <b>second-lowest June since 1901</b>, IMD says: 202.6 mm, after 2009 in that regional series. <a href={source(juneEast.id)}>See this separate regional finding ↗</a></p></div>}</section>}
   <section class="section g11-chapter"><div class="shell"><div class="g11-chapter-head"><span class="g11-chapter-number">01</span><div><p class="eyebrow">The trap in the comparison</p><h2>Seven September days separate the questions.</h2></div></div>
     <div class="grid-2"><div><span class="g11-tag measured">Measured · IMD reported</span><p class="g11-pull">For South Peninsular India, IMD reported <strong>−25.7%</strong> through <strong>23 September 2026</strong>. <a href={current ? source(current.id) : url('/sources/')}>2026 regional graphic ↗</a></p></div><div class="g11-clock"><span class="g11-tag history">Historical context</span><p>Our reviewed older rows cover <strong>every day from June through 30 September</strong>. Seven further days of rain can change a seasonal total. A partial 2026 departure cannot be ranked among complete seasons. The regional graphic also omits each cumulative normal total, so the 2026 regional percentage is attributed to IMD.</p></div></div>
     <p class="small muted">The IMD South Peninsula here is a ten-subdivision rainfall region, not a selected set of current states or the CWC southern reservoir cohort. <a href={url('/methodology/')}>Comparison rules ↗</a></p>

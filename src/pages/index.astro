@@ -2,6 +2,7 @@
 import Site from '../layouts/Site.astro';
 import Status from '../components/Status.astro';
 import RainfallChart from '../components/RainfallChart.astro';
+import WaterStoryStage from '../components/WaterStoryStage';
 import { release, url } from '../lib/publication';
 const claim = (id: string) => release.claims.find(c => c.id === id);
 const source = (id: string) => {
@@ -23,21 +24,20 @@ const heavyRain = claim('C-IMD-WEATHER-EVENT-20260924');
 const weekForecast = claim('C-IMD-EXTENDED-20260917');
 const threeOrders = claim('C-KA-DROUGHT-THREE-ORDERS-20260922');
 const assessment = claim('C-IWW-AI-ASSESSMENT-20260924');
+const juneRank = claim('C-IMD-JUNE-RANK-INDIA-2026');
 ---
 <Site title="The rain is down. What happens next?" description="A source-linked feature on India's dated 2026 rainfall shortfall, monitored reservoir storage, Karnataka's declaration, household access and what to watch next.">
-  <section class="g11-cover"><figure class="g11-cover-art"><img src={url('/images/hero-water-abstract.webp')} alt="" width="1672" height="941" loading="eager" decoding="async" /><figcaption>AI-generated symbolic water illustration; not a photograph, map or observation of 2026 conditions.</figcaption></figure><div class="shell g11-cover-grid">
-    <div>
-      <p class="g11-cover-kicker">India Water Watch / Monsoon 2026 / Reviewed snapshot</p>
-      <h1>The rain is down.<br />What happens next?</h1>
-      <p class="g11-deck">A national rainfall shortfall. A reservoir snapshot from an earlier week. A formal drought declaration in part of Karnataka. Together they raise urgent questions about water—and answer fewer than you might think.</p>
-      <div class="button-row"><a class="button" href="#story">Read the story ↓</a><a class="button button-light" href={url('/explore/')}>Explore the evidence ↗</a></div>
+  <section class="g13-cover" aria-labelledby="g13-cover-title"><figure class="g13-cover-art"><img src={url('/images/hero-water-abstract.webp')} alt="" width="1672" height="941" loading="eager" decoding="async" /><figcaption><strong>AI-generated illustration.</strong> Symbolic water image; not a photograph, map or measurement of 2026 conditions.</figcaption></figure><div class="shell g13-cover-inner">
+    <div class="g13-cover-meta"><span>India Water Watch <i aria-hidden="true">/</i> Monsoon 2026</span><span>Independent evidence feature <i aria-hidden="true">/</i> 01</span></div>
+    <div class="g13-cover-copy"><p class="g13-cover-kicker">A dated national reading</p><h1 id="g13-cover-title">One monsoon.<br /><em>Many water stories.</em></h1><p>June was exceptionally dry in IMD’s long record. The cumulative reading through 23 September covers a different, longer window. Neither tells us which tap, farm or reservoir has water.</p></div>
+    <div class="g13-cover-readings" aria-label="Two separate India rainfall windows">
+      {juneRank && <a class="g13-cover-reading" href={source(juneRank.id)}><span class="g11-tag history">Reported historical rank · IMD</span><strong>6<sup>th</sup></strong><span>lowest June rainfall since 1901</span><small>India · completed June 2026 · IMD finding ↗</small></a>}
+      {rain && <a class="g13-cover-reading" href={source(rain.id)}><span class="g11-tag measured">Measured · IMD</span><strong>−14.9<sup>%</sup></strong><span>rainfall departure for 1 June–23 September</span><small>713.3 mm recorded / 837.7 mm same-date normal ↗</small></a>}
     </div>
-    <aside class="g11-hero-number" aria-label="Dated national rainfall finding">
-      <p><span class="g11-tag measured">Measured · IMD</span></p><p class="eyebrow">India / 1 June–23 September 2026</p>
-      {rain ? <><strong>−14.9%</strong><p>IMD's reported rainfall departure: <b>713.3 mm</b> received against <b>837.7 mm</b> normal for those dates, using its 1971–2020 reference.</p><a class="g11-source" href={source(rain.id)}>See IMD graphic and calculation ↗</a></> : <p>National rainfall finding awaiting approved evidence. <a href={url('/data-status/')}>See data status ↗</a></p>}
-      <small>Rainfall departure does not measure drinking-water supply or declare a national drought.</small>
-    </aside>
+    <div class="g13-cover-foot"><p>Two different clocks. Follow the evidence before drawing a water-supply conclusion.</p><a href="#measurement">Compare the readings <span aria-hidden="true">↓</span></a><a href={url('/explore/?view=coverage')}>Find your place <span aria-hidden="true">↗</span></a></div>
   </div></section>
+
+  {juneRank && rain && <div id="measurement" class="g13-measurement"><div class="shell"><WaterStoryStage client:load june={{id:'june',tabLabel:'June 2026',periodLabel:'1–30 June 2026',actualMm:102.5,normalMm:165.3,sourceHref:source(juneRank.id),sourceLabel:'IMD June summary, p. 1 and p. 3',claimId:juneRank.id,finding:'India’s sixth-lowest June rainfall since 1901, according to IMD.',limit:'A completed June rank cannot be carried over to the season through 23 September or used to infer water shortage.'}} seasonToDate={{id:'season-to-date',tabLabel:'Season to date',periodLabel:'1 June–23 September 2026',actualMm:713.3,normalMm:837.7,sourceHref:source(rain.id),sourceLabel:'IMD 23 September graphic',claimId:rain.id,limit:'This cumulative national rainfall departure is not a measure of household supply, crop loss or official drought status.'}} /></div></div>}
 
   <div id="story" class="shell g11-sequence"><Status /><nav aria-label="Feature chapters" class="story-index"><p class="eyebrow">Five questions</p><a href="#where">Where did it fall short?</a><a href="#stored">What is stored?</a><a href="#action">What did government do?</a><a href="#tap">What reaches people?</a><a href="#future">What changes next?</a></nav></div>
 

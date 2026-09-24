@@ -233,5 +233,73 @@
     ],
     "synthetic": false,
     "public": true
+  },
+  {
+    "id": "O-DCA-ONION-BLR-20250923",
+    "metric_id": "retail_onion_price_inr_per_kg",
+    "series_id": "dca_centrewise_onion_bengaluru",
+    "definition_version": "dca-form-snapshot-2026-09-24",
+    "geography_id": "dca:bengaluru-onion-centre",
+    "boundary_version": "named-monitoring-centre-no-geometry",
+    "period": {
+      "start": "2025-09-23T00:00:00+05:30",
+      "end": "2025-09-23T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "day",
+      "cutoff_convention": "DCA centrewise report selected calendar date; no market sample or clock hour is specified. Time encodes date only."
+    },
+    "value": 23,
+    "unit": "INR/kg",
+    "status": "observed",
+    "missing_reason": null,
+    "normal_value": null,
+    "baseline_id": null,
+    "cohort_id": "DCA-named-Bengaluru-centre",
+    "population_basis": null,
+    "coverage_fraction": null,
+    "evidence_ids": [
+      "E-DCA-ONION-BLR-20250923"
+    ],
+    "quality_flags": [
+      "provider_reported",
+      "centre_sample_unknown",
+      "date_precision_only"
+    ],
+    "synthetic": false,
+    "public": true
+  },
+  {
+    "id": "O-DCA-ONION-BLR-20260923",
+    "metric_id": "retail_onion_price_inr_per_kg",
+    "series_id": "dca_centrewise_onion_bengaluru",
+    "definition_version": "dca-form-snapshot-2026-09-24",
+    "geography_id": "dca:bengaluru-onion-centre",
+    "boundary_version": "named-monitoring-centre-no-geometry",
+    "period": {
+      "start": "2026-09-23T00:00:00+05:30",
+      "end": "2026-09-23T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "day",
+      "cutoff_convention": "DCA centrewise report selected calendar date; no market sample or clock hour is specified. Time encodes date only."
+    },
+    "value": 57,
+    "unit": "INR/kg",
+    "status": "observed",
+    "missing_reason": null,
+    "normal_value": null,
+    "baseline_id": null,
+    "cohort_id": "DCA-named-Bengaluru-centre",
+    "population_basis": null,
+    "coverage_fraction": null,
+    "evidence_ids": [
+      "E-DCA-ONION-BLR-20260923"
+    ],
+    "quality_flags": [
+      "provider_reported",
+      "centre_sample_unknown",
+      "date_precision_only"
+    ],
+    "synthetic": false,
+    "public": true
   }
 ]

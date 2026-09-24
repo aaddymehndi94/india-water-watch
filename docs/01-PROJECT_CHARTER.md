@@ -29,6 +29,10 @@ Discover the current administrative inventory from an authoritative directory. V
 
 A concise national briefing, an exploratory atlas, durable explainers, evidence-backed investigations, a latest-developments desk, a conditional outlook, and an exportable journalist desk. Do not dump hundreds of loosely related articles on one page. Select a few meaningful, contextualized changes and give readers paths to detail.
 
+The lead feature should feel like a major visual news investigation: a striking dated opening, scenes that change rhythm as the reader moves, source-linked charts and diagrams, reader-controlled comparisons, and a clear route from observed weather to storage, official action, lived experience, markets and the next decision point. Make a 30-second reader understand the most surprising verified finding on a phone's first screen. Give a five-minute reader meaningful controls rather than a sequence of decorative cards. Motion must reveal a real change of view or an exact value; it must not imply unobserved intermediate measurements.
+
+Show dated firsthand voices and political statements when a verifiable published record exists, with speaker, outlet/document and context. Use original typographic treatments of linked coverage; do not reproduce article screenshots, publisher photos or artwork without a reusable licence or permission. Investigate claims of a media blackout against actual coverage rather than treating them as a premise. Describe market exposure, price movements and attributed causes as separate evidentiary steps.
+
 ## What success looks like
 
 - One comprehensible current national picture that shows regional disagreement and data gaps.
@@ -39,6 +43,7 @@ A concise national briefing, an exploratory atlas, durable explainers, evidence-
 - Concrete reporting on public response, livelihoods, economy, distributional effects and realistic protective actions.
 - A maintainable refresh pipeline, not a page that must be rewritten by hand every week.
 - A static build that remains readable during traffic spikes and does not charge per visitor.
+- A visually memorable mobile feature with light and dark themes, legible reduced-motion and no-JavaScript reading paths, and interaction that preserves exact dates, source identity and uncertainty.
 
 ## Editorial stance
 

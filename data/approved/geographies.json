@@ -813,5 +813,25 @@
     "evidence_ids": [
       "E-CWC-RSMS-20260910"
     ]
+  },
+  {
+    "id": "dca:bengaluru-onion-centre",
+    "name": "DCA Bengaluru onion monitoring centre",
+    "kind": "station",
+    "authority_code": null,
+    "authority": "Department of Consumer Affairs",
+    "boundary_version": "named-monitoring-centre-no-geometry",
+    "valid_from": null,
+    "valid_to": null,
+    "parent_ids": [
+      "india:karnataka"
+    ],
+    "aliases": [],
+    "geometry_asset": null,
+    "geometry_rights": "No point coordinate or city boundary asserted; source names a monitoring centre only.",
+    "evidence_ids": [
+      "E-DCA-ONION-BLR-20250923",
+      "E-DCA-ONION-BLR-20260923"
+    ]
   }
 ]

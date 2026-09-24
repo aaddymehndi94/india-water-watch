@@ -1,5 +1,5 @@
 {
   "extends": "astro/tsconfigs/strict",
   "include": [".astro/types.d.ts", "**/*"],
-  "exclude": ["dist", "dist-compact", "dist-root", "node_modules", "artifacts", "release", "exports", ".venv"]
+  "exclude": ["dist", "dist-compact", "dist-root", "dist-github", "node_modules", "artifacts", "release", "exports", ".venv"]
 }

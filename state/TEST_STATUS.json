@@ -83,5 +83,35 @@
     "label": "G10 independent browser, visual, accessibility and security sample",
     "status": "passed: 75/75 browser checks per profile; 2,579 references per profile; stated unrun checks",
     "at": "2026-09-24T08:03:56Z"
+  },
+  {
+    "label": "G13a approved schema and 80 Python tests",
+    "status": "passed",
+    "at": "2026-09-24T09:21:00Z"
+  },
+  {
+    "label": "G13a Astro strict check",
+    "status": "passed: 45 files, zero diagnostics",
+    "at": "2026-09-24T09:32:55Z"
+  },
+  {
+    "label": "G13a independent source and public-copy review",
+    "status": "passed for 27 claims; agent review with stated holds",
+    "at": "2026-09-24T09:31:00Z"
+  },
+  {
+    "label": "G13a root Chrome journeys",
+    "status": "passed: 131/131 checks, zero page errors or external requests",
+    "at": "2026-09-24T09:33:50Z"
+  },
+  {
+    "label": "G13a sampled axe accessibility",
+    "status": "passed: 14 cases, zero violations after contrast fix",
+    "at": "2026-09-24T09:33:30Z"
+  },
+  {
+    "label": "G13a GitHub-prefix Chrome journeys",
+    "status": "passed: 131/131 checks on pre-copy-fix build; final prefix smoke pending",
+    "at": "2026-09-24T09:24:00Z"
   }
 ]

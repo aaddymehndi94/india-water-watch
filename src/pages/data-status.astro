@@ -6,6 +6,7 @@ const builtAt = new Date().toISOString();
 const systems = [
  ['Rainfall', release.observations.filter(o => o.metricId.startsWith('rainfall')).length],
  ['Reservoir storage', release.observations.filter(o => o.metricId.startsWith('reservoir')).length],
+ ['Monitored retail price', release.observations.filter(o => o.metricId.startsWith('retail_')).length],
  ['Groundwater', release.observations.filter(o => o.metricId.startsWith('groundwater')).length],
  ['River flow', release.observations.filter(o => o.metricId.startsWith('river')).length],
  ['Household service', release.observations.filter(o => o.metricId.startsWith('service')).length],

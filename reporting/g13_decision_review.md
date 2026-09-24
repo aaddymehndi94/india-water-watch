@@ -1,0 +1,27 @@
+# G13 decision review — 24 September 2026
+
+This is the lead's review of the G11 public edition at 360, 768 and 1440 CSS pixels, its source ledger, implementation and reader path. The current page is a useful checked briefing, but it does not yet meet the publisher's requested visual news feature. The stronger June comparison and a small number of additional official records are approved for the next edition; they were not in G11.
+
+| Choice so far | What worked | What failed or remains open | Decision |
+| --- | --- | --- | --- |
+| Astro static output with React islands, TypeScript and Tailwind available | Fast, portable Pages build; accessible rendered text; no visitor cost or secret | Most visible layout is handwritten CSS and Astro cards. The framework is not a visual ceiling. | Keep the stack and change the experience. Use React for meaningful controls and exact-value transitions, shared source links and static fallbacks. |
+| Cautious evidence reset | G11 kept national rainfall, reservoir storage, Karnataka orders and household service apart, with dates and limitations | The opening sounds like an audit caveat, then delays the strongest verified datum until the fold on mobile | Lead with IMD's completed June rank and a distinct 23 September season-to-date view. Give dates and scope in the graphic itself. |
+| Large abstract cover | Original art and no reuse-rights uncertainty | Static aerial-looking image can feel like a satellite view, despite its caption; the number is in an aside | Prominently label symbolism. Make the first screen carry an exact figure, source and a control. Do not pass symbolic art off as geography. |
+| Repeated three-card chapters | Easy to scan and build | Weak rhythm, low interaction, long text before data, almost no surprise on scroll | Replace key chapters with changing visual scenes, big type, chart/table alternation, sticky data stage and direct routes to local data. |
+| National and regional IMD data | −14.9% India, −26.5% East/Northeast and −25.7% South are dated and traceable | The regional chart is below the prose and offers little reader control. State and district numbers are absent. | Put reader-controlled windows and regions in the story. Keep state/UT atlas honest about missing numeric coverage; no fake heat map. |
+| Historical comparison refusal | Correctly avoids comparing partial 2026 with complete old monsoons | The feature missed a valid dramatic historical comparison: June 2026 was India's sixth-lowest June since 1901 according to IMD | Publish that narrow June finding and 2014 as the most recent lower June. Do not turn it into a rank for the ongoing whole season. |
+| Government response stage tracker | Three original Karnataka gazettes support 177 distinct declared taluks, with no invented aid result | It is text-heavy and too Karnataka-centred for a national feature | Build a visible order→approval→transfer→delivery→outcome chain. Add sourced flood response as a separate branch; show unknown outcomes. |
+| Economy and people pages | Avoid invented 2026 national loss or health counts | The pages do not show a tangible current price record, company exposure chain or voices | Add the DCA two-date Bengaluru onion-centre price, explicitly without water causation; source real farmer/political voices and company/sector exposure before publication. |
+| Atlas | State/UT navigation and stage switch work | A long alphabetical tile list feels like a database, not a national spatial entry | Add clearly nongeographic 36-place tile cartogram and A–Z alternative. Hold boundary shapes until rights and border portrayal are resolved. |
+| Latest updates | Dates stay distinct | No systematic media-window treatment; readers may assume no one reported it | Show dated linked coverage and what it did or did not measure. The observed 2026 reporting contradicts a blanket media-blackout assertion. |
+
+## Reporting and rights decisions
+
+- An article collage will consist of original card typography, short attributed headline summaries, dates, outlet names and links. No screenshots, publisher photographs or AI-generated recreations of a real front page without rights review.
+- A published farmer or politician statement may appear with exact attribution and narrow context. It is not an interview by India Water Watch. Quotes must pass independent source review; no quote will be invented to make a scene dramatic.
+- Stock-market movement, corporate water-risk disclosure and water-related causal effects are separate claims. A company acknowledging a risk does not prove a 2026 share-price impact. A two-date retail price change likewise has multiple possible causes.
+- The publication can make a conditional AI Author assessment with evidence, issue date, horizon, confidence, assumptions and reversal signals. It cannot assign invented probabilities or assert a household shortage from rainfall alone.
+
+## Release test for the revision
+
+The first mobile viewport shows an exact, dated IMD finding and a route into an interaction. At least one central graphic changes under touch and keyboard control while preserving source/date/denominator. Historical June, season-to-date rainfall, older storage and market price appear as separate clocks. Article cards are linkable and rights-safe. The atlas distinguishes navigation from measured state data. Source, accessibility, visual, security and public build checks pass before the next Pages update. Screenshots at mobile, tablet and desktop are retained with the release report.

@@ -62,6 +62,39 @@
     },
     {
       "evidenceIds": [
+        "E-DCA-ONION-BLR-20250923",
+        "E-DCA-ONION-BLR-20260923",
+        "E-DCA-HOME-20260923"
+      ],
+      "geographyIds": [
+        "dca:bengaluru-onion-centre"
+      ],
+      "id": "C-DCA-ONION-BLR-YOY-20260923",
+      "inputClaimIds": [],
+      "kind": "derived",
+      "limitations": [
+        "Single monitored centre with undisclosed sample/transaction volume; not a city average or household bill.",
+        "The 2025 historical row was returned by the form on 24 September 2026 and may reflect later corrections.",
+        "No causal attribution to rainfall, water scarcity, crop damage, trade or other drivers."
+      ],
+      "methodPath": "57 − 23 = 34 INR/kg; (57/23 − 1) × 100 = 147.826%, rounded to 147.8%; source form exact Bengaluru row at both dates, retail unit corroborated by DCA home national row.",
+      "observationIds": [
+        "O-DCA-ONION-BLR-20250923",
+        "O-DCA-ONION-BLR-20260923"
+      ],
+      "period": {
+        "cutoff_convention": "Two discrete same-calendar-date observations; no values between dates are inferred.",
+        "end": "2026-09-23T00:00:00+05:30",
+        "kind": "other",
+        "start": "2025-09-23T00:00:00+05:30",
+        "timezone": "Asia/Kolkata"
+      },
+      "reviewedAt": "2026-09-24T09:02:01Z",
+      "status": "verified",
+      "text": "At the Department of Consumer Affairs’ monitored Bengaluru centre, the reported retail onion price was ₹57/kg on 23 September 2026 versus ₹23/kg on 23 September 2025, a ₹34/kg (147.8%) increase from the displayed prices. The centre record does not identify the cause or represent all Bengaluru purchases."
+    },
+    {
+      "evidenceIds": [
         "E-IMD-EXTENDED-20260917"
       ],
       "geographyIds": [
@@ -171,6 +204,60 @@
       "reviewedAt": "2026-09-24T07:51:13Z",
       "status": "verified",
       "text": "In IMD’s completed June–September 2025 South Peninsula series, the four printed monthly totals sum to 787.2 mm, 9.9% above the table’s displayed 1971–2020 normal. A recent wetter season is a counterexample to assuming a uniform decline."
+    },
+    {
+      "evidenceIds": [
+        "E-IMD-JUNE-SUMMARY-2026"
+      ],
+      "geographyIds": [
+        "imd:east-northeast"
+      ],
+      "id": "C-IMD-JUNE-RANK-EASTNE-2026",
+      "inputClaimIds": [],
+      "kind": "reported",
+      "limitations": [
+        "Official regional monthly attribution; the June region and the current cumulative operational graphic should not be treated as a matched historical season series.",
+        "Rainfall rank does not establish drought declaration or service harm."
+      ],
+      "methodPath": null,
+      "observationIds": [],
+      "period": {
+        "cutoff_convention": "Completed calendar month June 2026; no within-day cutoff is implied.",
+        "end": "2026-06-30T00:00:00+05:30",
+        "kind": "month",
+        "start": "2026-06-01T00:00:00+05:30",
+        "timezone": "Asia/Kolkata"
+      },
+      "reviewedAt": "2026-09-24T09:02:01Z",
+      "status": "attributed",
+      "text": "IMD states that East & Northeast India received 202.6 mm in June 2026, its second-lowest June rainfall since 1901, after June 2009 in that regional series. This describes June only, not the region’s cumulative rainfall through 23 September."
+    },
+    {
+      "evidenceIds": [
+        "E-IMD-JUNE-SUMMARY-2026"
+      ],
+      "geographyIds": [
+        "india"
+      ],
+      "id": "C-IMD-JUNE-RANK-INDIA-2026",
+      "inputClaimIds": [],
+      "kind": "reported",
+      "limitations": [
+        "The source PDF p. 1 rounds June 2026 to 103 mm; p. 3 prints 102.5 mm.",
+        "A completed June rank cannot be assigned to rainfall through 23 September or to household impacts."
+      ],
+      "methodPath": null,
+      "observationIds": [],
+      "period": {
+        "cutoff_convention": "Completed calendar month June 2026; no within-day cutoff is implied.",
+        "end": "2026-06-30T00:00:00+05:30",
+        "kind": "month",
+        "start": "2026-06-01T00:00:00+05:30",
+        "timezone": "Asia/Kolkata"
+      },
+      "reviewedAt": "2026-09-24T09:02:01Z",
+      "status": "attributed",
+      "text": "IMD states that June 2026 was India’s sixth-lowest June rainfall since 1901; among the five lower Junes it names, 2014 is the most recent. This is a June-only rainfall comparison, not a rank for the ongoing June–September 2026 season or a measure of water shortage."
     },
     {
       "evidenceIds": [
@@ -513,7 +600,7 @@
       "limitations": [
         "The order covers listed taluks, not all of Karnataka or India.",
         "It is a declaration and authorization, not proof of relief distribution, crop losses or household water shortage.",
-        "Earlier 101- and 23-taluk orders are cited in the gazette but their annexes were not independently reviewed for a cumulative statewide total."
+        "The earlier 101- and 23-taluk annexes were independently reviewed for the separate cumulative claim; this 22 September order itself adds 53 taluks."
       ],
       "methodPath": "Independently counted 53 numbered annex taluks, 51 severe and two moderate, in 17 distinct named districts.",
       "observationIds": [],
@@ -560,6 +647,61 @@
       "reviewedAt": "2026-09-24T08:32:59Z",
       "status": "verified",
       "text": "Three Karnataka kharif 2026 gazetted orders dated 27 August, 17 September and 22 September list 177 distinct drought-affected taluks in total: 161 severe and 16 moderate. This is a count of administrative declarations by 22 September, not a count of people, measured household shortages, crop loss or relief delivered."
+    },
+    {
+      "evidenceIds": [
+        "E-MHA-FLOOD-ADVANCE-20260801"
+      ],
+      "geographyIds": [
+        "india"
+      ],
+      "id": "C-MHA-FLOOD-ADVANCE-20260801",
+      "inputClaimIds": [],
+      "kind": "reported",
+      "limitations": [
+        "Government announcement and approved amount, not verified treasury transfer or beneficiary outcome.",
+        "Flood-specific response; does not describe water conditions in every named state or later dates."
+      ],
+      "methodPath": null,
+      "observationIds": [],
+      "period": {
+        "cutoff_convention": "Government announcement date; calendar precision only, not a treasury-transfer timestamp.",
+        "end": "2026-08-01T00:00:00+05:30",
+        "kind": "day",
+        "start": "2026-08-01T00:00:00+05:30",
+        "timezone": "Asia/Kolkata"
+      },
+      "reviewedAt": "2026-09-24T09:02:56Z",
+      "status": "attributed",
+      "text": "On 1 August 2026, the Union government said it had approved ₹2,117.85 crore in advance central SDRF shares for six flood-affected states: Arunachal Pradesh, Assam, Gujarat, Himachal Pradesh, Maharashtra and Odisha. The release does not document transfer of these new advances or aid delivered to households, and this is not Karnataka drought relief."
+    },
+    {
+      "evidenceIds": [
+        "E-MOD-FLOOD-RESCUE-20260726"
+      ],
+      "geographyIds": [
+        "india:gujarat",
+        "india:dadra-and-nagar-haveli-and-daman-and-diu"
+      ],
+      "id": "C-MOD-FLOOD-RESCUE-20260726",
+      "inputClaimIds": [],
+      "kind": "reported",
+      "limitations": [
+        "Earlier agency count of 355 by 25 July is part of this operation and must not be added.",
+        "Ministry-reported operation output, not independently audited or evidence of enduring service restoration."
+      ],
+      "methodPath": null,
+      "observationIds": [],
+      "period": {
+        "cutoff_convention": "Army-reported operation interval from 23 through 26 July; the release does not give a complete independent event ledger.",
+        "end": "2026-07-26T00:00:00+05:30",
+        "kind": "other",
+        "start": "2026-07-23T00:00:00+05:30",
+        "timezone": "Asia/Kolkata"
+      },
+      "reviewedAt": "2026-09-24T09:02:56Z",
+      "status": "attributed",
+      "text": "In a 26 July 2026 release, the Indian Army reported evacuating more than 790 people during flood operations since 23 July in parts of Gujarat and Dadra & Nagar Haveli, and distributing drinking water and essentials. This is an agency-reported operation output, not a national rescue total or proof of long-term recovery."
     },
     {
       "evidenceIds": [
@@ -643,10 +785,10 @@
     }
   ],
   "counts": {
-    "claims": 22,
-    "geographies": 43,
-    "observations": 7,
-    "sources": 16
+    "claims": 27,
+    "geographies": 44,
+    "observations": 9,
+    "sources": 22
   },
   "geographies": [
     {
@@ -670,6 +812,17 @@
       "slug": "south-50",
       "type": "other",
       "version": "cwc-rsms-178-reservoir-cohort-2026-09-10"
+    },
+    {
+      "code": null,
+      "id": "dca:bengaluru-onion-centre",
+      "name": "DCA Bengaluru onion monitoring centre",
+      "parentIds": [
+        "india:karnataka"
+      ],
+      "slug": "bengaluru-onion-centre",
+      "type": "station",
+      "version": "named-monitoring-centre-no-geometry"
     },
     {
       "code": null,
@@ -1166,6 +1319,48 @@
     },
     {
       "baselineId": null,
+      "claimId": "C-DCA-ONION-BLR-YOY-20260923",
+      "cutoffConvention": "DCA centrewise report selected calendar date; no market sample or clock hour is specified. Time encodes date only.",
+      "evidenceIds": [
+        "E-DCA-ONION-BLR-20250923"
+      ],
+      "geographyId": "dca:bengaluru-onion-centre",
+      "id": "O-DCA-ONION-BLR-20250923",
+      "metricId": "retail_onion_price_inr_per_kg",
+      "missingReason": null,
+      "periodEnd": "2025-09-23",
+      "periodKind": "day",
+      "periodPrecision": "date",
+      "periodStart": "2025-09-23",
+      "seriesId": "dca_centrewise_onion_bengaluru",
+      "sourceId": "E-DCA-ONION-BLR-20250923",
+      "status": "observed",
+      "unit": "INR/kg",
+      "value": 23
+    },
+    {
+      "baselineId": null,
+      "claimId": "C-DCA-ONION-BLR-YOY-20260923",
+      "cutoffConvention": "DCA centrewise report selected calendar date; no market sample or clock hour is specified. Time encodes date only.",
+      "evidenceIds": [
+        "E-DCA-ONION-BLR-20260923"
+      ],
+      "geographyId": "dca:bengaluru-onion-centre",
+      "id": "O-DCA-ONION-BLR-20260923",
+      "metricId": "retail_onion_price_inr_per_kg",
+      "missingReason": null,
+      "periodEnd": "2026-09-23",
+      "periodKind": "day",
+      "periodPrecision": "date",
+      "periodStart": "2026-09-23",
+      "seriesId": "dca_centrewise_onion_bengaluru",
+      "sourceId": "E-DCA-ONION-BLR-20260923",
+      "status": "observed",
+      "unit": "INR/kg",
+      "value": 57
+    },
+    {
+      "baselineId": null,
       "claimId": "C-IMD-RAINFALL-DEP-imd-central-20260923",
       "cutoffConvention": "IMD graphic labels dates June 1 through September 23; clock hour is not specified. Times in this record encode calendar dates only.",
       "evidenceIds": [
@@ -1270,16 +1465,20 @@
       "value": -14.9
     }
   ],
-  "releaseId": "approved-2f4e5d7258b9",
-  "reviewedAt": "2026-09-24T08:32:59Z",
+  "releaseId": "approved-f22be1c28b6b",
+  "reviewedAt": "2026-09-24T09:02:56Z",
   "schemaVersion": "1",
-  "snapshotSha256": "2f4e5d7258b9995be855813a1d34b64f8d6918d2de09c0521db46ebfe5160dac",
+  "snapshotSha256": "f22be1c28b6b4ef3679d8070b803fd276c7b1efd49a9548f0f55c4d521068525",
   "sourceWatermarks": {
     "E-CWC-RSMS-20260910": "2026-09-10",
+    "E-DCA-HOME-20260923": "2026-09-23",
+    "E-DCA-ONION-BLR-20250923": "2025-09-23",
+    "E-DCA-ONION-BLR-20260923": "2026-09-23",
     "E-IMD-ALLINDIA-20260923": "2026-09-23",
     "E-IMD-EXTENDED-20260917": null,
     "E-IMD-HOMO-20260923": "2026-09-23",
     "E-IMD-HOMO-HISTORY-20260924": null,
+    "E-IMD-JUNE-SUMMARY-2026": "2026-06-30",
     "E-IMD-OUTLOOK-20260831": null,
     "E-IMD-WEATHER-20260924": "2026-09-24",
     "E-INDIA-ROSTER-20260923": null,
@@ -1289,6 +1488,8 @@
     "E-KA-GAZETTE-DROUGHT-20260827": "2026-08-27",
     "E-KA-GAZETTE-DROUGHT-20260917": "2026-09-11",
     "E-KA-GAZETTE-DROUGHT-20260922": "2026-09-16",
+    "E-MHA-FLOOD-ADVANCE-20260801": "2026-08-01",
+    "E-MOD-FLOOD-RESCUE-20260726": "2026-07-26",
     "E-NSO-HCES-202324": "2024-03-31",
     "E-NSO-WATER-2018": "2018-12-31"
   },
@@ -1306,6 +1507,51 @@
       "sourceId": "cwc_rsms_2026_09_10",
       "title": "Weekly Bulletin on Live Storage Status of 178 Reservoirs as on 10 September 2026",
       "url": "https://rsms.cwc.gov.in/admin/storage/bulletins/bulletin-10-09-2026-119.pdf",
+      "validityEnd": null
+    },
+    {
+      "id": "E-DCA-HOME-20260923",
+      "locator": "Retail onion national daily average labelled ₹54.27/kg on 23 September 2026, matching centrewise report All India Average row.",
+      "observedThrough": "2026-09-23",
+      "observedThroughPrecision": "date",
+      "publicationDate": null,
+      "publicationDatePrecision": "unknown",
+      "publisher": "Department of Consumer Affairs",
+      "retrievedAt": "2026-09-24T08:55:10Z",
+      "sha256": "21a58b6a1d3f17b20536c64c28957c6647002a4bd30953c378de74495cbd64fd",
+      "sourceId": "dca_price_monitoring_home",
+      "title": "DCA Price Monitoring Division home, 23 September 2026",
+      "url": "https://fcainfoweb.nic.in/Default.aspx",
+      "validityEnd": null
+    },
+    {
+      "id": "E-DCA-ONION-BLR-20250923",
+      "locator": "Public centrewise form: selected 23/09/2025, Onion, Karnataka; exact Bengaluru row prints 23.",
+      "observedThrough": "2025-09-23",
+      "observedThroughPrecision": "date",
+      "publicationDate": null,
+      "publicationDatePrecision": "unknown",
+      "publisher": "Department of Consumer Affairs",
+      "retrievedAt": "2026-09-24T08:56:46Z",
+      "sha256": "288e0414aed651021fab78f6c4a1c8a4c8da92dafe3020615fbb0894bb7eab09",
+      "sourceId": "dca_centrewise_onion",
+      "title": "DCA centrewise onion price, Karnataka, 23 September 2025",
+      "url": "https://fcainfoweb.nic.in/Reports/DB/ReportCommoditywiseCenterwise.aspx",
+      "validityEnd": null
+    },
+    {
+      "id": "E-DCA-ONION-BLR-20260923",
+      "locator": "Public centrewise form: selected 23/09/2026, Onion, Karnataka; exact Bengaluru row prints 57.",
+      "observedThrough": "2026-09-23",
+      "observedThroughPrecision": "date",
+      "publicationDate": null,
+      "publicationDatePrecision": "unknown",
+      "publisher": "Department of Consumer Affairs",
+      "retrievedAt": "2026-09-24T08:56:34Z",
+      "sha256": "72c9fe4a305e34229550a9734cd904e7e33b0bf10388fc127b300e4025e0596f",
+      "sourceId": "dca_centrewise_onion",
+      "title": "DCA centrewise onion price, Karnataka, 23 September 2026",
+      "url": "https://fcainfoweb.nic.in/Reports/DB/ReportCommoditywiseCenterwise.aspx",
       "validityEnd": null
     },
     {
@@ -1369,6 +1615,21 @@
       "validityEnd": null
     },
     {
+      "id": "E-IMD-JUNE-SUMMARY-2026",
+      "locator": "PDF p. 1 national sixth-lowest June since 1901, five lower years and East & Northeast second-lowest June; p. 3 June 2026 actual/normal table.",
+      "observedThrough": "2026-06-30",
+      "observedThroughPrecision": "date",
+      "publicationDate": null,
+      "publicationDatePrecision": "unknown",
+      "publisher": "India Meteorological Department",
+      "retrievedAt": "2026-09-24T08:56:59Z",
+      "sha256": "21073dad5f7f2522848887b2e538092f514690821355db4d2fa00e260ff900f3",
+      "sourceId": "imd_june_2026_summary",
+      "title": "IMD Monthly Climate Summary for June 2026",
+      "url": "https://www.imdpune.gov.in/cmpg/Product/Monthly_Climate_Summary/Monthly_Clim_Summary_6_2026.pdf",
+      "validityEnd": null
+    },
+    {
       "id": "E-IMD-OUTLOOK-20260831",
       "locator": "Printed pp. 1-2, Highlights and section 2; threshold <91% of September 1971-2020 LPA; spatial caveat in Fig. 1.",
       "observedThrough": null,
@@ -1400,7 +1661,7 @@
     },
     {
       "id": "E-INDIA-ROSTER-20260923",
-      "locator": "States and Union Territories Holiday Calendar navigation; page last reviewed 23 September 2026",
+      "locator": "States and Union Territories Holiday Calendar navigation; preserved page footer says last reviewed and updated 24 September 2026 at 11:46:04 am. This is a page footer timestamp, not a verified publication time for the roster itself.",
       "observedThrough": null,
       "observedThroughPrecision": "unknown",
       "publicationDate": null,
@@ -1501,6 +1762,36 @@
       "sourceId": "karnataka_drought_order_20260922",
       "title": "Karnataka Gazette, Government Order RD 586 TNR 2026 (Part-1)",
       "url": "https://erajyapatra.karnataka.gov.in/WriteReadData/2026/11325.pdf",
+      "validityEnd": null
+    },
+    {
+      "id": "E-MHA-FLOOD-ADVANCE-20260801",
+      "locator": "1 August 2026 release, opening and assistance-approved paragraphs: ₹2,117.85 crore total across six named states.",
+      "observedThrough": "2026-08-01",
+      "observedThroughPrecision": "date",
+      "publicationDate": "2026-08-01T17:46:00+05:30",
+      "publicationDatePrecision": "datetime",
+      "publisher": "Ministry of Home Affairs / Press Information Bureau",
+      "retrievedAt": "2026-09-24T08:55:14Z",
+      "sha256": "4e494ddd188a66e44fca7d76853a35c359b25b0aece8041feb38d27b6509f0f8",
+      "sourceId": "mha_flood_sdrf_20260801",
+      "title": "MHA statement on advance central SDRF shares for six flood-affected states",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2293022&lang=1&reg=48",
+      "validityEnd": null
+    },
+    {
+      "id": "E-MOD-FLOOD-RESCUE-20260726",
+      "locator": "26 July 2026 release, operation paragraph: more than 790 people evacuated, drinking water and essentials distributed.",
+      "observedThrough": "2026-07-26",
+      "observedThroughPrecision": "date",
+      "publicationDate": "2026-07-26T13:34:00+05:30",
+      "publicationDatePrecision": "datetime",
+      "publisher": "Ministry of Defence / Press Information Bureau",
+      "retrievedAt": "2026-09-24T08:55:15Z",
+      "sha256": "6a26190c3c25958428ec7f1bd8ddbf09632f42b966e0e74d961daaba5764e7e2",
+      "sourceId": "mod_gujarat_rescue_20260726",
+      "title": "Ministry of Defence report on Gujarat and Dadra & Nagar Haveli flood rescue",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2289580&lang=2&reg=48",
       "validityEnd": null
     },
     {

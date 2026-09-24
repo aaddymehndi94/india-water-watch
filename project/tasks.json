@@ -826,5 +826,189 @@
     ],
     "result_paths": [],
     "blockers": []
+  },
+  {
+    "id": "T44",
+    "gate": "G12",
+    "title": "Matched-cutoff historical rainfall comparator",
+    "owner_role": "history_demography",
+    "depends_on": [],
+    "status": "completed",
+    "suggested_paths": [],
+    "acceptance": [
+      "Primary dated sources, exact scope and rights; independent review before public promotion"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T45",
+    "gate": "G12",
+    "title": "Licensed and versioned state/UT geometry audit",
+    "owner_role": "data_engineer",
+    "depends_on": [],
+    "status": "completed",
+    "suggested_paths": [],
+    "acceptance": [
+      "Primary dated sources, exact scope and rights; independent review before public promotion"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T46",
+    "gate": "G12",
+    "title": "Wider dated government response and implementation evidence",
+    "owner_role": "institutions_reporter",
+    "depends_on": [],
+    "status": "completed",
+    "suggested_paths": [],
+    "acceptance": [
+      "Primary dated sources, exact scope and rights; independent review before public promotion"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T47",
+    "gate": "G12",
+    "title": "Current economy and livelihoods evidence check",
+    "owner_role": "economy_access",
+    "depends_on": [],
+    "status": "completed",
+    "suggested_paths": [],
+    "acceptance": [
+      "Primary dated sources, exact scope and rights; independent review before public promotion"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T48",
+    "gate": "G12",
+    "title": "G12 source promotion, visual integration and independent review",
+    "owner_role": "lead",
+    "depends_on": [],
+    "status": "completed",
+    "suggested_paths": [],
+    "acceptance": [
+      "Primary dated sources, exact scope and rights; independent review before public promotion"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T49",
+    "gate": "G12",
+    "title": "G12 portable build, exports and live GitHub checkpoint",
+    "owner_role": "lead",
+    "depends_on": [],
+    "status": "not_started",
+    "suggested_paths": [],
+    "acceptance": [
+      "Primary dated sources, exact scope and rights; independent review before public promotion"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T50",
+    "gate": "G13",
+    "title": "Lead review of G11 choices and revised creative charter",
+    "owner_role": "lead",
+    "depends_on": [],
+    "status": "completed",
+    "suggested_paths": [],
+    "acceptance": [
+      "Dated, source-linked content; responsive and accessible interaction; independently reviewed before public promotion"
+    ],
+    "result_paths": [
+      "reporting/g13_decision_review.md",
+      "docs/01-PROJECT_CHARTER.md"
+    ],
+    "blockers": []
+  },
+  {
+    "id": "T51",
+    "gate": "G13",
+    "title": "Source-reviewed June, price and flood evidence depth",
+    "owner_role": "lead",
+    "depends_on": [],
+    "status": "completed",
+    "suggested_paths": [],
+    "acceptance": [
+      "Dated, source-linked content; responsive and accessible interaction; independently reviewed before public promotion"
+    ],
+    "result_paths": [
+      "data/approved/claims.json",
+      "reporting/g12_independent_source_review.md"
+    ],
+    "blockers": []
+  },
+  {
+    "id": "T52",
+    "gate": "G13",
+    "title": "Interactive dual-window rainfall feature and schematic atlas",
+    "owner_role": "frontend_engineer",
+    "depends_on": [],
+    "status": "completed",
+    "suggested_paths": [],
+    "acceptance": [
+      "Dated, source-linked content; responsive and accessible interaction; independently reviewed before public promotion"
+    ],
+    "result_paths": [
+      "src/components/WaterStoryStage.tsx",
+      "src/pages/index.astro",
+      "src/components/AtlasFilter.tsx"
+    ],
+    "blockers": []
+  },
+  {
+    "id": "T53",
+    "gate": "G13",
+    "title": "Dated media, farmer, politician and markets source investigation",
+    "owner_role": "source_auditor",
+    "depends_on": [],
+    "status": "completed",
+    "suggested_paths": [],
+    "acceptance": [
+      "Dated, source-linked content; responsive and accessible interaction; independently reviewed before public promotion"
+    ],
+    "result_paths": [
+      "reporting/g13_media_voices.md",
+      "reporting/g13_markets.md",
+      "reporting/g13_independent_source_review.md"
+    ],
+    "blockers": []
+  },
+  {
+    "id": "T54",
+    "gate": "G13",
+    "title": "Visual and accessibility remediation, collage and market mechanism",
+    "owner_role": "lead",
+    "depends_on": [],
+    "status": "in_progress",
+    "suggested_paths": [],
+    "acceptance": [
+      "Dated, source-linked content; responsive and accessible interaction; independently reviewed before public promotion"
+    ],
+    "result_paths": [
+      "reporting/g13_visual_review.md"
+    ],
+    "blockers": []
+  },
+  {
+    "id": "T55",
+    "gate": "G13",
+    "title": "G13 portable release, independent QA and GitHub Pages checkpoint",
+    "owner_role": "lead",
+    "depends_on": [],
+    "status": "in_progress",
+    "suggested_paths": [],
+    "acceptance": [
+      "Dated, source-linked content; responsive and accessible interaction; independently reviewed before public promotion"
+    ],
+    "result_paths": [],
+    "blockers": []
   }
 ]

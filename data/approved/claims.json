@@ -390,7 +390,7 @@
     "limitations": [
       "The order covers listed taluks, not all of Karnataka or India.",
       "It is a declaration and authorization, not proof of relief distribution, crop losses or household water shortage.",
-      "Earlier 101- and 23-taluk orders are cited in the gazette but their annexes were not independently reviewed for a cumulative statewide total."
+    "The earlier 101- and 23-taluk annexes were independently reviewed for the separate cumulative claim; this 22 September order itself adds 53 taluks."
     ],
     "reviewer_id": "independent-history-depth-agent-2026-09-24",
     "reviewed_at": "2026-09-24T07:46:58Z",
@@ -745,6 +745,173 @@
     ],
     "reviewer_id": "g11_source_review-agent-2026-09-24",
     "reviewed_at": "2026-09-24T08:32:59Z",
+    "requires_human_review": false,
+    "human_review_receipt": null,
+    "supersedes": null,
+    "public": true
+  },
+  {
+    "id": "C-IMD-JUNE-RANK-INDIA-2026",
+    "text": "IMD states that June 2026 was India’s sixth-lowest June rainfall since 1901; among the five lower Junes it names, 2014 is the most recent. This is a June-only rainfall comparison, not a rank for the ongoing June–September 2026 season or a measure of water shortage.",
+    "kind": "reported",
+    "status": "attributed",
+    "geography_ids": [
+      "india"
+    ],
+    "period": {
+      "start": "2026-06-01T00:00:00+05:30",
+      "end": "2026-06-30T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "month",
+      "cutoff_convention": "Completed calendar month June 2026; no within-day cutoff is implied."
+    },
+    "evidence_ids": [
+      "E-IMD-JUNE-SUMMARY-2026"
+    ],
+    "observation_ids": [],
+    "input_claim_ids": [],
+    "method_path": null,
+    "limitations": [
+      "The source PDF p. 1 rounds June 2026 to 103 mm; p. 3 prints 102.5 mm.",
+      "A completed June rank cannot be assigned to rainfall through 23 September or to household impacts."
+    ],
+    "reviewer_id": "g12_independent_source_review-agent-2026-09-24",
+    "reviewed_at": "2026-09-24T09:02:01Z",
+    "requires_human_review": false,
+    "human_review_receipt": null,
+    "supersedes": null,
+    "public": true
+  },
+  {
+    "id": "C-IMD-JUNE-RANK-EASTNE-2026",
+    "text": "IMD states that East & Northeast India received 202.6 mm in June 2026, its second-lowest June rainfall since 1901, after June 2009 in that regional series. This describes June only, not the region’s cumulative rainfall through 23 September.",
+    "kind": "reported",
+    "status": "attributed",
+    "geography_ids": [
+      "imd:east-northeast"
+    ],
+    "period": {
+      "start": "2026-06-01T00:00:00+05:30",
+      "end": "2026-06-30T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "month",
+      "cutoff_convention": "Completed calendar month June 2026; no within-day cutoff is implied."
+    },
+    "evidence_ids": [
+      "E-IMD-JUNE-SUMMARY-2026"
+    ],
+    "observation_ids": [],
+    "input_claim_ids": [],
+    "method_path": null,
+    "limitations": [
+      "Official regional monthly attribution; the June region and the current cumulative operational graphic should not be treated as a matched historical season series.",
+      "Rainfall rank does not establish drought declaration or service harm."
+    ],
+    "reviewer_id": "g12_independent_source_review-agent-2026-09-24",
+    "reviewed_at": "2026-09-24T09:02:01Z",
+    "requires_human_review": false,
+    "human_review_receipt": null,
+    "supersedes": null,
+    "public": true
+  },
+  {
+    "id": "C-DCA-ONION-BLR-YOY-20260923",
+    "text": "At the Department of Consumer Affairs’ monitored Bengaluru centre, the reported retail onion price was ₹57/kg on 23 September 2026 versus ₹23/kg on 23 September 2025, a ₹34/kg (147.8%) increase from the displayed prices. The centre record does not identify the cause or represent all Bengaluru purchases.",
+    "kind": "derived",
+    "status": "verified",
+    "geography_ids": [
+      "dca:bengaluru-onion-centre"
+    ],
+    "period": {
+      "start": "2025-09-23T00:00:00+05:30",
+      "end": "2026-09-23T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "other",
+      "cutoff_convention": "Two discrete same-calendar-date observations; no values between dates are inferred."
+    },
+    "evidence_ids": [
+      "E-DCA-ONION-BLR-20250923",
+      "E-DCA-ONION-BLR-20260923",
+      "E-DCA-HOME-20260923"
+    ],
+    "observation_ids": [
+      "O-DCA-ONION-BLR-20250923",
+      "O-DCA-ONION-BLR-20260923"
+    ],
+    "input_claim_ids": [],
+    "method_path": "57 − 23 = 34 INR/kg; (57/23 − 1) × 100 = 147.826%, rounded to 147.8%; source form exact Bengaluru row at both dates, retail unit corroborated by DCA home national row.",
+    "limitations": [
+      "Single monitored centre with undisclosed sample/transaction volume; not a city average or household bill.",
+      "The 2025 historical row was returned by the form on 24 September 2026 and may reflect later corrections.",
+      "No causal attribution to rainfall, water scarcity, crop damage, trade or other drivers."
+    ],
+    "reviewer_id": "g12_independent_source_review-agent-2026-09-24",
+    "reviewed_at": "2026-09-24T09:02:01Z",
+    "requires_human_review": false,
+    "human_review_receipt": null,
+    "supersedes": null,
+    "public": true
+  },
+  {
+    "id": "C-MHA-FLOOD-ADVANCE-20260801",
+    "text": "On 1 August 2026, the Union government said it had approved ₹2,117.85 crore in advance central SDRF shares for six flood-affected states: Arunachal Pradesh, Assam, Gujarat, Himachal Pradesh, Maharashtra and Odisha. The release does not document transfer of these new advances or aid delivered to households, and this is not Karnataka drought relief.",
+    "kind": "reported",
+    "status": "attributed",
+    "geography_ids": [
+      "india"
+    ],
+    "period": {
+      "start": "2026-08-01T00:00:00+05:30",
+      "end": "2026-08-01T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "day",
+      "cutoff_convention": "Government announcement date; calendar precision only, not a treasury-transfer timestamp."
+    },
+    "evidence_ids": [
+      "E-MHA-FLOOD-ADVANCE-20260801"
+    ],
+    "observation_ids": [],
+    "input_claim_ids": [],
+    "method_path": null,
+    "limitations": [
+      "Government announcement and approved amount, not verified treasury transfer or beneficiary outcome.",
+      "Flood-specific response; does not describe water conditions in every named state or later dates."
+    ],
+    "reviewer_id": "g12_independent_source_review-agent-2026-09-24",
+    "reviewed_at": "2026-09-24T09:02:56Z",
+    "requires_human_review": false,
+    "human_review_receipt": null,
+    "supersedes": null,
+    "public": true
+  },
+  {
+    "id": "C-MOD-FLOOD-RESCUE-20260726",
+    "text": "In a 26 July 2026 release, the Indian Army reported evacuating more than 790 people during flood operations since 23 July in parts of Gujarat and Dadra & Nagar Haveli, and distributing drinking water and essentials. This is an agency-reported operation output, not a national rescue total or proof of long-term recovery.",
+    "kind": "reported",
+    "status": "attributed",
+    "geography_ids": [
+      "india:gujarat",
+      "india:dadra-and-nagar-haveli-and-daman-and-diu"
+    ],
+    "period": {
+      "start": "2026-07-23T00:00:00+05:30",
+      "end": "2026-07-26T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "other",
+      "cutoff_convention": "Army-reported operation interval from 23 through 26 July; the release does not give a complete independent event ledger."
+    },
+    "evidence_ids": [
+      "E-MOD-FLOOD-RESCUE-20260726"
+    ],
+    "observation_ids": [],
+    "input_claim_ids": [],
+    "method_path": null,
+    "limitations": [
+      "Earlier agency count of 355 by 25 July is part of this operation and must not be added.",
+      "Ministry-reported operation output, not independently audited or evidence of enduring service restoration."
+    ],
+    "reviewer_id": "g12_independent_source_review-agent-2026-09-24",
+    "reviewed_at": "2026-09-24T09:02:56Z",
     "requires_human_review": false,
     "human_review_receipt": null,
     "supersedes": null,

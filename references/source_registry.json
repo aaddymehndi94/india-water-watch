@@ -770,5 +770,90 @@
     "license_status": "factual_excerpt_only",
     "selected_data_endpoint": "https://erajyapatra.karnataka.gov.in/Search1.aspx",
     "production_approved": true
+  },
+  {
+    "id": "imd_june_2026_summary",
+    "title": "IMD Monthly Climate Summary for June 2026",
+    "publisher": "India Meteorological Department",
+    "entry_url": "https://www.imdpune.gov.in/cmpg/Product/Monthly_Climate_Summary/Monthly_Clim_Summary_6_2026.pdf",
+    "topics": [
+      "rainfall",
+      "history"
+    ],
+    "access_status": "source_inspected",
+    "checked_on": "2026-09-24",
+    "access_notes": "June-only official rank: sixth-lowest all India and second-lowest East/Northeast since 1901; PDF p1 rounded national 103 mm and p3 exact 102.5 mm. No current monsoon rank.",
+    "expected_cadence": "monthly",
+    "license_status": "factual_excerpt_only",
+    "selected_data_endpoint": "https://www.imdpune.gov.in/cmpg/Product/Monthly_Climate_Summary/Monthly_Clim_Summary_6_2026.pdf",
+    "production_approved": true
+  },
+  {
+    "id": "dca_centrewise_onion",
+    "title": "DCA Price Monitoring Division centrewise onion report",
+    "publisher": "Department of Consumer Affairs",
+    "entry_url": "https://fcainfoweb.nic.in/Reports/DB/ReportCommoditywiseCenterwise.aspx",
+    "topics": [
+      "economy",
+      "prices"
+    ],
+    "access_status": "source_inspected",
+    "checked_on": "2026-09-24",
+    "access_notes": "Normal public form: choose Onion, Karnataka, dates 23/09/2025 and 23/09/2026, exact Bengaluru row. Source response hashes in approved evidence; not a citywide average or causal water finding.",
+    "expected_cadence": "daily",
+    "license_status": "factual_excerpt_only",
+    "selected_data_endpoint": "https://fcainfoweb.nic.in/Reports/DB/ReportCommoditywiseCenterwise.aspx",
+    "production_approved": true
+  },
+  {
+    "id": "dca_price_monitoring_home",
+    "title": "DCA Price Monitoring Division retail price home",
+    "publisher": "Department of Consumer Affairs",
+    "entry_url": "https://fcainfoweb.nic.in/Default.aspx",
+    "topics": [
+      "economy",
+      "prices"
+    ],
+    "access_status": "source_inspected",
+    "checked_on": "2026-09-24",
+    "access_notes": "23 Sep 2026 retail ₹/kg national onion average used only to cross-check centrewise report unit/type; mutable home page.",
+    "expected_cadence": "daily",
+    "license_status": "factual_excerpt_only",
+    "selected_data_endpoint": "https://fcainfoweb.nic.in/Default.aspx",
+    "production_approved": true
+  },
+  {
+    "id": "mha_flood_sdrf_20260801",
+    "title": "MHA 1 August 2026 flood SDRF advance approval",
+    "publisher": "Ministry of Home Affairs / Press Information Bureau",
+    "entry_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2293022&lang=1&reg=48",
+    "topics": [
+      "response",
+      "flood"
+    ],
+    "access_status": "source_inspected",
+    "checked_on": "2026-09-24",
+    "access_notes": "Approval/sanction stage only; not a verified treasury transfer or household receipt.",
+    "expected_cadence": "event_based",
+    "license_status": "factual_excerpt_only",
+    "selected_data_endpoint": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2293022&lang=1&reg=48",
+    "production_approved": true
+  },
+  {
+    "id": "mod_gujarat_rescue_20260726",
+    "title": "Army-reported flood rescue in Gujarat and Dadra & Nagar Haveli",
+    "publisher": "Ministry of Defence / Press Information Bureau",
+    "entry_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2289580&lang=2&reg=48",
+    "topics": [
+      "response",
+      "flood"
+    ],
+    "access_status": "source_inspected",
+    "checked_on": "2026-09-24",
+    "access_notes": "More than 790 evacuated by 26 July in a specified operation; agency-reported, not independent audit or national total.",
+    "expected_cadence": "event_based",
+    "license_status": "factual_excerpt_only",
+    "selected_data_endpoint": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2289580&lang=2&reg=48",
+    "production_approved": true
   }
 ]
