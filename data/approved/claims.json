@@ -568,5 +568,186 @@
     "human_review_receipt": null,
     "supersedes": null,
     "public": true
+  },
+  {
+    "id": "C-IMD-WEATHER-EVENT-20260924",
+    "text": "In its 24 September 2026 weather release, IMD reported extreme rain in coastal Andhra Pradesh and very heavy rain in Odisha, Jharkhand, coastal and south-interior Karnataka, and Telangana during the 24 hours ending 08:30 IST that day. This local event report does not establish reservoir or household-service recovery.",
+    "kind": "reported",
+    "status": "attributed",
+    "geography_ids": [
+      "india"
+    ],
+    "period": {
+      "start": "2026-09-23T00:00:00+05:30",
+      "end": "2026-09-24T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "day",
+      "cutoff_convention": "IMD reports weather realised in the 24 hours ending 08:30 IST on 24 September 2026; start is calendar approximation."
+    },
+    "evidence_ids": [
+      "E-IMD-WEATHER-20260924"
+    ],
+    "observation_ids": [],
+    "input_claim_ids": [],
+    "method_path": null,
+    "limitations": [
+      "Qualitative local event report; no rainfall totals or catchment benefit inferred.",
+      "A 24 September event can coexist with a cumulative rainfall shortfall through 23 September."
+    ],
+    "reviewer_id": "g11_source_review-agent-2026-09-24",
+    "reviewed_at": "2026-09-24T08:29:37Z",
+    "requires_human_review": false,
+    "human_review_receipt": null,
+    "supersedes": null,
+    "public": true
+  },
+  {
+    "id": "C-IMD-EXTENDED-20260917",
+    "text": "In an extended-range bulletin issued 17 September 2026, IMD forecast near-normal rainfall for India as a whole in 24–30 September (Week 2); it did not forecast water supply or rainfall through the 2027 monsoon.",
+    "kind": "forecast",
+    "status": "attributed",
+    "geography_ids": [
+      "india"
+    ],
+    "period": {
+      "start": "2026-09-24T00:00:00+05:30",
+      "end": "2026-09-30T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "week",
+      "cutoff_convention": "Week 2 forecast dates from IMD 17 September extended-range bulletin; calendar-date precision."
+    },
+    "evidence_ids": [
+      "E-IMD-EXTENDED-20260917"
+    ],
+    "observation_ids": [],
+    "input_claim_ids": [],
+    "method_path": null,
+    "limitations": [
+      "Forecast validity ends 30 September 2026; recheck current issue and supersede if IMD publishes a newer bulletin.",
+      "A national rainfall category does not indicate individual catchment or household water outcomes."
+    ],
+    "reviewer_id": "g11_source_review-agent-2026-09-24",
+    "reviewed_at": "2026-09-24T08:29:37Z",
+    "requires_human_review": false,
+    "human_review_receipt": null,
+    "supersedes": null,
+    "public": true
+  },
+  {
+    "id": "C-NSO-HCES-FOODSHARE-202324",
+    "text": "NSO’s Household Consumption Expenditure Survey 2023–24 factsheet reports that food made up 47.04% of average rural monthly per-person expenditure and 39.68% of average urban expenditure, without imputing selected free government-provided items.",
+    "kind": "reported",
+    "status": "attributed",
+    "geography_ids": [
+      "india"
+    ],
+    "period": {
+      "start": "2023-04-01T00:00:00+05:30",
+      "end": "2024-03-31T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "year",
+      "cutoff_convention": "NSO Household Consumption Expenditure Survey 2023–24 reference year; fieldwork timing follows source methods."
+    },
+    "evidence_ids": [
+      "E-NSO-HCES-202324"
+    ],
+    "observation_ids": [],
+    "input_claim_ids": [],
+    "method_path": null,
+    "limitations": [
+      "National rural and urban average expenditure shares, not income or the food shares of low-income households.",
+      "Historical budget context only; no 2026 food-price or water-linked impact inferred."
+    ],
+    "reviewer_id": "g11_source_review-agent-2026-09-24",
+    "reviewed_at": "2026-09-24T08:29:37Z",
+    "requires_human_review": false,
+    "human_review_receipt": null,
+    "supersedes": null,
+    "public": true
+  },
+  {
+    "id": "C-IWW-AI-ASSESSMENT-20260924",
+    "text": "AI Author assessment, issued 24 September 2026: some local water systems may remain under pressure through the coming dry season while others replenish before the next southwest monsoon. This is a low-confidence conditional judgment about differing system responses, not a forecast of which district or household will face interruption.",
+    "kind": "scenario",
+    "status": "attributed",
+    "geography_ids": [
+      "india"
+    ],
+    "period": {
+      "start": "2026-09-24T00:00:00+05:30",
+      "end": "2027-06-30T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "other",
+      "cutoff_convention": "Editorial scenario horizon through approximately the beginning of the 2027 southwest monsoon; the actual local replenishment date is unknown and 30 June is not a predicted onset."
+    },
+    "evidence_ids": [
+      "E-IMD-ALLINDIA-20260923",
+      "E-IMD-HOMO-20260923",
+      "E-CWC-RSMS-20260910",
+      "E-KA-GAZETTE-DROUGHT-20260922",
+      "E-IMD-WEATHER-20260924"
+    ],
+    "observation_ids": [
+      "O-IMD-RAINFALL-DEP-india-20260923",
+      "O-CWC-LIVE-STORAGE-india-178-20260910"
+    ],
+    "input_claim_ids": [
+      "C-IMD-RAINFALL-DEP-india-20260923",
+      "C-CWC-INDIA-STORAGE-20260910",
+      "C-KA-DROUGHT-ORDER-20260922",
+      "C-IMD-WEATHER-EVENT-20260924"
+    ],
+    "method_path": "Qualitative conditional water-balance reasoning: where verified usable storage is low and inflows fail to offset withdrawals, buffer may shrink; where subsequent catchment rainfall, source levels and delivery recover, concern weakens. No reservoir-level model, location forecast, probability, or numerical shortage estimate. See reporting/g11_hydrology_outlook.md and reporting/g11_independent_source_review.md.",
+    "limitations": [
+      "Confidence is low in any geographic or calendar outcome; only the conditional physical mechanism is high-confidence.",
+      "The 24 September heavy-rain event may alter local conditions, but its catchment or service effect has not been measured.",
+      "IMD 23 September rainfall, CWC 10 September storage, and Karnataka administration refer to different dates, boundaries and indicators.",
+      "Revise or withdraw if matched reservoir, well and utility records show recovery or a different stress pattern.",
+      "This is original AI-authored site analysis, not an official government forecast or a validated statistical model."
+    ],
+    "reviewer_id": "g11_source_review-agent-2026-09-24",
+    "reviewed_at": "2026-09-24T08:32:06Z",
+    "requires_human_review": false,
+    "human_review_receipt": null,
+    "supersedes": null,
+    "public": true
+  },
+  {
+    "id": "C-KA-DROUGHT-THREE-ORDERS-20260922",
+    "text": "Three Karnataka kharif 2026 gazetted orders dated 27 August, 17 September and 22 September list 177 distinct drought-affected taluks in total: 161 severe and 16 moderate. This is a count of administrative declarations by 22 September, not a count of people, measured household shortages, crop loss or relief delivered.",
+    "kind": "derived",
+    "status": "verified",
+    "geography_ids": [
+      "india:karnataka"
+    ],
+    "period": {
+      "start": "2026-06-01T00:00:00+05:30",
+      "end": "2026-09-22T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "season_to_date",
+      "cutoff_convention": "Kharif 2026 declaration assessment references calendar dates; exact crop/weather observation hours are not specified."
+    },
+    "evidence_ids": [
+      "E-KA-GAZETTE-DROUGHT-20260827",
+      "E-KA-GAZETTE-DROUGHT-20260917",
+      "E-KA-GAZETTE-DROUGHT-20260922"
+    ],
+    "observation_ids": [],
+    "input_claim_ids": [
+      "C-KA-DROUGHT-ORDER-20260922"
+    ],
+    "method_path": "Independent counts of annexure rows: 101 (89 severe/12 moderate) + 23 (21 severe/2 moderate) + 53 (51 severe/2 moderate) = 177 (161 severe/16 moderate). District+taluk pairs normalized and checked for overlap; 176 machine-split unique pairs plus one manually checked Kadur row. See reporting/g11_institutions.md and reporting/g11_independent_source_review.md.",
+    "limitations": [
+      "The 17 September document preamble misstates all 23 as severe; operative order and annexure support 21 severe/2 moderate.",
+      "The orders use taluks as administrative units and do not establish household water service, crop damage, aid delivery, or population exposure.",
+      "One 17 September annexure row required manual split; no duplicates were found across the three original lists.",
+      "22 September order uses the word additional; this count uses all three original annexures and an explicit overlap check."
+    ],
+    "reviewer_id": "g11_source_review-agent-2026-09-24",
+    "reviewed_at": "2026-09-24T08:32:59Z",
+    "requires_human_review": false,
+    "human_review_receipt": null,
+    "supersedes": null,
+    "public": true
   }
 ]

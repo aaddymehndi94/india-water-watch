@@ -58,6 +58,31 @@
     },
     {
       "evidenceIds": [
+        "E-IMD-EXTENDED-20260917"
+      ],
+      "geographyIds": [
+        "india"
+      ],
+      "id": "C-IMD-EXTENDED-20260917",
+      "kind": "forecast",
+      "limitations": [
+        "Forecast validity ends 30 September 2026; recheck current issue and supersede if IMD publishes a newer bulletin.",
+        "A national rainfall category does not indicate individual catchment or household water outcomes."
+      ],
+      "observationIds": [],
+      "period": {
+        "cutoff_convention": "Week 2 forecast dates from IMD 17 September extended-range bulletin; calendar-date precision.",
+        "end": "2026-09-30T00:00:00+05:30",
+        "kind": "week",
+        "start": "2026-09-24T00:00:00+05:30",
+        "timezone": "Asia/Kolkata"
+      },
+      "reviewedAt": "2026-09-24T08:29:37Z",
+      "status": "attributed",
+      "text": "In an extended-range bulletin issued 17 September 2026, IMD forecast near-normal rainfall for India as a whole in 24–30 September (Week 2); it did not forecast water supply or rainfall through the 2027 monsoon."
+    },
+    {
+      "evidenceIds": [
         "E-IMD-HOMO-HISTORY-20260924"
       ],
       "geographyIds": [
@@ -301,6 +326,66 @@
     },
     {
       "evidenceIds": [
+        "E-IMD-WEATHER-20260924"
+      ],
+      "geographyIds": [
+        "india"
+      ],
+      "id": "C-IMD-WEATHER-EVENT-20260924",
+      "kind": "reported",
+      "limitations": [
+        "Qualitative local event report; no rainfall totals or catchment benefit inferred.",
+        "A 24 September event can coexist with a cumulative rainfall shortfall through 23 September."
+      ],
+      "observationIds": [],
+      "period": {
+        "cutoff_convention": "IMD reports weather realised in the 24 hours ending 08:30 IST on 24 September 2026; start is calendar approximation.",
+        "end": "2026-09-24T00:00:00+05:30",
+        "kind": "day",
+        "start": "2026-09-23T00:00:00+05:30",
+        "timezone": "Asia/Kolkata"
+      },
+      "reviewedAt": "2026-09-24T08:29:37Z",
+      "status": "attributed",
+      "text": "In its 24 September 2026 weather release, IMD reported extreme rain in coastal Andhra Pradesh and very heavy rain in Odisha, Jharkhand, coastal and south-interior Karnataka, and Telangana during the 24 hours ending 08:30 IST that day. This local event report does not establish reservoir or household-service recovery."
+    },
+    {
+      "evidenceIds": [
+        "E-IMD-ALLINDIA-20260923",
+        "E-IMD-HOMO-20260923",
+        "E-CWC-RSMS-20260910",
+        "E-KA-GAZETTE-DROUGHT-20260922",
+        "E-IMD-WEATHER-20260924"
+      ],
+      "geographyIds": [
+        "india"
+      ],
+      "id": "C-IWW-AI-ASSESSMENT-20260924",
+      "kind": "scenario",
+      "limitations": [
+        "Confidence is low in any geographic or calendar outcome; only the conditional physical mechanism is high-confidence.",
+        "The 24 September heavy-rain event may alter local conditions, but its catchment or service effect has not been measured.",
+        "IMD 23 September rainfall, CWC 10 September storage, and Karnataka administration refer to different dates, boundaries and indicators.",
+        "Revise or withdraw if matched reservoir, well and utility records show recovery or a different stress pattern.",
+        "This is original AI-authored site analysis, not an official government forecast or a validated statistical model."
+      ],
+      "observationIds": [
+        "O-IMD-RAINFALL-DEP-india-20260923",
+        "O-CWC-LIVE-STORAGE-india-178-20260910"
+      ],
+      "period": {
+        "cutoff_convention": "Editorial scenario horizon through approximately the beginning of the 2027 southwest monsoon; the actual local replenishment date is unknown and 30 June is not a predicted onset.",
+        "end": "2027-06-30T00:00:00+05:30",
+        "kind": "other",
+        "start": "2026-09-24T00:00:00+05:30",
+        "timezone": "Asia/Kolkata"
+      },
+      "reviewedAt": "2026-09-24T08:32:06Z",
+      "status": "attributed",
+      "text": "AI Author assessment, issued 24 September 2026: some local water systems may remain under pressure through the coming dry season while others replenish before the next southwest monsoon. This is a low-confidence conditional judgment about differing system responses, not a forecast of which district or household will face interruption."
+    },
+    {
+      "evidenceIds": [
         "E-JJM-CONNECTIONS-20260402"
       ],
       "geographyIds": [
@@ -404,6 +489,60 @@
     },
     {
       "evidenceIds": [
+        "E-KA-GAZETTE-DROUGHT-20260827",
+        "E-KA-GAZETTE-DROUGHT-20260917",
+        "E-KA-GAZETTE-DROUGHT-20260922"
+      ],
+      "geographyIds": [
+        "india:karnataka"
+      ],
+      "id": "C-KA-DROUGHT-THREE-ORDERS-20260922",
+      "kind": "derived",
+      "limitations": [
+        "The 17 September document preamble misstates all 23 as severe; operative order and annexure support 21 severe/2 moderate.",
+        "The orders use taluks as administrative units and do not establish household water service, crop damage, aid delivery, or population exposure.",
+        "One 17 September annexure row required manual split; no duplicates were found across the three original lists.",
+        "22 September order uses the word additional; this count uses all three original annexures and an explicit overlap check."
+      ],
+      "observationIds": [],
+      "period": {
+        "cutoff_convention": "Kharif 2026 declaration assessment references calendar dates; exact crop/weather observation hours are not specified.",
+        "end": "2026-09-22T00:00:00+05:30",
+        "kind": "season_to_date",
+        "start": "2026-06-01T00:00:00+05:30",
+        "timezone": "Asia/Kolkata"
+      },
+      "reviewedAt": "2026-09-24T08:32:59Z",
+      "status": "verified",
+      "text": "Three Karnataka kharif 2026 gazetted orders dated 27 August, 17 September and 22 September list 177 distinct drought-affected taluks in total: 161 severe and 16 moderate. This is a count of administrative declarations by 22 September, not a count of people, measured household shortages, crop loss or relief delivered."
+    },
+    {
+      "evidenceIds": [
+        "E-NSO-HCES-202324"
+      ],
+      "geographyIds": [
+        "india"
+      ],
+      "id": "C-NSO-HCES-FOODSHARE-202324",
+      "kind": "reported",
+      "limitations": [
+        "National rural and urban average expenditure shares, not income or the food shares of low-income households.",
+        "Historical budget context only; no 2026 food-price or water-linked impact inferred."
+      ],
+      "observationIds": [],
+      "period": {
+        "cutoff_convention": "NSO Household Consumption Expenditure Survey 2023–24 reference year; fieldwork timing follows source methods.",
+        "end": "2024-03-31T00:00:00+05:30",
+        "kind": "year",
+        "start": "2023-04-01T00:00:00+05:30",
+        "timezone": "Asia/Kolkata"
+      },
+      "reviewedAt": "2026-09-24T08:29:37Z",
+      "status": "attributed",
+      "text": "NSO’s Household Consumption Expenditure Survey 2023–24 factsheet reports that food made up 47.04% of average rural monthly per-person expenditure and 39.68% of average urban expenditure, without imputing selected free government-provided items."
+    },
+    {
+      "evidenceIds": [
         "E-NSO-WATER-2018"
       ],
       "geographyIds": [
@@ -453,10 +592,10 @@
     }
   ],
   "counts": {
-    "claims": 17,
+    "claims": 22,
     "geographies": 43,
     "observations": 7,
-    "sources": 11
+    "sources": 16
   },
   "geographies": [
     {
@@ -1080,21 +1219,26 @@
       "value": -14.9
     }
   ],
-  "releaseId": "approved-8e21293fa8e6",
-  "reviewedAt": "2026-09-24T07:56:04Z",
+  "releaseId": "approved-159964869eef",
+  "reviewedAt": "2026-09-24T08:32:59Z",
   "schemaVersion": "1",
-  "snapshotSha256": "8e21293fa8e68dcd7107f28de7860c46afb99683cb8d50f7d97ac21991a09dfb",
+  "snapshotSha256": "159964869eeffc0dfb3a426f62621afdd47b68e955f96c83349004b316d35807",
   "sourceWatermarks": {
     "E-CWC-RSMS-20260910": "2026-09-10",
     "E-IMD-ALLINDIA-20260923": "2026-09-23",
+    "E-IMD-EXTENDED-20260917": null,
     "E-IMD-HOMO-20260923": "2026-09-23",
     "E-IMD-HOMO-HISTORY-20260924": null,
     "E-IMD-OUTLOOK-20260831": null,
+    "E-IMD-WEATHER-20260924": "2026-09-24",
     "E-INDIA-ROSTER-20260923": null,
     "E-JJM-CONNECTIONS-20260402": "2026-03-03",
     "E-JJM-FUNCTIONALITY-2024": "2024-10-31",
     "E-JJM-FUNDS-20260331": "2026-03-31",
+    "E-KA-GAZETTE-DROUGHT-20260827": "2026-08-27",
+    "E-KA-GAZETTE-DROUGHT-20260917": "2026-09-11",
     "E-KA-GAZETTE-DROUGHT-20260922": "2026-09-16",
+    "E-NSO-HCES-202324": "2024-03-31",
     "E-NSO-WATER-2018": "2018-12-31"
   },
   "sources": [
@@ -1127,6 +1271,21 @@
       "title": "IMD cumulative rainfall over the country as a whole, 2026",
       "url": "https://mausam.imd.gov.in/ClimateInformation/imdweb/DAY_WEEK/all-india.gif",
       "validityEnd": null
+    },
+    {
+      "id": "E-IMD-EXTENDED-20260917",
+      "locator": "PDF pp. 3–4, Week 2 precipitation forecast for 24–30 September: near-normal rainfall country as a whole.",
+      "observedThrough": null,
+      "observedThroughPrecision": "unknown",
+      "publicationDate": "2026-09-17T00:00:00+05:30",
+      "publicationDatePrecision": "datetime",
+      "publisher": "India Meteorological Department",
+      "retrievedAt": "2026-09-24T08:29:37Z",
+      "sha256": "46033486d26214d463ab5854377fe8356f21a162b2e7910c6cc00ede4b52a918",
+      "sourceId": "imd_extended_20260917",
+      "title": "IMD extended range forecast issued 17 September 2026",
+      "url": "https://internal.imd.gov.in/press_release/20260917_pr_5323.pdf",
+      "validityEnd": "2026-09-30"
     },
     {
       "id": "E-IMD-HOMO-20260923",
@@ -1172,6 +1331,21 @@
       "title": "Monthly Outlook for Rainfall and Temperature during September 2026",
       "url": "https://internal.imd.gov.in/press_release/20260831_pr_5277.pdf",
       "validityEnd": "2026-09-30"
+    },
+    {
+      "id": "E-IMD-WEATHER-20260924",
+      "locator": "PDF p. 1: realised weather in 24 hours ending 08:30 IST 24 Sep; extreme rain coastal Andhra Pradesh, very heavy rain Odisha, Jharkhand, coastal/south interior Karnataka and Telangana.",
+      "observedThrough": "2026-09-24",
+      "observedThroughPrecision": "date",
+      "publicationDate": "2026-09-24T13:20:00+05:30",
+      "publicationDatePrecision": "datetime",
+      "publisher": "India Meteorological Department",
+      "retrievedAt": "2026-09-24T08:29:37Z",
+      "sha256": "87f4140cbd654711b3952d608a3ddac9f9793c8c31d3e23243ffebfbec6ba008",
+      "sourceId": "imd_weather_20260924",
+      "title": "IMD national weather release, 24 September 2026",
+      "url": "https://internal.imd.gov.in/press_release/20260924_pr_5338.pdf",
+      "validityEnd": null
     },
     {
       "id": "E-INDIA-ROSTER-20260923",
@@ -1234,6 +1408,36 @@
       "validityEnd": null
     },
     {
+      "id": "E-KA-GAZETTE-DROUGHT-20260827",
+      "locator": "Seven-page official PDF: operative declaration and annexure list 101 taluks, 89 severe and 12 moderate.",
+      "observedThrough": "2026-08-27",
+      "observedThroughPrecision": "date",
+      "publicationDate": "2026-08-27T00:00:00+05:30",
+      "publicationDatePrecision": "datetime",
+      "publisher": "Government of Karnataka, Revenue Department",
+      "retrievedAt": "2026-09-24T08:32:59Z",
+      "sha256": "1351b07470dbc9f492ba8a039455e766891a81edf881ec186baee8e93515b290",
+      "sourceId": "karnataka_drought_order_20260827",
+      "title": "Karnataka Gazette kharif drought declaration, 27 August 2026",
+      "url": "https://erajyapatra.karnataka.gov.in/WriteReadData/2026/11076.pdf",
+      "validityEnd": null
+    },
+    {
+      "id": "E-KA-GAZETTE-DROUGHT-20260917",
+      "locator": "Official date-search 17-Sep-2026, Extraordinary, Gazette no. 926; form download PDF pp. 2–3 operative order and annexure: 23 taluks, 21 severe and 2 moderate.",
+      "observedThrough": "2026-09-11",
+      "observedThroughPrecision": "date",
+      "publicationDate": "2026-09-17T00:00:00+05:30",
+      "publicationDatePrecision": "datetime",
+      "publisher": "Government of Karnataka, Revenue Department",
+      "retrievedAt": "2026-09-24T08:32:59Z",
+      "sha256": "77aca9b56ce3db8333230d55503fd60869177035a71930373940d8ddeb467f25",
+      "sourceId": "karnataka_drought_order_20260917",
+      "title": "Karnataka Gazette no. 926, 17 September 2026, kharif drought declaration",
+      "url": "https://erajyapatra.karnataka.gov.in/Search1.aspx",
+      "validityEnd": null
+    },
+    {
       "id": "E-KA-GAZETTE-DROUGHT-20260922",
       "locator": "Order pp. 2–3: declaration, validity and directions; annex pp. 3–5: 53 numbered taluks, 51 severe and two moderate across 17 districts.",
       "observedThrough": "2026-09-16",
@@ -1246,6 +1450,21 @@
       "sourceId": "karnataka_drought_order_20260922",
       "title": "Karnataka Gazette, Government Order RD 586 TNR 2026 (Part-1)",
       "url": "https://erajyapatra.karnataka.gov.in/WriteReadData/2026/11325.pdf",
+      "validityEnd": null
+    },
+    {
+      "id": "E-NSO-HCES-202324",
+      "locator": "Factsheet Statement 1, printed pp. 3–4: food share of national average MPCE without selected free government-provided item imputation, rural 47.04%, urban 39.68%.",
+      "observedThrough": "2024-03-31",
+      "observedThroughPrecision": "date",
+      "publicationDate": null,
+      "publicationDatePrecision": "unknown",
+      "publisher": "National Statistical Office / Ministry of Statistics and Programme Implementation",
+      "retrievedAt": "2026-09-24T08:29:37Z",
+      "sha256": "31d4ce93ce9396b4042d226408b6d12e4be2006e0b716a0d63995d913b13f76e",
+      "sourceId": "nso_hces_2023_24",
+      "title": "NSO Household Consumption Expenditure Survey 2023–24 factsheet",
+      "url": "https://www.mospi.gov.in/sites/default/files/publication_reports/HCES%20FactSheet%202023-24.pdf",
       "validityEnd": null
     },
     {

@@ -721,10 +721,108 @@
     "title": "Reviewed static release, exports and live deployment smoke test",
     "owner_role": "lead",
     "depends_on": [],
-    "status": "in_progress",
+    "status": "completed",
     "suggested_paths": [],
     "acceptance": [
       "Material changes verified against approved evidence and tested on built output"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T37",
+    "gate": "G11",
+    "title": "Radical dark editorial design, motion and visible site-build timestamp",
+    "owner_role": "visual_designer",
+    "depends_on": [],
+    "status": "in_progress",
+    "suggested_paths": [],
+    "acceptance": [
+      "Source-linked and browser-verified output; exact dates; no unsupported predictive certainty"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T38",
+    "gate": "G11",
+    "title": "Immersive national narrative with provenance tags and AI Author assessment",
+    "owner_role": "editor",
+    "depends_on": [],
+    "status": "in_progress",
+    "suggested_paths": [],
+    "acceptance": [
+      "Source-linked and browser-verified output; exact dates; no unsupported predictive certainty"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T39",
+    "gate": "G11",
+    "title": "Interactive source-linked visual atlas and schematic geography",
+    "owner_role": "frontend_engineer",
+    "depends_on": [],
+    "status": "completed",
+    "suggested_paths": [],
+    "acceptance": [
+      "Source-linked and browser-verified output; exact dates; no unsupported predictive certainty"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T40",
+    "gate": "G11",
+    "title": "Latest hydrology, official outlook and response evidence research",
+    "owner_role": "hydrology",
+    "depends_on": [],
+    "status": "completed",
+    "suggested_paths": [],
+    "acceptance": [
+      "Source-linked and browser-verified output; exact dates; no unsupported predictive certainty"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T41",
+    "gate": "G11",
+    "title": "Economy, livelihoods and unequal-access evidence research",
+    "owner_role": "economy_access",
+    "depends_on": [],
+    "status": "completed",
+    "suggested_paths": [],
+    "acceptance": [
+      "Source-linked and browser-verified output; exact dates; no unsupported predictive certainty"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T42",
+    "gate": "G11",
+    "title": "Independent G11 source, visual, accessibility and security review",
+    "owner_role": "quality_engineer",
+    "depends_on": [],
+    "status": "in_progress",
+    "suggested_paths": [],
+    "acceptance": [
+      "Source-linked and browser-verified output; exact dates; no unsupported predictive certainty"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T43",
+    "gate": "G11",
+    "title": "Verified static release, journalist exports and GitHub Pages deployment",
+    "owner_role": "lead",
+    "depends_on": [],
+    "status": "not_started",
+    "suggested_paths": [],
+    "acceptance": [
+      "Source-linked and browser-verified output; exact dates; no unsupported predictive certainty"
     ],
     "result_paths": [],
     "blockers": []

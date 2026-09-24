@@ -1,0 +1,3 @@
+# G11 decorative hero asset
+
+`public/images/hero-water-abstract.webp` is original AI-generated abstract editorial art, created on 24 September 2026 for this site. It is **not** a photograph, satellite image, geographic map, drought observation or representation of any named place. The prompt requested symbolic braided water channels, dark mineral textures and negative space for copy, with no text or geographic outline. The generated 1672×941 PNG was encoded as WebP at quality 82 without compositional edits; final public file is 140,600 bytes. Use it as decorative background with an accessible empty alternative and do not cite it as evidence.

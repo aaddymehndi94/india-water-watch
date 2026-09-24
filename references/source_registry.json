@@ -680,5 +680,95 @@
     "license_status": "brief_factual_excerpts_only",
     "selected_data_endpoint": "https://www.imdpune.gov.in/cmpg/Product/homo.html",
     "production_approved": true
+  },
+  {
+    "id": "imd_weather_20260924",
+    "title": "IMD national weather release, 24 September 2026",
+    "publisher": "India Meteorological Department",
+    "entry_url": "https://internal.imd.gov.in/press_release/20260924_pr_5338.pdf",
+    "topics": [
+      "weather",
+      "rainfall",
+      "updates"
+    ],
+    "access_status": "source_inspected",
+    "checked_on": "2026-09-24",
+    "access_notes": "24 Sep 13:20 IST release independently reviewed; realised local extreme and very heavy rain for 24h ending 08:30 IST. No storage or service inference.",
+    "expected_cadence": "daily",
+    "license_status": "factual_excerpt_only",
+    "selected_data_endpoint": "https://internal.imd.gov.in/press_release/20260924_pr_5338.pdf",
+    "production_approved": true
+  },
+  {
+    "id": "imd_extended_20260917",
+    "title": "IMD extended range bulletin issued 17 September 2026",
+    "publisher": "India Meteorological Department",
+    "entry_url": "https://internal.imd.gov.in/press_release/20260917_pr_5323.pdf",
+    "topics": [
+      "rainfall",
+      "forecast",
+      "outlook"
+    ],
+    "access_status": "source_inspected",
+    "checked_on": "2026-09-24",
+    "access_notes": "Week 2 forecast near-normal nationally 24–30 Sep; recheck current index and expire after 30 Sep. No dry-season forecast.",
+    "expected_cadence": "weekly",
+    "license_status": "factual_excerpt_only",
+    "selected_data_endpoint": "https://internal.imd.gov.in/press_release/20260917_pr_5323.pdf",
+    "production_approved": true
+  },
+  {
+    "id": "nso_hces_2023_24",
+    "title": "NSO Household Consumption Expenditure Survey 2023–24 factsheet",
+    "publisher": "National Statistical Office",
+    "entry_url": "https://www.mospi.gov.in/sites/default/files/publication_reports/HCES%20FactSheet%202023-24.pdf",
+    "topics": [
+      "economy",
+      "households",
+      "inequality"
+    ],
+    "access_status": "source_inspected",
+    "checked_on": "2026-09-24",
+    "access_notes": "Statement 1 food expenditure shares without selected free government-item imputation independently checked; historical national averages only.",
+    "expected_cadence": "survey_release",
+    "license_status": "factual_excerpt_only",
+    "selected_data_endpoint": "https://www.mospi.gov.in/sites/default/files/publication_reports/HCES%20FactSheet%202023-24.pdf",
+    "production_approved": true
+  },
+  {
+    "id": "karnataka_drought_order_20260827",
+    "title": "Karnataka Gazette drought declaration, 27 August 2026",
+    "publisher": "Government of Karnataka",
+    "entry_url": "https://erajyapatra.karnataka.gov.in/WriteReadData/2026/11076.pdf",
+    "topics": [
+      "drought",
+      "response",
+      "karnataka"
+    ],
+    "access_status": "source_inspected",
+    "checked_on": "2026-09-24",
+    "access_notes": "Official seven-page order and annexure independently counted: 101 taluks, 89 severe/12 moderate. Administrative declaration only.",
+    "expected_cadence": "event_based",
+    "license_status": "factual_excerpt_only",
+    "selected_data_endpoint": "https://erajyapatra.karnataka.gov.in/WriteReadData/2026/11076.pdf",
+    "production_approved": true
+  },
+  {
+    "id": "karnataka_drought_order_20260917",
+    "title": "Karnataka Gazette no. 926, 17 September 2026",
+    "publisher": "Government of Karnataka",
+    "entry_url": "https://erajyapatra.karnataka.gov.in/Search1.aspx",
+    "topics": [
+      "drought",
+      "response",
+      "karnataka"
+    ],
+    "access_status": "source_inspected",
+    "checked_on": "2026-09-24",
+    "access_notes": "Official Gazette search by date/category and form-post PDF, hash preserved; operative annexure 23 taluks, 21 severe/2 moderate; preamble contains contradiction. No stable direct PDF URL shown.",
+    "expected_cadence": "event_based",
+    "license_status": "factual_excerpt_only",
+    "selected_data_endpoint": "https://erajyapatra.karnataka.gov.in/Search1.aspx",
+    "production_approved": true
   }
 ]

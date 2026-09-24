@@ -239,5 +239,120 @@
     "source_inspected": true,
     "upstream_evidence_ids": [],
     "access_notes": "Preserved official HTML independently re-parsed and arithmetic repeated by separate reviewer. Only three brief attributed factual comparisons, no table/HTML/chart redistribution. Source has no visible publication/revision timestamp; live page timed out on independent revisit."
+  },
+  {
+    "id": "E-IMD-WEATHER-20260924",
+    "source_id": "imd_weather_20260924",
+    "url": "https://internal.imd.gov.in/press_release/20260924_pr_5338.pdf",
+    "title": "IMD national weather release, 24 September 2026",
+    "publisher": "India Meteorological Department",
+    "published_at": "2026-09-24T13:20:00+05:30",
+    "observation_period": {
+      "start": "2026-09-23T00:00:00+05:30",
+      "end": "2026-09-24T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "day",
+      "cutoff_convention": "IMD reports weather realised in the 24 hours ending 08:30 IST on 24 September 2026; start is calendar approximation."
+    },
+    "locator": "PDF p. 1: realised weather in 24 hours ending 08:30 IST 24 Sep; extreme rain coastal Andhra Pradesh, very heavy rain Odisha, Jharkhand, coastal/south interior Karnataka and Telangana.",
+    "access_notes": "Independently hash-matched and source-checked by G11 source reviewer. Brief attributed factual summary only; no reproduction of PDF or maps.",
+    "sha256": "87f4140cbd654711b3952d608a3ddac9f9793c8c31d3e23243ffebfbec6ba008",
+    "local_snapshot_path": "data/candidates/g11_hydrology/imd-weather-2026-09-24.pdf",
+    "retrieved_at": "2026-09-24T08:29:37Z",
+    "rights_status": "permitted_excerpt",
+    "source_inspected": true,
+    "upstream_evidence_ids": []
+  },
+  {
+    "id": "E-IMD-EXTENDED-20260917",
+    "source_id": "imd_extended_20260917",
+    "url": "https://internal.imd.gov.in/press_release/20260917_pr_5323.pdf",
+    "title": "IMD extended range forecast issued 17 September 2026",
+    "publisher": "India Meteorological Department",
+    "published_at": "2026-09-17T00:00:00+05:30",
+    "observation_period": {
+      "start": "2026-09-24T00:00:00+05:30",
+      "end": "2026-09-30T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "week",
+      "cutoff_convention": "Week 2 forecast dates from IMD 17 September extended-range bulletin; calendar-date precision."
+    },
+    "locator": "PDF pp. 3–4, Week 2 precipitation forecast for 24–30 September: near-normal rainfall country as a whole.",
+    "access_notes": "Independently hash-matched and source-checked by G11 source reviewer. Recheck current IMD index for any superseding issue; validity ends 30 September. Brief attributed summary only.",
+    "sha256": "46033486d26214d463ab5854377fe8356f21a162b2e7910c6cc00ede4b52a918",
+    "local_snapshot_path": "data/candidates/g11_hydrology/imd-extended-2026-09-17.pdf",
+    "retrieved_at": "2026-09-24T08:29:37Z",
+    "rights_status": "permitted_excerpt",
+    "source_inspected": true,
+    "upstream_evidence_ids": []
+  },
+  {
+    "id": "E-NSO-HCES-202324",
+    "source_id": "nso_hces_2023_24",
+    "url": "https://www.mospi.gov.in/sites/default/files/publication_reports/HCES%20FactSheet%202023-24.pdf",
+    "title": "NSO Household Consumption Expenditure Survey 2023–24 factsheet",
+    "publisher": "National Statistical Office / Ministry of Statistics and Programme Implementation",
+    "published_at": null,
+    "observation_period": {
+      "start": "2023-04-01T00:00:00+05:30",
+      "end": "2024-03-31T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "year",
+      "cutoff_convention": "NSO Household Consumption Expenditure Survey 2023–24 reference year; fieldwork timing follows source methods."
+    },
+    "locator": "Factsheet Statement 1, printed pp. 3–4: food share of national average MPCE without selected free government-provided item imputation, rural 47.04%, urban 39.68%.",
+    "access_notes": "Independently hash-matched and table-checked by G11 source reviewer. Historical national averages, not income, current inflation or 2026 water harm. Brief facts only.",
+    "sha256": "31d4ce93ce9396b4042d226408b6d12e4be2006e0b716a0d63995d913b13f76e",
+    "local_snapshot_path": "data/candidates/g11_economy/hces_2023_24_factsheet.pdf",
+    "retrieved_at": "2026-09-24T08:29:37Z",
+    "rights_status": "permitted_excerpt",
+    "source_inspected": true,
+    "upstream_evidence_ids": []
+  },
+  {
+    "id": "E-KA-GAZETTE-DROUGHT-20260827",
+    "source_id": "karnataka_drought_order_20260827",
+    "url": "https://erajyapatra.karnataka.gov.in/WriteReadData/2026/11076.pdf",
+    "title": "Karnataka Gazette kharif drought declaration, 27 August 2026",
+    "publisher": "Government of Karnataka, Revenue Department",
+    "published_at": "2026-08-27T00:00:00+05:30",
+    "observation_period": {
+      "start": "2026-06-01T00:00:00+05:30",
+      "end": "2026-08-27T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "season_to_date",
+      "cutoff_convention": "Kharif 2026 declaration assessment references calendar dates; exact crop/weather observation hours are not specified."
+    },
+    "locator": "Seven-page official PDF: operative declaration and annexure list 101 taluks, 89 severe and 12 moderate.",
+    "local_snapshot_path": "data/candidates/g11_institutions/karnataka-drought-20260827.pdf",
+    "rights_status": "permitted_excerpt",
+    "source_inspected": true,
+    "upstream_evidence_ids": [],
+    "access_notes": "Original official PDF independently fetched and annexure counted by separate source reviewer; administrative declaration only.",
+    "retrieved_at": "2026-09-24T08:32:59Z",
+    "sha256": "1351b07470dbc9f492ba8a039455e766891a81edf881ec186baee8e93515b290"
+  },
+  {
+    "id": "E-KA-GAZETTE-DROUGHT-20260917",
+    "source_id": "karnataka_drought_order_20260917",
+    "url": "https://erajyapatra.karnataka.gov.in/Search1.aspx",
+    "title": "Karnataka Gazette no. 926, 17 September 2026, kharif drought declaration",
+    "publisher": "Government of Karnataka, Revenue Department",
+    "published_at": "2026-09-17T00:00:00+05:30",
+    "observation_period": {
+      "start": "2026-06-01T00:00:00+05:30",
+      "end": "2026-09-11T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "season_to_date",
+      "cutoff_convention": "Kharif 2026 declaration assessment references calendar dates; exact crop/weather observation hours are not specified."
+    },
+    "locator": "Official date-search 17-Sep-2026, Extraordinary, Gazette no. 926; form download PDF pp. 2–3 operative order and annexure: 23 taluks, 21 severe and 2 moderate.",
+    "local_snapshot_path": "data/candidates/g11_institutions/karnataka-drought-20260917.pdf",
+    "rights_status": "permitted_excerpt",
+    "source_inspected": true,
+    "upstream_evidence_ids": [],
+    "access_notes": "Official form-post PDF independently hash-matched and annexure counted. Preamble wrongly calls all 23 severe; operative order and annexure say 21 severe/2 moderate. Assessment date conflicts in document (2 vs 11 Sep); do not assert a single cutoff.",
+    "retrieved_at": "2026-09-24T08:32:59Z",
+    "sha256": "77aca9b56ce3db8333230d55503fd60869177035a71930373940d8ddeb467f25"
   }
 ]
