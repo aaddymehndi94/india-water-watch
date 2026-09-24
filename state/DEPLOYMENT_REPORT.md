@@ -1,6 +1,10 @@
 # Progress site deployment · 24 September 2026
 
-**Live URL:** https://india-water-watch.aaddy.chatgpt.site
+**Primary GitHub Pages URL:** https://aaddymehndi94.github.io/india-water-watch/
+
+The repository owner selected **GitHub Actions** as the Pages source. The existing `.github/workflows/pages.yml` ran successfully from `bae0575` ([workflow run](https://github.com/aaddymehndi94/india-water-watch/actions/runs/35968463153)): both build and deploy jobs succeeded. Public HTTP checks returned 200 for the homepage, state directory, Karnataka, Explore, Search, observation CSV and Pagefind script; a missing route returned 404. Headless Chrome loaded home, progress, Karnataka and Search with HTTP 200; `rainfall` returned 21 Pagefind matches. The Jekyll and Static HTML starter templates were not used.
+
+**Secondary Sites URL:** https://india-water-watch.aaddy.chatgpt.site
 
 The user authorized a publicly shareable progress site. GitHub Pages remains disabled in the repository, so the same reviewed static candidate was published through ChatGPT Sites as a root-path build. Sites project ID `appgprj_6ab4cac60b7c8191baca4aba1fd9ef2f` is persisted in `.openai/hosting.json`; source commit `e2518e5298256761ea436082e1bfcb697efc2c05` was pushed to its source repository. Saved version 1 ID `appgprj_6ab4cac60b7c8191baca4aba1fd9ef2f~appgver_f6f5adae2a0c8191a602bfe936ec0954` used the locally built `dist/` archive. Deployment `appgdep_6ab4cba0ce2c8191a4e968bc0706285f` reported `succeeded`; a subsequent site read confirmed `access_mode: public` and the live URL.
 
@@ -10,4 +14,4 @@ The public Site is open to anyone with its URL. No named colleague was invited, 
 
 Version 2 was saved from Git commit `129b3c044951f98643bdf1d747b2c4e0815eb310` as `appgprj_6ab4cac60b7c8191baca4aba1fd9ef2f~appgver_ca75577cb2a88191a7fd6db07c0299ac` and deployed as `appgdep_6ab4cd3159d0819182807cb588d96ab7`. The host reported `succeeded` at the same URL. A fresh public Chrome smoke check returned HTTP 200 for home, progress, Karnataka and search; the progress page now says “Recorded as deployed,” and search again returned 21 `rainfall` matches. The public observation CSV returned HTTP 200.
 
-GitHub source remains at https://github.com/aaddymehndi94/india-water-watch . GitHub Pages itself still returns 404 because the owner has not enabled Pages. The Sites URL above is the verified public site. Updates require a reviewed source commit, root static build, saved Sites version, deployment and fresh smoke test; no autonomous background updater is running.
+GitHub source remains at https://github.com/aaddymehndi94/india-water-watch . New reviewed pushes to `main` trigger the GitHub Pages workflow. The Sites URL remains a second verified public host; keeping it synchronized requires a separate saved version and deployment. No autonomous background updater is running.

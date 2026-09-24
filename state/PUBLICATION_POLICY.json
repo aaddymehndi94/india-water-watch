@@ -10,7 +10,8 @@
   "approved_release_sha256": null,
   "human_review_receipts": [],
   "note": "The publisher explicitly authorized a GitHub Pages progress site on 24 September 2026. This does not authorize unreviewed observations, sensitive reporting, or final editorial sign-off. A local boolean is not authentication.",
-  "progress_site_host": "chatgpt-sites:appgprj_6ab4cac60b7c8191baca4aba1fd9ef2f",
-  "progress_site_url": "https://india-water-watch.aaddy.chatgpt.site",
-  "progress_site_access": "public"
+  "progress_site_host": "github-pages:aaddymehndi94/india-water-watch",
+  "progress_site_url": "https://aaddymehndi94.github.io/india-water-watch/",
+  "progress_site_access": "public",
+  "secondary_progress_site_url": "https://india-water-watch.aaddy.chatgpt.site"
 }

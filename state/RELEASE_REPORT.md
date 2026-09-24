@@ -1,6 +1,6 @@
 # India Water Watch · local release candidate
 
-**Candidate:** `candidate-20260924-c5c2701d6b3c` · built 24 September 2026. The GitHub Pages profile ZIP is `release/site-github.zip`; the root profile was deployed through ChatGPT Sites. This agent-reviewed progress candidate is publicly live at https://india-water-watch.aaddy.chatgpt.site . GitHub Pages remains disabled.
+**Candidate:** `candidate-20260924-c5c2701d6b3c` · built 24 September 2026. The GitHub Pages profile ZIP is `release/site-github.zip`; the root profile is hosted through ChatGPT Sites. This agent-reviewed progress candidate is publicly live at https://aaddymehndi94.github.io/india-water-watch/ and https://india-water-watch.aaddy.chatgpt.site .
 
 ## Built and verified
 
@@ -43,6 +43,6 @@ The prompt-driven update guide is `docs/UPDATE_PLAYBOOK.md`. Root and GitHub ZIP
 
 ## Hosting
 
-The verified public progress URL is https://india-water-watch.aaddy.chatgpt.site . See `state/DEPLOYMENT_REPORT.md` for the Sites project/version/deployment IDs and live route/search checks. The existing GitHub remote is `git@github.com-aaddymehndi94:aaddymehndi94/india-water-watch.git`; `.github/workflows/pages.yml` runs checks and builds on `main` pushes. GitHub Pages still fails at `configure-pages` because Pages is disabled. The owner can enable **Settings → Pages → Build and deployment → Source: GitHub Actions** for an additional GitHub URL. No scheduled candidate auto-promotion is configured.
+The primary public progress URL is https://aaddymehndi94.github.io/india-water-watch/ . The existing `.github/workflows/pages.yml` builds and deploys on reviewed `main` pushes; its latest checked run succeeded. The secondary root-path Sites URL is https://india-water-watch.aaddy.chatgpt.site . See `state/DEPLOYMENT_REPORT.md` for both hosts' live route/search checks and Sites version IDs. No scheduled candidate auto-promotion is configured.
 
 To roll back, redeploy an earlier reviewed commit/workflow run or revert with a new commit. Keep prior source snapshots and release manifests; do not rewrite history or silently alter observation dates.

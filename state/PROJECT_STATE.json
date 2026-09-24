@@ -13,11 +13,15 @@
   "next_task": "T29",
   "active_workers": [],
   "source_data_status": "Five approved IMD rainfall observations through 2026-09-23; six additional dated official claims. District, storage, river, groundwater and service observations remain unapproved or missing.",
-  "next_action": "Review new evidence candidates, independently check claim changes, then save/deploy a new Sites version and smoke-test it. GitHub Pages remains disabled.",
+  "next_action": "For each reviewed data/content update, run validation and tests, push main for GitHub Pages, and verify live search/downloads; keep Sites in sync if maintaining the secondary URL.",
   "deployment_scope": "public_progress_site",
-  "deployment_url": "https://india-water-watch.aaddy.chatgpt.site",
-  "deployment_host": "ChatGPT Sites",
+  "deployment_url": "https://aaddymehndi94.github.io/india-water-watch/",
+  "deployment_host": "GitHub Pages",
   "deployed_at": "2026-09-24T07:08:57+00:00",
   "deployment_version_number": 2,
-  "deployment_id": "appgdep_6ab4cd3159d0819182807cb588d96ab7"
+  "deployment_id": "appgdep_6ab4cd3159d0819182807cb588d96ab7",
+  "primary_deployment_url": "https://aaddymehndi94.github.io/india-water-watch/",
+  "github_pages_deployed": true,
+  "github_pages_verified_at": "2026-09-24T07:29:34+00:00",
+  "secondary_deployment_url": "https://india-water-watch.aaddy.chatgpt.site"
 }

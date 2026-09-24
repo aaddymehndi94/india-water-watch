@@ -53,5 +53,10 @@
     "label": "Live Sites progress deployment v1",
     "status": "passed: public HTTP and browser smoke",
     "at": "2026-09-24T07:08:57+00:00"
+  },
+  {
+    "label": "GitHub Pages live smoke",
+    "status": "passed: workflow, routes, downloads, Pagefind search",
+    "at": "2026-09-24T07:29:34+00:00"
   }
 ]
