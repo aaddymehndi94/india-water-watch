@@ -2,16 +2,24 @@
   "schema_version": "1.0",
   "project": "india-water-watch",
   "starter_date": "2026-09-24",
-  "phase": "starter_only",
-  "current_gate": "G0",
+  "phase": "implementation",
+  "current_gate": "G1",
   "software_ready": false,
   "editorially_ready": false,
-  "publisher_authorized": false,
+  "publisher_authorized": true,
   "deployed": false,
   "approved_release_id": null,
-  "last_completed_task": null,
-  "next_task": "T01",
-  "active_workers": [],
+  "last_completed_task": "T01",
+  "next_task": "T02",
+  "active_workers": [
+    "prior_audit",
+    "hydrology_sources",
+    "history",
+    "institutions",
+    "economy_access",
+    "data_pipeline",
+    "frontend"
+  ],
   "source_data_status": "No production observations or claims have been verified by this starter.",
-  "next_action": "Read FIRST_PROMPT.txt and perform G0 preflight; preserve existing user work."
+  "next_action": "Complete Q01-Q12 audit; then review IMD candidate data and integrate Astro site."
 }
