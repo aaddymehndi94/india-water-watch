@@ -1092,7 +1092,7 @@
       "T57",
       "T58"
     ],
-    "status": "in_progress",
+    "status": "completed",
     "suggested_paths": [],
     "acceptance": [
       "Material new content only if source/method/rights checks pass; rebuild and live verify"
@@ -1103,8 +1103,27 @@
       "reporting/g14_postpromotion_source_review.md",
       "reporting/g14_quality_review.md",
       "release/site-github.zip",
-      "release/site-compact.zip"
+      "release/site-compact.zip",
+      "state/DEPLOYMENT_REPORT.md"
     ],
+    "blockers": []
+  },
+  {
+    "id": "T60",
+    "gate": "G15",
+    "title": "Acquire and independently verify matched subnational water-service or groundwater evidence",
+    "owner_role": "hydrology",
+    "depends_on": [
+      "T59"
+    ],
+    "status": "not_started",
+    "suggested_paths": [
+      "reporting/g15_subnational_evidence.md"
+    ],
+    "acceptance": [
+      "Exact geography, boundary and observation date; definition and source rights; independent source review; visible missingness rather than fabricated district values"
+    ],
+    "result_paths": [],
     "blockers": []
   }
 ]

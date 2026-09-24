@@ -188,5 +188,10 @@
     "label": "G14 structural release gate",
     "status": "passed for candidate-20260924-5993f9d4621f",
     "at": "2026-09-24T10:38:32Z"
+  },
+  {
+    "label": "G14 GitHub Pages live deployment and browser smoke",
+    "status": "passed: Actions 35988484343 build/deploy success, 131/131 Chrome journeys, five content/assets routes and image hash verified",
+    "at": "2026-09-24T10:41:56Z"
   }
 ]
