@@ -697,7 +697,7 @@
       "C-KA-DROUGHT-ORDER-20260922",
       "C-IMD-WEATHER-EVENT-20260924"
     ],
-    "method_path": "Qualitative conditional water-balance reasoning: where verified usable storage is low and inflows fail to offset withdrawals, buffer may shrink; where subsequent catchment rainfall, source levels and delivery recover, concern weakens. No reservoir-level model, location forecast, probability, or numerical shortage estimate. See reporting/g11_hydrology_outlook.md and reporting/g11_independent_source_review.md.",
+    "method_path": "Qualitative conditional water-balance reasoning: where verified usable storage is low and inflows fail to offset withdrawals, buffer may shrink; where subsequent catchment rainfall, source levels and delivery recover, concern weakens. No reservoir-level model, location forecast, probability, or numerical shortage estimate.",
     "limitations": [
       "Confidence is low in any geographic or calendar outcome; only the conditional physical mechanism is high-confidence.",
       "The 24 September heavy-rain event may alter local conditions, but its catchment or service effect has not been measured.",
@@ -736,7 +736,7 @@
     "input_claim_ids": [
       "C-KA-DROUGHT-ORDER-20260922"
     ],
-    "method_path": "Independent counts of annexure rows: 101 (89 severe/12 moderate) + 23 (21 severe/2 moderate) + 53 (51 severe/2 moderate) = 177 (161 severe/16 moderate). District+taluk pairs normalized and checked for overlap; 176 machine-split unique pairs plus one manually checked Kadur row. See reporting/g11_institutions.md and reporting/g11_independent_source_review.md.",
+    "method_path": "Independent counts of annexure rows: 101 (89 severe/12 moderate) + 23 (21 severe/2 moderate) + 53 (51 severe/2 moderate) = 177 (161 severe/16 moderate). District+taluk pairs normalized and checked for overlap; 176 machine-split unique pairs plus one manually checked Kadur row.",
     "limitations": [
       "The 17 September document preamble misstates all 23 as severe; operative order and annexure support 21 severe/2 moderate.",
       "The orders use taluks as administrative units and do not establish household water service, crop damage, aid delivery, or population exposure.",

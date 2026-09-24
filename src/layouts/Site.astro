@@ -5,24 +5,24 @@ const { title, description = 'Independent, source-linked reporting on water in I
 const nav = [
   ['Overview', '/'], ['Explore', '/explore/'], ['Understand', '/understand/'], ['Outlook & updates', '/outlook/'], ['Sources', '/sources/']
 ];
+const builtAt = new Date();
+const builtAtIST = new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'Asia/Kolkata' }).format(builtAt);
 ---
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
     <link rel="icon" type="image/svg+xml" href={url('/favicon.svg')} />
-    <meta name="theme-color" content="#f5f1e7" />
+    <meta name="theme-color" content="#111e22" />
     <script is:inline>
       (() => {
         try {
           const saved = localStorage.getItem('iww-theme');
-          document.documentElement.dataset.theme = saved === 'dark' || saved === 'light'
-            ? saved
-            : (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+          document.documentElement.dataset.theme = saved === 'dark' || saved === 'light' ? saved : 'dark';
         } catch {
-          document.documentElement.dataset.theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          document.documentElement.dataset.theme = 'dark';
         }
         document.querySelector('meta[name="theme-color"]').content = document.documentElement.dataset.theme === 'dark' ? '#111e22' : '#f5f1e7';
       })();
@@ -31,12 +31,14 @@ const nav = [
   </head>
   <body>
     <a class="skip" href="#main">Skip to content</a>
+    <div class="reading-progress" aria-hidden="true"></div>
     <header class="masthead">
-      <div class="masthead-rail"><div class="shell rail-inner"><span>Independent water reporting for India</span><span>Evidence · place · perspective</span></div></div>
+      <div class="masthead-rail"><div class="shell rail-inner"><span class="rail-identity">Independent water reporting for India</span><span class="rail-freshness"><time datetime={builtAt.toISOString()}>Site updated {builtAtIST} IST</time><span aria-hidden="true">/</span><a href={url('/data-status/')} aria-label="Check data freshness">Data freshness ↗</a></span></div></div>
       <div class="shell masthead-inner">
         <a class="brand" href={url('/')} aria-label="India Water Watch home"><svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><circle cx="24" cy="24" r="21" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M11 27c5-5 9-5 13 0s8 5 13 0M11 34c5-5 9-5 13 0s8 5 13 0" fill="none" stroke="currentColor" stroke-width="2"/><path d="M24 6v12" stroke="currentColor" stroke-width="1.5"/></svg><span>INDIA<span class="brand-line">WATER WATCH</span></span></a>
-        <nav aria-label="Main navigation"><ul>{nav.map(([label, path]) => <li><a href={url(path)} aria-current={Astro.url.pathname === url(path) ? 'page' : undefined}>{label}</a></li>)}</ul></nav>
+        <nav class="desktop-nav" aria-label="Main navigation"><ul>{nav.map(([label, path]) => <li><a href={url(path)} aria-current={Astro.url.pathname === url(path) ? 'page' : undefined}>{label}</a></li>)}</ul></nav>
         <div class="masthead-tools"><a class="search-link" href={url('/search/')} aria-label="Search the publication"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m15.5 15.5 5 5" stroke="currentColor" stroke-width="1.8"/></svg><span>Search</span></a><button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch colour theme" hidden><span class="theme-icon" aria-hidden="true">◐</span><span class="theme-label">Dark</span></button></div>
+        <details class="mobile-menu"><summary>Menu <span aria-hidden="true">⌄</span></summary><nav aria-label="Mobile navigation"><ul>{nav.map(([label, path]) => <li><a href={url(path)} aria-current={Astro.url.pathname === url(path) ? 'page' : undefined}>{label}</a></li>)}</ul></nav></details>
       </div>
     </header>
     <main id="main"><slot /></main>
@@ -58,11 +60,6 @@ const nav = [
           const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
           document.documentElement.dataset.theme = next;
           try { localStorage.setItem('iww-theme', next); } catch {}
-          sync();
-        });
-        matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-          try { if (localStorage.getItem('iww-theme')) return; } catch {}
-          document.documentElement.dataset.theme = event.matches ? 'dark' : 'light';
           sync();
         });
       })();

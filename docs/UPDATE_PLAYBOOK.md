@@ -23,7 +23,7 @@ PUBLIC_SITE_URL=https://aaddymehndi94.github.io PUBLIC_BASE_PATH=/india-water-wa
 python tools/release_gate.py
 ```
 
-Use the actual evaluation timestamp in `--as-of`. The refresh command checks only the currently implemented IMD adapter and writes under ignored `data/candidates/`; it does not approve or deploy anything. The release gate checks the exact `dist/` manifest and review evidence, so a new approved source snapshot requires fresh reviews and a new `state/RELEASE_REVIEW.json` binding. Commit reviewed changes and push `main`; the existing GitHub Actions workflow now deploys https://aaddymehndi94.github.io/india-water-watch/ . Inspect its run and smoke-test the live site. If the secondary ChatGPT Sites URL remains in use, ask Codex to push that exact commit to its source repository, build a root-path `dist/`, save a version with the built archive, deploy it, and smoke-test https://india-water-watch.aaddy.chatgpt.site . `.openai/hosting.json` records the Sites project ID. Do not automate candidate promotion.
+Use the actual evaluation timestamp in `--as-of`. The refresh command checks only the currently implemented IMD adapter and writes under ignored `data/candidates/`; it does not approve or deploy anything. The release gate checks the exact `dist/` manifest and review evidence, so a new approved source snapshot requires fresh reviews and a new `state/RELEASE_REVIEW.json` binding. Commit reviewed changes and push `main`; the existing GitHub Actions workflow deploys https://aaddymehndi94.github.io/india-water-watch/ . Inspect its run and smoke-test the live site. GitHub Pages is the maintained public host. Do not automate candidate promotion.
 
 For a quick local root preview after `build:compact`:
 

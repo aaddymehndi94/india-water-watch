@@ -255,10 +255,10 @@
       "cutoff_convention": "IMD reports weather realised in the 24 hours ending 08:30 IST on 24 September 2026; start is calendar approximation."
     },
     "locator": "PDF p. 1: realised weather in 24 hours ending 08:30 IST 24 Sep; extreme rain coastal Andhra Pradesh, very heavy rain Odisha, Jharkhand, coastal/south interior Karnataka and Telangana.",
-    "access_notes": "Independently hash-matched and source-checked by G11 source reviewer. Brief attributed factual summary only; no reproduction of PDF or maps.",
+    "access_notes": "Independently hash-matched and source-checked by G11 source reviewer. Brief attributed factual summary only; no reproduction of PDF or maps. Retrieval timestamp uses original downloaded snapshot file write time, rounded to seconds.",
     "sha256": "87f4140cbd654711b3952d608a3ddac9f9793c8c31d3e23243ffebfbec6ba008",
     "local_snapshot_path": "data/candidates/g11_hydrology/imd-weather-2026-09-24.pdf",
-    "retrieved_at": "2026-09-24T08:29:37Z",
+    "retrieved_at": "2026-09-24T08:23:30Z",
     "rights_status": "permitted_excerpt",
     "source_inspected": true,
     "upstream_evidence_ids": []
@@ -278,10 +278,10 @@
       "cutoff_convention": "Week 2 forecast dates from IMD 17 September extended-range bulletin; calendar-date precision."
     },
     "locator": "PDF pp. 3–4, Week 2 precipitation forecast for 24–30 September: near-normal rainfall country as a whole.",
-    "access_notes": "Independently hash-matched and source-checked by G11 source reviewer. Recheck current IMD index for any superseding issue; validity ends 30 September. Brief attributed summary only.",
+    "access_notes": "Independently hash-matched and source-checked by G11 source reviewer. Recheck current IMD index for any superseding issue; validity ends 30 September. Brief attributed summary only. Retrieval timestamp uses original downloaded snapshot file write time, rounded to seconds.",
     "sha256": "46033486d26214d463ab5854377fe8356f21a162b2e7910c6cc00ede4b52a918",
     "local_snapshot_path": "data/candidates/g11_hydrology/imd-extended-2026-09-17.pdf",
-    "retrieved_at": "2026-09-24T08:29:37Z",
+    "retrieved_at": "2026-09-24T08:23:29Z",
     "rights_status": "permitted_excerpt",
     "source_inspected": true,
     "upstream_evidence_ids": []
@@ -301,10 +301,10 @@
       "cutoff_convention": "NSO Household Consumption Expenditure Survey 2023–24 reference year; fieldwork timing follows source methods."
     },
     "locator": "Factsheet Statement 1, printed pp. 3–4: food share of national average MPCE without selected free government-provided item imputation, rural 47.04%, urban 39.68%.",
-    "access_notes": "Independently hash-matched and table-checked by G11 source reviewer. Historical national averages, not income, current inflation or 2026 water harm. Brief facts only.",
+    "access_notes": "Independently hash-matched and table-checked by G11 source reviewer. Historical national averages, not income, current inflation or 2026 water harm. Brief facts only. Retrieval timestamp uses original downloaded snapshot file write time, rounded to seconds.",
     "sha256": "31d4ce93ce9396b4042d226408b6d12e4be2006e0b716a0d63995d913b13f76e",
     "local_snapshot_path": "data/candidates/g11_economy/hces_2023_24_factsheet.pdf",
-    "retrieved_at": "2026-09-24T08:29:37Z",
+    "retrieved_at": "2026-09-24T08:24:16Z",
     "rights_status": "permitted_excerpt",
     "source_inspected": true,
     "upstream_evidence_ids": []
@@ -328,8 +328,8 @@
     "rights_status": "permitted_excerpt",
     "source_inspected": true,
     "upstream_evidence_ids": [],
-    "access_notes": "Original official PDF independently fetched and annexure counted by separate source reviewer; administrative declaration only.",
-    "retrieved_at": "2026-09-24T08:32:59Z",
+    "access_notes": "Original official PDF independently fetched and annexure counted by separate source reviewer; administrative declaration only. Retrieval timestamp uses original downloaded snapshot file write time, rounded to seconds.",
+    "retrieved_at": "2026-09-24T08:26:50Z",
     "sha256": "1351b07470dbc9f492ba8a039455e766891a81edf881ec186baee8e93515b290"
   },
   {
@@ -351,8 +351,8 @@
     "rights_status": "permitted_excerpt",
     "source_inspected": true,
     "upstream_evidence_ids": [],
-    "access_notes": "Official form-post PDF independently hash-matched and annexure counted. Preamble wrongly calls all 23 severe; operative order and annexure say 21 severe/2 moderate. Assessment date conflicts in document (2 vs 11 Sep); do not assert a single cutoff.",
-    "retrieved_at": "2026-09-24T08:32:59Z",
+    "access_notes": "Official form-post PDF independently hash-matched and annexure counted. Preamble wrongly calls all 23 severe; operative order and annexure say 21 severe/2 moderate. Assessment date conflicts in document (2 vs 11 Sep); do not assert a single cutoff. Retrieval timestamp uses original downloaded snapshot file write time, rounded to seconds.",
+    "retrieved_at": "2026-09-24T08:29:27Z",
     "sha256": "77aca9b56ce3db8333230d55503fd60869177035a71930373940d8ddeb467f25"
   }
 ]

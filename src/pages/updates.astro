@@ -3,19 +3,26 @@ import Site from '../layouts/Site.astro';
 import PageHeader from '../components/PageHeader.astro';
 import ClaimBlock from '../components/ClaimBlock.astro';
 import { release, url } from '../lib/publication';
+const claim = (id: string) => release.claims.find(c => c.id === id);
+const source = (id: string) => {
+  const item = claim(id);
+  return item ? url(`/sources/${item.evidenceIds[0]}/`) : url('/sources/');
+};
 const entries = [
-  ['C-IMD-RAINFALL-DEP-india-20260923','Observed rainfall through 23 September 2026'],
-  ['C-KA-DROUGHT-ORDER-20260922','Karnataka gazetted drought declaration, 22 September 2026'],
-  ['C-CWC-INDIA-STORAGE-20260910','CWC monitored-reservoir storage, 10 September 2026'],
-  ['C-IMD-OUTLOOK-20260831','Forecast issued 31 August; valid for September 2026'],
-  ['C-JJM-FUNDS-20260331','Ministry release of 31 March 2026'],
-  ['C-JJM-CONNECTIONS-20260303','Connection status as of 3 March 2026'],
+  ['C-IMD-WEATHER-EVENT-20260924','24 September 2026 · 08:30 IST endpoint','Observed event · IMD reported','Extreme rain in coastal Andhra Pradesh and very heavy rain in parts of the east and south during the preceding 24 hours; no recovery outcome inferred.'],
+  ['C-IMD-RAINFALL-DEP-india-20260923','23 September 2026','Measured · IMD reported','A national rainfall shortfall through this date, not a water-supply verdict.'],
+  ['C-KA-DROUGHT-THREE-ORDERS-20260922','22 September 2026 · third order','Government orders','Three Karnataka gazettes now list 177 distinct drought-affected taluks; this is administrative scope, not measured loss or aid delivered.'],
+  ['C-IMD-EXTENDED-20260917','17 September 2026','Official forecast','IMD forecasts near-normal national rain for 24–30 September; this says nothing about 2027 or local water supply.'],
+  ['C-CWC-INDIA-STORAGE-20260910','10 September 2026','Measured · CWC reported','The monitored 178-reservoir cohort held 130.554 BCM, 70.66% of combined live capacity. This predates the rain cutoff.'],
+  ['C-IMD-OUTLOOK-20260831','31 August 2026','Official forecast','A September rainfall outlook, subject to any later IMD issue; not an observed September outcome.'],
+  ['C-JJM-FUNDS-20260331','31 March 2026','Ministry report','A programme approval, guidelines and reported FY 2025–26 release; not a September emergency response or service result.'],
 ] as const;
 ---
-<Site title="Dated updates" description="A source-linked sequence of approved observations and reports, with event and publication dates kept apart.">
-  <PageHeader title="What entered the record" eyebrow="Updates · evidence desk" description="This is a curated evidence log, not a live news wire. The date on each item says what the source actually covers." />
-  <section class="section"><div class="shell page-grid"><article><p>Our newest approved rainfall observation is IMD's graphic through <strong>23 September 2026</strong>. A separate <a href={url('/sources/E-KA-GAZETTE-DROUGHT-20260922/')}>22 September Karnataka gazette</a> declared 53 additional taluks drought-affected for the 2026 kharif season; it does not establish relief delivery or measured crop loss. The <a href={url('/sources/E-CWC-RSMS-20260910/')}>CWC storage bulletin</a> is dated 10 September, for 178 monitored reservoirs, and cannot establish storage at the later rainfall cutoff. The March programme and connection records describe earlier administrative periods. The 31 August IMD item is a forecast for September 2026, subject to any later issue; it is not an observed September result. Links below lead to exact source records and limitations.</p>
-    {entries.map(([id,heading]) => {const claim = release.claims.find(c => c.id === id); return claim && <ClaimBlock claim={claim} heading={heading} />})}
-    <div class="note"><strong>Changes since the last release</strong><p>No earlier approved publication snapshot with matched definitions is bound to this build. We therefore cannot calculate a reliable “since last update” change from these different records. A future revision will retain both versions and identify changed claims.</p></div>
-  </article><aside><p class="eyebrow">Inspect the record</p><a href={url('/data-status/')}>Coverage and freshness</a><a href={url('/sources/')}>Source catalogue</a><a href={url('/corrections/')}>Corrections</a><a href={url('/journalists/')}>Reuse the data</a></aside></div></section>
+<Site title="The dated record" description="A curated chronology of reviewed India Water Watch evidence with observation, government-order and forecast dates kept distinct.">
+  <PageHeader title="The dated record" eyebrow="Updates / evidence desk" description="There is no live sensor feed here. These are the source events and measurements we have checked, each carrying its own clock." />
+  <section class="section g11-chapter"><div class="shell"><div class="g11-chapter-head"><span class="g11-chapter-number">↘</span><div><p class="eyebrow">Most recent source event first</p><h2>Seven records. No artificial trend line.</h2></div></div>
+    <ol class="g11-sequence">{entries.map(([id,date,type,summary]) => {const item=claim(id);return item && <li><p class="eyebrow">{date}</p><span class:list={['g11-tag', {'measured':type.startsWith('Measured') || type.startsWith('Observed'),'order':type.includes('order') || type.includes('Ministry'),'official-forecast':type.includes('forecast')}]}>{type}</span><h3>{summary}</h3>{id === 'C-KA-DROUGHT-THREE-ORDERS-20260922' ? <p class="small"><a href={url('/sources/E-KA-GAZETTE-DROUGHT-20260827/')}>27 Aug order ↗</a> · <a href={url('/sources/E-KA-GAZETTE-DROUGHT-20260917/')}>17 Sep order ↗</a> · <a href={url('/sources/E-KA-GAZETTE-DROUGHT-20260922/')}>22 Sep order ↗</a></p> : <a href={source(id)}>Exact source and limits ↗</a>}</li>})}</ol>
+    <div class="g11-clock"><p class="eyebrow">Read the dates correctly</p><p>The 24 September IMD event covers the preceding 24 hours; its national cumulative rainfall graphic ends on 23 September. CWC storage is dated 10 September. Karnataka's three gazettes are administrative orders through 22 September. The 17 September forecast targets 24–30 September, while the 31 August forecast targets the month. Their dates, geographies and measures cannot be collapsed into “today.”</p><p>No earlier approved publication snapshot with matching definitions is bound to this build, so we do not calculate an invented “change since last update.”</p></div>
+  </div></section>
+  <section class="section"><div class="shell reading"><p class="eyebrow">Open the reviewed claim records</p><h2>Read the evidence behind each update.</h2>{entries.map(([id,date]) => {const item=claim(id);return item && <ClaimBlock claim={item} heading={date} />})}<div class="button-row"><a class="button" href={url('/data-status/')}>Coverage and freshness ↗</a><a class="button button-light" href={url('/corrections/')}>Corrections ↗</a></div></div></section>
 </Site>

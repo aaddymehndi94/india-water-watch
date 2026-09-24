@@ -51,7 +51,7 @@ def publication(root: Path = ROOT) -> dict:
     for eid in sorted(used_evidence):
         ev = evidence[eid]
         period_end = ((ev["observation_period"] or {}).get("end") or "")[:10] or None
-        date_only_publications = {"E-IMD-OUTLOOK-20260831", "E-NSO-WATER-2018", "E-KA-GAZETTE-DROUGHT-20260922"}
+        date_only_publications = {"E-IMD-OUTLOOK-20260831", "E-IMD-EXTENDED-20260917", "E-NSO-WATER-2018", "E-KA-GAZETTE-DROUGHT-20260827", "E-KA-GAZETTE-DROUGHT-20260917", "E-KA-GAZETTE-DROUGHT-20260922"}
         sources.append({
             "id": eid, "sourceId": ev["source_id"], "title": ev["title"],
             "publisher": ev["publisher"], "url": ev["url"],
@@ -87,6 +87,7 @@ def publication(root: Path = ROOT) -> dict:
         "observationIds": c["observation_ids"], "geographyIds": c["geography_ids"],
         "status": c["status"], "kind": c["kind"], "period": c["period"],
         "reviewedAt": c["reviewed_at"], "limitations": c["limitations"],
+        "methodPath": c["method_path"], "inputClaimIds": c["input_claim_ids"],
     } for c in selected_claims]
     reviewed_at = max((c["reviewed_at"] for c in selected_claims), default=None)
     watermarks = {source["id"]: source["observedThrough"] for source in sources}

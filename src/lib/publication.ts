@@ -8,7 +8,7 @@ import approvedGeographies from '../../data/approved/geographies.json';
 export type Geography = { id: string; name: string; type: string; slug: string; code?: string; version?: string };
 export type Observation = { id: string; geographyId: string; metricId: string; value: number | null; unit: string; periodStart: string; periodEnd: string; sourceId: string; claimId: string; seriesId?: string; periodKind?: string; periodPrecision?: string; cutoffConvention?: string; baselineId?: string | null; status?: string; evidenceIds?: string[] };
 export type Source = { id: string; title: string; publisher: string; url?: string | null; entry_url?: string | null; observedThrough?: string | null; validityEnd?: string | null; publicationDate?: string | null; retrievedAt?: string | null; locator?: string; sha256?: string | null; access_status?: string; access_notes?: string; checked_on?: string | null; production_approved?: boolean; topics?: string[] };
-export type Claim = { id: string; text: string; evidenceIds: string[]; status: string; reviewedAt?: string; limitations?: string[] };
+export type Claim = { id: string; text: string; evidenceIds: string[]; status: string; kind?: string; reviewedAt?: string; limitations?: string[]; methodPath?: string | null; inputClaimIds?: string[] };
 type Publication = { releaseId: string; reviewedAt: string; observations: Observation[]; geographies: Geography[]; sources: Source[]; claims: Claim[] };
 
 const path = resolve('data/approved/publication.json');

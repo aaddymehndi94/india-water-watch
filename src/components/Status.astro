@@ -1,5 +1,8 @@
 ---
 import { release, url } from '../lib/publication';
 const { compact = false } = Astro.props;
+const reviewed = release.reviewedAt
+  ? new Intl.DateTimeFormat('en-IN', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'Asia/Kolkata' }).format(new Date(release.reviewedAt))
+  : null;
 ---
-<aside class:list={['status-band', {compact}]} aria-label="Data status"><span class="status-dot" aria-hidden="true"></span><div><strong>{release.observations.length ? 'Approved snapshot' : 'Current measurements pending review'}</strong><span>{release.observations.length ? `Reviewed ${release.reviewedAt}; release ${release.releaseId}.` : 'No national measurement is published from this candidate yet.'}</span></div><a href={url('/data-status/')}>See coverage <span aria-hidden="true">↗</span></a></aside>
+<aside class:list={['status-band', {compact}]} aria-label="Data status"><span class="status-dot" aria-hidden="true"></span><div><strong>{release.observations.length ? 'Reviewed evidence snapshot' : 'Current measurements pending review'}</strong><span>{release.observations.length ? `Evidence reviewed ${reviewed}. Observation dates vary by source.` : 'No national measurement is published from this candidate yet.'}</span></div><a href={url('/data-status/')}>See coverage <span aria-hidden="true">↗</span></a></aside>

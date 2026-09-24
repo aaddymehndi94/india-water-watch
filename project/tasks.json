@@ -735,7 +735,7 @@
     "title": "Radical dark editorial design, motion and visible site-build timestamp",
     "owner_role": "visual_designer",
     "depends_on": [],
-    "status": "in_progress",
+    "status": "completed",
     "suggested_paths": [],
     "acceptance": [
       "Source-linked and browser-verified output; exact dates; no unsupported predictive certainty"
@@ -749,7 +749,7 @@
     "title": "Immersive national narrative with provenance tags and AI Author assessment",
     "owner_role": "editor",
     "depends_on": [],
-    "status": "in_progress",
+    "status": "completed",
     "suggested_paths": [],
     "acceptance": [
       "Source-linked and browser-verified output; exact dates; no unsupported predictive certainty"
@@ -805,7 +805,7 @@
     "title": "Independent G11 source, visual, accessibility and security review",
     "owner_role": "quality_engineer",
     "depends_on": [],
-    "status": "in_progress",
+    "status": "completed",
     "suggested_paths": [],
     "acceptance": [
       "Source-linked and browser-verified output; exact dates; no unsupported predictive certainty"
@@ -819,7 +819,7 @@
     "title": "Verified static release, journalist exports and GitHub Pages deployment",
     "owner_role": "lead",
     "depends_on": [],
-    "status": "not_started",
+    "status": "in_progress",
     "suggested_paths": [],
     "acceptance": [
       "Source-linked and browser-verified output; exact dates; no unsupported predictive certainty"

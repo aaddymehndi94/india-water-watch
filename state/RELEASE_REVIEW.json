@@ -1,74 +1,74 @@
 {
   "schema_version": "1.0",
-  "release_id": "candidate-20260924-6705f01bb901",
-  "snapshot_sha256": "6705f01bb9012ffeba2b5415c1aab8b87029b17b4745a42a4cd591f48cc2166d",
+  "release_id": "candidate-20260924-0ff6e35ffc18",
+  "snapshot_sha256": "0ff6e35ffc18863d601e9714c2180f1b9443f0e0590779d9dc12300e13ab00a2",
   "checks": [
     {
       "id": "data",
       "status": "passed",
       "reviewer": "lead-engineer",
-      "evidence_path": "reporting/g10_data_review.md",
-      "evidence_sha256": "be145bbdfd4e5d205a1dfc6a762c05a4fdc3711ddcb27f9ff138cde2e02fdc0f"
+      "evidence_path": "reporting/g11_data_review.md",
+      "evidence_sha256": "f69a9668c14837a632dd4d588dc7b2c7c30158d42fc75748f92796ce722fdc30"
     },
     {
       "id": "claims",
       "status": "passed",
       "reviewer": "independent-fact-checker-agent",
-      "evidence_path": "reporting/g10_fact_review.md",
-      "evidence_sha256": "08dd4acf0571ad436d5cb224dc18289128d6a67b3fb085e4c4622c47701366be"
+      "evidence_path": "reporting/g11_independent_source_review.md",
+      "evidence_sha256": "6086bd6d7f0775ce0667b3828f73310c8c795ddd3bbf90dd0cf4a080bee434d2"
     },
     {
       "id": "comparability",
       "status": "passed",
       "reviewer": "independent-fact-checker-agent",
-      "evidence_path": "reporting/g10_fact_review.md",
-      "evidence_sha256": "08dd4acf0571ad436d5cb224dc18289128d6a67b3fb085e4c4622c47701366be"
+      "evidence_path": "reporting/g11_independent_source_review.md",
+      "evidence_sha256": "6086bd6d7f0775ce0667b3828f73310c8c795ddd3bbf90dd0cf4a080bee434d2"
     },
     {
       "id": "editorial",
       "status": "passed",
       "reviewer": "independent-fact-checker-agent",
-      "evidence_path": "reporting/g10_fact_review.md",
-      "evidence_sha256": "08dd4acf0571ad436d5cb224dc18289128d6a67b3fb085e4c4622c47701366be"
+      "evidence_path": "reporting/g11_independent_source_review.md",
+      "evidence_sha256": "6086bd6d7f0775ce0667b3828f73310c8c795ddd3bbf90dd0cf4a080bee434d2"
     },
     {
       "id": "rights",
       "status": "passed",
       "reviewer": "independent-fact-checker-agent",
-      "evidence_path": "reporting/g10_fact_review.md",
-      "evidence_sha256": "08dd4acf0571ad436d5cb224dc18289128d6a67b3fb085e4c4622c47701366be"
+      "evidence_path": "reporting/g11_independent_source_review.md",
+      "evidence_sha256": "6086bd6d7f0775ce0667b3828f73310c8c795ddd3bbf90dd0cf4a080bee434d2"
     },
     {
       "id": "accessibility",
       "status": "passed",
       "reviewer": "independent-quality-agent",
-      "evidence_path": "reporting/g10_quality_review.md",
-      "evidence_sha256": "411d1e55fc1d96e240ef11a3eab44a5a7832a7de53375b48215c2896e6135011"
+      "evidence_path": "reporting/g11_quality_review.md",
+      "evidence_sha256": "917179469a7221f6b1651ae76f80a7de9cd7cf1626e116408d2168241a39046a"
     },
     {
       "id": "visual",
       "status": "passed",
       "reviewer": "independent-quality-agent",
-      "evidence_path": "reporting/g10_quality_review.md",
-      "evidence_sha256": "411d1e55fc1d96e240ef11a3eab44a5a7832a7de53375b48215c2896e6135011"
+      "evidence_path": "reporting/g11_quality_review.md",
+      "evidence_sha256": "917179469a7221f6b1651ae76f80a7de9cd7cf1626e116408d2168241a39046a"
     },
     {
       "id": "security",
       "status": "passed",
       "reviewer": "independent-quality-agent",
-      "evidence_path": "reporting/g10_quality_review.md",
-      "evidence_sha256": "411d1e55fc1d96e240ef11a3eab44a5a7832a7de53375b48215c2896e6135011"
+      "evidence_path": "reporting/g11_quality_review.md",
+      "evidence_sha256": "917179469a7221f6b1651ae76f80a7de9cd7cf1626e116408d2168241a39046a"
     },
     {
       "id": "hosting",
       "status": "passed",
       "reviewer": "independent-quality-agent",
-      "evidence_path": "reporting/g10_quality_review.md",
-      "evidence_sha256": "411d1e55fc1d96e240ef11a3eab44a5a7832a7de53375b48215c2896e6135011"
+      "evidence_path": "reporting/g11_quality_review.md",
+      "evidence_sha256": "917179469a7221f6b1651ae76f80a7de9cd7cf1626e116408d2168241a39046a"
     }
   ],
   "blocking_findings": [],
   "sensitive_human_review_required": false,
   "human_review_receipt": null,
-  "scope": "Agent-reviewed G10 public progress candidate with 17 source-linked claims and 7 dated observations. No human editorial sign-off is asserted."
+  "scope": "Agent-reviewed G11 public progress candidate; 22 source-linked claims, seven dated numeric observations, low-confidence user-authorized AI Author assessment. No human field or editorial review asserted."
 }

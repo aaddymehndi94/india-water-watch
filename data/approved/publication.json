@@ -8,12 +8,14 @@
         "cwc:india-178"
       ],
       "id": "C-CWC-INDIA-STORAGE-20260910",
+      "inputClaimIds": [],
       "kind": "reported",
       "limitations": [
         "CWC monitored-reservoir cohort only; not all storage, groundwater, household supply or river flow.",
         "Status date is 10 September 2026; the newer 17 September bulletin was listed but its official PDF returned 404 on 24 September.",
         "Capacity fill and departure from ten-year normal use different denominators."
       ],
+      "methodPath": "130.554 / 184.762 × 100 = 70.6606%, agreeing with CWC printed 70.66%.",
       "observationIds": [
         "O-CWC-LIVE-STORAGE-india-178-20260910"
       ],
@@ -36,12 +38,14 @@
         "cwc:south-50"
       ],
       "id": "C-CWC-SOUTH-STORAGE-20260910",
+      "inputClaimIds": [],
       "kind": "reported",
       "limitations": [
         "CWC monitored-reservoir cohort only; not all storage, groundwater, household supply or river flow.",
         "Status date is 10 September 2026; the newer 17 September bulletin was listed but its official PDF returned 404 on 24 September.",
         "Capacity fill and departure from ten-year normal use different denominators."
       ],
+      "methodPath": "30.467 / 55.879 × 100 = 54.5232%, agreeing with CWC printed 54.52%.",
       "observationIds": [
         "O-CWC-LIVE-STORAGE-south-50-20260910"
       ],
@@ -64,11 +68,13 @@
         "india"
       ],
       "id": "C-IMD-EXTENDED-20260917",
+      "inputClaimIds": [],
       "kind": "forecast",
       "limitations": [
         "Forecast validity ends 30 September 2026; recheck current issue and supersede if IMD publishes a newer bulletin.",
         "A national rainfall category does not indicate individual catchment or household water outcomes."
       ],
+      "methodPath": null,
       "observationIds": [],
       "period": {
         "cutoff_convention": "Week 2 forecast dates from IMD 17 September extended-range bulletin; calendar-date precision.",
@@ -89,12 +95,14 @@
         "imd:south-peninsular"
       ],
       "id": "C-IMD-HISTORY-SOUTH-2002",
+      "inputClaimIds": [],
       "kind": "derived",
       "limitations": [
         "Completed June–September seasons cannot be ranked against the current 2026 observation ending 23 September.",
         "The South Peninsula footprint has 10 IMD subdivisions; it is not a set of selected current states.",
         "Brief factual extraction only; do not reproduce the IMD historical table, bulk rows or graphics without a rights decision."
       ],
+      "methodPath": "Sum IMD printed June, July, August and September monthly totals; (466.9 / 716.1 - 1) × 100 = -34.8% at one decimal.",
       "observationIds": [],
       "period": {
         "cutoff_convention": "Completed calendar months June through September; source values are one-decimal monthly totals, not daily cutoffs.",
@@ -116,12 +124,14 @@
         "india"
       ],
       "id": "C-IMD-HISTORY-SOUTH-2009",
+      "inputClaimIds": [],
       "kind": "derived",
       "limitations": [
         "Completed June–September seasons cannot be ranked against the current 2026 observation ending 23 September.",
         "The South Peninsula footprint has 10 IMD subdivisions; it is not a set of selected current states.",
         "Brief factual extraction only; do not reproduce the IMD historical table, bulk rows or graphics without a rights decision."
       ],
+      "methodPath": "Sum IMD printed June, July, August and September monthly totals, then (actual / displayed 1971–2020 normal - 1) × 100. South Peninsula 681.6 / 716.1 = -4.8% at one decimal; 2009 India 709.1 / 868.5 = -18.4% at one decimal.",
       "observationIds": [],
       "period": {
         "cutoff_convention": "Completed calendar months June through September; source values are one-decimal monthly totals, not daily cutoffs.",
@@ -142,12 +152,14 @@
         "imd:south-peninsular"
       ],
       "id": "C-IMD-HISTORY-SOUTH-2025",
+      "inputClaimIds": [],
       "kind": "derived",
       "limitations": [
         "Completed June–September seasons cannot be ranked against the current 2026 observation ending 23 September.",
         "The South Peninsula footprint has 10 IMD subdivisions; it is not a set of selected current states.",
         "Brief factual extraction only; do not reproduce the IMD historical table, bulk rows or graphics without a rights decision."
       ],
+      "methodPath": "Sum IMD printed June, July, August and September monthly totals; (787.2 / 716.1 - 1) × 100 = 9.9% at one decimal.",
       "observationIds": [],
       "period": {
         "cutoff_convention": "Completed calendar months June through September; source values are one-decimal monthly totals, not daily cutoffs.",
@@ -168,11 +180,13 @@
         "india"
       ],
       "id": "C-IMD-OUTLOOK-20260831",
+      "inputClaimIds": [],
       "kind": "forecast",
       "limitations": [
         "Valid only for September 2026 and superseded by any later outlook.",
         "A rainfall forecast is not a water-supply or crop-loss forecast."
       ],
+      "methodPath": null,
       "observationIds": [],
       "period": {
         "cutoff_convention": "Dates are calendar precision; 00:00 encodes date only, not a measured cutoff hour.",
@@ -193,12 +207,14 @@
         "imd:central"
       ],
       "id": "C-IMD-RAINFALL-DEP-imd-central-20260923",
+      "inputClaimIds": [],
       "kind": "reported",
       "limitations": [
         "Rainfall departure is not a measure of water supply or a drought declaration.",
         "The graphic is a mutable, provider-rounded image; exact region boundaries and station methods were not reconstructed.",
         "The image identifies a 1971–2020 daily normal but does not print separate cumulative normal totals for this region; the reported percentage could not be independently recomputed."
       ],
+      "methodPath": null,
       "observationIds": [
         "O-IMD-RAINFALL-DEP-imd-central-20260923"
       ],
@@ -221,12 +237,14 @@
         "imd:east-northeast"
       ],
       "id": "C-IMD-RAINFALL-DEP-imd-east-northeast-20260923",
+      "inputClaimIds": [],
       "kind": "reported",
       "limitations": [
         "Rainfall departure is not a measure of water supply or a drought declaration.",
         "The graphic is a mutable, provider-rounded image; exact region boundaries and station methods were not reconstructed.",
         "The image identifies a 1971–2020 daily normal but does not print separate cumulative normal totals for this region; the reported percentage could not be independently recomputed."
       ],
+      "methodPath": null,
       "observationIds": [
         "O-IMD-RAINFALL-DEP-imd-east-northeast-20260923"
       ],
@@ -249,12 +267,14 @@
         "imd:northwest"
       ],
       "id": "C-IMD-RAINFALL-DEP-imd-northwest-20260923",
+      "inputClaimIds": [],
       "kind": "reported",
       "limitations": [
         "Rainfall departure is not a measure of water supply or a drought declaration.",
         "The graphic is a mutable, provider-rounded image; exact region boundaries and station methods were not reconstructed.",
         "The image identifies a 1971–2020 daily normal but does not print separate cumulative normal totals for this region; the reported percentage could not be independently recomputed."
       ],
+      "methodPath": null,
       "observationIds": [
         "O-IMD-RAINFALL-DEP-imd-northwest-20260923"
       ],
@@ -277,12 +297,14 @@
         "imd:south-peninsular"
       ],
       "id": "C-IMD-RAINFALL-DEP-imd-south-peninsular-20260923",
+      "inputClaimIds": [],
       "kind": "reported",
       "limitations": [
         "Rainfall departure is not a measure of water supply or a drought declaration.",
         "The graphic is a mutable, provider-rounded image; exact region boundaries and station methods were not reconstructed.",
         "The image identifies a 1971–2020 daily normal but does not print separate cumulative normal totals for this region; the reported percentage could not be independently recomputed."
       ],
+      "methodPath": null,
       "observationIds": [
         "O-IMD-RAINFALL-DEP-imd-south-peninsular-20260923"
       ],
@@ -305,11 +327,13 @@
         "india"
       ],
       "id": "C-IMD-RAINFALL-DEP-india-20260923",
+      "inputClaimIds": [],
       "kind": "reported",
       "limitations": [
         "Rainfall departure is not a measure of water supply or a drought declaration.",
         "The graphic is a mutable, provider-rounded image; exact region boundaries and station methods were not reconstructed."
       ],
+      "methodPath": "IMD all-India graphic middle and bottom panels; (713.3 / 837.7 - 1) × 100 = −14.85%, rounding to −14.9%.",
       "observationIds": [
         "O-IMD-RAINFALL-DEP-india-20260923"
       ],
@@ -332,11 +356,13 @@
         "india"
       ],
       "id": "C-IMD-WEATHER-EVENT-20260924",
+      "inputClaimIds": [],
       "kind": "reported",
       "limitations": [
         "Qualitative local event report; no rainfall totals or catchment benefit inferred.",
         "A 24 September event can coexist with a cumulative rainfall shortfall through 23 September."
       ],
+      "methodPath": null,
       "observationIds": [],
       "period": {
         "cutoff_convention": "IMD reports weather realised in the 24 hours ending 08:30 IST on 24 September 2026; start is calendar approximation.",
@@ -361,6 +387,12 @@
         "india"
       ],
       "id": "C-IWW-AI-ASSESSMENT-20260924",
+      "inputClaimIds": [
+        "C-IMD-RAINFALL-DEP-india-20260923",
+        "C-CWC-INDIA-STORAGE-20260910",
+        "C-KA-DROUGHT-ORDER-20260922",
+        "C-IMD-WEATHER-EVENT-20260924"
+      ],
       "kind": "scenario",
       "limitations": [
         "Confidence is low in any geographic or calendar outcome; only the conditional physical mechanism is high-confidence.",
@@ -369,6 +401,7 @@
         "Revise or withdraw if matched reservoir, well and utility records show recovery or a different stress pattern.",
         "This is original AI-authored site analysis, not an official government forecast or a validated statistical model."
       ],
+      "methodPath": "Qualitative conditional water-balance reasoning: where verified usable storage is low and inflows fail to offset withdrawals, buffer may shrink; where subsequent catchment rainfall, source levels and delivery recover, concern weakens. No reservoir-level model, location forecast, probability, or numerical shortage estimate.",
       "observationIds": [
         "O-IMD-RAINFALL-DEP-india-20260923",
         "O-CWC-LIVE-STORAGE-india-178-20260910"
@@ -392,11 +425,13 @@
         "india"
       ],
       "id": "C-JJM-CONNECTIONS-20260303",
+      "inputClaimIds": [],
       "kind": "reported",
       "limitations": [
         "This is an administrative count reported by states and UTs, not a household functionality survey.",
         "Rounded headline counts should not be treated as exact household counts."
       ],
+      "methodPath": null,
       "observationIds": [],
       "period": {
         "cutoff_convention": "Dates are calendar precision; 00:00 encodes date only, not a measured cutoff hour.",
@@ -417,6 +452,7 @@
         "india"
       ],
       "id": "C-JJM-FUNCTIONALITY-2024",
+      "inputClaimIds": [],
       "kind": "reported",
       "limitations": [
         "Sampled declared-covered villages, not all rural India; weighted household estimates.",
@@ -424,6 +460,7 @@
         "The 76% microbiological sample result is not the share of fully safe or functional households.",
         "The report calculated a separate 76% functionality figure as the minimum of three separately estimated components, not a joint household observation."
       ],
+      "methodPath": null,
       "observationIds": [],
       "period": {
         "cutoff_convention": "Dates are calendar precision; 00:00 encodes date only, not a measured cutoff hour.",
@@ -444,11 +481,13 @@
         "india"
       ],
       "id": "C-JJM-FUNDS-20260331",
+      "inputClaimIds": [],
       "kind": "reported",
       "limitations": [
         "A ministry announcement/release is a single source chain and is not independent treasury confirmation.",
         "The five named states are Uttar Pradesh, Chhattisgarh, Madhya Pradesh, Odisha and Maharashtra; this is not a drought-specific emergency measure."
       ],
+      "methodPath": null,
       "observationIds": [],
       "period": {
         "cutoff_convention": "Dates are calendar precision; 00:00 encodes date only, not a measured cutoff hour.",
@@ -469,12 +508,14 @@
         "india:karnataka"
       ],
       "id": "C-KA-DROUGHT-ORDER-20260922",
+      "inputClaimIds": [],
       "kind": "reported",
       "limitations": [
         "The order covers listed taluks, not all of Karnataka or India.",
         "It is a declaration and authorization, not proof of relief distribution, crop losses or household water shortage.",
         "Earlier 101- and 23-taluk orders are cited in the gazette but their annexes were not independently reviewed for a cumulative statewide total."
       ],
+      "methodPath": "Independently counted 53 numbered annex taluks, 51 severe and two moderate, in 17 distinct named districts.",
       "observationIds": [],
       "period": {
         "cutoff_convention": "Order date has calendar precision; 00:00 is a date placeholder, not a signing time.",
@@ -497,6 +538,9 @@
         "india:karnataka"
       ],
       "id": "C-KA-DROUGHT-THREE-ORDERS-20260922",
+      "inputClaimIds": [
+        "C-KA-DROUGHT-ORDER-20260922"
+      ],
       "kind": "derived",
       "limitations": [
         "The 17 September document preamble misstates all 23 as severe; operative order and annexure support 21 severe/2 moderate.",
@@ -504,6 +548,7 @@
         "One 17 September annexure row required manual split; no duplicates were found across the three original lists.",
         "22 September order uses the word additional; this count uses all three original annexures and an explicit overlap check."
       ],
+      "methodPath": "Independent counts of annexure rows: 101 (89 severe/12 moderate) + 23 (21 severe/2 moderate) + 53 (51 severe/2 moderate) = 177 (161 severe/16 moderate). District+taluk pairs normalized and checked for overlap; 176 machine-split unique pairs plus one manually checked Kadur row.",
       "observationIds": [],
       "period": {
         "cutoff_convention": "Kharif 2026 declaration assessment references calendar dates; exact crop/weather observation hours are not specified.",
@@ -524,11 +569,13 @@
         "india"
       ],
       "id": "C-NSO-HCES-FOODSHARE-202324",
+      "inputClaimIds": [],
       "kind": "reported",
       "limitations": [
         "National rural and urban average expenditure shares, not income or the food shares of low-income households.",
         "Historical budget context only; no 2026 food-price or water-linked impact inferred."
       ],
+      "methodPath": null,
       "observationIds": [],
       "period": {
         "cutoff_convention": "NSO Household Consumption Expenditure Survey 2023–24 reference year; fieldwork timing follows source methods.",
@@ -549,11 +596,13 @@
         "india"
       ],
       "id": "C-NSO-PREMISES-2018",
+      "inputClaimIds": [],
       "kind": "reported",
       "limitations": [
         "Household responses in a 2018 survey; not a 2026 service measure or quality test.",
         "The rural and urban frames differ from later JJM administrative reports."
       ],
+      "methodPath": null,
       "observationIds": [],
       "period": {
         "cutoff_convention": "Dates are calendar precision; 00:00 encodes date only, not a measured cutoff hour.",
@@ -574,10 +623,12 @@
         "india"
       ],
       "id": "C-NSO-SUFFICIENCY-2018",
+      "inputClaimIds": [],
       "kind": "reported",
       "limitations": [
         "Self-reported year-round sufficiency from the principal source, not independently measured daily service or safe quality."
       ],
+      "methodPath": null,
       "observationIds": [],
       "period": {
         "cutoff_convention": "Dates are calendar precision; 00:00 encodes date only, not a measured cutoff hour.",
@@ -1219,10 +1270,10 @@
       "value": -14.9
     }
   ],
-  "releaseId": "approved-159964869eef",
+  "releaseId": "approved-2f4e5d7258b9",
   "reviewedAt": "2026-09-24T08:32:59Z",
   "schemaVersion": "1",
-  "snapshotSha256": "159964869eeffc0dfb3a426f62621afdd47b68e955f96c83349004b316d35807",
+  "snapshotSha256": "2f4e5d7258b9995be855813a1d34b64f8d6918d2de09c0521db46ebfe5160dac",
   "sourceWatermarks": {
     "E-CWC-RSMS-20260910": "2026-09-10",
     "E-IMD-ALLINDIA-20260923": "2026-09-23",
@@ -1277,10 +1328,10 @@
       "locator": "PDF pp. 3–4, Week 2 precipitation forecast for 24–30 September: near-normal rainfall country as a whole.",
       "observedThrough": null,
       "observedThroughPrecision": "unknown",
-      "publicationDate": "2026-09-17T00:00:00+05:30",
-      "publicationDatePrecision": "datetime",
+      "publicationDate": "2026-09-17",
+      "publicationDatePrecision": "date",
       "publisher": "India Meteorological Department",
-      "retrievedAt": "2026-09-24T08:29:37Z",
+      "retrievedAt": "2026-09-24T08:23:29Z",
       "sha256": "46033486d26214d463ab5854377fe8356f21a162b2e7910c6cc00ede4b52a918",
       "sourceId": "imd_extended_20260917",
       "title": "IMD extended range forecast issued 17 September 2026",
@@ -1340,7 +1391,7 @@
       "publicationDate": "2026-09-24T13:20:00+05:30",
       "publicationDatePrecision": "datetime",
       "publisher": "India Meteorological Department",
-      "retrievedAt": "2026-09-24T08:29:37Z",
+      "retrievedAt": "2026-09-24T08:23:30Z",
       "sha256": "87f4140cbd654711b3952d608a3ddac9f9793c8c31d3e23243ffebfbec6ba008",
       "sourceId": "imd_weather_20260924",
       "title": "IMD national weather release, 24 September 2026",
@@ -1412,10 +1463,10 @@
       "locator": "Seven-page official PDF: operative declaration and annexure list 101 taluks, 89 severe and 12 moderate.",
       "observedThrough": "2026-08-27",
       "observedThroughPrecision": "date",
-      "publicationDate": "2026-08-27T00:00:00+05:30",
-      "publicationDatePrecision": "datetime",
+      "publicationDate": "2026-08-27",
+      "publicationDatePrecision": "date",
       "publisher": "Government of Karnataka, Revenue Department",
-      "retrievedAt": "2026-09-24T08:32:59Z",
+      "retrievedAt": "2026-09-24T08:26:50Z",
       "sha256": "1351b07470dbc9f492ba8a039455e766891a81edf881ec186baee8e93515b290",
       "sourceId": "karnataka_drought_order_20260827",
       "title": "Karnataka Gazette kharif drought declaration, 27 August 2026",
@@ -1427,10 +1478,10 @@
       "locator": "Official date-search 17-Sep-2026, Extraordinary, Gazette no. 926; form download PDF pp. 2–3 operative order and annexure: 23 taluks, 21 severe and 2 moderate.",
       "observedThrough": "2026-09-11",
       "observedThroughPrecision": "date",
-      "publicationDate": "2026-09-17T00:00:00+05:30",
-      "publicationDatePrecision": "datetime",
+      "publicationDate": "2026-09-17",
+      "publicationDatePrecision": "date",
       "publisher": "Government of Karnataka, Revenue Department",
-      "retrievedAt": "2026-09-24T08:32:59Z",
+      "retrievedAt": "2026-09-24T08:29:27Z",
       "sha256": "77aca9b56ce3db8333230d55503fd60869177035a71930373940d8ddeb467f25",
       "sourceId": "karnataka_drought_order_20260917",
       "title": "Karnataka Gazette no. 926, 17 September 2026, kharif drought declaration",
@@ -1460,7 +1511,7 @@
       "publicationDate": null,
       "publicationDatePrecision": "unknown",
       "publisher": "National Statistical Office / Ministry of Statistics and Programme Implementation",
-      "retrievedAt": "2026-09-24T08:29:37Z",
+      "retrievedAt": "2026-09-24T08:24:16Z",
       "sha256": "31d4ce93ce9396b4042d226408b6d12e4be2006e0b716a0d63995d913b13f76e",
       "sourceId": "nso_hces_2023_24",
       "title": "NSO Household Consumption Expenditure Survey 2023–24 factsheet",

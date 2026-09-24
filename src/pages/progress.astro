@@ -35,7 +35,7 @@ const latestObservationDate = release.observations.map(row => row.periodEnd).sor
       </div>
       <div class="note" style="margin-top:2rem">
         <strong>What is visible now</strong>
-        <p>{release.observations.length} approved rainfall observations are in this build{latestObservationDate ? `, most recently through ${latestObservationDate}` : ''}. State, district and other water indicators have different coverage. <a href={url('/data-status/')}>Check coverage and freshness.</a></p>
+        <p>{release.observations.length} approved numeric observations are in this build, across rainfall and monitored reservoir storage{latestObservationDate ? `; the latest rainfall cutoff is ${latestObservationDate}` : ''}. State, district and other water indicators have different coverage. <a href={url('/data-status/')}>Check coverage and freshness.</a></p>
         {state.github_pages_verified_at && <p>GitHub Pages was last verified at <time datetime={state.github_pages_verified_at}>{new Date(state.github_pages_verified_at).toLocaleString('en-IN', { dateStyle: 'medium', timeStyle: 'short', timeZone: 'Asia/Kolkata' })} IST</time>. This timestamp refers to the prior verified deployment until the next smoke test is recorded.</p>}
       </div>
       <h2 style="margin-top:3rem">Work in this revision</h2>
