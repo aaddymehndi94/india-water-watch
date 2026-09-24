@@ -13,6 +13,7 @@ import { url } from '../lib/publication';
     const query = input.value.trim();
     list.replaceChildren();
     if (query.length < 2) { status.textContent = 'Enter at least two characters.'; return; }
+    status.textContent = 'Searching published pages…';
     try {
       if (!pagefind) {
         pagefind = await import(`${input.dataset.base}pagefind/pagefind.js`);
