@@ -15,7 +15,7 @@ from tools.validate_approved import ROOT
 FIELDS = {
     "claims": ["id", "text", "kind", "status", "geographyIds", "observationIds", "evidenceIds", "reviewedAt", "limitations"],
     "observations": ["id", "geographyId", "metricId", "seriesId", "value", "unit", "status", "missingReason", "periodStart", "periodEnd", "periodPrecision", "cutoffConvention", "periodKind", "baselineId", "sourceId", "evidenceIds", "claimId"],
-    "sources": ["id", "sourceId", "title", "publisher", "url", "observedThrough", "observedThroughPrecision", "publicationDate", "publicationDatePrecision", "retrievedAt", "locator", "sha256"],
+    "sources": ["id", "sourceId", "title", "publisher", "url", "observedThrough", "observedThroughPrecision", "validityEnd", "publicationDate", "publicationDatePrecision", "retrievedAt", "locator", "sha256"],
     "geographies": ["id", "name", "type", "slug", "code", "version", "parentIds"],
 }
 
@@ -53,7 +53,7 @@ def write_exports(root: Path = ROOT, output: Path | None = None) -> Path:
         f"Snapshot SHA-256: {data['snapshotSha256']}\n"
         f"Release ID: {data['releaseId']}\n"
         "Only public records tied to reviewed claims are included. Empty cells mean missing or inapplicable, never zero. "
-        "Observation periods are calendar-date precision; no midnight observation hour is asserted. See cutoffConvention. Source publication/retrieval dates have distinct meanings. "
+        "Observation periods are calendar-date precision; no midnight observation hour is asserted. See cutoffConvention. Forecast validityEnd is separate from observedThrough. Source publication/retrieval dates have distinct meanings. "
         "CSV text that could be interpreted as a spreadsheet formula is prefixed with an apostrophe. "
         "Use claims.csv evidenceIds and observations.csv sourceId to join sources.csv.\n"
     )

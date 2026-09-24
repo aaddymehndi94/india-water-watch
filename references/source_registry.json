@@ -588,7 +588,7 @@
     ],
     "access_status": "product_inspected",
     "checked_on": "2026-09-24",
-    "access_notes": "Graphic snapshot SHA256 2a75486b645fe44c6dfd250b7cb90191ccdc9f5d586357cebe34862d9921d18a; 1 Jun\u201323 Sep, 713.3/837.7 mm, -14.9% against 1971\u20132020 normal. Brief facts only; no graphic redistribution. Independent source/method review completed.",
+    "access_notes": "Graphic snapshot SHA256 2a75486b645fe44c6dfd250b7cb90191ccdc9f5d586357cebe34862d9921d18a; 1 Jun–23 Sep, 713.3/837.7 mm, -14.9% against 1971–2020 normal. Brief facts only; no graphic redistribution. Independent source/method review completed.",
     "expected_cadence": "daily",
     "license_status": "brief_factual_excerpt_only",
     "selected_data_endpoint": "https://mausam.imd.gov.in/ClimateInformation/imdweb/DAY_WEEK/all-india.gif",
@@ -605,7 +605,7 @@
     ],
     "access_status": "product_inspected",
     "checked_on": "2026-09-24",
-    "access_notes": "Graphic snapshot SHA256 dfc549134ea2f520fda1a64dd236c67169a5d86fb8f65c8c79b3520b1fef61d0; provider-reported 1 Jun\u201323 Sep departures; regional cumulative denominators not printed. Brief facts only; no graphic redistribution. Independent image review completed.",
+    "access_notes": "Graphic snapshot SHA256 dfc549134ea2f520fda1a64dd236c67169a5d86fb8f65c8c79b3520b1fef61d0; provider-reported 1 Jun–23 Sep departures; regional cumulative denominators not printed. Brief facts only; no graphic redistribution. Independent image review completed.",
     "expected_cadence": "daily",
     "license_status": "brief_factual_excerpt_only",
     "selected_data_endpoint": "https://mausam.imd.gov.in/ClimateInformation/imdweb/DAY_WEEK/homo.gif",
@@ -627,6 +627,58 @@
     "expected_cadence": "as_changed",
     "license_status": "metadata_only",
     "selected_data_endpoint": "https://www.india.gov.in/calendar?date=2026-09-24",
+    "production_approved": true
+  },
+  {
+    "id": "karnataka_drought_order_20260922",
+    "title": "Karnataka Gazette, Government Order RD 586 TNR 2026 (Part-1)",
+    "publisher": "Government of Karnataka, Revenue Department",
+    "entry_url": "https://erajyapatra.karnataka.gov.in/WriteReadData/2026/11325.pdf",
+    "topics": [
+      "drought_declaration",
+      "government_response",
+      "karnataka"
+    ],
+    "access_status": "official_pdf_verified",
+    "checked_on": "2026-09-24",
+    "access_notes": "Official gazette inspected and independently hash-matched; brief factual summary approved. Exact taluk annex, order stages and caveats recorded in evidence ledger.",
+    "expected_cadence": "notification_based",
+    "license_status": "factual_excerpt_only",
+    "selected_data_endpoint": "https://erajyapatra.karnataka.gov.in/WriteReadData/2026/11325.pdf",
+    "production_approved": true
+  },
+  {
+    "id": "cwc_rsms_2026_09_10",
+    "title": "Weekly Bulletin on Live Storage Status of 178 Reservoirs as on 10 September 2026",
+    "publisher": "Central Water Commission",
+    "entry_url": "https://rsms.cwc.gov.in/admin/storage/bulletins/bulletin-10-09-2026-119.pdf",
+    "topics": [
+      "reservoir_storage",
+      "southern_region"
+    ],
+    "access_status": "official_pdf_verified",
+    "checked_on": "2026-09-24",
+    "access_notes": "10 September 178-reservoir PDF independently inspected. Newer listed 17 September PDF returned 404; do not relabel old observations.",
+    "expected_cadence": "weekly",
+    "license_status": "factual_excerpt_only",
+    "selected_data_endpoint": "https://rsms.cwc.gov.in/admin/storage/bulletins/bulletin-10-09-2026-119.pdf",
+    "production_approved": true
+  },
+  {
+    "id": "imd_homogeneous_monthly_history",
+    "title": "IMD all-India and homogeneous-region monthly rainfall table, 1901–2025",
+    "publisher": "India Meteorological Department, Climate Research & Services Pune",
+    "entry_url": "https://www.imdpune.gov.in/cmpg/Product/homo.html",
+    "topics": [
+      "history",
+      "rainfall"
+    ],
+    "access_status": "official_snapshot_verified",
+    "checked_on": "2026-09-24",
+    "access_notes": "Preserved official HTML hash and independent arithmetic verified; short attributed facts only, no full-table redistribution.",
+    "expected_cadence": "release_based",
+    "license_status": "brief_factual_excerpts_only",
+    "selected_data_endpoint": "https://www.imdpune.gov.in/cmpg/Product/homo.html",
     "production_approved": true
   }
 ]

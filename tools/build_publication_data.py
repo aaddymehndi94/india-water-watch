@@ -29,6 +29,11 @@ def publication(root: Path = ROOT) -> dict:
     for claim in selected_claims:
         for oid in claim["observation_ids"]:
             used_obs.setdefault(oid, claim["id"])
+    forecast_only_evidence = {
+        eid for claim in selected_claims if claim["kind"] == "forecast" for eid in claim["evidence_ids"]
+    } - {
+        eid for claim in selected_claims if claim["kind"] != "forecast" for eid in claim["evidence_ids"]
+    }
     unclaimed = sorted(o["id"] for o in rows["observations"] if o["public"] is True and o["id"] not in used_obs)
     if unclaimed:
         raise ValueError("Public observations have no reviewed public claim: " + ", ".join(unclaimed))
@@ -45,13 +50,16 @@ def publication(root: Path = ROOT) -> dict:
     sources = []
     for eid in sorted(used_evidence):
         ev = evidence[eid]
+        period_end = ((ev["observation_period"] or {}).get("end") or "")[:10] or None
+        date_only_publications = {"E-IMD-OUTLOOK-20260831", "E-NSO-WATER-2018", "E-KA-GAZETTE-DROUGHT-20260922"}
         sources.append({
             "id": eid, "sourceId": ev["source_id"], "title": ev["title"],
             "publisher": ev["publisher"], "url": ev["url"],
-            "observedThrough": ((ev["observation_period"] or {}).get("end") or "")[:10] or None,
-            "observedThroughPrecision": "date" if (ev["observation_period"] or {}).get("end") else "unknown",
-            "publicationDate": (ev["published_at"][:10] if eid in {"E-IMD-OUTLOOK-20260831", "E-NSO-WATER-2018"} and ev["published_at"] else ev["published_at"]),
-            "publicationDatePrecision": ("date" if eid in {"E-IMD-OUTLOOK-20260831", "E-NSO-WATER-2018"} else "datetime" if ev["published_at"] else "unknown"),
+            "observedThrough": None if eid in forecast_only_evidence else period_end,
+            "observedThroughPrecision": "unknown" if eid in forecast_only_evidence or not period_end else "date",
+            "validityEnd": period_end if eid in forecast_only_evidence else None,
+            "publicationDate": (ev["published_at"][:10] if eid in date_only_publications and ev["published_at"] else ev["published_at"]),
+            "publicationDatePrecision": ("date" if eid in date_only_publications and ev["published_at"] else "datetime" if ev["published_at"] else "unknown"),
             "retrievedAt": ev["retrieved_at"],
             "locator": ev["locator"], "sha256": ev["sha256"],
         })

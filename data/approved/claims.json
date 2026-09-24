@@ -175,7 +175,7 @@
   },
   {
     "id": "C-IMD-OUTLOOK-20260831",
-    "text": "In an outlook issued 31 August 2026, IMD forecast that all-India rainfall during September was most likely below normal, its category for less than 91% of the 1971–2020 September average. It also identified areas where normal or above-normal rain was possible. This is a forecast archive, not a measured September outcome.",
+    "text": "In an outlook issued 31 August 2026, IMD forecast that all-India rainfall during September was most likely below normal, its category for less than 91% of the 1971–2020 September average. It also identified areas where normal or above-normal rain was possible. This is a dated forecast, not a measured September outcome; check for any later IMD issue.",
     "kind": "forecast",
     "status": "attributed",
     "geography_ids": [
@@ -198,8 +198,8 @@
       "Valid only for September 2026 and superseded by any later outlook.",
       "A rainfall forecast is not a water-supply or crop-loss forecast."
     ],
-    "reviewer_id": "fact_checker-agent-2026-09-24",
-    "reviewed_at": "2026-09-24T06:39:38Z",
+    "reviewer_id": "revision-fact-checker-agent-2026-09-24",
+    "reviewed_at": "2026-09-24T07:56:04Z",
     "requires_human_review": false,
     "human_review_receipt": null,
     "supersedes": null,
@@ -361,6 +361,209 @@
     ],
     "reviewer_id": "fact_checker-agent-2026-09-24",
     "reviewed_at": "2026-09-24T06:39:38Z",
+    "requires_human_review": false,
+    "human_review_receipt": null,
+    "supersedes": null,
+    "public": true
+  },
+  {
+    "id": "C-KA-DROUGHT-ORDER-20260922",
+    "text": "Karnataka’s 22 September 2026 gazetted order declared 53 additional taluks across 17 districts drought-affected for the 2026 kharif season: 51 severe and two moderate. The order took effect immediately for up to six months unless revoked. It authorizes district authorities to undertake relief under SDRF norms and directs a joint crop-loss survey; it does not establish that aid was delivered or losses measured.",
+    "kind": "reported",
+    "status": "attributed",
+    "geography_ids": [
+      "india:karnataka"
+    ],
+    "period": {
+      "start": "2026-09-22T00:00:00+05:30",
+      "end": "2026-09-22T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "instant",
+      "cutoff_convention": "Order date has calendar precision; 00:00 is a date placeholder, not a signing time."
+    },
+    "evidence_ids": [
+      "E-KA-GAZETTE-DROUGHT-20260922"
+    ],
+    "observation_ids": [],
+    "input_claim_ids": [],
+    "method_path": "Independently counted 53 numbered annex taluks, 51 severe and two moderate, in 17 distinct named districts.",
+    "limitations": [
+      "The order covers listed taluks, not all of Karnataka or India.",
+      "It is a declaration and authorization, not proof of relief distribution, crop losses or household water shortage.",
+      "Earlier 101- and 23-taluk orders are cited in the gazette but their annexes were not independently reviewed for a cumulative statewide total."
+    ],
+    "reviewer_id": "independent-history-depth-agent-2026-09-24",
+    "reviewed_at": "2026-09-24T07:46:58Z",
+    "requires_human_review": false,
+    "human_review_receipt": null,
+    "supersedes": null,
+    "public": true
+  },
+  {
+    "id": "C-CWC-INDIA-STORAGE-20260910",
+    "text": "In its 10 September 2026 bulletin, the Central Water Commission reported 130.554 billion cubic metres (BCM) of live storage in 178 monitored reservoirs, 70.66% of their combined 184.762 BCM live capacity. This monitored cohort is not all reservoirs or total usable water.",
+    "kind": "reported",
+    "status": "attributed",
+    "geography_ids": [
+      "cwc:india-178"
+    ],
+    "period": {
+      "start": "2026-09-10T00:00:00+05:30",
+      "end": "2026-09-10T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "instant",
+      "cutoff_convention": "Bulletin status date is 10 September 2026; 00:00 is a calendar-date placeholder, not a measurement hour."
+    },
+    "evidence_ids": [
+      "E-CWC-RSMS-20260910"
+    ],
+    "observation_ids": [
+      "O-CWC-LIVE-STORAGE-india-178-20260910"
+    ],
+    "input_claim_ids": [],
+    "method_path": "130.554 / 184.762 × 100 = 70.6606%, agreeing with CWC printed 70.66%.",
+    "limitations": [
+      "CWC monitored-reservoir cohort only; not all storage, groundwater, household supply or river flow.",
+      "Status date is 10 September 2026; the newer 17 September bulletin was listed but its official PDF returned 404 on 24 September.",
+      "Capacity fill and departure from ten-year normal use different denominators."
+    ],
+    "reviewer_id": "independent-institutions-agent-2026-09-24",
+    "reviewed_at": "2026-09-24T07:50:10Z",
+    "requires_human_review": false,
+    "human_review_receipt": null,
+    "supersedes": null,
+    "public": true
+  },
+  {
+    "id": "C-CWC-SOUTH-STORAGE-20260910",
+    "text": "CWC reported that its 50 monitored southern-region reservoirs held 30.467 BCM on 10 September 2026, 54.52% of their combined 55.879 BCM live capacity and below their corresponding-week ten-year normal of 40.827 BCM. This CWC region is not the same geography as IMD’s South Peninsula rainfall region.",
+    "kind": "reported",
+    "status": "attributed",
+    "geography_ids": [
+      "cwc:south-50"
+    ],
+    "period": {
+      "start": "2026-09-10T00:00:00+05:30",
+      "end": "2026-09-10T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "instant",
+      "cutoff_convention": "Bulletin status date is 10 September 2026; 00:00 is a calendar-date placeholder, not a measurement hour."
+    },
+    "evidence_ids": [
+      "E-CWC-RSMS-20260910"
+    ],
+    "observation_ids": [
+      "O-CWC-LIVE-STORAGE-south-50-20260910"
+    ],
+    "input_claim_ids": [],
+    "method_path": "30.467 / 55.879 × 100 = 54.5232%, agreeing with CWC printed 54.52%.",
+    "limitations": [
+      "CWC monitored-reservoir cohort only; not all storage, groundwater, household supply or river flow.",
+      "Status date is 10 September 2026; the newer 17 September bulletin was listed but its official PDF returned 404 on 24 September.",
+      "Capacity fill and departure from ten-year normal use different denominators."
+    ],
+    "reviewer_id": "independent-institutions-agent-2026-09-24",
+    "reviewed_at": "2026-09-24T07:50:10Z",
+    "requires_human_review": false,
+    "human_review_receipt": null,
+    "supersedes": null,
+    "public": true
+  },
+  {
+    "id": "C-IMD-HISTORY-SOUTH-2002",
+    "text": "In IMD’s completed June–September 2002 South Peninsula (10 subdivisions) series, the four printed monthly totals sum to 466.9 mm, 34.8% below the table’s displayed 1971–2020 normal. This is a rainfall comparison, not evidence that 2026 has reached the same severity.",
+    "kind": "derived",
+    "status": "verified",
+    "geography_ids": [
+      "imd:south-peninsular"
+    ],
+    "period": {
+      "start": "2002-06-01T00:00:00+05:30",
+      "end": "2002-09-30T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "completed_season",
+      "cutoff_convention": "Completed calendar months June through September; source values are one-decimal monthly totals, not daily cutoffs."
+    },
+    "evidence_ids": [
+      "E-IMD-HOMO-HISTORY-20260924"
+    ],
+    "observation_ids": [],
+    "input_claim_ids": [],
+    "method_path": "Sum IMD printed June, July, August and September monthly totals; (466.9 / 716.1 - 1) × 100 = -34.8% at one decimal.",
+    "limitations": [
+      "Completed June–September seasons cannot be ranked against the current 2026 observation ending 23 September.",
+      "The South Peninsula footprint has 10 IMD subdivisions; it is not a set of selected current states.",
+      "Brief factual extraction only; do not reproduce the IMD historical table, bulk rows or graphics without a rights decision."
+    ],
+    "reviewer_id": "independent-hydrology-agent-2026-09-24",
+    "reviewed_at": "2026-09-24T07:51:13Z",
+    "requires_human_review": false,
+    "human_review_receipt": null,
+    "supersedes": null,
+    "public": true
+  },
+  {
+    "id": "C-IMD-HISTORY-SOUTH-2009",
+    "text": "In the same IMD completed-season series, South Peninsula rainfall in 2009 summed to 681.6 mm, 4.8% below its displayed 1971–2020 normal, while the all-India total was 709.1 mm, 18.4% below its own displayed normal. National and regional rainfall signals differed that year.",
+    "kind": "derived",
+    "status": "verified",
+    "geography_ids": [
+      "imd:south-peninsular",
+      "india"
+    ],
+    "period": {
+      "start": "2009-06-01T00:00:00+05:30",
+      "end": "2009-09-30T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "completed_season",
+      "cutoff_convention": "Completed calendar months June through September; source values are one-decimal monthly totals, not daily cutoffs."
+    },
+    "evidence_ids": [
+      "E-IMD-HOMO-HISTORY-20260924"
+    ],
+    "observation_ids": [],
+    "input_claim_ids": [],
+    "method_path": "Sum IMD printed June, July, August and September monthly totals, then (actual / displayed 1971–2020 normal - 1) × 100. South Peninsula 681.6 / 716.1 = -4.8% at one decimal; 2009 India 709.1 / 868.5 = -18.4% at one decimal.",
+    "limitations": [
+      "Completed June–September seasons cannot be ranked against the current 2026 observation ending 23 September.",
+      "The South Peninsula footprint has 10 IMD subdivisions; it is not a set of selected current states.",
+      "Brief factual extraction only; do not reproduce the IMD historical table, bulk rows or graphics without a rights decision."
+    ],
+    "reviewer_id": "independent-hydrology-agent-2026-09-24",
+    "reviewed_at": "2026-09-24T07:51:13Z",
+    "requires_human_review": false,
+    "human_review_receipt": null,
+    "supersedes": null,
+    "public": true
+  },
+  {
+    "id": "C-IMD-HISTORY-SOUTH-2025",
+    "text": "In IMD’s completed June–September 2025 South Peninsula series, the four printed monthly totals sum to 787.2 mm, 9.9% above the table’s displayed 1971–2020 normal. A recent wetter season is a counterexample to assuming a uniform decline.",
+    "kind": "derived",
+    "status": "verified",
+    "geography_ids": [
+      "imd:south-peninsular"
+    ],
+    "period": {
+      "start": "2025-06-01T00:00:00+05:30",
+      "end": "2025-09-30T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "completed_season",
+      "cutoff_convention": "Completed calendar months June through September; source values are one-decimal monthly totals, not daily cutoffs."
+    },
+    "evidence_ids": [
+      "E-IMD-HOMO-HISTORY-20260924"
+    ],
+    "observation_ids": [],
+    "input_claim_ids": [],
+    "method_path": "Sum IMD printed June, July, August and September monthly totals; (787.2 / 716.1 - 1) × 100 = 9.9% at one decimal.",
+    "limitations": [
+      "Completed June–September seasons cannot be ranked against the current 2026 observation ending 23 September.",
+      "The South Peninsula footprint has 10 IMD subdivisions; it is not a set of selected current states.",
+      "Brief factual extraction only; do not reproduce the IMD historical table, bulk rows or graphics without a rights decision."
+    ],
+    "reviewer_id": "independent-hydrology-agent-2026-09-24",
+    "reviewed_at": "2026-09-24T07:51:13Z",
     "requires_human_review": false,
     "human_review_receipt": null,
     "supersedes": null,

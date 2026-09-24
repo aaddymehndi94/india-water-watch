@@ -32,12 +32,14 @@ def build_manifest(root: Path, dist: Path | None = None) -> dict:
     observations = [row for row in data["observations"] if row.get("public") is True]
     claims = [row for row in data["claims"] if row.get("public") is True]
     watermarks = {row["id"]: row["period"]["end"][:10] for row in observations}
-    git_commit = subprocess.run(["git", "rev-parse", "HEAD"], cwd=root, capture_output=True, text=True, check=True).stdout.strip()
+    git_head = subprocess.run(["git", "rev-parse", "HEAD"], cwd=root, capture_output=True, text=True, check=True).stdout.strip()
+    working_tree_dirty = bool(subprocess.run(["git", "status", "--porcelain", "--untracked-files=normal"], cwd=root, capture_output=True, text=True, check=True).stdout.strip())
     return {
         "release_id": f"candidate-{datetime.now(timezone.utc):%Y%m%d}-{digest[:12]}",
         "status": "candidate",
         "built_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-        "git_commit": git_commit,
+        "git_head_at_build": git_head,
+        "working_tree_dirty_at_build": working_tree_dirty,
         "snapshot_sha256": digest,
         "source_watermarks": watermarks,
         "approved_observation_ids": [row["id"] for row in observations],
@@ -45,7 +47,7 @@ def build_manifest(root: Path, dist: Path | None = None) -> dict:
         "files_sha256": files,
         "file_count": len(files),
         "total_bytes": sum((dist / path).stat().st_size for path in files),
-        "scope": "Five reviewed IMD rainfall observations through 23 September 2026 and six additional dated, attributed official claims on outlook, rural water access and institutional response. Other systems remain under investigation.",
+        "scope": f"{len(observations)} reviewed public observations and {len(claims)} source-linked public claims; each observation retains its own status date and source. Coverage limits are recorded in state/COVERAGE_AND_FRESHNESS.md.",
     }
 
 

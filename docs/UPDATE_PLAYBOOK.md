@@ -6,9 +6,9 @@ The site is a static publication. A rebuild refreshes the **build date**, not th
 
 From this repository, ask Codex:
 
-> Check the official IMD cumulative rainfall source as of the current India date. Run the candidate refresh, report source dates, missing/stale/invalid rows and semantic differences. Independently verify any proposed public claim and its source locator. Update approved records only if the source, geography, baseline, arithmetic and rights checks pass. Then regenerate journalist exports, run tests and both static builds, inspect the release diff, and commit the reviewed change. Push the progress-site update only after local release checks pass. Do not promote candidate rows merely because the fetch succeeded.
+> Update India Water Watch as of the current India date. Check the official IMD rainfall product, the CWC reservoir bulletin list and the latest reachable original PDF, and any new official drought orders or response documents. Record each source's observation/status date, issue date, retrieval time and exact URL; log broken feeds and keep the last verified version visibly dated. Run the IMD candidate refresh and report missing/stale/invalid district rows and semantic differences. Independently verify every proposed public claim, calculation, geography, denominator and rights status. Add only supported records to the approved ledger, update the story, response and coverage pages, then regenerate journalist exports, run tests and root/GitHub static builds, inspect the release diff, and push a reviewed progress update. Do not promote candidate rows merely because a fetch succeeded. Never relabel old observations with the new build date.
 
-To update a different beat, name the exact source and question in the prompt. An inaccessible source should produce a logged gap and a legitimate manual-import proposal; it must not cause fabricated data.
+To update another beat, name the exact source and question in the prompt. The CWC bulletin currently needs a source review/manual import; the existing automated refresh covers IMD only. An inaccessible source should produce a logged gap and a legitimate manual-import proposal; it must not cause fabricated data. The site has no background updater: reviewed changes reach GitHub Pages only after a commit and push.
 
 ## Exact local commands
 

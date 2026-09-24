@@ -58,5 +58,30 @@
     "label": "GitHub Pages live smoke",
     "status": "passed: workflow, routes, downloads, Pagefind search",
     "at": "2026-09-24T07:29:34+00:00"
+  },
+  {
+    "label": "G10 Python unit tests (80)",
+    "status": "passed",
+    "at": "2026-09-24T08:03:56Z"
+  },
+  {
+    "label": "G10 approved-schema and Astro strict check",
+    "status": "passed: 43 files, zero diagnostics",
+    "at": "2026-09-24T08:03:56Z"
+  },
+  {
+    "label": "G10 root and GitHub subpath builds",
+    "status": "passed: 110 HTML pages each",
+    "at": "2026-09-24T08:03:56Z"
+  },
+  {
+    "label": "G10 independent source, arithmetic and editorial review",
+    "status": "passed for 17 approved claims with stated source/rights limits; agent review",
+    "at": "2026-09-24T08:03:56Z"
+  },
+  {
+    "label": "G10 independent browser, visual, accessibility and security sample",
+    "status": "passed: 75/75 browser checks per profile; 2,579 references per profile; stated unrun checks",
+    "at": "2026-09-24T08:03:56Z"
   }
 ]

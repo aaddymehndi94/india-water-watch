@@ -2,13 +2,50 @@
 import Site from '../layouts/Site.astro';
 import PageHeader from '../components/PageHeader.astro';
 import { release, url } from '../lib/publication';
-// @ts-ignore Node built-ins are available during Astro's build; root toolchain owns @types/node.
+// @ts-ignore Node built-ins are available during Astro's build.
 import { readFileSync, existsSync } from 'node:fs';
-const tasks = JSON.parse(readFileSync('project/tasks.json','utf8')) as {id:string;title:string;status:string;gate:string}[];
-const state = JSON.parse(readFileSync('state/PROJECT_STATE.json','utf8')) as {phase:string;current_gate:string;software_ready:boolean;editorially_ready:boolean;deployed:boolean};
-const testPath = 'state/TEST_STATUS.json';
-const tests = existsSync(testPath) ? JSON.parse(readFileSync(testPath,'utf8')) as {label:string;status:string;at?:string}[] : [];
-const gates = [...new Set(tasks.map(t => t.gate))];
+
+type Task = { id: string; title: string; status: string; gate: string };
+type Check = { label: string; status: string; at?: string };
+type ProjectState = {
+  phase: string;
+  current_gate: string;
+  software_ready: boolean;
+  editorially_ready: boolean;
+  github_pages_verified_at?: string;
+  next_action?: string;
+};
+const tasks = JSON.parse(readFileSync('project/tasks.json', 'utf8')) as Task[];
+const state = JSON.parse(readFileSync('state/PROJECT_STATE.json', 'utf8')) as ProjectState;
+const checks = existsSync('state/TEST_STATUS.json') ? JSON.parse(readFileSync('state/TEST_STATUS.json', 'utf8')) as Check[] : [];
+const current = tasks.filter(task => task.gate === state.current_gate);
+const previous = tasks.filter(task => task.gate !== state.current_gate);
 const builtAt = new Date().toISOString();
+const pretty = (value: string) => value.replaceAll('_', ' ');
+const latestObservationDate = release.observations.map(row => row.periodEnd).sort().at(-1);
 ---
-<Site title="Build progress"><PageHeader title="Build progress" eyebrow="Project log" description="A snapshot of recorded tasks and checks at the time this site was built. It is not a live water observation feed." /><section class="section"><div class="shell"><div class="grid-3"><div class="empty-panel"><p class="eyebrow">Build status</p><h3>{state.software_ready ? 'Software candidate ready' : 'In development'}</h3><p>Recorded phase: {state.phase.replaceAll('_',' ')} · gate {state.current_gate}</p></div><div class="empty-panel"><p class="eyebrow">Editorial status</p><h3>{state.editorially_ready ? 'Editorial review complete' : 'Review in progress'}</h3><p>Public findings still require claim-by-claim source review.</p></div><div class="empty-panel"><p class="eyebrow">Deployment status</p><h3>{state.deployed ? 'Recorded as deployed' : 'Deployment not yet recorded in this build'}</h3><p>Last site build: <time datetime={builtAt}>{builtAt}</time>. This is not a data date.</p></div></div><div class="note" style="margin-top:2rem"><strong>Water data are tracked separately.</strong><p>{release.observations.length} approved observations are in this build. Their periods belong to the observation rows. <a href={url('/data-status/')}>Inspect freshness and gaps.</a></p></div><h2 style="margin-top:3rem">Task record</h2><p>These statuses come from the project's task file at build time. They describe work completed, not percentages of India covered.</p>{gates.map(gate => <section aria-label={`Gate ${gate}`}><h3>{gate}</h3><div class="table-wrap"><table class="data-table"><thead><tr><th>ID</th><th>Task</th><th>Recorded status</th></tr></thead><tbody>{tasks.filter(t => t.gate === gate).map(t => <tr><td>{t.id}</td><td>{t.title}</td><td>{t.status.replaceAll('_',' ')}</td></tr>)}</tbody></table></div></section>)}<h2 style="margin-top:3rem">Recorded checks</h2>{tests.length ? <ul class="source-list">{tests.map(t => <li><strong>{t.label}</strong><small>{t.status} · {t.at || 'time not recorded'}</small></li>)}</ul> : <p>No check record was supplied to the public progress page. This does not mean checks passed.</p>}</div></section></Site>
+<Site title="Build progress">
+  <PageHeader title="Build progress" eyebrow="Project log" description="The recorded work behind this publication. This page is captured when the site is built; it is not a live water data feed." />
+  <section class="section">
+    <div class="shell">
+      <div class="grid-3">
+        <div class="empty-panel"><p class="eyebrow">Current revision</p><h3>{pretty(state.phase)}</h3><p>{state.current_gate} · {state.software_ready ? 'Software candidate ready' : 'Implementation and review in progress'}</p></div>
+        <div class="empty-panel"><p class="eyebrow">Editorial review</p><h3>{state.editorially_ready ? 'Complete for this revision' : 'In progress'}</h3><p>Only individually approved claims appear in the public data release.</p></div>
+        <div class="empty-panel"><p class="eyebrow">Build snapshot</p><h3><time datetime={builtAt}>{new Date(builtAt).toLocaleString('en-IN', { dateStyle: 'medium', timeStyle: 'short', timeZone: 'Asia/Kolkata' })} IST</time></h3><p>Building a page does not refresh its underlying observations.</p></div>
+      </div>
+      <div class="note" style="margin-top:2rem">
+        <strong>What is visible now</strong>
+        <p>{release.observations.length} approved rainfall observations are in this build{latestObservationDate ? `, most recently through ${latestObservationDate}` : ''}. State, district and other water indicators have different coverage. <a href={url('/data-status/')}>Check coverage and freshness.</a></p>
+        {state.github_pages_verified_at && <p>GitHub Pages was last verified at <time datetime={state.github_pages_verified_at}>{new Date(state.github_pages_verified_at).toLocaleString('en-IN', { dateStyle: 'medium', timeStyle: 'short', timeZone: 'Asia/Kolkata' })} IST</time>. This timestamp refers to the prior verified deployment until the next smoke test is recorded.</p>}
+      </div>
+      <h2 style="margin-top:3rem">Work in this revision</h2>
+      <p>These are task states, not a percentage of work completed or a measure of water conditions.</p>
+      <div class="table-wrap"><table class="data-table"><thead><tr><th>Task</th><th>Work</th><th>Recorded state</th></tr></thead><tbody>{current.map(task => <tr><td>{task.id}</td><td>{task.title}</td><td>{pretty(task.status)}</td></tr>)}</tbody></table></div>
+      {state.next_action && <p class="note"><strong>Next recorded action:</strong> {state.next_action}</p>}
+      <h2 style="margin-top:3rem">Checks on record</h2>
+      <p>Check dates matter: a pass for an earlier revision does not approve work added later.</p>
+      {checks.length ? <ul class="source-list">{checks.map(check => <li><strong>{check.label}</strong><small>{check.status} · {check.at || 'time not recorded'}</small></li>)}</ul> : <p>No check record is available for this build.</p>}
+      <details style="margin-top:3rem"><summary>Earlier project tasks ({previous.length})</summary><div class="table-wrap"><table class="data-table"><thead><tr><th>Task</th><th>Work</th><th>Recorded state</th></tr></thead><tbody>{previous.map(task => <tr><td>{task.id}</td><td>{task.title}</td><td>{pretty(task.status)}</td></tr>)}</tbody></table></div></details>
+    </div>
+  </section>
+</Site>

@@ -176,5 +176,68 @@
     "source_inspected": true,
     "upstream_evidence_ids": [],
     "access_notes": "Sample of villages already recorded covered; household percentages weighted. Quantity estimated from one household flow per habitation; microbiological results from tested samples."
+  },
+  {
+    "id": "E-KA-GAZETTE-DROUGHT-20260922",
+    "source_id": "karnataka_drought_order_20260922",
+    "url": "https://erajyapatra.karnataka.gov.in/WriteReadData/2026/11325.pdf",
+    "title": "Karnataka Gazette, Government Order RD 586 TNR 2026 (Part-1)",
+    "publisher": "Government of Karnataka, Revenue Department",
+    "published_at": "2026-09-22T00:00:00+05:30",
+    "retrieved_at": "2026-09-24T07:46:58Z",
+    "observation_period": {
+      "start": "2026-06-01T00:00:00+05:30",
+      "end": "2026-09-16T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "season_to_date",
+      "cutoff_convention": "Assessment window printed in the 22 September order; dates have calendar precision."
+    },
+    "locator": "Order pp. 2–3: declaration, validity and directions; annex pp. 3–5: 53 numbered taluks, 51 severe and two moderate across 17 districts.",
+    "sha256": "f1453449104e8b96098c931fdf724265740b89e8c430284e69278c035fdbb6d5",
+    "local_snapshot_path": "data/candidates/institutions/karnataka-drought-go-20260922.pdf",
+    "rights_status": "permitted_excerpt",
+    "source_inspected": true,
+    "upstream_evidence_ids": [],
+    "access_notes": "Independently re-fetched and hash-matched by a separate reviewer; official e-Gazette. Factual summary only; no reproduced PDF. Order does not establish relief delivery or crop-loss totals."
+  },
+  {
+    "id": "E-CWC-RSMS-20260910",
+    "source_id": "cwc_rsms_2026_09_10",
+    "url": "https://rsms.cwc.gov.in/admin/storage/bulletins/bulletin-10-09-2026-119.pdf",
+    "title": "Weekly Bulletin on Live Storage Status of 178 Reservoirs as on 10 September 2026",
+    "publisher": "Central Water Commission",
+    "published_at": null,
+    "retrieved_at": "2026-09-24T07:50:10Z",
+    "observation_period": {
+      "start": "2026-09-10T00:00:00+05:30",
+      "end": "2026-09-10T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "instant",
+      "cutoff_convention": "Bulletin status date is 10 September 2026; 00:00 is a calendar-date placeholder, not a measurement hour."
+    },
+    "locator": "PDF p. 3 (printed p. 1) national and southern summary; PDF pp. 8–9 (printed pp. 6–7) Table 01.",
+    "sha256": "47b7b3779abf4107cb8b1349456e5ace4d7e3fe7fe8ab1a8248faaeee7aabec7",
+    "local_snapshot_path": "data/candidates/hydrology/cwc-bulletin-10-09-2026.pdf",
+    "rights_status": "permitted_excerpt",
+    "source_inspected": true,
+    "upstream_evidence_ids": [],
+    "access_notes": "Independently fetched, hash-matched, visually inspected and recalculated. Brief facts only; PDF not republished. 17 September bulletin is listed but official PDF returned 404 on 24 September."
+  },
+  {
+    "id": "E-IMD-HOMO-HISTORY-20260924",
+    "source_id": "imd_homogeneous_monthly_history",
+    "url": "https://www.imdpune.gov.in/cmpg/Product/homo.html",
+    "title": "IMD all-India and homogeneous-region monthly rainfall table, 1901–2025",
+    "publisher": "India Meteorological Department, Climate Research & Services Pune",
+    "published_at": null,
+    "retrieved_at": "2026-09-24T07:51:13Z",
+    "observation_period": null,
+    "locator": "South Peninsula (10 Sub-divisions) and India rainfall tables; June–September cells for 2002, 2009, 2025 and displayed (1971–2020) NORM row.",
+    "sha256": "6d27dc1a012e1abf4eedd682afc53a6f38984cb5f11c976452e83afb37fc71fb",
+    "local_snapshot_path": "data/candidates/history/imd-homo-2026-09-24.html",
+    "rights_status": "permitted_excerpt",
+    "source_inspected": true,
+    "upstream_evidence_ids": [],
+    "access_notes": "Preserved official HTML independently re-parsed and arithmetic repeated by separate reviewer. Only three brief attributed factual comparisons, no table/HTML/chart redistribution. Source has no visible publication/revision timestamp; live page timed out on independent revisit."
   }
 ]

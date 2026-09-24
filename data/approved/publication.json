@@ -2,6 +2,141 @@
   "claims": [
     {
       "evidenceIds": [
+        "E-CWC-RSMS-20260910"
+      ],
+      "geographyIds": [
+        "cwc:india-178"
+      ],
+      "id": "C-CWC-INDIA-STORAGE-20260910",
+      "kind": "reported",
+      "limitations": [
+        "CWC monitored-reservoir cohort only; not all storage, groundwater, household supply or river flow.",
+        "Status date is 10 September 2026; the newer 17 September bulletin was listed but its official PDF returned 404 on 24 September.",
+        "Capacity fill and departure from ten-year normal use different denominators."
+      ],
+      "observationIds": [
+        "O-CWC-LIVE-STORAGE-india-178-20260910"
+      ],
+      "period": {
+        "cutoff_convention": "Bulletin status date is 10 September 2026; 00:00 is a calendar-date placeholder, not a measurement hour.",
+        "end": "2026-09-10T00:00:00+05:30",
+        "kind": "instant",
+        "start": "2026-09-10T00:00:00+05:30",
+        "timezone": "Asia/Kolkata"
+      },
+      "reviewedAt": "2026-09-24T07:50:10Z",
+      "status": "attributed",
+      "text": "In its 10 September 2026 bulletin, the Central Water Commission reported 130.554 billion cubic metres (BCM) of live storage in 178 monitored reservoirs, 70.66% of their combined 184.762 BCM live capacity. This monitored cohort is not all reservoirs or total usable water."
+    },
+    {
+      "evidenceIds": [
+        "E-CWC-RSMS-20260910"
+      ],
+      "geographyIds": [
+        "cwc:south-50"
+      ],
+      "id": "C-CWC-SOUTH-STORAGE-20260910",
+      "kind": "reported",
+      "limitations": [
+        "CWC monitored-reservoir cohort only; not all storage, groundwater, household supply or river flow.",
+        "Status date is 10 September 2026; the newer 17 September bulletin was listed but its official PDF returned 404 on 24 September.",
+        "Capacity fill and departure from ten-year normal use different denominators."
+      ],
+      "observationIds": [
+        "O-CWC-LIVE-STORAGE-south-50-20260910"
+      ],
+      "period": {
+        "cutoff_convention": "Bulletin status date is 10 September 2026; 00:00 is a calendar-date placeholder, not a measurement hour.",
+        "end": "2026-09-10T00:00:00+05:30",
+        "kind": "instant",
+        "start": "2026-09-10T00:00:00+05:30",
+        "timezone": "Asia/Kolkata"
+      },
+      "reviewedAt": "2026-09-24T07:50:10Z",
+      "status": "attributed",
+      "text": "CWC reported that its 50 monitored southern-region reservoirs held 30.467 BCM on 10 September 2026, 54.52% of their combined 55.879 BCM live capacity and below their corresponding-week ten-year normal of 40.827 BCM. This CWC region is not the same geography as IMD’s South Peninsula rainfall region."
+    },
+    {
+      "evidenceIds": [
+        "E-IMD-HOMO-HISTORY-20260924"
+      ],
+      "geographyIds": [
+        "imd:south-peninsular"
+      ],
+      "id": "C-IMD-HISTORY-SOUTH-2002",
+      "kind": "derived",
+      "limitations": [
+        "Completed June–September seasons cannot be ranked against the current 2026 observation ending 23 September.",
+        "The South Peninsula footprint has 10 IMD subdivisions; it is not a set of selected current states.",
+        "Brief factual extraction only; do not reproduce the IMD historical table, bulk rows or graphics without a rights decision."
+      ],
+      "observationIds": [],
+      "period": {
+        "cutoff_convention": "Completed calendar months June through September; source values are one-decimal monthly totals, not daily cutoffs.",
+        "end": "2002-09-30T00:00:00+05:30",
+        "kind": "completed_season",
+        "start": "2002-06-01T00:00:00+05:30",
+        "timezone": "Asia/Kolkata"
+      },
+      "reviewedAt": "2026-09-24T07:51:13Z",
+      "status": "verified",
+      "text": "In IMD’s completed June–September 2002 South Peninsula (10 subdivisions) series, the four printed monthly totals sum to 466.9 mm, 34.8% below the table’s displayed 1971–2020 normal. This is a rainfall comparison, not evidence that 2026 has reached the same severity."
+    },
+    {
+      "evidenceIds": [
+        "E-IMD-HOMO-HISTORY-20260924"
+      ],
+      "geographyIds": [
+        "imd:south-peninsular",
+        "india"
+      ],
+      "id": "C-IMD-HISTORY-SOUTH-2009",
+      "kind": "derived",
+      "limitations": [
+        "Completed June–September seasons cannot be ranked against the current 2026 observation ending 23 September.",
+        "The South Peninsula footprint has 10 IMD subdivisions; it is not a set of selected current states.",
+        "Brief factual extraction only; do not reproduce the IMD historical table, bulk rows or graphics without a rights decision."
+      ],
+      "observationIds": [],
+      "period": {
+        "cutoff_convention": "Completed calendar months June through September; source values are one-decimal monthly totals, not daily cutoffs.",
+        "end": "2009-09-30T00:00:00+05:30",
+        "kind": "completed_season",
+        "start": "2009-06-01T00:00:00+05:30",
+        "timezone": "Asia/Kolkata"
+      },
+      "reviewedAt": "2026-09-24T07:51:13Z",
+      "status": "verified",
+      "text": "In the same IMD completed-season series, South Peninsula rainfall in 2009 summed to 681.6 mm, 4.8% below its displayed 1971–2020 normal, while the all-India total was 709.1 mm, 18.4% below its own displayed normal. National and regional rainfall signals differed that year."
+    },
+    {
+      "evidenceIds": [
+        "E-IMD-HOMO-HISTORY-20260924"
+      ],
+      "geographyIds": [
+        "imd:south-peninsular"
+      ],
+      "id": "C-IMD-HISTORY-SOUTH-2025",
+      "kind": "derived",
+      "limitations": [
+        "Completed June–September seasons cannot be ranked against the current 2026 observation ending 23 September.",
+        "The South Peninsula footprint has 10 IMD subdivisions; it is not a set of selected current states.",
+        "Brief factual extraction only; do not reproduce the IMD historical table, bulk rows or graphics without a rights decision."
+      ],
+      "observationIds": [],
+      "period": {
+        "cutoff_convention": "Completed calendar months June through September; source values are one-decimal monthly totals, not daily cutoffs.",
+        "end": "2025-09-30T00:00:00+05:30",
+        "kind": "completed_season",
+        "start": "2025-06-01T00:00:00+05:30",
+        "timezone": "Asia/Kolkata"
+      },
+      "reviewedAt": "2026-09-24T07:51:13Z",
+      "status": "verified",
+      "text": "In IMD’s completed June–September 2025 South Peninsula series, the four printed monthly totals sum to 787.2 mm, 9.9% above the table’s displayed 1971–2020 normal. A recent wetter season is a counterexample to assuming a uniform decline."
+    },
+    {
+      "evidenceIds": [
         "E-IMD-OUTLOOK-20260831"
       ],
       "geographyIds": [
@@ -21,9 +156,9 @@
         "start": "2026-09-01T00:00:00+05:30",
         "timezone": "Asia/Kolkata"
       },
-      "reviewedAt": "2026-09-24T06:39:38Z",
+      "reviewedAt": "2026-09-24T07:56:04Z",
       "status": "attributed",
-      "text": "In an outlook issued 31 August 2026, IMD forecast that all-India rainfall during September was most likely below normal, its category for less than 91% of the 1971–2020 September average. It also identified areas where normal or above-normal rain was possible. This is a forecast archive, not a measured September outcome."
+      "text": "In an outlook issued 31 August 2026, IMD forecast that all-India rainfall during September was most likely below normal, its category for less than 91% of the 1971–2020 September average. It also identified areas where normal or above-normal rain was possible. This is a dated forecast, not a measured September outcome; check for any later IMD issue."
     },
     {
       "evidenceIds": [
@@ -243,6 +378,32 @@
     },
     {
       "evidenceIds": [
+        "E-KA-GAZETTE-DROUGHT-20260922"
+      ],
+      "geographyIds": [
+        "india:karnataka"
+      ],
+      "id": "C-KA-DROUGHT-ORDER-20260922",
+      "kind": "reported",
+      "limitations": [
+        "The order covers listed taluks, not all of Karnataka or India.",
+        "It is a declaration and authorization, not proof of relief distribution, crop losses or household water shortage.",
+        "Earlier 101- and 23-taluk orders are cited in the gazette but their annexes were not independently reviewed for a cumulative statewide total."
+      ],
+      "observationIds": [],
+      "period": {
+        "cutoff_convention": "Order date has calendar precision; 00:00 is a date placeholder, not a signing time.",
+        "end": "2026-09-22T00:00:00+05:30",
+        "kind": "instant",
+        "start": "2026-09-22T00:00:00+05:30",
+        "timezone": "Asia/Kolkata"
+      },
+      "reviewedAt": "2026-09-24T07:46:58Z",
+      "status": "attributed",
+      "text": "Karnataka’s 22 September 2026 gazetted order declared 53 additional taluks across 17 districts drought-affected for the 2026 kharif season: 51 severe and two moderate. The order took effect immediately for up to six months unless revoked. It authorizes district authorities to undertake relief under SDRF norms and directs a joint crop-loss survey; it does not establish that aid was delivered or losses measured."
+    },
+    {
+      "evidenceIds": [
         "E-NSO-WATER-2018"
       ],
       "geographyIds": [
@@ -292,12 +453,34 @@
     }
   ],
   "counts": {
-    "claims": 11,
-    "geographies": 41,
-    "observations": 5,
-    "sources": 8
+    "claims": 17,
+    "geographies": 43,
+    "observations": 7,
+    "sources": 11
   },
   "geographies": [
+    {
+      "code": null,
+      "id": "cwc:india-178",
+      "name": "India · CWC 178 monitored reservoirs",
+      "parentIds": [
+        "india"
+      ],
+      "slug": "india-178",
+      "type": "other",
+      "version": "cwc-rsms-178-reservoir-cohort-2026-09-10"
+    },
+    {
+      "code": null,
+      "id": "cwc:south-50",
+      "name": "Southern region · CWC 50 monitored reservoirs",
+      "parentIds": [
+        "india"
+      ],
+      "slug": "south-50",
+      "type": "other",
+      "version": "cwc-rsms-178-reservoir-cohort-2026-09-10"
+    },
     {
       "code": null,
       "id": "imd:central",
@@ -750,6 +933,48 @@
   ],
   "observations": [
     {
+      "baselineId": "cwc-corresponding-week-previous-ten-years",
+      "claimId": "C-CWC-INDIA-STORAGE-20260910",
+      "cutoffConvention": "Bulletin status date is 10 September 2026; 00:00 is a calendar-date placeholder, not a measurement hour.",
+      "evidenceIds": [
+        "E-CWC-RSMS-20260910"
+      ],
+      "geographyId": "cwc:india-178",
+      "id": "O-CWC-LIVE-STORAGE-india-178-20260910",
+      "metricId": "reservoir_live_storage_bcm",
+      "missingReason": null,
+      "periodEnd": "2026-09-10",
+      "periodKind": "instant",
+      "periodPrecision": "date",
+      "periodStart": "2026-09-10",
+      "seriesId": "cwc_rsms_weekly_178_2026",
+      "sourceId": "E-CWC-RSMS-20260910",
+      "status": "observed",
+      "unit": "BCM",
+      "value": 130.554
+    },
+    {
+      "baselineId": "cwc-corresponding-week-previous-ten-years",
+      "claimId": "C-CWC-SOUTH-STORAGE-20260910",
+      "cutoffConvention": "Bulletin status date is 10 September 2026; 00:00 is a calendar-date placeholder, not a measurement hour.",
+      "evidenceIds": [
+        "E-CWC-RSMS-20260910"
+      ],
+      "geographyId": "cwc:south-50",
+      "id": "O-CWC-LIVE-STORAGE-south-50-20260910",
+      "metricId": "reservoir_live_storage_bcm",
+      "missingReason": null,
+      "periodEnd": "2026-09-10",
+      "periodKind": "instant",
+      "periodPrecision": "date",
+      "periodStart": "2026-09-10",
+      "seriesId": "cwc_rsms_weekly_178_2026",
+      "sourceId": "E-CWC-RSMS-20260910",
+      "status": "observed",
+      "unit": "BCM",
+      "value": 30.467
+    },
+    {
       "baselineId": null,
       "claimId": "C-IMD-RAINFALL-DEP-imd-central-20260923",
       "cutoffConvention": "IMD graphic labels dates June 1 through September 23; clock hour is not specified. Times in this record encode calendar dates only.",
@@ -855,21 +1080,39 @@
       "value": -14.9
     }
   ],
-  "releaseId": "approved-7543569af9b1",
-  "reviewedAt": "2026-09-24T06:39:38Z",
+  "releaseId": "approved-8e21293fa8e6",
+  "reviewedAt": "2026-09-24T07:56:04Z",
   "schemaVersion": "1",
-  "snapshotSha256": "7543569af9b165f2bacb8f864cc9dd619cda170e6a092c579623235ab38ecea4",
+  "snapshotSha256": "8e21293fa8e68dcd7107f28de7860c46afb99683cb8d50f7d97ac21991a09dfb",
   "sourceWatermarks": {
+    "E-CWC-RSMS-20260910": "2026-09-10",
     "E-IMD-ALLINDIA-20260923": "2026-09-23",
     "E-IMD-HOMO-20260923": "2026-09-23",
-    "E-IMD-OUTLOOK-20260831": "2026-09-30",
+    "E-IMD-HOMO-HISTORY-20260924": null,
+    "E-IMD-OUTLOOK-20260831": null,
     "E-INDIA-ROSTER-20260923": null,
     "E-JJM-CONNECTIONS-20260402": "2026-03-03",
     "E-JJM-FUNCTIONALITY-2024": "2024-10-31",
     "E-JJM-FUNDS-20260331": "2026-03-31",
+    "E-KA-GAZETTE-DROUGHT-20260922": "2026-09-16",
     "E-NSO-WATER-2018": "2018-12-31"
   },
   "sources": [
+    {
+      "id": "E-CWC-RSMS-20260910",
+      "locator": "PDF p. 3 (printed p. 1) national and southern summary; PDF pp. 8–9 (printed pp. 6–7) Table 01.",
+      "observedThrough": "2026-09-10",
+      "observedThroughPrecision": "date",
+      "publicationDate": null,
+      "publicationDatePrecision": "unknown",
+      "publisher": "Central Water Commission",
+      "retrievedAt": "2026-09-24T07:50:10Z",
+      "sha256": "47b7b3779abf4107cb8b1349456e5ace4d7e3fe7fe8ab1a8248faaeee7aabec7",
+      "sourceId": "cwc_rsms_2026_09_10",
+      "title": "Weekly Bulletin on Live Storage Status of 178 Reservoirs as on 10 September 2026",
+      "url": "https://rsms.cwc.gov.in/admin/storage/bulletins/bulletin-10-09-2026-119.pdf",
+      "validityEnd": null
+    },
     {
       "id": "E-IMD-ALLINDIA-20260923",
       "locator": "Middle panel actual 713.3 mm / normal 837.7 mm; bottom panel cumulative % departure -14.9% till Sep.23",
@@ -882,7 +1125,8 @@
       "sha256": "2a75486b645fe44c6dfd250b7cb90191ccdc9f5d586357cebe34862d9921d18a",
       "sourceId": "imd_all_india_daily_graphic",
       "title": "IMD cumulative rainfall over the country as a whole, 2026",
-      "url": "https://mausam.imd.gov.in/ClimateInformation/imdweb/DAY_WEEK/all-india.gif"
+      "url": "https://mausam.imd.gov.in/ClimateInformation/imdweb/DAY_WEEK/all-india.gif",
+      "validityEnd": null
     },
     {
       "id": "E-IMD-HOMO-20260923",
@@ -896,13 +1140,29 @@
       "sha256": "dfc549134ea2f520fda1a64dd236c67169a5d86fb8f65c8c79b3520b1fef61d0",
       "sourceId": "imd_homogeneous_regions_daily_graphic",
       "title": "IMD rainfall over four homogeneous regions, 2026",
-      "url": "https://mausam.imd.gov.in/ClimateInformation/imdweb/DAY_WEEK/homo.gif"
+      "url": "https://mausam.imd.gov.in/ClimateInformation/imdweb/DAY_WEEK/homo.gif",
+      "validityEnd": null
+    },
+    {
+      "id": "E-IMD-HOMO-HISTORY-20260924",
+      "locator": "South Peninsula (10 Sub-divisions) and India rainfall tables; June–September cells for 2002, 2009, 2025 and displayed (1971–2020) NORM row.",
+      "observedThrough": null,
+      "observedThroughPrecision": "unknown",
+      "publicationDate": null,
+      "publicationDatePrecision": "unknown",
+      "publisher": "India Meteorological Department, Climate Research & Services Pune",
+      "retrievedAt": "2026-09-24T07:51:13Z",
+      "sha256": "6d27dc1a012e1abf4eedd682afc53a6f38984cb5f11c976452e83afb37fc71fb",
+      "sourceId": "imd_homogeneous_monthly_history",
+      "title": "IMD all-India and homogeneous-region monthly rainfall table, 1901–2025",
+      "url": "https://www.imdpune.gov.in/cmpg/Product/homo.html",
+      "validityEnd": null
     },
     {
       "id": "E-IMD-OUTLOOK-20260831",
       "locator": "Printed pp. 1-2, Highlights and section 2; threshold <91% of September 1971-2020 LPA; spatial caveat in Fig. 1.",
-      "observedThrough": "2026-09-30",
-      "observedThroughPrecision": "date",
+      "observedThrough": null,
+      "observedThroughPrecision": "unknown",
       "publicationDate": "2026-08-31",
       "publicationDatePrecision": "date",
       "publisher": "India Meteorological Department",
@@ -910,7 +1170,8 @@
       "sha256": "700c9b57533b36861f66ab8d79fe32d9fb7e3669b48b33ad75c25f56a914dfbb",
       "sourceId": "imd_september_2026_outlook",
       "title": "Monthly Outlook for Rainfall and Temperature during September 2026",
-      "url": "https://internal.imd.gov.in/press_release/20260831_pr_5277.pdf"
+      "url": "https://internal.imd.gov.in/press_release/20260831_pr_5277.pdf",
+      "validityEnd": "2026-09-30"
     },
     {
       "id": "E-INDIA-ROSTER-20260923",
@@ -924,7 +1185,8 @@
       "sha256": "1544aab352318b38762669f752644b4bcad8efbf8778f5debe612c5fa2f118df",
       "sourceId": "india_portal_calendar_roster",
       "title": "National Portal of India state and Union Territory roster",
-      "url": "https://www.india.gov.in/calendar?date=2026-09-24"
+      "url": "https://www.india.gov.in/calendar?date=2026-09-24",
+      "validityEnd": null
     },
     {
       "id": "E-JJM-CONNECTIONS-20260402",
@@ -938,7 +1200,8 @@
       "sha256": "519a18cea92b73ad093988e3aa51f94f2448149f7215058aa511f83e99cfd54c",
       "sourceId": "jal_shakti_jjm_2026_connections",
       "title": "Lok Sabha written reply on reported rural tap connections",
-      "url": "https://www.jalshakti-dowr.gov.in/static/uploads/2026/04/0c540cebf0bbc74ac5c12965fc818f1d.pdf"
+      "url": "https://www.jalshakti-dowr.gov.in/static/uploads/2026/04/0c540cebf0bbc74ac5c12965fc818f1d.pdf",
+      "validityEnd": null
     },
     {
       "id": "E-JJM-FUNCTIONALITY-2024",
@@ -952,7 +1215,8 @@
       "sha256": "7d1f1ba033e6231db4add5fad944aedbefceb554a8261896932485ac7ddbe2bd",
       "sourceId": "jjm_functionality_2024",
       "title": "Functionality Assessment of Household Tap Connection: National Report 2024",
-      "url": "https://jaljeevanmission.gov.in/sites/default/files/2025-12/FHTC_National%20Report%202024.pdf"
+      "url": "https://jaljeevanmission.gov.in/sites/default/files/2025-12/FHTC_National%20Report%202024.pdf",
+      "validityEnd": null
     },
     {
       "id": "E-JJM-FUNDS-20260331",
@@ -966,7 +1230,23 @@
       "sha256": "a29459e38b6279af4424420253707d766321d9668fa3129b7e45ce123e081d9d",
       "sourceId": "jal_shakti_jjm_2026_funds",
       "title": "Ministry statement on JJM 2.0 and FY 2025-26 release",
-      "url": "https://www.jalshakti-dowr.gov.in/static/uploads/2026/04/fcf34c99623c6988f805fd15151f54ee.pdf"
+      "url": "https://www.jalshakti-dowr.gov.in/static/uploads/2026/04/fcf34c99623c6988f805fd15151f54ee.pdf",
+      "validityEnd": null
+    },
+    {
+      "id": "E-KA-GAZETTE-DROUGHT-20260922",
+      "locator": "Order pp. 2–3: declaration, validity and directions; annex pp. 3–5: 53 numbered taluks, 51 severe and two moderate across 17 districts.",
+      "observedThrough": "2026-09-16",
+      "observedThroughPrecision": "date",
+      "publicationDate": "2026-09-22",
+      "publicationDatePrecision": "date",
+      "publisher": "Government of Karnataka, Revenue Department",
+      "retrievedAt": "2026-09-24T07:46:58Z",
+      "sha256": "f1453449104e8b96098c931fdf724265740b89e8c430284e69278c035fdbb6d5",
+      "sourceId": "karnataka_drought_order_20260922",
+      "title": "Karnataka Gazette, Government Order RD 586 TNR 2026 (Part-1)",
+      "url": "https://erajyapatra.karnataka.gov.in/WriteReadData/2026/11325.pdf",
+      "validityEnd": null
     },
     {
       "id": "E-NSO-WATER-2018",
@@ -980,7 +1260,8 @@
       "sha256": "90832ed91c54a67d1ef8ebfe8eb4cdd4748b78467eeb78c9e087a7a88f3ea467",
       "sourceId": "nso_nss_584_water",
       "title": "NSO NSS Report 584 press note on drinking water, sanitation and hygiene",
-      "url": "https://mospi.gov.in/sites/default/files/press_release/Press%2BNote_Report%2BNo%2B584_DWS_76th%20Final.pdf"
+      "url": "https://mospi.gov.in/sites/default/files/press_release/Press%2BNote_Report%2BNo%2B584_DWS_76th%20Final.pdf",
+      "validityEnd": null
     }
   ]
 }

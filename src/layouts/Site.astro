@@ -13,19 +13,59 @@ const nav = [
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
     <link rel="icon" type="image/svg+xml" href={url('/favicon.svg')} />
-    <meta name="theme-color" content="#f5f2eb" />
+    <meta name="theme-color" content="#f5f1e7" />
+    <script is:inline>
+      (() => {
+        try {
+          const saved = localStorage.getItem('iww-theme');
+          document.documentElement.dataset.theme = saved === 'dark' || saved === 'light'
+            ? saved
+            : (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        } catch {
+          document.documentElement.dataset.theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        document.querySelector('meta[name="theme-color"]').content = document.documentElement.dataset.theme === 'dark' ? '#111e22' : '#f5f1e7';
+      })();
+    </script>
     <title>{title ? `${title} · India Water Watch` : 'India Water Watch'}</title>
   </head>
   <body>
     <a class="skip" href="#main">Skip to content</a>
     <header class="masthead">
+      <div class="masthead-rail"><div class="shell rail-inner"><span>Independent water reporting for India</span><span>Evidence · place · perspective</span></div></div>
       <div class="shell masthead-inner">
-        <a class="brand" href={url('/')} aria-label="India Water Watch home"><span class="brand-mark" aria-hidden="true">◉</span><span>INDIA<br />WATER WATCH</span></a>
+        <a class="brand" href={url('/')} aria-label="India Water Watch home"><svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><circle cx="24" cy="24" r="21" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M11 27c5-5 9-5 13 0s8 5 13 0M11 34c5-5 9-5 13 0s8 5 13 0" fill="none" stroke="currentColor" stroke-width="2"/><path d="M24 6v12" stroke="currentColor" stroke-width="1.5"/></svg><span>INDIA<span class="brand-line">WATER WATCH</span></span></a>
         <nav aria-label="Main navigation"><ul>{nav.map(([label, path]) => <li><a href={url(path)} aria-current={Astro.url.pathname === url(path) ? 'page' : undefined}>{label}</a></li>)}</ul></nav>
-        <a class="search-link" href={url('/search/')} aria-label="Search the publication">Search <span aria-hidden="true">↗</span></a>
+        <div class="masthead-tools"><a class="search-link" href={url('/search/')} aria-label="Search the publication"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m15.5 15.5 5 5" stroke="currentColor" stroke-width="1.8"/></svg><span>Search</span></a><button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch colour theme" hidden><span class="theme-icon" aria-hidden="true">◐</span><span class="theme-label">Dark</span></button></div>
       </div>
     </header>
     <main id="main"><slot /></main>
-    <footer class="footer"><div class="shell footer-grid"><div><p class="eyebrow">India Water Watch</p><p>Independent water reporting with visible evidence and limits.</p></div><div><a href={url('/methodology/')}>Methodology</a><a href={url('/data-status/')}>Data status</a><a href={url('/corrections/')}>Corrections</a></div><div><a href={url('/journalists/')}>Journalist desk</a><a href={url('/about/')}>About this project</a><a href={url('/sources/')}>Source catalogue</a><a href={url('/progress/')}>Build progress</a></div></div></footer>
+    <footer class="footer"><div class="shell footer-grid"><div><p class="eyebrow">India Water Watch</p><p>Independent water reporting with visible evidence and limits.</p></div><div><p class="footer-heading">Read the evidence</p><a href={url('/methodology/')}>Methodology</a><a href={url('/data-status/')}>Data status</a><a href={url('/corrections/')}>Corrections</a></div><div><p class="footer-heading">Use this work</p><a href={url('/journalists/')}>Journalist desk</a><a href={url('/about/')}>About this project</a><a href={url('/sources/')}>Source catalogue</a><a href={url('/progress/')}>Build progress</a></div></div><div class="shell footer-bottom"><span>Read the date. Follow the source. Check what is missing.</span><a href="#main">Back to top ↑</a></div></footer>
+    <script is:inline>
+      (() => {
+        const button = document.getElementById('theme-toggle');
+        if (!button) return;
+        const sync = () => {
+          const dark = document.documentElement.dataset.theme === 'dark';
+          button.setAttribute('aria-label', dark ? 'Switch to light theme' : 'Switch to dark theme');
+          document.querySelector('meta[name="theme-color"]').content = dark ? '#111e22' : '#f5f1e7';
+          const label = button.querySelector('.theme-label');
+          if (label) label.textContent = dark ? 'Light' : 'Dark';
+        };
+        button.hidden = false;
+        sync();
+        button.addEventListener('click', () => {
+          const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+          document.documentElement.dataset.theme = next;
+          try { localStorage.setItem('iww-theme', next); } catch {}
+          sync();
+        });
+        matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+          try { if (localStorage.getItem('iww-theme')) return; } catch {}
+          document.documentElement.dataset.theme = event.matches ? 'dark' : 'light';
+          sync();
+        });
+      })();
+    </script>
   </body>
 </html>

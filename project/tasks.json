@@ -612,7 +612,7 @@
     "depends_on": [
       "T28"
     ],
-    "status": "in_progress",
+    "status": "completed",
     "suggested_paths": [
       "reports/deployment.md",
       "state/PUBLICATION_POLICY.json"
@@ -641,6 +641,90 @@
     "path_ownership_note": "Lead grants an exclusive bounded path subset before assignment; suggested paths can overlap across sequential tasks. Workers return patches rather than editing shared stores without a lease.",
     "acceptance": [
       "Separate explicit authorization; schedule proposes candidate updates by default; no paid API assumptions; no deployment from untrusted forks"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T31",
+    "gate": "G10",
+    "title": "Editorial design, responsive layout and light/dark preference",
+    "owner_role": "visual_designer",
+    "depends_on": [],
+    "status": "completed",
+    "suggested_paths": [],
+    "acceptance": [
+      "Material changes verified against approved evidence and tested on built output"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T32",
+    "gate": "G10",
+    "title": "National story, historical context and public service narratives",
+    "owner_role": "editor",
+    "depends_on": [],
+    "status": "completed",
+    "suggested_paths": [],
+    "acceptance": [
+      "Material changes verified against approved evidence and tested on built output"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T33",
+    "gate": "G10",
+    "title": "Interactive atlas, state and district routes, source and journalist desk",
+    "owner_role": "frontend_engineer",
+    "depends_on": [],
+    "status": "completed",
+    "suggested_paths": [],
+    "acceptance": [
+      "Material changes verified against approved evidence and tested on built output"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T34",
+    "gate": "G10",
+    "title": "Hydrology, history and institutional evidence depth",
+    "owner_role": "source_auditor",
+    "depends_on": [],
+    "status": "completed",
+    "suggested_paths": [],
+    "acceptance": [
+      "Material changes verified against approved evidence and tested on built output"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T35",
+    "gate": "G10",
+    "title": "Independent claim, accessibility, security and visual review",
+    "owner_role": "quality_engineer",
+    "depends_on": [],
+    "status": "completed",
+    "suggested_paths": [],
+    "acceptance": [
+      "Material changes verified against approved evidence and tested on built output"
+    ],
+    "result_paths": [],
+    "blockers": []
+  },
+  {
+    "id": "T36",
+    "gate": "G10",
+    "title": "Reviewed static release, exports and live deployment smoke test",
+    "owner_role": "lead",
+    "depends_on": [],
+    "status": "in_progress",
+    "suggested_paths": [],
+    "acceptance": [
+      "Material changes verified against approved evidence and tested on built output"
     ],
     "result_paths": [],
     "blockers": []

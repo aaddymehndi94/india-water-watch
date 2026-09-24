@@ -167,5 +167,71 @@
     ],
     "synthetic": false,
     "public": true
+  },
+  {
+    "id": "O-CWC-LIVE-STORAGE-india-178-20260910",
+    "metric_id": "reservoir_live_storage_bcm",
+    "series_id": "cwc_rsms_weekly_178_2026",
+    "definition_version": "cwc-rsms-live-storage-2026-09-10",
+    "geography_id": "cwc:india-178",
+    "boundary_version": "cwc-rsms-178-reservoir-cohort-2026-09-10",
+    "period": {
+      "start": "2026-09-10T00:00:00+05:30",
+      "end": "2026-09-10T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "instant",
+      "cutoff_convention": "Bulletin status date is 10 September 2026; 00:00 is a calendar-date placeholder, not a measurement hour."
+    },
+    "value": 130.554,
+    "unit": "BCM",
+    "status": "observed",
+    "missing_reason": null,
+    "normal_value": 140.271,
+    "baseline_id": "cwc-corresponding-week-previous-ten-years",
+    "cohort_id": "cwc-rsms-178-2026-09-10",
+    "population_basis": null,
+    "coverage_fraction": null,
+    "evidence_ids": [
+      "E-CWC-RSMS-20260910"
+    ],
+    "quality_flags": [
+      "Monitored reservoirs only; not all national water storage.",
+      "10 September status, not a 24 September reading."
+    ],
+    "synthetic": false,
+    "public": true
+  },
+  {
+    "id": "O-CWC-LIVE-STORAGE-south-50-20260910",
+    "metric_id": "reservoir_live_storage_bcm",
+    "series_id": "cwc_rsms_weekly_178_2026",
+    "definition_version": "cwc-rsms-live-storage-2026-09-10",
+    "geography_id": "cwc:south-50",
+    "boundary_version": "cwc-rsms-178-reservoir-cohort-2026-09-10",
+    "period": {
+      "start": "2026-09-10T00:00:00+05:30",
+      "end": "2026-09-10T00:00:00+05:30",
+      "timezone": "Asia/Kolkata",
+      "kind": "instant",
+      "cutoff_convention": "Bulletin status date is 10 September 2026; 00:00 is a calendar-date placeholder, not a measurement hour."
+    },
+    "value": 30.467,
+    "unit": "BCM",
+    "status": "observed",
+    "missing_reason": null,
+    "normal_value": 40.827,
+    "baseline_id": "cwc-corresponding-week-previous-ten-years",
+    "cohort_id": "cwc-rsms-south-50-2026-09-10",
+    "population_basis": null,
+    "coverage_fraction": null,
+    "evidence_ids": [
+      "E-CWC-RSMS-20260910"
+    ],
+    "quality_flags": [
+      "Monitored reservoirs only; not all national water storage.",
+      "10 September status, not a 24 September reading."
+    ],
+    "synthetic": false,
+    "public": true
   }
 ]

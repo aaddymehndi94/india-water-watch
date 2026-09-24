@@ -1,0 +1,23 @@
+# G10 independent browser, visual and public-build review
+
+Reviewed locally on 24 September 2026. This is an agent QA pass on the integrated static candidate, not a human editorial or WCAG certification. The interactive lead retained build and release ownership. The root profile was `dist-compact/`; the GitHub Pages profile was `dist/` served at `/india-water-watch/`. Both contained 110 HTML pages and 250 files when inspected. The lead is regenerating metadata-only `release.json` after this browser run; the HTML, CSS and JavaScript reviewed here were stable.
+
+## Tests actually run
+
+- Served the root files with `python -m http.server 8768 --directory dist-compact` and the GitHub profile under `/india-water-watch/` through a temporary symlink and `python -m http.server 8769 --directory /tmp/iww-qa-subpath`.
+- Ran `node artifacts/qa/g10/browser-check.cjs http://127.0.0.1:8768/ root` and `node artifacts/qa/g10/browser-check.cjs http://127.0.0.1:8769/india-water-watch/ subpath` in headless Google Chrome via Playwright. **75/75 checks passed in each profile**; JSON records are `artifacts/qa/g10/root-browser-report.json` and `artifacts/qa/g10/subpath-browser-report.json`.
+- At **360, 768 and 1440 px**, captured the homepage in **light and dark** and checked HTTP 200, applied theme, no page-level horizontal overflow, and no console/page exceptions. Representative final screenshots: `artifacts/qa/g10/root-home-{360,768,1440}-{light,dark}.png` (six files). The corresponding six `subpath-home-*.png` files also exist. Visually inspected the 360 light, 768 light and 1440 dark screenshots: heading, dated finding, status, chart/table, chapter rhythm, source routes and footer remained legible. The 360 screenshot has a long but readable vertical page, with tables internally scrollable.
+- At 360 px, checked home, explore, states, history, response, outlook, sources, journalists and search: all returned 200, had the publication title and had no body overflow. Checked Atlas coverage filter, Kerala search, URL state and browser Back restoration. Pagefind returned matching pages for “rainfall.” Observation, claim and source CSV; release manifest; and chart SVG returned 200 with nonempty bodies in both profiles.
+- Direct-loaded and refreshed `/states/kerala/`, `/sources/cwc_storage/` and `/districts/` in both profiles at 360 px: each returned 200, retained its own title and had no page overflow.
+- Keyboard checks: Skip to content was the first focus target and activated; the theme button accepted Enter and changed mode; a light/dark selection persisted after reload. With JavaScript disabled, the homepage retained its headline and navigation, the search page exposed source/directory alternatives, and the explorer and source catalogue retained server-rendered core records. An OS dark preference still produced a dark background without JavaScript.
+- Reduced-motion check: Chrome reported `prefers-reduced-motion: reduce`; computed page scroll behavior was `auto`, and button transition duration reduced to `0.00001s`. A nonexistent deep route returned 404 in both local static server profiles.
+- Parsed all built HTML `href` and `src` values against each profile's exact base path: **2,579 references per profile, zero wrong-base or missing local targets**. Checked external links: no non-HTTPS web link, unsafe scheme, or `_blank` link missing `noopener noreferrer` in either profile.
+- Scanned all files in both public outputs for `data/quarantine`, the owner's email, private-key marker, `ghp_`, `127.0.0.1` and `localhost`: zero matches. The root output was 2,110,893 bytes; the subpath output was 2,157,461 bytes, each 250 files, below the documented 1,000-file dashboard upload cap. This is a pattern scan, not a comprehensive secret scanner.
+
+## Findings
+
+No material browser, visual, navigation, base-path or public-file defect was found in these checks. The released root and subpath HTML/CSS/JS passed the tested journeys. The reviewed content still has stated reporting coverage gaps; QA does not convert those gaps into verified findings.
+
+## Limits and next action
+
+This pass did not run a full automated accessibility scanner, 200% zoom matrix, screen reader session, mobile network performance benchmark, detailed contrast-ratio calculation, production CDN smoke test, or independent scientific source audit. It cannot certify WCAG 2.2 AA, third-party link availability, claim accuracy, rights or human publication review. After the lead regenerates release metadata and deploys, smoke-test the actual hosted URL and verify its commit/release ID; keep this report tied to the reviewed HTML/CSS/JS snapshot.

@@ -51,6 +51,11 @@ class PublicationToolTests(unittest.TestCase):
         roster_refs = {eid for geo in self.rows["geographies"] if geo["kind"] in {"state", "ut", "union_territory"} for eid in geo["evidence_ids"]}
         self.assertTrue(roster_refs.issubset(sources))
         self.assertEqual("andhra-pradesh", next(g["slug"] for g in result["geographies"] if g["name"] == "Andhra Pradesh"))
+        forecast = sources["E-IMD-OUTLOOK-20260831"]
+        self.assertIsNone(forecast["observedThrough"])
+        self.assertEqual("2026-09-30", forecast["validityEnd"])
+        gazette = sources["E-KA-GAZETTE-DROUGHT-20260922"]
+        self.assertEqual("date", gazette["publicationDatePrecision"])
         out = self.root / "publication.json"
         write_publication(self.root, out)
         digest = hashlib.sha256(out.read_bytes()).hexdigest()

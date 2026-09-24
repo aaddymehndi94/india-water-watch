@@ -775,5 +775,43 @@
     "evidence_ids": [
       "E-IMD-HOMO-20260923"
     ]
+  },
+  {
+    "id": "cwc:india-178",
+    "name": "India · CWC 178 monitored reservoirs",
+    "kind": "other",
+    "authority_code": null,
+    "authority": "Central Water Commission / Reservoir Storage Monitoring System",
+    "boundary_version": "cwc-rsms-178-reservoir-cohort-2026-09-10",
+    "valid_from": null,
+    "valid_to": null,
+    "parent_ids": [
+      "india"
+    ],
+    "aliases": [],
+    "geometry_asset": null,
+    "geometry_rights": "No boundary or reservoir geometry included; source-defined monitored cohort only.",
+    "evidence_ids": [
+      "E-CWC-RSMS-20260910"
+    ]
+  },
+  {
+    "id": "cwc:south-50",
+    "name": "Southern region · CWC 50 monitored reservoirs",
+    "kind": "other",
+    "authority_code": null,
+    "authority": "Central Water Commission / Reservoir Storage Monitoring System",
+    "boundary_version": "cwc-rsms-178-reservoir-cohort-2026-09-10",
+    "valid_from": null,
+    "valid_to": null,
+    "parent_ids": [
+      "india"
+    ],
+    "aliases": [],
+    "geometry_asset": null,
+    "geometry_rights": "No boundary or reservoir geometry included; source-defined monitored cohort only.",
+    "evidence_ids": [
+      "E-CWC-RSMS-20260910"
+    ]
   }
 ]
