@@ -1,11 +1,74 @@
 {
   "schema_version": "1.0",
-  "release_id": null,
-  "snapshot_sha256": null,
-  "checks": [],
-  "blocking_findings": [
-    "No website or verified production dataset exists yet."
+  "release_id": "candidate-20260924-c5c2701d6b3c",
+  "snapshot_sha256": "c5c2701d6b3ca818d6ae48bc96eaf453d50939d2874ad85c204b5e619594aed0",
+  "checks": [
+    {
+      "id": "data",
+      "status": "passed",
+      "reviewer": "lead-engineer",
+      "evidence_path": "reporting/release_checks.md",
+      "evidence_sha256": "cada325a54bb0d9ddbcfde21a935bd825cf194a8ffba2f085051557b2c7105ce"
+    },
+    {
+      "id": "claims",
+      "status": "passed",
+      "reviewer": "fact-checker-agent",
+      "evidence_path": "reporting/final_fact_review.md",
+      "evidence_sha256": "cbc1667ee2458dec7dd08f02bd48368c5801ccfac9007c114c21bbb64cbe3944"
+    },
+    {
+      "id": "comparability",
+      "status": "passed",
+      "reviewer": "fact-checker-agent",
+      "evidence_path": "reporting/final_fact_review.md",
+      "evidence_sha256": "cbc1667ee2458dec7dd08f02bd48368c5801ccfac9007c114c21bbb64cbe3944"
+    },
+    {
+      "id": "editorial",
+      "status": "passed",
+      "reviewer": "independent-editor-agent",
+      "evidence_path": "reporting/final_editorial_review.md",
+      "evidence_sha256": "7d50de294664713d4e04325878f26a04fd53a5ab67621867f5775ba8dee9bf4e"
+    },
+    {
+      "id": "accessibility",
+      "status": "passed",
+      "reviewer": "independent-quality-agent",
+      "evidence_path": "reporting/final_quality_review.md",
+      "evidence_sha256": "a4b7218b5495e2d9422c1c5402e750c94ddc10b48e4120bf16d6355a47ead0bb"
+    },
+    {
+      "id": "visual",
+      "status": "passed",
+      "reviewer": "independent-quality-agent",
+      "evidence_path": "reporting/final_quality_review.md",
+      "evidence_sha256": "a4b7218b5495e2d9422c1c5402e750c94ddc10b48e4120bf16d6355a47ead0bb"
+    },
+    {
+      "id": "security",
+      "status": "passed",
+      "reviewer": "independent-quality-agent",
+      "evidence_path": "reporting/final_quality_review.md",
+      "evidence_sha256": "a4b7218b5495e2d9422c1c5402e750c94ddc10b48e4120bf16d6355a47ead0bb"
+    },
+    {
+      "id": "rights",
+      "status": "passed",
+      "reviewer": "independent-editor-agent",
+      "evidence_path": "reporting/final_editorial_review.md",
+      "evidence_sha256": "7d50de294664713d4e04325878f26a04fd53a5ab67621867f5775ba8dee9bf4e"
+    },
+    {
+      "id": "hosting",
+      "status": "passed",
+      "reviewer": "independent-quality-agent",
+      "evidence_path": "reporting/final_quality_review.md",
+      "evidence_sha256": "a4b7218b5495e2d9422c1c5402e750c94ddc10b48e4120bf16d6355a47ead0bb"
+    }
   ],
+  "blocking_findings": [],
   "sensitive_human_review_required": false,
-  "human_review_receipt": null
+  "human_review_receipt": null,
+  "scope": "Agent-reviewed local progress candidate; no human editorial sign-off or public deployment approval asserted."
 }
